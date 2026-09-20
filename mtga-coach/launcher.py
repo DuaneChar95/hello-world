@@ -10,7 +10,6 @@ from __future__ import annotations
 import os
 import subprocess
 import sys
-import threading
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -42,7 +41,7 @@ MODES = [
      "Grades every pick and reports your patterns."),
     ("My playstyle", "text", ["--playstyle"],
      "How you draft, what it costs you, and what would stretch you."),
-    ("Live Arena overlay", "gui", [],
+    ("Live Arena overlay", "gui", ["--overlay"],
      "Reads Arena's log during a real draft. Needs Detailed Logs enabled."),
 ]
 
@@ -126,49 +125,43 @@ class Launcher:
 
     # ---------------------------------------------------------------- run
     def run(self, kind: str, argv: list) -> None:
-        if kind == "gui":
-            threading.Thread(target=self._inproc, args=(argv,), daemon=True).start()
-            return
-        if kind == "cards":
-            threading.Thread(target=self._inproc, args=(argv,), daemon=True).start()
-            return
-        self._console(argv)
+        """Every mode runs in its own process.
 
-    def _inproc(self, argv: list) -> None:
-        try:
-            from coach.cli import main
-            main(argv)
-        except Exception as e:                             # noqa: BLE001
-            messagebox.showerror("MTGA Coach", str(e))
-
-    def _console(self, argv: list) -> None:
-        """Terminal modes need a real console.
-
-        A windowed executable has no stdout, so the build ships a second,
-        console-subsystem executable beside it and these modes run there.
+        tkinter is not thread-safe and a second Tk root cannot share images
+        with the first: running a draft window on a background thread produced
+        `image "pyimageN" doesn't exist` the moment it drew a card. A separate
+        process gives each window its own interpreter on its own main thread,
+        which is the only arrangement tkinter actually supports.
         """
+        self._spawn(argv, console=(kind == "text"))
+
+    def _target(self, console: bool):
+        """(command prefix, working directory) for a child process."""
         if getattr(sys, "frozen", False):
             exe = Path(sys.executable)
-            console = exe.with_name("MTGA Coach (console).exe")
-            if not console.exists():
-                console = exe.with_name("MTGA Coach (console)")
-            if not console.exists():
-                messagebox.showerror(
-                    "MTGA Coach",
-                    "The console executable is missing.\n\n"
-                    f"Expected it next to:\n{exe}\n\n"
-                    "Re-run build.bat, or use the windowed modes.")
-                return
-            cmd = [str(console)] + argv
-        else:
-            cmd = [sys.executable, str(HERE / "run_overlay.py")] + argv
+            if not console:
+                return [str(exe)], exe.parent
+            for name in ("MTGA Coach (console).exe", "MTGA Coach (console)"):
+                cand = exe.with_name(name)
+                if cand.exists():
+                    return [str(cand)], exe.parent
+            return None, exe.parent
+        return [sys.executable, str(HERE / "run_overlay.py")], HERE
+
+    def _spawn(self, argv: list, console: bool) -> None:
+        cmd, cwd = self._target(console)
+        if cmd is None:
+            messagebox.showerror(
+                "MTGA Coach",
+                "The console build is missing.\n\n"
+                "Keep 'MTGA Coach.exe' and 'MTGA Coach (console).exe' together "
+                "in the same folder - the text modes run in the console build.")
+            return
         kwargs = {}
-        if os.name == "nt":
+        if os.name == "nt" and console:
             kwargs["creationflags"] = subprocess.CREATE_NEW_CONSOLE
-            env = dict(os.environ, MTGA_COACH_CONSOLE="1")
-            kwargs["env"] = env
         try:
-            subprocess.Popen(cmd, cwd=str(HERE), **kwargs)
+            subprocess.Popen(cmd + argv, cwd=str(cwd), **kwargs)
         except Exception as e:                             # noqa: BLE001
             messagebox.showerror("MTGA Coach", f"could not start: {e}")
 
@@ -201,6 +194,10 @@ class Launcher:
 
 
 def main() -> int:
+    """With arguments, this executable is the CLI; without, it is the menu."""
+    if len(sys.argv) > 1:
+        from coach.cli import main as cli_main
+        return cli_main(sys.argv[1:])
     Launcher().go()
     return 0
 

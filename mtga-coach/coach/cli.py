@@ -308,6 +308,8 @@ def main(argv=None) -> int:
                    help="practice with no feedback until the end")
     p.add_argument("--auto", action="store_true", help="let the model draft (a demo)")
     p.add_argument("--seats", type=int, default=8)
+    p.add_argument("--overlay", action="store_true",
+                   help="watch Arena's log during a real draft (the default)")
     p.add_argument("--gui", action="store_true",
                    help="practice in a window with card images and hover detail")
     p.add_argument("--no-art", action="store_true",

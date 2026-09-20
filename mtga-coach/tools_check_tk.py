@@ -12,6 +12,10 @@ import ast
 import sys
 from pathlib import Path
 
+# Never read or write .pyc here: a cached module from an earlier edit can
+# make this report a failure that no longer exists in the source.
+sys.dont_write_bytecode = True
+
 GEOMETRY = {"pack", "grid", "place", "pack_configure", "grid_configure"}
 
 

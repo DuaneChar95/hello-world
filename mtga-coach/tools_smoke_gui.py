@@ -12,6 +12,10 @@ import sys
 import types
 from pathlib import Path
 
+# Never read or write .pyc here: a cached module from an earlier edit can
+# make this report a failure that no longer exists in the source.
+sys.dont_write_bytecode = True
+
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
@@ -105,6 +109,37 @@ def main() -> int:
         n += 1
     win.refresh()
     print(f"  draft window ............... {n} picks, finish screen ok")
+
+    # Every mode must run in its own process. A second Tk root on a background
+    # thread cannot share images with the first, which is what produced
+    # `image "pyimageN" doesn't exist` when a draft window opened.
+    import subprocess
+    import launcher as L
+    src = Path(L.__file__).read_text(encoding="utf-8")
+    if "threading" in src:
+        ERRORS.append("launcher.py still imports threading - Tk must not run "
+                      "off the main thread")
+    calls: list = []
+    real_popen = subprocess.Popen
+    subprocess.Popen = lambda cmd, **k: calls.append((cmd, k)) or types.SimpleNamespace()
+    try:
+        lau = L.Launcher()
+        for label, kind, argv, _ in L.MODES:
+            before = len(calls)
+            lau.run(kind, argv)
+            if len(calls) == before:
+                ERRORS.append(f"mode {label!r} did not spawn a process")
+            elif not argv:
+                ERRORS.append(f"mode {label!r} spawns with no arguments - the "
+                              "windowed build would just reopen this menu")
+    finally:
+        subprocess.Popen = real_popen
+    windowed = [c for c, _ in calls if "--gui" in c or not c]
+    print(f"  mode dispatch .............. {len(calls)}/{len(L.MODES)} spawned "
+          f"a process")
+    if len(sys.argv) > 1 and sys.argv[1] == "-v":
+        for c, k in calls:
+            print(f"     {c[-2:] or '(launcher)'}  console={'creationflags' in k}")
 
     if ERRORS:
         print(f"  widget options ............. FAIL ({len(ERRORS)})")
