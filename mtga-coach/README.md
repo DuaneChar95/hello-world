@@ -243,20 +243,48 @@ built and why:
   Best build: Fatehold (WU) - 23 playables from 44 on-colour cards
 ```
 
-### About the cards
+### About the cards — and how to make them real
 
-The set is not out, so a faithful practice pool cannot be built from real cards —
-only ~46 are known. So: **every real card is seeded in at its real rarity**, and
-the rest is generated from the format's mechanical vocabulary at the set's real
-composition (71 commons / 109 uncommons / 64 rares / 26 mythics).
+**One command switches the whole app to the real card list:**
 
-Generated cards are marked `°`. They are placeholders, not predictions — no
-claim is made that any of them will exist.
+```
+python fetch_cards.py
+```
 
-This still trains what decides drafts: reading signals, committing at the right
-time, curve, interaction counts, archetype fit, and applying the rubric. None of
-that is card knowledge. When the real list lands, swap the generator in
-`coach/cards.py` and everything downstream is unchanged.
+It pulls every Reality Fracture card from Scryfall (following pagination,
+rate-limited politely), saves the JSON, and rebuilds the ratings file. From then
+on **practice packs are drawn from the real 333 cards**, the overlay recognises
+them, and hover shows real mana costs — which makes splash advice exact instead
+of approximate.
+
+No internet on that machine? Save this URL's JSON in a browser and import it:
+
+```
+https://api.scryfall.com/cards/search?q=set%3Afra
+python run_overlay.py --import-cards fra.json
+```
+
+`--import-cards` also accepts an **MTGJSON** set file or a **CSV** with a name
+column. It derives tags from oracle text — prepared and which college's spell it
+carries, empower Jace, threshold, Heartwood, removal (splitting instant-speed
+cheap removal from the rest), board wipes, evasion, lands and fixing — so the
+scorer understands real cards the same way it understands the hand-written ones.
+
+It also **tells you which hand-written cards are not in the real list.** Those
+are names guessed wrong during research; `--prune` drops them.
+
+**Until you import**, the pool is: every card known at the time of writing
+(~51) seeded at its real rarity, plus generated placeholders marked `°` filling
+out the set's true composition (71/109/64/26). Placeholders are not predictions —
+no claim is made that any of them will exist.
+
+Either way the practice trains what decides drafts: reading signals, committing
+at the right time, curve, interaction counts, archetype fit, and the rubric.
+None of that is card knowledge.
+
+**Grades stay heuristic even after importing** — rarity and type with adjustments
+for removal, evasion and rate. The confidence flag reads `carddata`, not `data`.
+Run `--import-17lands` once win rates exist and it becomes real.
 
 Practice drafts are tagged `simulated` in the saved file. `--real-only` excludes
 them from `--review` and `--playstyle` once you have real Arena drafts.

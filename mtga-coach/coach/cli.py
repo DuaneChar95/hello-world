@@ -130,6 +130,42 @@ def cmd_replay(args, ratings: Ratings) -> int:
     return 0
 
 
+def cmd_import_cards(args, ratings: Ratings) -> int:
+    """Replace the generated placeholders with the real card list."""
+    from .cardimport import load_cards, build_ratings
+    src = Path(args.import_cards)
+    cards = load_cards(src)
+    print(f"read {len(cards)} records from {src.name}")
+    out, stats = build_ratings(cards, ratings.raw, ratings.raw.get("set", "FRA"),
+                               prune=args.prune)
+    dest = Path(args.out or (Path(__file__).resolve().parent.parent
+                             / "data" / "fra_ratings.json"))
+    dest.write_text(json.dumps(out, indent=1), encoding="utf-8")
+    by_rarity: dict = {}
+    for e in out["cards"].values():
+        r = e.get("rarity") or "?"
+        by_rarity[r] = by_rarity.get(r, 0) + 1
+    print(f"imported {stats['added']} cards -> {dest}")
+    print("  " + "  ".join(f"{k}:{v}" for k, v in sorted(by_rarity.items())))
+    print(f"  kept {stats['kept_hand_grade']} hand-written grades, "
+          f"skipped {stats['skipped']} tokens/basics")
+    if stats["unmatched"]:
+        print(f"\n  {len(stats['unmatched'])} hand-written card(s) are NOT in the real")
+        print("  list - those names were guessed wrong during research:")
+        for n in stats["unmatched"][:20]:
+            print(f"    - {n}")
+        if len(stats["unmatched"]) > 20:
+            print(f"    ... and {len(stats['unmatched']) - 20} more")
+        if stats["pruned"]:
+            print(f"  removed all {stats['pruned']} (--prune).")
+        else:
+            print("  re-run with --prune to drop them.")
+    print("\nPractice drafts will now use the real cards, and the overlay will")
+    print("recognise them. Grades are still heuristic - run --import-17lands")
+    print("once win-rate data exists.")
+    return 0
+
+
 def cmd_import_17lands(args, ratings: Ratings) -> int:
     """Convert a 17Lands card-ratings CSV into the ratings file.
 
@@ -280,6 +316,11 @@ def main(argv=None) -> int:
     p.add_argument("--hard", action="store_true", help="quiz only on picks you got wrong")
     p.add_argument("-n", type=int, default=10, help="questions per session")
     p.add_argument("--seed", type=int)
+    p.add_argument("--import-cards", metavar="FILE",
+                   help="rebuild ratings from a real card list "
+                        "(Scryfall JSON, MTGJSON, or CSV)")
+    p.add_argument("--prune", action="store_true",
+                   help="--import-cards: drop hand-written cards the real list lacks")
     p.add_argument("--import-17lands", metavar="CSV")
     p.add_argument("--out", metavar="JSON", help="where --import-17lands writes")
     p.add_argument("--selftest", action="store_true")
@@ -290,6 +331,8 @@ def main(argv=None) -> int:
     if args.selftest:
         print("selftest")
         return cmd_selftest(ratings)
+    if args.import_cards:
+        return cmd_import_cards(args, ratings)
     if args.import_17lands:
         return cmd_import_17lands(args, ratings)
     _banner(ratings)

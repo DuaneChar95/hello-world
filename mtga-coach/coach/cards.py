@@ -88,12 +88,16 @@ class CardPool:
         self.all: list[PoolCard] = []
         self._next_id = 900000
         self._seed_real()
-        self._generate()
+        self.real_only = ratings.raw.get("card_data") == "real" and len(self.all) >= 200
+        if not self.real_only:
+            self._generate()
 
     # -- construction ---------------------------------------------------
-    def _add(self, name, colors, rarity, cmc, types, grade, tags, real=False) -> PoolCard:
+    def _add(self, name, colors, rarity, cmc, types, grade, tags, real=False,
+             cost="") -> PoolCard:
         self._next_id += 1
-        c = PoolCard(CardInfo(self._next_id, name, colors, rarity, "FRA", cmc, types),
+        c = PoolCard(CardInfo(self._next_id, name, colors, rarity, "FRA", cmc, types,
+                              cost),
                      round(grade, 2), list(tags), real)
         self.by_rarity.setdefault(rarity, []).append(c)
         self.all.append(c)
@@ -105,14 +109,18 @@ class CardPool:
             if rarity not in TARGET:
                 rarity = "uncommon"
             tags = list(e.get("tags", []))
+            cost = e.get("cost", "")
             if "land" in tags:
-                self._add(name, "", rarity, 0, "Land",
-                          float(e.get("grade", 2.2)), tags, real=True)
+                self._add(name, "", rarity, 0, e.get("types", "Land"),
+                          float(e.get("grade", 2.2)), tags, real=True, cost=cost)
                 continue
-            cmc = self._infer_cmc(tags, rarity)
-            types = "Creature" if self._is_creature(tags, name) else "Instant"
+            # Real imported cards carry their own cmc/type; only guess when they don't.
+            cmc = int(e["cmc"]) if isinstance(e.get("cmc"), int) \
+                else self._infer_cmc(tags, rarity)
+            types = e.get("types") or (
+                "Creature" if self._is_creature(tags, name) else "Instant")
             self._add(name, e.get("colors", ""), rarity, cmc, types,
-                      float(e.get("grade", 3.0)), tags, real=True)
+                      float(e.get("grade", 3.0)), tags, real=True, cost=cost)
 
     def _infer_cmc(self, tags, rarity) -> int:
         if "bomb" in tags:
@@ -269,5 +277,7 @@ class CardPool:
         """Grades/tags for generated cards, so the scorer knows them."""
         return {c.name: {"grade": c.grade, "colors": c.info.colors,
                          "rarity": c.info.rarity, "tags": c.tags,
+                         "cost": c.info.cost, "cmc": c.info.cmc,
+                         "types": c.info.types,
                          "note": "" if c.real else "generated practice card"}
                 for c in self.all}
