@@ -1,0 +1,56 @@
+name: Build Windows app
+
+# Builds MTGA Coach into a real Windows executable and uploads it as a
+# downloadable artifact. PyInstaller cannot cross-compile, so this has to run
+# on a Windows runner.
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'mtga-coach/**'
+      - '.github/workflows/build-windows.yml'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: mtga-coach
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check tkinter is present
+        run: python -c "import tkinter; print('tkinter', tkinter.TkVersion)"
+
+      - name: Install PyInstaller
+        run: python -m pip install --upgrade pip pyinstaller
+
+      - name: Generate the icon
+        run: python assets/make_icon.py
+
+      - name: Self-test before packaging
+        run: python run_overlay.py --selftest
+
+      - name: Build
+        run: python -m PyInstaller mtga-coach.spec --noconfirm --clean
+
+      - name: Smoke-test the packaged console build
+        run: |
+          & ".\dist\MTGA Coach (console).exe" --selftest
+          if ($LASTEXITCODE -ne 0) { throw "packaged selftest failed" }
+
+      - name: Show what was built
+        run: Get-ChildItem dist | Format-Table Name, Length
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MTGA-Coach-Windows
+          path: mtga-coach/dist/*
+          if-no-files-found: error
+          retention-days: 90
