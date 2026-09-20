@@ -65,7 +65,14 @@ def cmd_overlay(args, ratings: Ratings) -> int:
         return 2
     print(f"watching {log}")
     resolver = _resolver(args, ratings)
-    session = DraftSession(resolver, ratings, mode=args.mode)
+    profile = None
+    if not args.no_profile:
+        from .playstyle import build_profile
+        profile = build_profile(ratings)
+        if profile:
+            print(f"playstyle: {profile.label()} "
+                  f"({profile.n_drafts} drafts, {profile.confidence})")
+    session = DraftSession(resolver, ratings, mode=args.mode, profile=profile)
     q: "queue.Queue" = queue.Queue()
 
     unknown_fh = open(args.dump_unknown, "a", encoding="utf-8") if args.dump_unknown else None
@@ -230,6 +237,10 @@ def main(argv=None) -> int:
                    help="log payloads the parser did not recognise (send me this file)")
     p.add_argument("--replay", metavar="FILE", help="parse a saved log instead of watching")
     p.add_argument("--review", action="store_true", help="grade your saved drafts")
+    p.add_argument("--playstyle", action="store_true",
+                   help="profile how you draft, and what would stretch you")
+    p.add_argument("--no-profile", action="store_true",
+                   help="do not use your playstyle in the overlay")
     p.add_argument("--quiz", action="store_true", help="replay real packs and test your picks")
     p.add_argument("--drills", action="store_true", help="concept drills (no drafts needed)")
     p.add_argument("--hard", action="store_true", help="quiz only on picks you got wrong")
@@ -255,6 +266,10 @@ def main(argv=None) -> int:
     if args.quiz:
         from .quiz import run_pack_quiz
         run_pack_quiz(ratings, DRAFT_DIR, args.n, args.seed, hard_only=args.hard)
+        return 0
+    if args.playstyle:
+        from .playstyle import build_profile, report
+        print(report(build_profile(ratings), ratings))
         return 0
     if args.review:
         print(review_all(ratings))

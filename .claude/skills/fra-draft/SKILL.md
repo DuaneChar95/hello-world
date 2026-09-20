@@ -105,6 +105,15 @@ for a splash**, not just ramp → be slower than feels right.
 - **Don't attack their Jace** unless it's winning them the game; take the life total.
 - **Your removal can point at planeswalkers** — FRA has more than any set since War of the Spark.
 
+## Playstyle
+
+The desktop app (`mtga-coach/`) profiles the user from their saved drafts:
+`python run_overlay.py --playstyle`. If they ask about their tendencies, habits,
+or which picks are in-character, point them there rather than guessing — it
+measures colour bias against what they actually saw, and separates preferences
+from habits that cost measurable pick loss. Never characterise their playstyle
+from memory or from a single draft.
+
 ## Honesty rules for this skill
 
 - These numbers are a **pre-release prior**, not data. The set releases 2026-10-02; Arena queues

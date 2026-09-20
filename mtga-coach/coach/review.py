@@ -11,6 +11,7 @@ from typing import Optional
 
 from .arenadb import CardInfo, CardResolver
 from .model import PoolState, Ratings, score_pack
+from .playstyle import build_profile, classify_pick, report as style_report
 from .session import load_drafts, DRAFT_DIR
 
 
@@ -21,7 +22,7 @@ def _card(names: dict, gid: int, meta: Optional[dict] = None) -> CardInfo:
                     int(m.get("cmc") or 0), m.get("types", ""))
 
 
-def regrade(draft: dict, ratings: Ratings) -> dict:
+def regrade(draft: dict, ratings: Ratings, profile=None) -> dict:
     """Replay a saved draft through the current model."""
     names = draft.get("names", {})
     meta = draft.get("meta", {})
@@ -36,7 +37,9 @@ def regrade(draft: dict, ratings: Ratings) -> dict:
         chosen_id = rp.get("chosen")
         chosen = next((s for s in scored if s.card.grpid == chosen_id), None)
         loss = round(best.score - chosen.score, 2) if chosen else None
+        verdict, vexp = classify_pick(scored, chosen_id, profile, ratings)
         rows.append({
+            "style": verdict, "style_why": vexp,
             "pack": rp.get("pack_number", 1),
             "pick": rp.get("pick_number", 1),
             "took": chosen.card.name if chosen else "(unknown)",
@@ -136,10 +139,11 @@ def review_all(ratings: Ratings, directory: Path = DRAFT_DIR, limit: Optional[in
                 "Run the overlay during a draft and they will be recorded automatically.")
     if limit:
         drafts = drafts[-limit:]
+    profile = build_profile(ratings, directory)
     lines: list[str] = []
     all_rows: list[dict] = []
     for d in drafts:
-        res = regrade(d, ratings)
+        res = regrade(d, ratings, profile)
         all_rows += [r for r in res["rows"] if r["loss"] is not None]
         lines.append("=" * 70)
         lines.append(f"{Path(d['_file']).name}  -  {d.get('mode', 'draft')}  -  "
@@ -152,6 +156,8 @@ def review_all(ratings: Ratings, directory: Path = DRAFT_DIR, limit: Optional[in
                          + (f"-{r['loss']}" if r["loss"] else "="))
             if (r["loss"] or 0) > 0.8:
                 lines.append(f"        why: {'; '.join(r['why'])}")
+            if r.get("style") == "stretch":
+                lines.append(f"        stretch: {r['style_why']}")
         lines.append("")
         for t in lessons(res["rows"], res["pool"], ratings):
             lines.append("  * " + t)
@@ -170,6 +176,15 @@ def review_all(ratings: Ratings, directory: Path = DRAFT_DIR, limit: Optional[in
         if passed:
             lines.append("  Cards you most often pass that the model wants: " +
                          ", ".join(f"{n} (x{c})" for n, c in passed.most_common(5)))
-    lines.append("")
-    lines.append(f"Ratings source: {ratings.source}")
+    if profile:
+        stretches = [r for r in all_rows if r.get("style") == "stretch"]
+        instyle = [r for r in all_rows if r.get("style", "").startswith("in style")]
+        if all_rows:
+            lines.append(f"  Style: {len(instyle)} picks were the pick you normally make, "
+                         f"{len(stretches)} were outside your usual range and still strong.")
+        lines.append("")
+        lines.append(style_report(profile, ratings))
+    else:
+        lines.append("")
+        lines.append(f"Ratings source: {ratings.source}")
     return "\n".join(lines)

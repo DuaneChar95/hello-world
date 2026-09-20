@@ -10,12 +10,15 @@ It does three things:
    your pool is actually in.
 2. **Review** — after the draft, it regrades every pick you made and tells you
    what your *patterns* are, not just your mistakes.
-3. **Trainer** — concept drills on this format's mechanics, plus a pack quiz that
+3. **Playstyle** — profiles how you draft, marks picks as in-style or stretch,
+   and separates your preferences from the habits that actually cost you.
+4. **Trainer** — concept drills on this format's mechanics, plus a pack quiz that
    replays the real packs you faced and makes you pick again.
 
 ```
 python run_overlay.py                 # the overlay
-python run_overlay.py --review        # grade your saved drafts
+python run_overlay.py --playstyle     # how you draft, and what would stretch you
+python run_overlay.py --review        # grade your saved drafts (includes playstyle)
 python run_overlay.py --drills        # concept drills (works before the set is out)
 python run_overlay.py --quiz --hard   # re-pick the packs you got wrong
 ```
@@ -123,6 +126,73 @@ part that's actually useful — the aggregate:
 
 Across several drafts it also reports the cards you most often pass that the
 model wants — which is usually where a real leak lives.
+
+---
+
+## Playstyle
+
+```
+python run_overlay.py --playstyle
+```
+
+Profiles you from your own saved drafts across six axes — curve, power vs
+synergy, commitment timing, interaction appetite, creature balance, and late
+discipline — plus colour bias measured properly: **how often you take a colour
+against how often you actually see it**, so a blue bias means you reach for
+blue, not that you opened blue cards.
+
+```
+  PLAYSTYLE: OPEN MIDRANGE DRAFTER
+  5 drafts, 195 graded picks - confidence: emerging
+
+  Curve            slow / top-heavy ------O---|---------- fast / cheap
+               your picks average 2.70 mana against 2.37 for the cards you see
+
+  COLOURS - how often you take a colour vs how often you see it
+    U   1.20x   favoured
+    G   0.91x   neutral
+    -> you reach for U/B
+```
+
+### Style is not a leak
+
+The report keeps those two apart on purpose. A tendency is only called a leak
+when the numbers say so — the average pick loss on picks that express it,
+against picks that don't:
+
+```
+  TENDENCIES - measured cost, not opinion
+    COSTS  taking a rare over a better-scoring common or uncommon
+           1.09 vs 0.56 (+0.53 per pick over 57 picks)
+    EARNS  taking the synergy card over the strongest card
+           0.0 vs 0.78 (-0.78 per pick over 15 picks) - keep doing this
+```
+
+Some of your habits will be *earning* you points. Those get left alone rather
+than sanded into a generic drafter.
+
+### In-style and stretch picks, live
+
+Once you have ~20 graded picks, the overlay starts flagging two things:
+
+- **`STRETCH`** — a card nearly as good as your default pick, but the kind you
+  normally pass. Offered as a choice, never a correction; taking it is how your
+  range grows, and skipping it isn't a mistake.
+- **`NOT YOUR USUAL PICK`** on the top recommendation — the best card in the
+  pack is itself one your bias would make you pass. This is the more valuable
+  warning of the two.
+
+Fit is judged **against the rest of that pack**, not an absolute scale, so a
+pack that doesn't split along your preferences produces no stretch pick at all
+rather than a manufactured one. `--review` labels every past pick *in style* /
+*in style, costly* / *stretch* / *off profile*.
+
+The report ends with concrete experiments drawn from your most lopsided axes —
+a colour you avoid that the format rates well, a tier-A lane you have never
+ended in, a commitment habit worth testing once.
+
+**Sample size is stated, not hidden.** Under 3 drafts it says `provisional` and
+tells you to treat it as a sketch; 3–9 is `emerging`; 10+ is `established`.
 
 ---
 

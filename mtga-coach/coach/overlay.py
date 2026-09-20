@@ -30,6 +30,7 @@ ACCENT = "#4fb2bf"
 GOOD = "#7fd3a8"
 WARN = "#d5a25a"
 TIER = {"S": "#8ad6e0", "A": "#4fb2bf", "B": "#2e8b99", "C": "#1e6673"}
+STRETCH = "#c79bd8"
 
 
 class Overlay:
@@ -129,9 +130,33 @@ class Overlay:
                 tk.Label(head, text=f"{sc.score:.2f}", bg=row["bg"], fg=ACCENT,
                          font=self.f_m).pack(side="right")
                 why = "; ".join(sc.reasons[:2])
+                if i == 0 and (s.annotation or {}).get("default_is_stretch"):
+                    tk.Label(row, text="NOT YOUR USUAL PICK - best card here is one you "
+                                       "normally pass", bg=row["bg"], fg=STRETCH,
+                             font=self.f_s, anchor="w", justify="left",
+                             wraplength=340).pack(fill="x", padx=8)
                 tk.Label(row, text=why, bg=row["bg"], fg=MUTED, font=self.f_s,
                          anchor="w", justify="left", wraplength=340).pack(fill="x", padx=8, pady=(0, 5))
-            rest = s.current_scored[3:]
+            st = (s.annotation or {}).get("stretch")
+            if st is not None and st.card.grpid not in [x.card.grpid for x in s.current_scored[:3]]:
+                row = tk.Frame(self.picks, bg=BG, highlightbackground=STRETCH,
+                               highlightthickness=1)
+                row.pack(fill="x", pady=(2, 4))
+                head = tk.Frame(row, bg=BG)
+                head.pack(fill="x", padx=8, pady=(5, 0))
+                tk.Label(head, text="STRETCH", bg=BG, fg=STRETCH,
+                         font=self.f_s).pack(side="left")
+                tk.Label(head, text=f" {st.card.name}", bg=BG, fg=FG, font=self.f_b,
+                         anchor="w", justify="left", wraplength=230).pack(side="left", fill="x", expand=True)
+                tk.Label(head, text=f"{st.score:.2f}", bg=BG, fg=STRETCH,
+                         font=self.f_m).pack(side="right")
+                tk.Label(row, text="strong, but not the card you usually take",
+                         bg=BG, fg=MUTED, font=self.f_s, anchor="w",
+                         justify="left", wraplength=340).pack(fill="x", padx=8, pady=(0, 5))
+                excl = {st.card.grpid}
+            else:
+                excl = set()
+            rest = [x for x in s.current_scored[3:] if x.card.grpid not in excl]
             if rest:
                 self.lbl_rest.config(text="then: " + " · ".join(
                     f"{r.card.name} {r.score:.1f}" for r in rest[:10]))
@@ -145,7 +170,10 @@ class Overlay:
                           "If nothing appears:\n"
                           "  Options > Account > Detailed Logs\n"
                           "  (Plugin Support) must be ON,\n"
-                          "  then restart Arena.",
+                          "  then restart Arena.\n\n"
+                          "Picks are graded against your own\n"
+                          "playstyle once you have a few drafts:\n"
+                          "  python run_overlay.py --playstyle",
                      bg=BG, fg=MUTED, font=self.f_b, justify="left",
                      anchor="w").pack(fill="x", padx=4, pady=6)
 
@@ -158,8 +186,10 @@ class Overlay:
                      f"{sm['top_name']} ({sm['top_pair']}) {('tier ' + tier) if tier else ''}\n"
                      f"{sm['verdict']}",
                 fg=TIER.get(tier, FG))
-            self.lbl_foot.config(
-                text=f"interaction {sm['interaction']} (want 4+)   creatures {sm['creatures']}")
+            foot = f"interaction {sm['interaction']} (want 4+)   creatures {sm['creatures']}"
+            if self.session.profile is not None:
+                foot += f"\n{self.session.profile.label()} · {self.session.profile.confidence}"
+            self.lbl_foot.config(text=foot)
         else:
             self.lbl_pool.config(text="pool: empty", fg=FG)
             self.lbl_foot.config(text="")

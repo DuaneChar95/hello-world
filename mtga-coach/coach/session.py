@@ -27,9 +27,12 @@ class RecordedPick:
 class DraftSession:
     """Turns a stream of PackEvent/PickEvent into advice and a saved record."""
 
-    def __init__(self, resolver: CardResolver, ratings: Ratings, mode: str = "draft"):
+    def __init__(self, resolver: CardResolver, ratings: Ratings, mode: str = "draft",
+                 profile=None):
         self.resolver = resolver
         self.ratings = ratings
+        self.profile = profile
+        self.annotation: dict = {}
         self.pool = PoolState(mode=mode)
         self.current_pack: list[CardInfo] = []
         self.current_scored: list[Scored] = []
@@ -52,6 +55,7 @@ class DraftSession:
         self.pack_number, self.pick_number = pack_no, pick_no
         self.current_pack = [self.resolver.get(i) for i in card_ids]
         self.current_scored = score_pack(self.current_pack, self.pool, self.ratings, pack_no, pick_no)
+        self._annotate()
         best = self.current_scored[0] if self.current_scored else None
         self._pending = RecordedPick(
             pack_no, pick_no, list(card_ids),
@@ -75,6 +79,7 @@ class DraftSession:
         self._pending = None
         self.current_pack = []
         self.current_scored = []
+        self.annotation = {}
         return True
 
     def on_pool(self, card_ids: list[int]) -> None:
@@ -84,6 +89,14 @@ class DraftSession:
             self.pool.add(self.resolver.get(i))
         self.current_pack = [self.resolver.get(i) for i in card_ids]
         self.current_scored = score_pack(self.current_pack, self.pool, self.ratings, 1, 1)
+        self._annotate()
+
+    def _annotate(self) -> None:
+        from .playstyle import annotate_pack
+        try:
+            self.annotation = annotate_pack(self.current_scored, self.profile, self.ratings)
+        except Exception:                                  # noqa: BLE001 - advice is optional
+            self.annotation = {}
 
     # -- output ---------------------------------------------------------
     def summary(self) -> dict:
@@ -95,6 +108,10 @@ class DraftSession:
         directory.mkdir(parents=True, exist_ok=True)
         stamp = time.strftime("%Y%m%d-%H%M%S", time.localtime(self.started))
         path = directory / f"draft-{stamp}.json"
+        n = 1
+        while path.exists():                 # two drafts in the same second
+            path = directory / f"draft-{stamp}-{n}.json"
+            n += 1
         names, meta = {}, {}
         for rp in self.history:
             for gid in rp.pack:
