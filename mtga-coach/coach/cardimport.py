@@ -64,6 +64,33 @@ COLLEGE_PAT = [
 ]
 
 
+RARITY_LETTER = {"c": "common", "u": "uncommon", "r": "rare", "m": "mythic",
+                 "s": "special", "b": "bonus"}
+
+# Scryfall's CSV export has no oracle_text. For prepared cards the back-face
+# name still identifies the college, because at common and uncommon every
+# creature in a school shares one spell.
+COLLEGE_BY_SPELL = {
+    "peer review": "prepared_fatehold",
+    "omit variables": "prepared_theorix",
+    "vicious verse": "prepared_stingerquill",
+    "soul tether": "prepared_konstrari",
+    "seed suture": "prepared_vigorbloom",
+}
+
+
+def _front(value: str) -> str:
+    """Split cards carry both faces in one field, separated by //."""
+    return value.split("//")[0].strip() if isinstance(value, str) else value
+
+
+def _rarity_of(c: dict) -> str:
+    r = (c.get("rarity") or "").strip().lower()
+    if len(r) == 1:
+        return RARITY_LETTER.get(r, r)
+    return r
+
+
 def _text_of(c: dict) -> str:
     parts = [c.get("oracle_text") or c.get("text") or ""]
     for f in c.get("card_faces") or []:
@@ -77,7 +104,7 @@ def _cost_of(c: dict) -> str:
         faces = c.get("card_faces") or []
         if faces:
             mc = faces[0].get("mana_cost", "") or ""
-    return mc
+    return _front(mc)
 
 
 def _type_of(c: dict) -> str:
@@ -86,7 +113,7 @@ def _type_of(c: dict) -> str:
         faces = c.get("card_faces") or []
         if faces:
             t = faces[0].get("type_line", "")
-    return t
+    return _front(t)
 
 
 def _colors_of(c: dict, cost: str) -> str:
@@ -106,15 +133,31 @@ def _colors_of(c: dict, cost: str) -> str:
 
 def derive_tags(c: dict) -> list[str]:
     text = _text_of(c)
+    name = (c.get("name") or c.get("Name") or "")
     tline = _type_of(c).lower()
+    full_type = (c.get("type_line") or c.get("type") or "").lower()
     cmc = int(float(c.get("cmc") or c.get("manaValue") or 0))
     tags: list[str] = []
 
     if "land" in tline:
         tags += ["land"]
-        if re.search(r"add \{[wubrg]\}.*or.*\{[wubrg]\}|\{t\}: add \{[wubrg]\} or", text):
+        if re.search(r"add \{[wubrg]\}.*or.*\{[wubrg]\}|\{t\}: add \{[wubrg]\} or", text) \
+                or "annex" in name.lower():
             tags.append("fixing")
+        if "basic land" in tline:
+            tags.append("basic")
         return tags
+
+    # A split card whose faces are Creature // Sorcery is a prepared card, and
+    # the spell half names its college even with no rules text available.
+    if "//" in name and "//" in full_type:
+        back_name = name.split("//")[-1].strip().lower()
+        back_type = full_type.split("//")[-1].strip()
+        if "creature" in tline and ("sorcery" in back_type or "instant" in back_type):
+            tags.append("prepared")
+            college = COLLEGE_BY_SPELL.get(back_name)
+            if college:
+                tags.append(college)
 
     if REMOVAL.search(text):
         tags.append("removal_instant_cheap" if ("instant" in tline and cmc <= 3)
@@ -141,7 +184,7 @@ def derive_tags(c: dict) -> list[str]:
 def heuristic_grade(c: dict, tags: list[str]) -> float:
     """A defensible starting grade. NOT data - 17Lands overwrites this."""
     tline = _type_of(c).lower()
-    rarity = (c.get("rarity") or "").lower()
+    rarity = _rarity_of(c)
     cmc = int(float(c.get("cmc") or c.get("manaValue") or 0))
     g = {"mythic": 3.6, "rare": 3.3, "uncommon": 2.9, "common": 2.5}.get(rarity, 2.5)
     if "land" in tline:
@@ -243,7 +286,7 @@ def build_ratings(cards: Iterable[dict], base: dict, setcode: str = "FRA",
             continue
         cost = _cost_of(c)
         tline = _type_of(c)
-        if "basic land" in tline.lower():
+        if "basic land" in (c.get("type_line") or c.get("type") or "").lower():
             stats["skipped"] += 1
             continue
         tags = derive_tags(c)
@@ -251,12 +294,16 @@ def build_ratings(cards: Iterable[dict], base: dict, setcode: str = "FRA",
         hand = "grade" in entry and entry.get("source") != "auto"
         entry.update({
             "colors": _colors_of(c, cost),
-            "rarity": (c.get("rarity") or "").lower(),
+            "rarity": _rarity_of(c),
             "cost": cost,
             "cmc": int(float(c.get("cmc") or c.get("manaValue") or 0)),
             "types": tline,
             "tags": sorted(set(tags) | set(entry.get("tags", []))),
         })
+        for k_src, k_dst in (("image_uri", "image"), ("scryfall_id", "scryfall_id"),
+                             ("collector_number", "number")):
+            if c.get(k_src):
+                entry[k_dst] = c[k_src]
         if hand:
             stats["kept_hand_grade"] += 1
         else:

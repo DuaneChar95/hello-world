@@ -35,6 +35,55 @@ correct in six months, and it is what actually decides games.
 
 ---
 
+## 0.5 Corrections from the real card list  [CONFIRMED 2026-09-20]
+
+The full set data is now in hand (285 cards: 5 basics, 81 commons, 109 uncommons,
+64 rares, 26 mythics — the "71 commons" figure quoted below counts common *spells*,
+with 10 more at common being lands). **49 of the 51 card names I researched were
+real.** Here is everything the real data corrected, because several of these change
+the advice:
+
+| Card | I said | Actually | Why it matters |
+|---|---|---|---|
+| **Titanbones, Towering Heart** | two separate cards | **one card**, `{3}{G}` uncommon | I split one name in half. There is no card called "Towering Heart". |
+| **Master of Barbs** | B/R uncommon | **mono-R rare** | I called this "the payoff that makes Stingerquill work". At rare you usually won't have it — this makes **B/R worse, not better**, and reinforces the C-tier call. |
+| **Stingcaster Mage** | uncommon | **mythic** | Not a build-around you can plan on. It's a bomb you occasionally open. |
+| **Overwrite the Multiverse** | "if it's a rare…" | **mythic** | I flagged its rarity as a key unknown. Answered — and being mythic, it reshapes sealed far less than I speculated. |
+| **Proctor of Potential** | W common | **W/U rare** | W/U's scry/surveil payoff is rarer than implied. |
+| **Null Summoner** | B common | **U/B rare** | Same for Theorix's threshold payoff. |
+| **Cruel Calculations** | B common | **mono-U rare** | |
+| **Void Extrapolator** | uncommon | **common**, and it's a *prepared* Theorix card (`Void Extrapolator // Omit Variables`) | Good news for U/B: the enabler is at common. |
+| **Prudent Fateseer** | common | **uncommon** | |
+| **The Echoed Pair planeswalkers** | gold rares in the enemy pair | **mono-coloured mythics** — *Ajani Resolute* is W, *Ajani Unrelenting* is R; *Liliana the Repentant* is B, *the Faultless* is W | This one I had structurally wrong. An Echoed Pair is **two mono-coloured cards, one in each colour of the pair** — not a gold card. So the enemy archetypes are signposted by a pair of mono-coloured mythics. |
+
+### What the real data confirmed
+
+- **Every college shares one prepared spell, by name.** `Semester Foreseer // Peer
+  Review` and `Prudent Fateseer // Peer Review` (Fatehold); `Theorix Metamage //
+  Omit Variables` and `Void Extrapolator // Omit Variables` (Theorix);
+  `Stingerquill Voxmancer // Vicious Verse` and `Whiplash Wordsmith // Vicious
+  Verse` (Stingerquill); `Woodwork Prodigy // Soul Tether` (Konstrari);
+  `Vigorbloom Vanguard // Seed Suture` (Vigorbloom).
+- **The Annexes are commons.** *Fatehold Annex*, *Theorix Annex*, *Stingerquill
+  Annex*, *Konstrari Annex*, *Vigorbloom Annex* — all common lands. Section 4.5 stands.
+- **Rarity distribution** matches exactly: 109 uncommons against 71 common spells.
+
+### One thing that changes Section 4.5
+
+**Many of the college cards are hybrid**, not gold: `Theorix Metamage {2}{U/B}`,
+`Stingerquill Voxmancer {B/R}`, `Vigorbloom Vanguard {1}{G/W}`, `Woodwork Prodigy
+{2}{R/G}`. A hybrid card is castable with **either** colour, so it behaves like a
+mono-coloured card for mana purposes and slides into a splash far more easily than a
+true gold card. Two consequences [EVAL]:
+
+1. **Hybrid college cards are not a splash problem at all** — if you're in one of
+   the two colours, you can cast it.
+2. **They are a weaker signal than I claimed.** A late Fatehold hybrid card doesn't
+   prove W/U is open; a mono-W or mono-U drafter could also want it. Weight the
+   *mono-coloured* college cards more heavily when reading signals.
+
+---
+
 ## 1. The set in one page
 
 | | |
