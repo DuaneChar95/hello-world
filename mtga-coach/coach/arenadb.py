@@ -34,6 +34,7 @@ class CardInfo:
     setcode: str = ""
     cmc: int = 0
     types: str = ""
+    cost: str = ""            # raw mana cost, when the source provides one
 
     def color_set(self) -> set[str]:
         return {c for c in self.colors if c in COLOR_LETTERS}
@@ -173,7 +174,9 @@ def load_from_arena_db(db_path: Path, setcode: Optional[str] = None) -> dict[int
             rv = row[idx[rar]] if rar else ""
             rarity = rarity_map.get(rv, str(rv).lower()) if isinstance(rv, int) else str(rv or "").lower()
             out[gid] = CardInfo(gid, nm or f"#{gid}", _colors_from_cost(cst), rarity, ex,
-                                _cmc_from_cost(cst), str(row[idx[types]]) if types and row[idx[types]] else "")
+                                _cmc_from_cost(cst),
+                                str(row[idx[types]]) if types and row[idx[types]] else "",
+                                str(cst or ""))
     finally:
         con.close()
     return out
@@ -198,7 +201,8 @@ def load_from_scryfall(setcode: str) -> dict[int, CardInfo]:
             out[int(aid)] = CardInfo(
                 int(aid), c.get("name", ""), "".join(c.get("colors", []) or []),
                 c.get("rarity", ""), (c.get("set") or "").upper(),
-                int(c.get("cmc") or 0), c.get("type_line", ""))
+                int(c.get("cmc") or 0), c.get("type_line", ""),
+                c.get("mana_cost", "") or "")
         url = data.get("next_page") if data.get("has_more") else None
     return out
 

@@ -90,9 +90,19 @@ class Ratings:
         return e.get("note", "") if e else ""
 
     def card_colors(self, card: CardInfo) -> set[str]:
+        """Colour identity, most reliable source first.
+
+        A real mana cost outranks the ratings file, which carries hand-entered
+        colours that may be blank for a card whose cost was never confirmed.
+        """
         cs = card.color_set()
         if cs:
             return cs
+        cost = getattr(card, "cost", "") or ""
+        if cost:
+            from_cost = {c for c in re.findall(r"[WUBRG]", cost.upper())}
+            if from_cost:
+                return from_cost
         e = self.entry(card.name)
         if e and e.get("colors"):
             return {c for c in e["colors"] if c in COLORS}

@@ -137,7 +137,8 @@ model wants — which is usually where a real leak lives.
 ## Practice
 
 ```
-python run_overlay.py --practice            # 8-person pod, 3 packs x 14 picks
+python run_overlay.py --practice --gui      # card images, hover for detail
+python run_overlay.py --practice            # same draft, in the terminal
 python run_overlay.py --practice-sealed     # 6 packs, build 40
 python run_overlay.py --practice --coach    # training wheels: advice BEFORE you pick
 python run_overlay.py --practice --silent   # no feedback until the end
@@ -163,6 +164,51 @@ rubric, `q` quits.
 is a reading exercise, not a draft. You get the verdict *after* committing, plus
 the style read once you have a profile. `--coach` turns that off if you want
 training wheels; `--silent` defers everything to the end.
+
+### Card images and hover  (`--gui`)
+
+```
+python run_overlay.py --practice --gui
+python run_overlay.py --practice --gui --card-scale 1.3   # bigger cards
+python run_overlay.py --practice --gui --no-art           # skip downloads
+```
+
+Opens a window with the pack laid out as cards. **Hover any card** and the side
+panel tells you what it pairs with and whether you can splash it:
+
+```
+  PAIRS BEST WITH
+    WU  Fatehold — tier S
+         exactly WU; wants flying, surveil
+    UB  Theorix — tier A
+         half on-colour; wants surveil
+
+  SPLASH
+    Gold (WU) - not a splash card.
+    Needs both colours on curve. Only playable in a deck already in one
+    of them, and even then the second colour has to be real.
+```
+
+Splash analysis uses **pip counts, not colour identity** — `{1}{R}` and `{R}{R}`
+are the same colour and completely different propositions. When a real mana cost
+is available the count is exact; when it isn't, the panel says so rather than
+inventing precision. It also knows the format-specific bit: **R/G Konstrari
+splashes best here, because Heartwood tokens tap for R or G and fix a third
+colour for free.**
+
+The same analysis is in the terminal draft — type `i 3` to inspect card 3.
+
+#### About the images
+
+- **Real spoiled cards** pull their actual art from Scryfall, downloaded once
+  and cached in `~/.mtga-coach/art/`. Needs internet the first time.
+- **Generated practice cards** have no art anywhere, so they are drawn as a
+  plain card face with a `PLACEHOLDER · NOT A REAL CARD` stripe. They are never
+  dressed up to look real.
+- `pip install Pillow` gives smoother scaling and smaller downloads. Without it
+  the app fetches PNGs and scales by integer steps, which works but is chunkier.
+- The web version of this guide **cannot** show card images — published artifacts
+  block external images at the CSP level. Images are desktop-only.
 
 ### The bots actually cut colours
 

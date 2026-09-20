@@ -211,6 +211,22 @@ def cmd_selftest(ratings: Ratings) -> int:
     print(f"  off-colour penalty late .... {'ok' if penalised else 'FAIL'}")
     ok &= penalised
 
+    from .analysis import archetype_affinity, splash_advice
+    bomb = CI(1, "Denzilore Fatehold", "WU", "mythic", "FRA", 4, "Creature", "{2}{W}{U}")
+    aff = archetype_affinity(bomb, ratings)
+    ok_aff = bool(aff) and aff[0]["pair"] == "WU"
+    print(f"  affinity picks WU ......... {'ok' if ok_aff else 'FAIL'}")
+    ok &= ok_aff
+    single = CI(2, "Test Wipe", "", "rare", "FRA", 5, "Sorcery", "{4}{W}")
+    sp = splash_advice(single, ratings)
+    ok_sp = sp["ease"] == "easy"
+    print(f"  single pip is splashable .. {'ok' if ok_sp else 'FAIL (' + sp['ease'] + ')'}")
+    ok &= ok_sp
+    gold = CI(3, "Test Gold", "BR", "uncommon", "FRA", 3, "Creature", "{1}{B}{R}")
+    ok_g = splash_advice(gold, ratings)["ease"] == "hard"
+    print(f"  gold is not splashable .... {'ok' if ok_g else 'FAIL'}")
+    ok &= ok_g
+
     lean = pool.archetype_lean(ratings)[0][0]
     print(f"  archetype lean detected .... {'ok (' + lean + ')' if lean == 'WU' else 'FAIL (' + lean + ')'}")
     ok &= lean == "WU"
@@ -253,6 +269,12 @@ def main(argv=None) -> int:
                    help="practice with no feedback until the end")
     p.add_argument("--auto", action="store_true", help="let the model draft (a demo)")
     p.add_argument("--seats", type=int, default=8)
+    p.add_argument("--gui", action="store_true",
+                   help="practice in a window with card images and hover detail")
+    p.add_argument("--no-art", action="store_true",
+                   help="--gui without downloading card images")
+    p.add_argument("--card-scale", type=float, default=1.0,
+                   help="card size in the window (e.g. 1.3)")
     p.add_argument("--real-only", action="store_true",
                    help="review/playstyle: ignore practice drafts")
     p.add_argument("--hard", action="store_true", help="quiz only on picks you got wrong")
@@ -287,6 +309,16 @@ def main(argv=None) -> int:
             profile = build_profile(ratings)
         if args.practice_sealed:
             run_sealed(ratings, args.seed, auto=args.auto, profile=profile)
+        elif args.gui:
+            try:
+                from .gui import run_gui
+                run_gui(ratings, args.seed, seats=args.seats, profile=profile,
+                        art_enabled=not (args.no_art or args.offline),
+                        scale=args.card_scale)
+            except RuntimeError as e:
+                print(f"\n{e}\n\nThe terminal draft needs none of that:"
+                      "\n  python run_overlay.py --practice")
+                return 2
         else:
             run_draft(ratings, args.seed, seats=args.seats, coach=args.coach,
                       auto=args.auto, feedback=not args.silent, profile=profile)

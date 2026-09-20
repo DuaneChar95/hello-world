@@ -85,6 +85,102 @@ class Bot:
 
 
 # --------------------------------------------------------------------------
+# engine - shared by the terminal and the window
+# --------------------------------------------------------------------------
+
+class DraftEngine:
+    """The pod, as an explicit state machine so any UI can drive it.
+
+    Call current_pack(), then pick(grpid), until done. The terminal loop and
+    the Tk window are both thin shells over this.
+    """
+
+    def __init__(self, base_ratings: Ratings, seed: Optional[int] = None,
+                 seats: int = 8, profile=None):
+        self.rng = random.Random(seed)
+        self.pool_gen = CardPool(base_ratings, seed=seed or 20261002)
+        self.ratings = sim_ratings(base_ratings, self.pool_gen)
+        self.resolver = CardResolver({c.info.grpid: c.info for c in self.pool_gen.all})
+        self.session = DraftSession(self.resolver, self.ratings, mode="draft",
+                                    profile=profile)
+        self.profile = profile
+        self.seats = seats
+        self.bots = [Bot(i, self.ratings, self.rng) for i in range(1, seats)]
+        self.pack_no = 0
+        self.pick_no = 0
+        self.packs: list[list[CardInfo]] = []
+        self.done = False
+        self._open_pack(1)
+
+    # -- state ------------------------------------------------------
+    def _open_pack(self, pack_no: int) -> None:
+        self.pack_no = pack_no
+        self.pick_no = 1
+        self.packs = [[c.info for c in self.pool_gen.make_pack(self.rng)]
+                      for _ in range(self.seats)]
+        self._score()
+
+    def _score(self) -> None:
+        if self.packs and self.packs[0]:
+            self.session.on_pack(self.pack_no, self.pick_no,
+                                 [c.grpid for c in self.packs[0]])
+
+    def current_pack(self) -> list[CardInfo]:
+        return self.packs[0] if self.packs else []
+
+    @property
+    def scored(self):
+        return self.session.current_scored
+
+    @property
+    def annotation(self) -> dict:
+        return self.session.annotation or {}
+
+    def feedback(self, grpid: int) -> dict:
+        """What the model thinks of a pick, before it is committed."""
+        scored = self.scored
+        best = scored[0] if scored else None
+        taken = next((s for s in scored if s.card.grpid == grpid), None)
+        if best is None or taken is None:
+            return {}
+        out = {"taken": taken, "best": best,
+               "loss": round(best.score - taken.score, 2)}
+        if self.profile is not None:
+            from .playstyle import classify_pick
+            v, why = classify_pick(scored, grpid, self.profile, self.ratings)
+            out["style"], out["style_why"] = v, why
+        return out
+
+    # -- advance ----------------------------------------------------
+    def pick(self, grpid: int) -> None:
+        if self.done:
+            return
+        self.session.on_pick(grpid)
+        self.packs[0] = [c for c in self.packs[0] if c.grpid != grpid]
+        for b in self.bots:
+            p = self.packs[b.seat]
+            if p:
+                taken = b.pick(p)
+                self.packs[b.seat] = [c for c in p if c.grpid != taken.grpid]
+        direction = 1 if self.pack_no % 2 == 1 else -1
+        self.packs = self.packs[-direction:] + self.packs[:-direction]
+        self.pick_no += 1
+        if self.pick_no > 14 or not self.packs[0]:
+            if self.pack_no >= 3:
+                self.done = True
+                return
+            self._open_pack(self.pack_no + 1)
+        else:
+            self._score()
+
+    def finish(self) -> Optional[Path]:
+        path = self.session.save()
+        if path:
+            _mark_simulated(path)
+        return path
+
+
+# --------------------------------------------------------------------------
 # display
 # --------------------------------------------------------------------------
 
@@ -203,69 +299,64 @@ def _ask(prompt: str) -> str:
 def run_draft(base_ratings: Ratings, seed: Optional[int] = None, seats: int = 8,
               coach: bool = False, auto: bool = False, feedback: bool = True,
               profile=None) -> Optional[Path]:
-    rng = random.Random(seed)
-    pool_gen = CardPool(base_ratings, seed=seed or 20261002)
-    ratings = sim_ratings(base_ratings, pool_gen)
-    resolver = CardResolver({c.info.grpid: c.info for c in pool_gen.all})
-    session = DraftSession(resolver, ratings, mode="draft", profile=profile)
-    bots = [Bot(i, ratings, rng) for i in range(1, seats)]
+    eng = DraftEngine(base_ratings, seed, seats, profile)
+    ratings = eng.ratings
 
     print("=" * W)
     print("  PRACTICE DRAFT - Reality Fracture")
     print(f"  {seats}-player pod, 3 packs x 14 picks."
           f"  Cards marked {SYNTH} are generated placeholders.")
-    print("  Enter a number to pick.  p = pool,  ? = rubric,  q = quit")
+    print("  Enter a number to pick.  p = pool,  i N = inspect card N,  "
+          "? = rubric,  q = quit")
     print("=" * W)
 
-    for pack_no in (1, 2, 3):
-        packs = [[c.info for c in pool_gen.make_pack(rng)] for _ in range(seats)]
-        direction = 1 if pack_no % 2 == 1 else -1
-        for pick_no in range(1, 15):
-            if not packs[0]:
-                break
-            session.on_pack(pack_no, pick_no, [c.grpid for c in packs[0]])
-            scored = session.current_scored
-            if auto:
-                choice = scored[0].card
-            else:
-                while True:
-                    show_pack(packs[0], ratings, pack_no, pick_no,
-                              scored if coach else None)
-                    a = _ask("\n  pick > ")
-                    if a.lower().startswith("q"):
-                        print("\n  quit - nothing saved.")
-                        return None
-                    if a.lower().startswith("p"):
-                        show_pool(session.pool, ratings)
-                        continue
-                    if a.startswith("?"):
-                        print()
-                        for i, line in enumerate(ratings.raw.get("rubric", []), 1):
-                            print(textwrap.fill(f"  {i}. {line}", W,
-                                                subsequent_indent="     "))
-                        continue
-                    if a.isdigit() and 1 <= int(a) <= len(packs[0]):
-                        choice = packs[0][int(a) - 1]
-                        break
-                    print("  ? enter a card number, or p / ? / q")
+    while not eng.done:
+        pack = eng.current_pack()
+        if not pack:
+            break
+        scored = eng.scored
+        if auto:
+            choice = scored[0].card
+        else:
+            choice = None
+            while choice is None:
+                show_pack(pack, ratings, eng.pack_no, eng.pick_no,
+                          scored if coach else None)
+                a = _ask("\n  pick > ")
+                low = a.lower()
+                if low.startswith("q"):
+                    print("\n  quit - nothing saved.")
+                    return None
+                if low.startswith("p"):
+                    show_pool(eng.session.pool, ratings)
+                    continue
+                if low.startswith("i"):
+                    rest = a[1:].strip()
+                    if rest.isdigit() and 1 <= int(rest) <= len(pack):
+                        _inspect(pack[int(rest) - 1], ratings, scored)
+                    else:
+                        print("  ? use 'i 3' to inspect card 3")
+                    continue
+                if a.startswith("?"):
+                    print()
+                    for i, line in enumerate(ratings.raw.get("rubric", []), 1):
+                        print(textwrap.fill(f"  {i}. {line}", W,
+                                            subsequent_indent="     "))
+                    continue
+                if a.isdigit() and 1 <= int(a) <= len(pack):
+                    choice = pack[int(a) - 1]
+                else:
+                    print("  ? enter a card number, or p / i N / ? / q")
 
-            if feedback and not auto:
-                _pick_feedback(scored, choice, ratings, session, profile)
-            session.on_pick(choice.grpid)
-            packs[0] = [c for c in packs[0] if c.grpid != choice.grpid]
-
-            for b in bots:
-                p = packs[b.seat]
-                if p:
-                    taken = b.pick(p)
-                    packs[b.seat] = [c for c in p if c.grpid != taken.grpid]
-            packs = packs[-direction:] + packs[:-direction]
+        if feedback and not auto:
+            _show_feedback(eng.feedback(choice.grpid))
+        eng.pick(choice.grpid)
 
     print("\n" + "=" * W)
     print("  DRAFT COMPLETE")
     print("=" * W)
-    show_pool(session.pool, ratings)
-    d = build_deck(session.pool, ratings)
+    show_pool(eng.session.pool, ratings)
+    d = build_deck(eng.session.pool, ratings)
     print()
     for line in grade_deck(d, ratings):
         print(textwrap.fill("  " + line, W, subsequent_indent="    "))
@@ -273,34 +364,36 @@ def run_draft(base_ratings: Ratings, seed: Optional[int] = None, seats: int = 8,
     for c in sorted(d["deck"], key=lambda c: (c.cmc or 0, c.name)):
         print("   " + fmt_card(c, ratings))
 
-    path = session.save()
+    path = eng.finish()
     if path:
-        _mark_simulated(path)
         print(f"\n  saved -> {path}")
         print("  Now run:  python run_overlay.py --review     (grades this draft)")
         print("            python run_overlay.py --playstyle  (updates your profile)")
     return path
 
 
-def _pick_feedback(scored, choice: CardInfo, ratings: Ratings,
-                   session: DraftSession, profile) -> None:
-    best = scored[0]
-    taken = next((s for s in scored if s.card.grpid == choice.grpid), None)
-    if taken is None:
+def _inspect(card: CardInfo, ratings: Ratings, scored) -> None:
+    from .analysis import hover_text
+    sc = next((s for s in (scored or []) if s.card.grpid == card.grpid), None)
+    print()
+    for line in hover_text(card, ratings, sc).splitlines():
+        print(textwrap.fill(line, W, initial_indent="  ",
+                            subsequent_indent="    ") if line else "")
+
+
+def _show_feedback(fb: dict) -> None:
+    if not fb:
         return
-    loss = round(best.score - taken.score, 2)
+    best, taken, loss = fb["best"], fb["taken"], fb["loss"]
     if loss <= 0.05:
-        print(f"\n  + {choice.name} - agrees with the model.")
+        print(f"\n  + {taken.card.name} - agrees with the model.")
     else:
-        print(f"\n  - {choice.name} ({taken.score:.2f}).  "
+        print(f"\n  - {taken.card.name} ({taken.score:.2f}).  "
               f"Model: {best.card.name} ({best.score:.2f}), -{loss}")
         print(textwrap.fill("    why: " + "; ".join(best.reasons[:2]), W,
                             subsequent_indent="         "))
-    if profile is not None:
-        from .playstyle import classify_pick
-        v, why = classify_pick(scored, choice.grpid, profile, ratings)
-        if v not in ("unknown", ""):
-            print(f"    style: {v} - {why}")
+    if fb.get("style") and fb["style"] not in ("unknown", ""):
+        print(f"    style: {fb['style']} - {fb['style_why']}")
 
 
 def _mark_simulated(path: Path) -> None:
