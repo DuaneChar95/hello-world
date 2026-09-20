@@ -132,10 +132,12 @@ def cmd_replay(args, ratings: Ratings) -> int:
 
 def cmd_import_cards(args, ratings: Ratings) -> int:
     """Replace the generated placeholders with the real card list."""
-    from .cardimport import load_cards, build_ratings
-    src = Path(args.import_cards)
-    cards = load_cards(src)
-    print(f"read {len(cards)} records from {src.name}")
+    from .cardimport import load_many
+    from .cardimport import build_ratings
+    srcs = [Path(x) for x in args.import_cards]
+    cards = load_many(srcs)
+    print(f"read {len(cards)} records from "
+          + ", ".join(s.name for s in srcs))
     out, stats = build_ratings(cards, ratings.raw, ratings.raw.get("set", "FRA"),
                                prune=args.prune)
     dest = Path(args.out or (Path(__file__).resolve().parent.parent
@@ -316,9 +318,9 @@ def main(argv=None) -> int:
     p.add_argument("--hard", action="store_true", help="quiz only on picks you got wrong")
     p.add_argument("-n", type=int, default=10, help="questions per session")
     p.add_argument("--seed", type=int)
-    p.add_argument("--import-cards", metavar="FILE",
-                   help="rebuild ratings from a real card list "
-                        "(Scryfall JSON, MTGJSON, or CSV)")
+    p.add_argument("--import-cards", metavar="FILE", nargs="+",
+                   help="rebuild ratings from a real card list (Scryfall JSON "
+                        "or CSV, MTGJSON). Several files are merged.")
     p.add_argument("--prune", action="store_true",
                    help="--import-cards: drop hand-written cards the real list lacks")
     p.add_argument("--import-17lands", metavar="CSV")

@@ -257,11 +257,20 @@ on **practice packs are drawn from the real 333 cards**, the overlay recognises
 them, and hover shows real mana costs — which makes splash advice exact instead
 of approximate.
 
-No internet on that machine? Save this URL's JSON in a browser and import it:
+**No Python where the internet is?** Open this one URL in a browser and save the
+file — Scryfall's CSV export returns the whole set in a single response, with no
+pagination to deal with:
 
 ```
-https://api.scryfall.com/cards/search?q=set%3Afra
-python run_overlay.py --import-cards fra.json
+https://api.scryfall.com/cards/search?q=set%3Afra&format=csv
+python run_overlay.py --import-cards fra.csv
+```
+
+If you save the JSON instead, it pages at 175 cards, so you will get two files.
+That is fine — pass both and they are merged and de-duplicated:
+
+```
+python run_overlay.py --import-cards page1.json page2.json
 ```
 
 `--import-cards` also accepts an **MTGJSON** set file or a **CSV** with a name

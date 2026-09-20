@@ -95,6 +95,9 @@ def _colors_of(c: dict, cost: str) -> str:
         faces = c.get("card_faces") or []
         if faces:
             cols = faces[0].get("colors")
+    if isinstance(cols, str):
+        # Scryfall's CSV export writes this as "W,U" or "['W', 'U']"
+        cols = re.findall(r"[WUBRG]", cols.upper())
     if not cols:
         cols = re.findall(r"[WUBRG]", cost.upper())
     seen = {x for x in (cols or []) if x in COLORS}
@@ -168,6 +171,20 @@ def heuristic_grade(c: dict, tags: list[str]) -> float:
     if cmc <= 1 and "creature" in tline:
         g -= 0.2
     return round(max(0.0, min(5.0, g)), 2)
+
+
+def load_many(paths) -> list[dict]:
+    """Merge several files, de-duplicating on name. Lets you save Scryfall's
+    two result pages separately and import both."""
+    out: list[dict] = []
+    seen: set[str] = set()
+    for p in paths:
+        for c in load_cards(Path(p)):
+            key = (c.get("name") or c.get("Name") or "").split("//")[0].strip()
+            if key and key not in seen:
+                seen.add(key)
+                out.append(c)
+    return out
 
 
 def load_cards(path: Path) -> list[dict]:
