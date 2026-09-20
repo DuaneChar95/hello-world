@@ -8,6 +8,7 @@ Draft and sealed prep for Magic's **Reality Fracture**, the third premier set of
 | **[DRAFT-GUIDE.md](DRAFT-GUIDE.md)** | The full write-up — set mechanics, all 10 archetypes, colour and archetype strength charts, pick-order rubric, sealed plan, play-pattern checklist. |
 | **[Hexhaven Draft Table](https://claude.ai/artifact/CjBgGyDCeXzeGRLpyRGzwf)** | Interactive companion page: the same analysis, plus a live signal tracker you can tally picks into during a draft. |
 | **`/fra-draft`** | Claude Code skill (`../.claude/skills/fra-draft/SKILL.md`) — ask it mid-draft which card to take, whether a colour is open, or how to build a sealed pool. |
+| **[mtga-coach/](../mtga-coach/)** | Desktop overlay + trainer. Reads Arena's `Player.log` read-only, ranks the live pack, grades your drafts afterwards, and quizzes you on the packs you got wrong. |
 
 ## Status
 

@@ -1,0 +1,79 @@
+{
+  "set": "FRA",
+  "drills": [
+    {"q": "Your Jace token has 3 loyalty and you are stable on board with a full grip. What is the efficient way to spend it?",
+     "a": ["Three separate -1 surveils", "One -3 to draw a card", "Hold it as a blocker for their attackers", "Nothing - save it for the late game"],
+     "correct": 0,
+     "why": "Three surveils cost the same three loyalty as one card. Surveil is the efficient rate and drawing is the luxury rate. Spend -1 three times unless you are flooding out and genuinely need a new card."},
+
+    {"q": "An opponent has a prepared creature that re-prepares at their upkeep. You hold a 2-mana instant kill spell. When do you cast it?",
+     "a": ["On their upkeep, after the re-prepare trigger", "Immediately on your own turn", "After they cast the prepared spell", "Never - save it for a bigger threat"],
+     "correct": 0,
+     "why": "The exiled copy vanishes when the creature leaves the battlefield. Killing it before they cast the copy denies the spell entirely - a clean 2-for-1. Their upkeep is the latest safe window."},
+
+    {"q": "You control an upkeep-repreparing creature and its prepared copy is a merely break-even play this turn. Do you cast it?",
+     "a": ["Yes - an unspent copy is deleted, not saved", "No - hold it for a better window", "Only if you have spare mana after your main play", "Only if the creature is about to die"],
+     "correct": 0,
+     "why": "A creature that is already prepared cannot become prepared again. If you do not spend the copy before your next upkeep, the re-prepare does nothing and the copy is simply wasted. Spend it every turn cycle."},
+
+    {"q": "Pack 1, pick 8. You are solidly U/B Theorix. A common with 'threshold' text is in the pack alongside a mediocre on-colour creature. Take?",
+     "a": ["The threshold card - it is live in your deck and dead in everyone else's", "The creature - threshold is unreliable", "Neither, take the best off-colour card", "Whichever has the higher mana value"],
+     "correct": 0,
+     "why": "Theorix reaches seven cards in the graveyard around turn 5-6; every other deck needs turn 9+. Threshold cards are U/B cards. The bonus is that other drafters cut them, so they come around - but if it is in front of you and you are the Theorix deck, it is a real card."},
+
+    {"q": "How much is 'empower Jace 3' worth on an otherwise ordinary body?",
+     "a": ["Roughly half a card", "Roughly a full extra card", "Nothing - the Jace token is a trap", "Three cards, one per loyalty"],
+     "correct": 0,
+     "why": "Three loyalty converts to one card draw, or three surveils. Call it 0.5-0.7 cards. Worth about 1.3x that in U/B and W/U where the surveils also fire payoffs, and about 0.7x in R/W and B/R where deferred value is worse than a body that attacks now."},
+
+    {"q": "Which archetype has the biggest swing between draft and sealed?",
+     "a": ["R/G Konstrari - worst in draft, top three in sealed", "U/B Theorix - best in both", "W/U Fatehold - unchanged", "B/R Stingerquill - better in sealed"],
+     "correct": 0,
+     "why": "Ramp is card disadvantage in draft when the top end went to eight other drafters. In sealed, pools are full of expensive bombs you otherwise cannot cast, and the aggro punish barely exists. Heartwood also fixes a splash for the best card in your pool."},
+
+    {"q": "You have no read at all after three picks. Which lane is the correct default?",
+     "a": ["B/G Garruk's Bestiary", "B/R Stingerquill", "R/G Konstrari", "G/U Jace's Mastery"],
+     "correct": 0,
+     "why": "Garruk's Bestiary needs the least synergy - good creatures are good creatures - so it has the highest floor in the set. Stingerquill is the lane to avoid unless it is screaming at you."},
+
+    {"q": "Why is red the weakest colour in this format?",
+     "a": ["Its headline plan points damage at faces instead of creatures", "It has no removal at all", "It appears in fewer archetypes than the others", "Its creatures are undersized"],
+     "correct": 0,
+     "why": "Every colour appears in exactly four archetypes. Red's problem is the plan: in a midrange format where killing a prepared creature is a 2-for-1, burning face is paying a real cost for your payoffs - and it runs straight into a lifegain archetype. Red's creature removal is fine; its reach gets over-drafted."},
+
+    {"q": "Your opponent has a Jace token with 4 loyalty and you have lethal-ish pressure on board. Where do you attack?",
+     "a": ["The player - take the life total", "The Jace token, to deny the card advantage", "Split evenly between both", "Hold back and build a bigger board"],
+     "correct": 0,
+     "why": "The Jace token only ticks down - it is a battery, not an engine, and it cannot stabilise their board. Damage to the player is progress toward winning; damage to a shrinking planeswalker usually is not."},
+
+    {"q": "You are at pack 1 pick 6 and have seen two late Fatehold prepared commons. What does that tell you?",
+     "a": ["W/U is open - it is the most reliable signal in the format", "Nothing - uncommons are the real signal", "W/U is being cut hard upstream", "The pack was weak overall"],
+     "correct": 0,
+     "why": "The college prepared creatures are the backbone commons of five archetypes, so lateness on them is a clean read. Gold uncommons mean less than usual here because the Echoed Pair slot floods packs with uncommons."},
+
+    {"q": "Which prepared spell is the strongest, and why?",
+     "a": ["Fatehold's - it makes a 2/2 and surveils, so enablers are also payoffs", "Theorix's - self-mill is the fastest enabler", "Stingerquill's - reach wins races", "Konstrari's - Heartwood ramps and fixes"],
+     "correct": 0,
+     "why": "Fatehold's spell adds a body AND fires the archetype's own scry/surveil payoffs. Most synergy decks have blank enablers and needy payoffs; Fatehold's enablers are the payoffs, so the deck has almost no failure draw."},
+
+    {"q": "How much interaction should a Reality Fracture draft deck run?",
+     "a": ["4 or more, with instants preferred", "2 is plenty in a creature format", "As much as you can, 8+", "Only as much as your colours give you"],
+     "correct": 0,
+     "why": "4+ is the target. Instants get a half-grade bump over sorceries here specifically because they let you kill a prepared creature before it casts its copy."},
+
+    {"q": "In sealed you have a pool with two uncastable 7-drop bombs and passable R/G cards. What do you do?",
+     "a": ["Build R/G Konstrari with Heartwood and 18 lands", "Ignore the 7-drops and build the cleanest 2-colour aggro deck", "Splash both bombs off two basics", "Play a 3-colour goodstuff pile"],
+     "correct": 0,
+     "why": "This is exactly the pool Konstrari is for. Heartwood turns uncastable top end into win conditions, sealed games go long enough to get there, and 18 lands is correct when you are ramping to a real top end."},
+
+    {"q": "Why does the high uncommon count (109 vs 71 commons) change how you draft?",
+     "a": ["You cannot fill a deck from the back half of packs - take playables earlier", "Rares matter more than usual", "Signals are easier to read", "Two-colour decks get worse"],
+     "correct": 0,
+     "why": "Roughly 14 commons per colour means the back half of packs is thinner than you are used to. Take playables over speculation earlier, and read signals off commons rather than off late gold uncommons."},
+
+    {"q": "You empower Jace 2 while you already control a Jace token with 1 loyalty. What happens?",
+     "a": ["Your existing token goes to 3 loyalty", "You create a second token with 2 loyalty", "You choose which to create; the legend rule applies", "Nothing - you cannot empower twice"],
+     "correct": 0,
+     "why": "Empower cannot create a second token while you control one; the counters stack on the one you have. The tokens are not legendary, so other effects could make more - but empower alone never will. This is why empower cards never anti-synergise with each other."}
+  ]
+}
