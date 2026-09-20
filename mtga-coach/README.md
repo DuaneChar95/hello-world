@@ -134,7 +134,19 @@ model wants — which is usually where a real leak lives.
 
 ---
 
-## Building the executable
+## Getting the Windows app
+
+### Download a prebuilt one (no Python needed)
+
+Every push builds it on a Windows runner. Go to the repository's
+**Actions → Build Windows app → the latest run → Artifacts →
+`MTGA-Coach-Windows`**, download the zip, and extract it anywhere.
+
+You need to be signed in to GitHub to download a workflow artifact, and they
+expire after 90 days. If the latest one has expired, open the workflow and press
+**Run workflow** to build a fresh one.
+
+### Or build it yourself
 
 Double-click **`build.bat`**. It regenerates the icon, installs PyInstaller if
 you don't have it, and builds into `dist\`:
