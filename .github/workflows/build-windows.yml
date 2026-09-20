@@ -68,14 +68,4 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh release delete mtga-coach-latest --yes --cleanup-tag 2>$null
-          gh release create mtga-coach-latest `
-            "MTGA-Coach-Windows.zip" `
-            --title "MTGA Coach - Windows (latest)" `
-            --notes "Windows build of MTGA Coach for Reality Fracture, built from ${{ github.sha }}.
-
-**Download `MTGA-Coach-Windows.zip`, extract it, and run `MTGA Coach.exe`.**
-
-Keep `MTGA Coach.exe` and `MTGA Coach (console).exe` in the same folder - the terminal modes run in the console build.
-
-Windows SmartScreen will warn that the publisher is unknown, because the executable is unsigned. Choose *More info* then *Run anyway* if you are happy to." `
-            --target ${{ github.sha }}
+          gh release create mtga-coach-latest "MTGA-Coach-Windows.zip" --title "MTGA Coach - Windows (latest)" --notes-file RELEASE_NOTES.md --target $env:GITHUB_SHA
