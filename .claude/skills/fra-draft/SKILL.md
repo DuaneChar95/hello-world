@@ -105,6 +105,14 @@ for a splash**, not just ramp → be slower than feels right.
 - **Don't attack their Jace** unless it's winning them the game; take the life total.
 - **Your removal can point at planeswalkers** — FRA has more than any set since War of the Spark.
 
+## Practice
+
+The user can draft without Arena: `python run_overlay.py --practice` (8-person
+pod with bots that cut colours) or `--practice-sealed`. Cards marked with a
+degree sign are generated placeholders shaped like FRA cards, not real spoilers
+- never present them as real cards. Practice drafts feed the same review and
+playstyle pipeline.
+
 ## Playstyle
 
 The desktop app (`mtga-coach/`) profiles the user from their saved drafts:

@@ -132,21 +132,23 @@ def lessons(rows: list[dict], pool: PoolState, ratings: Ratings) -> list[str]:
     return out
 
 
-def review_all(ratings: Ratings, directory: Path = DRAFT_DIR, limit: Optional[int] = None) -> str:
-    drafts = load_drafts(directory)
+def review_all(ratings: Ratings, directory: Path = DRAFT_DIR, limit: Optional[int] = None,
+               real_only: bool = False) -> str:
+    drafts = load_drafts(directory, real_only=real_only)
     if not drafts:
         return (f"No saved drafts in {directory}.\n"
                 "Run the overlay during a draft and they will be recorded automatically.")
     if limit:
         drafts = drafts[-limit:]
-    profile = build_profile(ratings, directory)
+    profile = build_profile(ratings, directory, real_only=real_only)
     lines: list[str] = []
     all_rows: list[dict] = []
     for d in drafts:
         res = regrade(d, ratings, profile)
         all_rows += [r for r in res["rows"] if r["loss"] is not None]
         lines.append("=" * 70)
-        lines.append(f"{Path(d['_file']).name}  -  {d.get('mode', 'draft')}  -  "
+        lines.append(f"{Path(d['_file']).name}  -  {d.get('mode', 'draft')}"
+                     f"{'  (practice)' if d.get('simulated') else ''}  -  "
                      f"{len(res['rows'])} picks")
         lines.append("-" * 70)
         for r in res["rows"]:

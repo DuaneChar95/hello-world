@@ -134,13 +134,16 @@ class DraftSession:
         return path
 
 
-def load_drafts(directory: Path = DRAFT_DIR) -> list[dict]:
+def load_drafts(directory: Path = DRAFT_DIR, real_only: bool = False) -> list[dict]:
     if not directory.exists():
         return []
     out = []
     for f in sorted(directory.glob("draft-*.json")):
         try:
-            out.append(json.loads(f.read_text(encoding="utf-8")) | {"_file": str(f)})
+            d = json.loads(f.read_text(encoding="utf-8")) | {"_file": str(f)}
         except (OSError, ValueError):
             continue
+        if real_only and d.get("simulated"):
+            continue
+        out.append(d)
     return out

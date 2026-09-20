@@ -329,8 +329,9 @@ class Profile:
         return [c for c, v in sorted(self.colors.items(), key=lambda kv: kv[1]) if v < 0.75]
 
 
-def build_profile(ratings: Ratings, directory: Path = DRAFT_DIR) -> Optional[Profile]:
-    drafts = load_drafts(directory)
+def build_profile(ratings: Ratings, directory: Path = DRAFT_DIR,
+                  real_only: bool = False) -> Optional[Profile]:
+    drafts = load_drafts(directory, real_only=real_only)
     if not drafts:
         return None
     obs = observe(drafts, ratings)

@@ -243,6 +243,18 @@ def main(argv=None) -> int:
                    help="do not use your playstyle in the overlay")
     p.add_argument("--quiz", action="store_true", help="replay real packs and test your picks")
     p.add_argument("--drills", action="store_true", help="concept drills (no drafts needed)")
+    p.add_argument("--practice", action="store_true",
+                   help="draft a full pod against bots - no Arena needed")
+    p.add_argument("--practice-sealed", action="store_true",
+                   help="open six packs and build a sealed deck")
+    p.add_argument("--coach", action="store_true",
+                   help="practice with the model's picks shown BEFORE you choose")
+    p.add_argument("--silent", action="store_true",
+                   help="practice with no feedback until the end")
+    p.add_argument("--auto", action="store_true", help="let the model draft (a demo)")
+    p.add_argument("--seats", type=int, default=8)
+    p.add_argument("--real-only", action="store_true",
+                   help="review/playstyle: ignore practice drafts")
     p.add_argument("--hard", action="store_true", help="quiz only on picks you got wrong")
     p.add_argument("-n", type=int, default=10, help="questions per session")
     p.add_argument("--seed", type=int)
@@ -267,12 +279,24 @@ def main(argv=None) -> int:
         from .quiz import run_pack_quiz
         run_pack_quiz(ratings, DRAFT_DIR, args.n, args.seed, hard_only=args.hard)
         return 0
+    if args.practice or args.practice_sealed:
+        from .sim import run_draft, run_sealed
+        profile = None
+        if not args.no_profile:
+            from .playstyle import build_profile
+            profile = build_profile(ratings)
+        if args.practice_sealed:
+            run_sealed(ratings, args.seed, auto=args.auto, profile=profile)
+        else:
+            run_draft(ratings, args.seed, seats=args.seats, coach=args.coach,
+                      auto=args.auto, feedback=not args.silent, profile=profile)
+        return 0
     if args.playstyle:
         from .playstyle import build_profile, report
-        print(report(build_profile(ratings), ratings))
+        print(report(build_profile(ratings, real_only=args.real_only), ratings))
         return 0
     if args.review:
-        print(review_all(ratings))
+        print(review_all(ratings, real_only=args.real_only))
         return 0
     if args.replay:
         return cmd_replay(args, ratings)

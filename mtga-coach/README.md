@@ -5,6 +5,9 @@ A read-only draft/sealed overlay and trainer for MTG Arena, built around the
 
 It does three things:
 
+0. **Practice** — a full 8-person draft pod, or a sealed pool, played in the
+   terminal with no Arena needed. Bots commit to lanes and cut colours, so
+   signal reading is real.
 1. **Overlay** — an always-on-top window that reads the pack Arena is showing you
    and ranks it, with a one-line reason per card and a live read on which lane
    your pool is actually in.
@@ -16,7 +19,9 @@ It does three things:
    replays the real packs you faced and makes you pick again.
 
 ```
-python run_overlay.py                 # the overlay
+python run_overlay.py --practice      # draft a pod against bots, no Arena needed
+python run_overlay.py --practice-sealed
+python run_overlay.py                 # the overlay (needs Arena)
 python run_overlay.py --playstyle     # how you draft, and what would stretch you
 python run_overlay.py --review        # grade your saved drafts (includes playstyle)
 python run_overlay.py --drills        # concept drills (works before the set is out)
@@ -126,6 +131,89 @@ part that's actually useful — the aggregate:
 
 Across several drafts it also reports the cards you most often pass that the
 model wants — which is usually where a real leak lives.
+
+---
+
+## Practice
+
+```
+python run_overlay.py --practice            # 8-person pod, 3 packs x 14 picks
+python run_overlay.py --practice-sealed     # 6 packs, build 40
+python run_overlay.py --practice --coach    # training wheels: advice BEFORE you pick
+python run_overlay.py --practice --silent   # no feedback until the end
+python run_overlay.py --practice --seed 42  # a reproducible draft
+```
+
+You pick by number. `p` shows your pool and current lane read, `?` reprints the
+rubric, `q` quits.
+
+```
+  PACK 1  PICK 1   (14 cards)
+   1. Untamed Rootspeaker°         G  3  u    8. Reckless Agitator°      RG 3  R
+   2. Grim Repriser                BR 3  c    9. Hollow Failing Grade°   B  3  c
+   ...
+  pick > 3
+
+  - Invasive Rootspeaker° (2.55).  Model: Failing Grade° (3.92), -1.37
+    why: Rated 3.5; in a strong colour
+    style: in style, costly - typical of you, but it cost 1.4
+```
+
+**Advice is hidden while you pick.** A practice tool that shows the answer first
+is a reading exercise, not a draft. You get the verdict *after* committing, plus
+the style read once you have a profile. `--coach` turns that off if you want
+training wheels; `--silent` defers everything to the end.
+
+### The bots actually cut colours
+
+Seven bots keep colour counts and commit to lanes, and packs pass left, right,
+left. What gets taken upstream genuinely dries up downstream:
+
+```
+  colour share of cards reaching your seat, early picks vs late picks
+    W: early 23.3%  late 11.6%   DRIED UP
+    U: early 17.6%  late  7.2%   DRIED UP
+    R: early 22.2%  late 33.3%   FLOWING
+    G: early 17.0%  late 31.9%   FLOWING
+```
+
+That is the whole point: signal reading is a skill you can only practise against
+opponents who are really competing for cards. The bots are tuned slightly below
+optimal so lanes open up the way they do at a real table.
+
+At the end it builds your best deck, grades the curve, interaction and creature
+counts, and saves the draft — so `--review`, `--playstyle` and `--quiz` all work
+on your practice drafts exactly as they do on real ones.
+
+Sealed asks for your two colours *first*, then shows what the model would have
+built and why:
+
+```
+  YOUR BUILD: UB
+  Best build: Theorix (UB) - 23 playables from 28 on-colour cards
+  Interaction: 3. Every FRA deck wants 4+...
+
+  The model would build Fatehold (WU) instead:
+  Best build: Fatehold (WU) - 23 playables from 44 on-colour cards
+```
+
+### About the cards
+
+The set is not out, so a faithful practice pool cannot be built from real cards —
+only ~46 are known. So: **every real card is seeded in at its real rarity**, and
+the rest is generated from the format's mechanical vocabulary at the set's real
+composition (71 commons / 109 uncommons / 64 rares / 26 mythics).
+
+Generated cards are marked `°`. They are placeholders, not predictions — no
+claim is made that any of them will exist.
+
+This still trains what decides drafts: reading signals, committing at the right
+time, curve, interaction counts, archetype fit, and applying the rubric. None of
+that is card knowledge. When the real list lands, swap the generator in
+`coach/cards.py` and everything downstream is unchanged.
+
+Practice drafts are tagged `simulated` in the saved file. `--real-only` excludes
+them from `--review` and `--playstyle` once you have real Arena drafts.
 
 ---
 
