@@ -92,7 +92,7 @@ class DraftWindow:
         side.pack_propagate(False)
         self.lbl_name = tk.Label(side, text="Hover a card", bg=BG2, fg=FG,
                                  font=self.f_h, anchor="w", justify="left",
-                                 wraplength=312, padx=14, pady=(12))
+                                 wraplength=312, padx=14, pady=12)
         self.lbl_name.pack(fill="x")
         self.lbl_meta = tk.Label(side, text="", bg=BG2, fg=MUTED, font=self.f_s,
                                  anchor="w", justify="left", wraplength=312, padx=14)
@@ -107,9 +107,9 @@ class DraftWindow:
                                  wraplength=1000)
         self.lbl_pool.pack(fill="x")
         self.lbl_fb = tk.Label(foot, text="", bg=BG2, fg=MUTED, font=self.f_s,
-                               anchor="w", justify="left", padx=12, pady=(0, 8),
+                               anchor="w", justify="left", padx=12,
                                wraplength=1000)
-        self.lbl_fb.pack(fill="x")
+        self.lbl_fb.pack(fill="x", pady=(0, 8))
 
     # ------------------------------------------------------------ card faces
     def _photo(self, card: CardInfo):

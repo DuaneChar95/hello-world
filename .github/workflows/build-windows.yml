@@ -40,6 +40,12 @@ jobs:
       - name: Self-test before packaging
         run: python run_overlay.py --selftest
 
+      - name: Check Tk widget options
+        run: python tools_check_tk.py
+
+      - name: Drive the windows against a strict Tk stub
+        run: python tools_smoke_gui.py
+
       - name: Build
         run: python -m PyInstaller mtga-coach.spec --noconfirm --clean
 

@@ -104,8 +104,8 @@ class Overlay:
                                  anchor="w", justify="left", wraplength=360, padx=10, pady=6)
         self.lbl_pool.pack(fill="x")
         self.lbl_foot = tk.Label(bot, text="", bg=BG2, fg=MUTED, font=self.f_s,
-                                 anchor="w", padx=10, pady=(0, 6))
-        self.lbl_foot.pack(fill="x")
+                                 anchor="w", padx=10)
+        self.lbl_foot.pack(fill="x", pady=(0, 6))
 
     # -- rendering ------------------------------------------------------
     def _render(self) -> None:

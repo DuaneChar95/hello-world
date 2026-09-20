@@ -69,10 +69,10 @@ class Launcher:
         head = tk.Frame(self.root, bg=BG2)
         head.pack(fill="x")
         tk.Label(head, text="MTGA Coach", bg=BG2, fg=ACCENT, font=self.f_h,
-                 anchor="w", padx=16, pady=(12, 0)).pack(fill="x")
+                 anchor="w", padx=16).pack(fill="x", pady=(12, 0))
         tk.Label(head, text="Reality Fracture  ·  draft and sealed", bg=BG2,
-                 fg=MUTED, font=self.f_b, anchor="w", padx=16,
-                 pady=(0, 12)).pack(fill="x")
+                 fg=MUTED, font=self.f_b, anchor="w",
+                 padx=16).pack(fill="x", pady=(0, 12))
 
         body = tk.Frame(self.root, bg=BG, padx=12, pady=10)
         body.pack(fill="both", expand=True)
@@ -98,11 +98,11 @@ class Launcher:
         f = tk.Frame(parent, bg=BG3, cursor="hand2")
         f.pack(fill="x", pady=3)
         t = tk.Label(f, text=label, bg=BG3, fg=FG, font=self.f_t, anchor="w",
-                     padx=12, pady=(7, 0))
-        t.pack(fill="x")
+                     padx=12)
+        t.pack(fill="x", pady=(7, 0))
         b = tk.Label(f, text=blurb, bg=BG3, fg=MUTED, font=self.f_b, anchor="w",
-                     justify="left", wraplength=400, padx=12, pady=(0, 7))
-        b.pack(fill="x")
+                     justify="left", wraplength=400, padx=12)
+        b.pack(fill="x", pady=(0, 7))
         for w in (f, t, b):
             w.bind("<Button-1>", lambda e, k=kind, a=argv: self.run(k, a))
             w.bind("<Enter>", lambda e, ww=(f, t, b): [x.config(bg="#2c3644") for x in ww])
