@@ -11,6 +11,9 @@ on:
       - 'mtga-coach/**'
       - '.github/workflows/build-windows.yml'
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: windows-latest
@@ -48,9 +51,31 @@ jobs:
       - name: Show what was built
         run: Get-ChildItem dist | Format-Table Name, Length
 
+      - name: Package for release
+        run: Compress-Archive -Path dist\* -DestinationPath MTGA-Coach-Windows.zip -Force
+
       - uses: actions/upload-artifact@v4
         with:
           name: MTGA-Coach-Windows
           path: mtga-coach/dist/*
           if-no-files-found: error
           retention-days: 90
+
+      # A release gives a plain download link that needs no GitHub login and
+      # does not expire, unlike a workflow artifact.
+      - name: Publish to the rolling release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete mtga-coach-latest --yes --cleanup-tag 2>$null
+          gh release create mtga-coach-latest `
+            "MTGA-Coach-Windows.zip" `
+            --title "MTGA Coach - Windows (latest)" `
+            --notes "Windows build of MTGA Coach for Reality Fracture, built from ${{ github.sha }}.
+
+**Download `MTGA-Coach-Windows.zip`, extract it, and run `MTGA Coach.exe`.**
+
+Keep `MTGA Coach.exe` and `MTGA Coach (console).exe` in the same folder - the terminal modes run in the console build.
+
+Windows SmartScreen will warn that the publisher is unknown, because the executable is unsigned. Choose *More info* then *Run anyway* if you are happy to." `
+            --target ${{ github.sha }}
