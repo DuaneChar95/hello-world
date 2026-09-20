@@ -18,8 +18,9 @@ from .arenadb import CardInfo
 from .model import PoolState, Ratings, score_pack
 from .session import load_drafts, DRAFT_DIR
 
-DATA = Path(__file__).resolve().parent.parent / "data"
-PROFILE = Path.home() / ".mtga-coach" / "profile.json"
+from .paths import data_file, user_dir
+
+PROFILE = user_dir() / "profile.json"
 
 W = 74
 
@@ -51,7 +52,7 @@ def _save_profile(p: dict) -> None:
 
 
 def run_drills(n: int = 10, seed: Optional[int] = None) -> None:
-    data = json.loads((DATA / "drills.json").read_text(encoding="utf-8"))
+    data = json.loads(data_file("drills.json").read_text(encoding="utf-8"))
     drills = data["drills"][:]
     rng = random.Random(seed)
     rng.shuffle(drills)

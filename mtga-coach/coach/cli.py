@@ -140,8 +140,8 @@ def cmd_import_cards(args, ratings: Ratings) -> int:
           + ", ".join(s.name for s in srcs))
     out, stats = build_ratings(cards, ratings.raw, ratings.raw.get("set", "FRA"),
                                prune=args.prune)
-    dest = Path(args.out or (Path(__file__).resolve().parent.parent
-                             / "data" / "fra_ratings.json"))
+    from .paths import writable_ratings_path
+    dest = Path(args.out) if args.out else writable_ratings_path()
     dest.write_text(json.dumps(out, indent=1), encoding="utf-8")
     by_rarity: dict = {}
     for e in out["cards"].values():
@@ -216,7 +216,8 @@ def cmd_import_17lands(args, ratings: Ratings) -> int:
     out["cards"] = cards
     out["confidence"] = "data"
     out["source"] = f"17Lands import from {src.name} ({n} cards) merged over the pre-release prior"
-    dest = Path(args.out or (Path(__file__).resolve().parent.parent / "data" / "fra_ratings.json"))
+    from .paths import writable_ratings_path
+    dest = Path(args.out) if args.out else writable_ratings_path()
     dest.write_text(json.dumps(out, indent=1), encoding="utf-8")
     print(f"imported {n} card ratings -> {dest}")
     print("The overlay will now say 'data' instead of 'eval'.")

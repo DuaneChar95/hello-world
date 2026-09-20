@@ -134,7 +134,42 @@ model wants — which is usually where a real leak lives.
 
 ---
 
+## Building the executable
+
+Double-click **`build.bat`**. It regenerates the icon, installs PyInstaller if
+you don't have it, and builds into `dist\`:
+
+```
+dist\MTGA Coach.exe              <- double-click this
+dist\MTGA Coach (console).exe    <- used by the terminal modes
+```
+
+**Keep both files in the same folder.** A windowed Windows executable has no
+stdout, so the terminal modes (drills, review, playstyle, the text draft) run in
+the console build, which the launcher starts for you.
+
+`MTGA Coach.exe` opens a menu — practice draft, sealed, trainer, quiz, review,
+playstyle, the live Arena overlay, and buttons to import a card list or 17Lands
+CSV. No command line needed.
+
+The icon is generated from source by `assets/make_icon.py` with no image library
+— raw PNG bytes packed into a six-size `.ico`. Edit the colours at the top of
+that file and re-run `build.bat` if you want a different mark.
+
+**Where your data goes:** anything you import is written to
+`%USERPROFILE%\.mtga-coach\` and takes precedence over the copy inside the
+executable. That matters because a one-file build unpacks to a temporary folder
+that is wiped on exit — your imports would not survive there. Drafts, your
+playstyle profile and quiz progress live in the same folder.
+
+macOS and Linux: the same spec works with `pyinstaller mtga-coach.spec`, though
+the console binary is only needed on Windows.
+
+---
+
 ## Practice
+
+**Windows: build a double-clickable app** — see [Building the executable](#building-the-executable).
 
 ```
 python run_overlay.py --practice --gui      # card images, hover for detail

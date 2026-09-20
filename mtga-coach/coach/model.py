@@ -15,9 +15,9 @@ from pathlib import Path
 from typing import Optional
 
 from .arenadb import CardInfo
+from .paths import data_file, ratings_path
 
 COLORS = "WUBRG"
-DATA = Path(__file__).resolve().parent.parent / "data"
 
 
 # --------------------------------------------------------------------------
@@ -28,7 +28,7 @@ class Ratings:
 
     @classmethod
     def load(cls, path: Optional[Path] = None) -> "Ratings":
-        p = Path(path) if path else DATA / "fra_ratings.json"
+        p = Path(path) if path else ratings_path()
         return cls(json.loads(Path(p).read_text(encoding="utf-8")))
 
     @property
