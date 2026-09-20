@@ -196,9 +196,13 @@ signal in the format** — far more reliable than a late gold uncommon. [EVAL]
 First predefined coloured artifact token.
 
 [EVAL] A mana rock as a token is **card disadvantage that buys a turn**. In Limited that is only
-worth it if you have something worth ramping *into*. Heartwood is doing three jobs at once:
-ramp, artifact count (for Konstrari payoffs like **Aerid Konstrari**), and fixing for a splash.
-The third job is quietly the best one — **Heartwood makes greedy splashes in R/G real.**
+worth it if you have something worth ramping *into*. Heartwood does two jobs: ramp, and artifact
+count (for Konstrari payoffs like **Aerid Konstrari**).
+
+> **Correction to an earlier version of this guide.** I previously wrote that Heartwood "fixes a
+> third colour for free." That was too broad and I was wrong to say it. Heartwood adds **{R} or
+> {G} and nothing else** — it pays for an R or G splash specifically, and does nothing at all for
+> a W, U or B splash. The set's actual fixing is the Annex land cycle; see Section 4.5.
 
 **Threshold** (seven or more cards in your graveyard) [CONFIRMED]: reachable around **turn 5–6
 with Theorix self-mill**, around **turn 9+ without it**. That gap is enormous.
@@ -206,6 +210,126 @@ with Theorix self-mill**, around **turn 9+ without it**. That gap is enormous.
 > **Rule: threshold cards are U/B cards, full stop.** Outside Theorix they are late-game-only
 > and you should treat the threshold text as absent. The upside: everyone else cuts them, so
 > they come around late for the deck that actually wants them. [EVAL]
+
+---
+
+## 4.5 Three-colour decks: what actually works
+
+This is the part of the format most people will get wrong, because the fixing is unusually
+shaped. Here is every piece of colour fixing in the set:
+
+| Source | Rarity | What it actually does |
+|---|---|---|
+| **Annex cycle** — Fatehold, Theorix, Stingerquill, Konstrari, Vigorbloom | **common** | Taps for its two **allied** colours. **Enters tapped unless you control a planeswalker.** [CONFIRMED] |
+| Portal / Echoverse slowlands | rare | A second dual cycle, also **allied pairs only** [CONFIRMED] |
+| **Heartwood** token | common (6 makers) | `{T}: Add {R} or {G}` — **and nothing else** [CONFIRMED] |
+| **Lotus** token (Kwia Vigorbloom) | mythic | Tap and sacrifice for three mana of one colour — a one-shot |
+
+> **Read the table again and notice what is missing: there is no enemy-colour dual land in this
+> set at any rarity.** Both cycles cover only the five college pairs. That single fact drives
+> everything below. [CONFIRMED]
+
+### The rule: a dual that shares one colour with you is a free splash land
+
+If a land makes one of your main colours *and* your splash colour, it is never a dead draw. You
+are not paying for the splash with a worse mana base — you are paying with a land that would have
+been fine anyway.
+
+Because the Annexes are allied, they chain around the colour wheel, so **every college pair has
+exactly two third colours it can reach on a common**: [EVAL, from confirmed card data]
+
+| Your pair | Your dual | +3rd colour | Bridging common | Becomes |
+|---|---|---|---|---|
+| **W/U** Fatehold | Fatehold Annex | +B | Theorix Annex | **WUB** Esper |
+| | | +G | Vigorbloom Annex | **GWU** Bant |
+| **U/B** Theorix | Theorix Annex | +W | Fatehold Annex | **WUB** Esper |
+| | | +R | Stingerquill Annex | **UBR** Grixis |
+| **B/R** Stingerquill | Stingerquill Annex | +U | Theorix Annex | **UBR** Grixis |
+| | | +G | Konstrari Annex | **BRG** Jund |
+| **R/G** Konstrari | Konstrari Annex | +B | Stingerquill Annex | **BRG** Jund |
+| | | +W | Vigorbloom Annex | **RGW** Naya |
+| **G/W** Vigorbloom | Vigorbloom Annex | +R | Konstrari Annex | **RGW** Naya |
+| | | +U | Fatehold Annex | **GWU** Bant |
+
+**The supported three-colour decks are the five shards — the contiguous arcs of the colour wheel.
+Wedges are not supported.** A shard contains two allied pairs, so it gets two Annexes. A wedge
+(Abzan W/B/G, Mardu R/W/B, and so on) contains only one, and that one doesn't bridge to your
+third colour. If you find yourself in a wedge, you are in three colours on basics. Don't.
+
+### The insight worth the most: an enemy pair *improves* its mana by adding a third colour
+
+The five Lorwyn Five archetypes are enemy pairs, so **none of them has a dual land.** A W/B
+Liliana's Attrition deck opens the set with nothing.
+
+But look at what a Fatehold Annex does in each deck:
+
+- **In straight W/B:** makes W (useful) or U (dead). It's a Plains that sometimes enters tapped. Unplayable.
+- **In W/U/B:** makes W or U — both live. And Theorix Annex makes U or B — also both live. **Two perfect duals.**
+
+So for an enemy-pair deck, the bridging colour doesn't strain your mana, it *repairs* it:
+
+| Enemy archetype | Bridge | Becomes | Both Annexes then live |
+|---|---|---|---|
+| **W/B** Liliana's Attrition | **+U** | WUB Esper | Fatehold + Theorix |
+| **U/R** Chandra's Prowess | **+B** | UBR Grixis | Theorix + Stingerquill |
+| **B/G** Garruk's Bestiary | **+R** | BRG Jund | Stingerquill + Konstrari |
+| **R/W** Ajani's Army | **+G** | RGW Naya | Konstrari + Vigorbloom |
+| **G/U** Jace's Mastery | **+W** | GWU Bant | Vigorbloom + Fatehold |
+
+This is counterintuitive and it is real: **in Reality Fracture, going to three colours can make
+your mana better than staying on two.** [EVAL]
+
+**It is not free, and I don't want to oversell it.** You still dilute your deck, you still draw
+the wrong half sometimes, and it only works if you actually have the Annexes. The honest rule:
+**two Annexes is the price of entry.** With two, the bridge colour is genuinely open. With one,
+it's a maybe. With none, you are a two-colour deck and should act like it.
+
+### Empower Jace is the mana fixer
+
+The Annexes enter untapped **only if you already control a planeswalker** — and empower Jace
+makes a Jace token, at common, in every colour combination. The set's free mechanic is also its
+mana base. [CONFIRMED]
+
+Two consequences that matter at the table [EVAL]:
+
+1. **A planeswalker arriving the same turn does not count.** [CONFIRMED] Playing the Annex on the
+   turn you make your first Jace does not untap it. You need the Jace already down.
+2. **Annexes are taplands on turns 1–3 and real duals from turn 4.** That is precisely backwards
+   for an aggro deck and completely fine for a midrange one. **Three-colour in FRA is a
+   midrange/control plan. R/W Ajani's Army should almost never do it.**
+
+So a three-colour deck wants **3+ empower cards** not for the card advantage but to switch its
+lands on.
+
+### When to splash, concretely
+
+- **Splash for:** bombs (an Elder Sphinx, a planeswalker), premium removal, and expensive cards
+  you'll cast on turn 6 anyway — by then you've drawn your sources.
+- **Never splash for:** two-drops, curve filler, or synergy pieces that must arrive on time. A
+  card you can't cast on curve isn't doing its job.
+- **Sources:** single coloured pip → 2–3 sources. **Double pip → that is a main colour, not a
+  splash.** `{1}{R}` and `{R}{R}` are the same colour and completely different cards.
+- **Count an Annex as a source for both its colours**, but discount it on turns 1–3.
+
+A worked example — U/B Theorix splashing W for a bomb, 17 lands:
+
+```
+2 Fatehold Annex   (W/U - the bridge)
+2 Theorix Annex    (U/B - your own pair)
+6 Island
+5 Swamp
+2 Plains
+= 4 white sources, 10 blue, 9 black, and every land makes a main colour
+```
+
+### Draft vs sealed
+
+- **Sealed:** much more likely. Deeper pools, slower games, and more uncastable bombs. Check your
+  Annex count before you settle on two colours — a second Annex can be worth more than a third
+  playable.
+- **Draft:** you have to actively take them. They're commons so they often wheel, but not if two
+  other drafters are splashing. If you're planning the splash, take the second Annex around pick
+  6–8 rather than hoping.
 
 ---
 
@@ -442,8 +566,9 @@ single insight in this guide for you specifically, because you're playing both d
   other drafters took the bombs. You lose to RW and BR before you untap with six mana.
 - **In sealed it's a top-three deck.** Sealed pools contain **more expensive bombs than you can
   normally cast**, and sealed games are slower, so the aggro punish barely exists. Heartwood turns
-  your uncastable 6- and 7-drops into your win conditions and fixes a third-colour splash for the
-  best rare in your pool. **In sealed, go up to 18 lands and jam the top end.**
+  your uncastable 6- and 7-drops into your win conditions. **In sealed, go up to 18 lands and jam
+  the top end.** (Heartwood only makes R or G — for a splash outside those colours you need
+  Annexes, Section 4.5.)
 
 ---
 
@@ -593,8 +718,9 @@ highest floor. **The lane to avoid unless it's screaming:** **B/R Stingerquill.*
    have archetype density.
 3. **Count removal across all five colours** before choosing. Removal is scarcer per-pool than
    creatures, so it should drive colour choice more than playable count.
-4. **Consider Heartwood as fixing, not ramp.** If R/G is close, Heartwood lets you splash the best
-   card in your pool. **Go to 18 lands** if you're ramping to a real top end.
+4. **Count your Annexes before you plan a splash.** They are the set's only common fixing, and
+   only for allied pairs — see Section 4.5. Heartwood adds R or G only, so it pays for a red or
+   green splash and nothing else. **Go to 18 lands** if you're ramping to a real top end.
 5. **Be slower than you think.** Sealed games in FRA will go long. A 6-drop that wins the game is
    better than a 2-drop that doesn't. Cut the aggro plan unless the pool hands it to you.
 6. **Bring instant-speed removal in from the sideboard** against decks showing prepared creatures.
@@ -612,7 +738,8 @@ Print this next to your monitor.
 - [ ] **Use −1 surveil three times before −3 draw.** Surveil is the efficient rate.
 - [ ] **Don't attack their Jace** unless it's actively winning them the game. Take the life total.
 - [ ] **Count your graveyard before casting a threshold card.** Seven.
-- [ ] **Heartwood is also fixing.** Check whether it enables a splash before you treat it as ramp.
+- [ ] **Heartwood adds R or G only.** It pays for a red or green splash, not any splash.
+- [ ] **An Annex enters untapped only if a planeswalker is *already* there** — one arriving the same turn doesn't count.
 - [ ] **Your removal can point at planeswalkers.** This set has a lot of them.
 
 ---

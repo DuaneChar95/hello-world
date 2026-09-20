@@ -21,6 +21,100 @@ from .model import Ratings
 
 COLORS = "WUBRG"
 
+# The whole of FRA's colour fixing. Note what is NOT here: there is no
+# enemy-colour dual at any rarity, and Heartwood adds {R} or {G} only.
+ANNEX = {"WU": "Fatehold Annex", "UB": "Theorix Annex", "BR": "Stingerquill Annex",
+         "RG": "Konstrari Annex", "GW": "Vigorbloom Annex"}
+ALLIED = list(ANNEX)
+
+# Contiguous arcs of the colour wheel. Each contains TWO allied pairs, so each
+# gets two common Annexes. Wedges contain only one and are far worse supported.
+SHARDS = {frozenset("WUB"): ("WUB", "Esper", ("WU", "UB")),
+          frozenset("UBR"): ("UBR", "Grixis", ("UB", "BR")),
+          frozenset("BRG"): ("BRG", "Jund", ("BR", "RG")),
+          frozenset("RGW"): ("RGW", "Naya", ("RG", "GW")),
+          frozenset("GWU"): ("GWU", "Bant", ("GW", "WU"))}
+
+
+def shard_of(colors) -> Optional[tuple]:
+    """(label, nickname, its two allied pairs) if these three colours form a
+    contiguous arc of the wheel, else None -- a wedge, which FRA barely supports."""
+    return SHARDS.get(frozenset(colors))
+
+# The one colour that turns an enemy pair into a shard, making both of its
+# Annexes into real duals instead of half-dead lands.
+BRIDGE = {"WB": "U", "UR": "B", "BG": "R", "RW": "G", "GU": "W"}
+
+
+def annex_for(pair: str) -> Optional[str]:
+    key = "".join(sorted(pair, key=COLORS.index))
+    for a, name in ANNEX.items():
+        if "".join(sorted(a, key=COLORS.index)) == key:
+            return name
+    return None
+
+
+def bridges_to(pair: str) -> list[dict]:
+    """Which third colours this pair can reach on a common dual, and how."""
+    cols = set(pair)
+    out = []
+    for allied, land in ANNEX.items():
+        shared = cols & set(allied)
+        extra = set(allied) - cols
+        if len(shared) == 1 and len(extra) == 1:
+            c = next(iter(extra))
+            three = cols | {c}
+            sh = shard_of(three)
+            out.append({"color": c, "land": land, "shares": next(iter(shared)),
+                        "kind": "shard" if sh else "wedge",
+                        "shard": sh[0] if sh else "".join(sorted(three, key=COLORS.index)),
+                        "nickname": sh[1] if sh else "",
+                        "lands": list(sh[2]) if sh else [allied]})
+    # A real shard reached by two different Annexes is one option, not two.
+    merged: dict[str, dict] = {}
+    for o in out:
+        k = o["color"]
+        if k in merged:
+            merged[k]["land"] = merged[k]["land"] + " + " + o["land"]
+        else:
+            merged[k] = o
+    ranked = sorted(merged.values(), key=lambda o: (o["kind"] != "shard", o["color"]))
+    return ranked
+
+
+def three_color_plan(pair: str) -> dict:
+    """How this two-colour deck should think about a third colour."""
+    key = "".join(sorted(pair, key=COLORS.index))
+    allied = any("".join(sorted(a, key=COLORS.index)) == key for a in ANNEX)
+    options = bridges_to(pair)
+    if allied:
+        return {
+            "base": "allied", "own_land": annex_for(pair), "options": options,
+            "headline": f"{annex_for(pair)} is your dual. Two third colours are one "
+                        "common away.",
+            "advice": "Each option below shares a colour with you, so that land is "
+                      "never dead - it makes one of your main colours whether or "
+                      "not you draw the splash card."}
+    bridge = BRIDGE.get(key) or BRIDGE.get(pair)
+    if bridge:
+        lands = [o for o in options if o["color"] == bridge]
+        sh = shard_of(set(pair) | {bridge})
+        shard = f"{sh[0]} ({sh[1]})" if sh else "".join(
+            sorted(set(pair) | {bridge}, key=COLORS.index))
+        return {
+            "base": "enemy", "own_land": None, "bridge": bridge, "shard": shard,
+            "options": options,
+            "headline": f"No dual exists for {key}. Adding {bridge} is what fixes it.",
+            "advice": (f"{key} has no land in this set. But {bridge} turns you into "
+                       f"{shard}, and then BOTH "
+                       + " and ".join(sorted({
+                           part for l in lands for part in l["land"].split(" + ")}))
+                       + " become real duals instead of half-dead lands. Adding a "
+                         "third colour here can improve your mana rather than "
+                         "strain it - but only if you actually have the Annexes.")}
+    return {"base": "unknown", "options": options, "headline": "", "advice": ""}
+
+
 
 # --------------------------------------------------------------------------
 # pips
@@ -159,8 +253,14 @@ def splash_advice(card: CardInfo, ratings: Ratings) -> dict:
     homes = [p for p in ratings.archetypes if col in p]
     extra = []
     if ease in ("easy", "unknown"):
-        extra.append("R/G Konstrari splashes best in this format - Heartwood "
-                     "tokens tap for R or G and fix a third colour for free.")
+        carriers = sorted({land for pair, land in ANNEX.items() if col in pair})
+        if carriers:
+            extra.append(f"Carried by {' or '.join(carriers)} - a common dual that "
+                         f"makes {col} plus its partner, and enters untapped once "
+                         "you control a planeswalker (a Jace token counts).")
+        if col in "RG":
+            extra.append("Heartwood tokens add {R} or {G}, so they pay for this "
+                         "splash specifically. They do NOT fix any other colour.")
         if card.cmc and card.cmc >= 5:
             extra.append("At 5+ mana you will have drawn your splash source by "
                          "the time you can cast it, which makes the splash safer.")

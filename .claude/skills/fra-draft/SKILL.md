@@ -20,7 +20,12 @@ and the signal it implies. Not an essay.**
 - **Prepared** — creature face + spell face. On becoming prepared, a copy of the spell goes to
   exile; casting it unprepares the creature. **Copy dies if the creature leaves the battlefield.**
   Can't re-prepare while already prepared.
-- **Heartwood token** — red-and-green artifact, `{T}: Add {R} or {G}`.
+- **Heartwood token** — red-and-green artifact, `{T}: Add {R} or {G}`. **Fixes an R or G splash
+  only — it does nothing for a W, U or B splash.** (An earlier version of this file overstated
+  this; correct the user if they repeat it.)
+- **Annex lands** (common): Fatehold W/U, Theorix U/B, Stingerquill B/R, Konstrari R/G,
+  Vigorbloom G/W. Tap for their two allied colours; **enter tapped unless you already control a
+  planeswalker** — a Jace token counts, but one entering the same turn does not.
 - **Threshold** — 7+ cards in your graveyard.
 - Allied pairs = Hexhaven colleges. Enemy pairs = the Lorwyn Five.
 
@@ -104,6 +109,23 @@ for a splash**, not just ramp → be slower than feels right.
 - **−1 surveil three times before −3 draw.** Surveil is the efficient rate.
 - **Don't attack their Jace** unless it's winning them the game; take the life total.
 - **Your removal can point at planeswalkers** — FRA has more than any set since War of the Spark.
+
+## Three colours
+
+**There is no enemy-colour dual in this set at any rarity.** Both dual cycles (common Annexes,
+rare Portal slowlands) are allied only. That drives everything:
+
+- A dual sharing one colour with your pair is a **free splash land** — never a dead draw.
+- So the supported three-colour decks are the **five shards** (contiguous arcs of the wheel).
+  **Wedges are not supported** — one Annex, and it doesn't bridge.
+- Each college pair reaches two third colours: WU→+B/+G, UB→+W/+R, BR→+U/+G, RG→+B/+W, GW→+R/+U.
+- **Enemy pairs improve their mana by adding the bridge colour**, because it turns two half-dead
+  Annexes into perfect duals: WB+U=Esper, UR+B=Grixis, BG+R=Jund, RW+G=Naya, GU+W=Bant.
+- **Price of entry is two Annexes.** One is a maybe; none means play two colours.
+- Annexes are taplands turns 1–3 and duals from turn 4, so three colours is a midrange plan.
+  R/W Ajani's Army should almost never splash.
+- Splash bombs, premium removal and expensive cards. Never a two-drop. Single pip = 2–3 sources;
+  double pip is a main colour, not a splash.
 
 ## Practice
 

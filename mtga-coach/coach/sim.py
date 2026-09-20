@@ -231,8 +231,11 @@ def build_deck(pool: PoolState, ratings: Ratings, size: int = 23) -> dict:
     lean = pool.archetype_lean(ratings)
     pair = lean[0][0] if lean else "WU"
     wanted = set(pair)
+    lands = [c for c in pool.picks if "land" in (c.types or "").lower()]
     playables = []
     for c in pool.picks:
+        if "land" in (c.types or "").lower():
+            continue
         cols = ratings.card_colors(c)
         if cols and not cols <= wanted:
             continue
@@ -250,7 +253,7 @@ def build_deck(pool: PoolState, ratings: Ratings, size: int = 23) -> dict:
                        for t in ratings.tags(c)))
     return {"pair": pair, "deck": deck, "curve": curve, "creatures": creatures,
             "interaction": inter, "playable_count": len(playables),
-            "meta": ratings.archetypes.get(pair, {})}
+            "lands": lands, "meta": ratings.archetypes.get(pair, {})}
 
 
 def grade_deck(d: dict, ratings: Ratings, mode: str = "draft") -> list[str]:
@@ -282,6 +285,34 @@ def grade_deck(d: dict, ratings: Ratings, mode: str = "draft") -> list[str]:
         out.append("Heartwood ramp with a real top end - play 18 lands.")
     out.append(f"Lands: {lands}.   Curve: " +
                " ".join(f"{k}:{d['curve'].get(k, 0)}" for k in range(1, 7)))
+    out += splash_lines(d, ratings)
+    return out
+
+
+def splash_lines(d: dict, ratings: Ratings) -> list[str]:
+    """Whether a third colour is on the table, given the lands actually drafted."""
+    from .analysis import three_color_plan, annex_for
+    out: list[str] = []
+    fixers = d.get("lands") or []
+    plan = three_color_plan(d["pair"])
+    own = plan.get("own_land")
+    own_n = sum(1 for c in fixers if c.name == own) if own else 0
+    if own_n:
+        out.append(f"Fixing: {own_n}x {own} for your main pair.")
+    if plan["base"] == "enemy":
+        out.append(plan["headline"] + " " + plan["advice"].split(" - ")[0])
+    for o in plan["options"]:
+        if o["kind"] != "shard":
+            continue
+        have = [c for c in fixers if c.name in o["land"].split(" + ")]
+        if len(have) >= 2:
+            out.append(f"SPLASH LIVE: {len(have)} {o['land']} - {o['color']} is "
+                       f"open to you ({o['shard']}"
+                       + (f", {o['nickname']}" if o["nickname"] else "") +
+                       "). Splash a bomb or premium removal only, never a 2-drop.")
+        elif len(have) == 1:
+            out.append(f"Splash possible: 1 {have[0].name}. One more and {o['color']} "
+                       "is a real option.")
     return out
 
 

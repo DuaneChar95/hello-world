@@ -105,6 +105,10 @@ class CardPool:
             if rarity not in TARGET:
                 rarity = "uncommon"
             tags = list(e.get("tags", []))
+            if "land" in tags:
+                self._add(name, "", rarity, 0, "Land",
+                          float(e.get("grade", 2.2)), tags, real=True)
+                continue
             cmc = self._infer_cmc(tags, rarity)
             types = "Creature" if self._is_creature(tags, name) else "Instant"
             self._add(name, e.get("colors", ""), rarity, cmc, types,
