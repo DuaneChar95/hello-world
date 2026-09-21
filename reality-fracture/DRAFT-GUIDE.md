@@ -84,6 +84,166 @@ true gold card. Two consequences [EVAL]:
 
 ---
 
+## 0.6 Deck shells, and two rankings the card data changed  [CONFIRMED card data, EVAL analysis]
+
+With all 285 cards in hand I counted what each colour actually offers. Two of my
+earlier calls were wrong, and both were wrong for the same reason: I reasoned
+from archetype design instead of from how many playable cards exist.
+
+### The counts that matter
+
+**Removal, by colour** (every card that kills a creature, all rarities):
+
+| Colour | Removal | At common | The commons |
+|---|---|---|---|
+| **Black** | **12** | **3** | Last Gasp `{1}{B}` instant · Silence the Echo `{1}{B}` · Extended Absence `{3}{B}` instant |
+| **Red** | 8 | 2 | Wrath of the Bloodmane `{2}{R}` instant · Awaken the Inferno `{4}{R}` |
+| White | 6 | 1 | Surgical Precision `{1}{W}` |
+| Green | 4 | 1 | Sureshot Sower `{1}{G}` (a 2-mana flier with removal attached) |
+| **Blue** | **3** | **1** | Icy Reception `{1}{U}` |
+
+**Commons per colour: 11 mono, plus ~4 hybrid shared with a neighbour.** A
+two-colour deck draws on roughly 24 distinct commons. That is thin, and it is
+why taking playables early beats speculating.
+
+**Empower Jace: 35 cards.** Blue 9, black 7, white 6, green 4, red 4, plus a
+G/U pair. Common empower-3 exists in blue (Mindseeker Oculus, Protege's
+Awakening) and G/U (Tam's Resistance).
+
+### Correction 1 — black is the best colour, not blue
+
+I had **U 8.5 > B 8.0**. That was wrong. **Black has twelve removal spells and
+three at common; blue has three and one.** In a format whose central tension is
+killing a prepared creature before it casts its copy, a colour that cannot
+interact is not the best colour no matter how many cards it draws. Blue's
+empower count is real, but a blue deck holding Icy Reception and hoping is
+losing the 2-for-1 war it is trying to win.
+
+### Correction 2 — red is better than I said, for the opposite reason to the one I gave
+
+I had red last at 6.5, on the grounds that its plan points damage at faces.
+That plan is still a trap — but red's actual **removal suite is second-best in
+the set**, and `Wrath of the Bloodmane` at common is a premium card. Red is fine;
+*Stingerquill* is the problem. Those are different claims and I conflated them.
+
+**Revised colour ranking** [EVAL, from confirmed counts]:
+
+| | Colour | Was | Now | Why |
+|---|---|---|---|---|
+| 1 | **Black** | 8.0 | **8.6** | 12 removal, 3 at common, plus the graveyard payoffs |
+| 2 | Blue | 8.5 | **8.2** | Most empower and selection — but 3 removal total |
+| 3 | White | 7.5 | **7.5** | Unchanged: counters, flyers, lifegain, 6 removal |
+| 4 | **Red** | 6.5 | **7.2** | Second-best removal. The face plan is the trap, not the colour |
+| 5 | Green | 7.0 | **6.6** | 4 removal, fewest rares, and its removal is a creature |
+
+### Correction 3 — G/U Jace's Mastery has its payoffs after all
+
+I flagged this as the archetype most likely to move a tier, because I couldn't
+tell whether the "grant your planeswalkers abilities" cards existed. **They do:
+a ten-card uncommon cycle of legendary enchantments — `Way of the Mind Sculptor`,
+`Way of the Paradox`, `Way of the Pyromancer`, `Way of the Warlord`,
+`Way of the Wildspeaker`, and five more — two per colour, several granting
+empower 3.** That is real support. **G/U moves from B to A- (6.5 → 7.1).**
+
+---
+
+## 0.7 The shell for each deck
+
+A shell is the 23 nonland slots broken into roles, with the cards that actually
+fill them. Land counts are 17 unless noted.
+
+Read each one as: **Spine** (take these over anything comparable) · **Engine**
+(how many you need before the deck works) · **Filler** · **Fails when**.
+
+### U/B Theorix — Graveyard Math · 23 spells, 17 land
+
+- **Spine:** `Theorix Metamage` (C, `{2}{U/B}` — flier, self-mill, threshold, *and* prepared: it is four cards in one), `Void Extrapolator` (C, `{1}{B}`), `Paradox Shaper` (U), `Uldaros Theorix` (M)
+- **Engine:** **5+ self-mill sources.** The Theorix prepared spell (*Omit Variables*) is self-mill, so each prepared creature counts. Only 3 prepared cards exist in-college, so the Jace surveils have to make up the difference — **run 4+ empower cards**, which is easy in blue.
+- **Threshold payoffs:** `Null Summoner` (R), `Loot, the Anomaly` (U), `Void Extrapolator`. These wheel; nobody else can use them.
+- **Interaction:** 5. You are in black — take `Last Gasp` and `Silence the Echo` over almost any creature.
+- **Curve:** 1:0 · 2:6 · 3:6 · 4:4 · 5:2 · 6:1
+- **Fails when:** you have the threshold payoffs and not the mill. Count enablers before you take a third payoff.
+
+### W/U Fatehold — Surveil Tempo · 23 spells, 17 land
+
+- **Spine:** `Fatehold Chronologist` (C, `{1}{W/U}` flier + prepared), `Prudent Fateseer` (U), `Denzilore Fatehold` (M — 4-mana 3/4 flash flier that counters up your board on every scry *or* surveil)
+- **Engine:** the prepared spell (*Peer Review*) makes a 2/2 **and** surveils, so your enablers are your payoffs. `Proctor of Potential` (R) and `Surveillance Phantasm` (C) convert the triggers.
+- **Interaction:** this is the shell's weak point — **W+U is 4 removal total, 2 at common.** Plan to win on board, and take `Surgical Precision` and `Icy Reception` higher than their rate suggests.
+- **Curve:** 1:1 · 2:7 · 3:6 · 4:4 · 5:2 · 6:0 — the lowest curve of the good decks.
+- **Fails when:** you treat it as aggro. It is a tempo-value deck; flyers plus tokens plus selection, not a turn-six kill.
+
+### W/B Liliana's Attrition — Sacrifice & Recursion · 23 spells, 17 land
+
+- **Spine:** `Blessed Ghoul` (C, `{W/B}` — a one-drop that recurs, exactly what the deck wants), `Theoretical Necromancer` (C), `Edgar, Ancient Bloodlord` (U), the Liliana pair (M)
+- **Engine:** a sacrifice outlet. `Silence the Echo` (C) doubles as removal *and* an outlet. Without one, recursion is just small creatures.
+- **Interaction:** **this is the best interaction shell in the format — 18 removal spells across W+B.** Run 6. You are happy to trade all day.
+- **Curve:** 1:2 · 2:7 · 3:6 · 4:4 · 5:2 · 6:0
+- **Mana:** no dual exists. If you see two Fatehold or two Theorix Annexes, **go W/U/B** — Section 4.5.
+- **Fails when:** you draft it as a pile of cheap creatures with no outlet and no payoff.
+
+### B/G Garruk's Bestiary — Value Creatures · 23 spells, 17 land
+
+- **Spine:** `Ferocity of the Hunt` (C, `{1}{B/G}`, deathtouch), `Rampart Hunter` (C, deathtouch), `Primal Witchstalker` (U), `Vraska, the Cutting Glare` (R)
+- **Engine:** none — and that is the point. This is the highest-floor deck because good creatures are good creatures.
+- **Interaction:** black carries it. 5–6, mostly black commons.
+- **Curve:** 1:0 · 2:5 · 3:7 · 4:5 · 5:3 · 6:1 — the highest curve that still works.
+- **Fails when:** never badly. It loses to the two S-tier decks by a little and beats everything else by a little.
+
+### G/W Vigorbloom — Lifegain & Counters · 23 spells, 17 land
+
+- **Spine:** `Emergency Phytomedic` (C, `{G/W}` — a one-drop with counters, life *and* prepared), `Vigorbloom Vanguard` (U), `Blossom-Blessed Angel` (C), `Solarium Sentry` (R)
+- **Engine:** `Graft Surgeon` (C) keeps counters after a creature dies; `Bloombrute` (U) draws on lifegain. Two payoffs is enough.
+- **Interaction:** **weakest in the format — G+W is 10 removal, 2 at common.** Accept it; win on board size.
+- **Curve:** 1:2 · 2:6 · 3:6 · 4:5 · 5:2 · 6:0
+- **Fails when:** it plays a long game against U/B or W/B. Lifegain does nothing to a deck winning on cards.
+
+### R/W Ajani's Army — Counters Aggro · 23 spells, **16 land**
+
+- **Spine:** `Charge the Sanctum` (C, `{2}{R/W}`), `Chandra's Emberling` (C, haste + counters), `Mabel, Valley Hero` (U), `Warrior's Blades` (U equipment), the Ajani pair (M)
+- **Engine:** the curve *is* the engine. **7+ two-drops, 16 lands.**
+- **Interaction:** 3 is enough — you are not trading, you are racing.
+- **Curve:** 1:3 · 2:8 · 3:6 · 4:4 · 5:0 · 6:0
+- **Fails when:** anything. This deck has no late game, loses to Vigorbloom lifegain, and gets 2-for-1'd by prepared creatures. **Only take this lane when it is screaming.**
+
+### B/R Stingerquill — Face Burn · 23 spells, 17 land
+
+- **Spine:** `Stingerquill Voxmancer` (U, `{B/R}` one-drop), `Hallway Heckler` (C), `Whiplash Wordsmith` (C — a 4-mana flier with haste), `Ingris Stingerquill` (M)
+- **The honest version:** **B+R is 20 removal spells, the deepest interaction in the set.** The winning B/R deck is not a burn deck — it is a removal deck that happens to be in those colours. `Master of Barbs` being a *rare* means the face-damage payoff usually isn't there, so stop building toward it.
+- **Interaction:** 7. Yes, seven. Point it at creatures.
+- **Curve:** 1:2 · 2:6 · 3:6 · 4:5 · 5:2 · 6:0
+- **Fails when:** you point burn at the face. **Re-rated 6.2 → 6.9 as a removal deck**, and still C-tier as the deck it is designed to be.
+
+### U/R Chandra's Prowess — Noncreature Spells · 23 spells, 17 land
+
+- **Spine:** `Twinned Vision` (C, `{1}{U/R}`), `Cryotheory Adept` (C prowess), `Saheeli, Jewel of Avishkar` (U), `Stingcaster Mage` (M)
+- **Engine:** ~9 noncreature spells, and they should be **removal**, so your spell count and your interaction count are the same cards. Red supplies what blue cannot.
+- **Curve:** 1:1 · 2:7 · 3:6 · 4:4 · 5:2 · 6:0
+- **Fails when:** you play weak cantrips to hit a prowess count. A bad spell is still a bad card.
+
+### G/U Jace's Mastery — Empower Value · 23 spells, 17 land  **(upgraded)**
+
+- **Spine:** `Tam's Resistance` (C, `{1}{G/U}`, **empower 3**), `Kiora of Salt and Sand` (U), `Avatar of Burgeoning Echoes` (M), and **the Way cycle** — `Way of the Paradox`, `Way of the Wildspeaker`, `Way of the Mind Sculptor`
+- **Engine:** **6+ empower cards and 2+ Ways.** The Ways are what turn a battery into an engine — without two of them you have a green-blue goodstuff deck paying a tax.
+- **Interaction:** G+U is 7 removal, 2 at common. Thin. Take `Sureshot Sower` (a flier that removes) and `Icy Reception` early.
+- **Curve:** 1:0 · 2:6 · 3:6 · 4:5 · 5:3 · 6:0
+- **Fails when:** you get the empower and not the Ways.
+
+### R/G Konstrari — Heartwood Ramp · 23 spells, **18 land in sealed, 17 in draft**
+
+- **Spine:** `Konstrari Improviser` (C, `{1}{R/G}` — makes Heartwood *and* is prepared), `Heartwood Crafter` (U), `Woodwork Prodigy` (U), `Aerid Konstrari` (M), `Craftwork Crusher` (U)
+- **Engine:** **3+ Heartwood makers AND 3+ cards worth ramping into.** Both halves, or neither works.
+- **Interaction:** `Konstrari Charm` (U) and red's commons. 4.
+- **Curve:** 1:0 · 2:5 · 3:5 · 4:4 · 5:5 · 6:4 — deliberately top-heavy.
+- **Fails when:** in draft, the top end went to the other eight drafters. **In sealed it is a top-three deck** and this shell is the reason: pools hand you the expensive cards draft won't.
+
+### The one-line version
+
+> **Black first, blue second, and the best deck in any seat is the one holding
+> the most removal.** Six of the ten shells are built around killing a prepared
+> creature before it casts its copy — and only two colours can reliably do it.
+
+---
+
 ## 1. The set in one page
 
 | | |

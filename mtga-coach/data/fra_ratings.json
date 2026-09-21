@@ -6,11 +6,11 @@
  "confidence": "carddata",
  "scale": "0-5 limited grades (3.0 = solid playable, 4.0 = premium, 4.5+ = bomb)",
  "color_scores": {
-  "U": 8.5,
-  "B": 8.0,
+  "B": 8.6,
+  "U": 8.2,
   "W": 7.5,
-  "G": 7.0,
-  "R": 6.5
+  "R": 7.2,
+  "G": 6.6
  },
  "archetypes": {
   "WU": {
@@ -42,12 +42,13 @@
   },
   "BR": {
    "name": "Stingerquill",
-   "tag": "Face Burn",
-   "draft": 6.2,
+   "tag": "Removal (not Face Burn)",
+   "draft": 6.9,
    "sealed": 5.7,
-   "tier": "C",
+   "tier": "B",
    "wants": [
-    "burn",
+    "removal",
+    "removal_instant_cheap",
     "haste",
     "prepared_stingerquill",
     "aggro"
@@ -136,11 +137,12 @@
   "GU": {
    "name": "Jace's Mastery",
    "tag": "Empower Value",
-   "draft": 6.5,
+   "draft": 7.1,
    "sealed": 6.3,
-   "tier": "B",
+   "tier": "A",
    "wants": [
     "empower",
+    "empower3",
     "planeswalker",
     "surveil",
     "ramp"
@@ -4624,5 +4626,6 @@
   "heartwood": "Artifact token, {T}: add {R} or {G}. Fixes an R or G splash ONLY - not any colour.",
   "lotus": "Kwia Vigorbloom (mythic) makes Lotus tokens: tap and sacrifice for three mana of one colour."
  },
- "card_data": "real"
+ "card_data": "real",
+ "revision": "Colour scores and two archetype scores revised from the real card list: removal counts per colour (B12/R8/W6/G4/U3) and the discovery of the ten-card Way cycle that pays off G/U."
 }

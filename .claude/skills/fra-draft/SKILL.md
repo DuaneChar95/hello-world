@@ -40,8 +40,8 @@ and the signal it implies. Not an essay.**
 | G/W | **Vigorbloom** — Invasive Healing | Lifegain + +1/+1 counters | **A** (7.2) | ▲ |
 | R/W | **Ajani's Army** | Counters aggro, equipment | **B** (6.9) | ▼▼▼ can't get the curve |
 | U/R | **Chandra's Prowess** | Noncreature spells, Thopters | **B** (6.7) | ▼ |
-| G/U | **Jace's Mastery** | Empower value, walker abilities | **B** (6.5) | ▬ |
-| B/R | **Stingerquill** — Painful Words | Face burn | **C** (6.2) | ▼▼ |
+| G/U | **Jace's Mastery** | Empower + the Way cycle | **A** (7.1) | ▬ |
+| B/R | **Stingerquill** — Painful Words | Removal, *not* face burn | **B** (6.9) | ▼▼ |
 | R/G | **Konstrari** — Constructive Arts | Heartwood ramp | **C** (6.0) | **▲▲▲▲ → 7.3, top-3 in sealed** |
 
 **College prepared spells (C/U, shared within a college):**
@@ -50,9 +50,25 @@ Konstrari = Heartwood token · Vigorbloom = lifegain + counters.
 
 ## Color order (prior)
 
-**U 8.5 > B 8.0 > W 7.5 > G 7.0 > R 6.5.** Blue and black are the grindy-format colors.
-Red is the trap — its face-damage plan is bad in a midrange format with a lifegain archetype.
-Expect red to be the most open color by pack 3.
+**B 8.6 > U 8.2 > W 7.5 > R 7.2 > G 6.6** — revised from the real card list.
+
+Removal per colour, all rarities (commons in brackets): **B 12 [3] · R 8 [2] · W 6 [1] ·
+G 4 [1] · U 3 [1]**. Black is first because six of the ten shells are built around killing a
+prepared creature before it casts its copy, and only black and red can reliably do it.
+Blue has the most empower and the least interaction. Red's *removal* is fine — its
+face-damage *plan* is the trap; those are different claims.
+
+Each colour has ~11 mono commons plus ~4 hybrids, so a two-colour deck draws on ~24
+distinct commons. Thin: take playables early.
+
+## Two calls revised by the card data
+
+- **B/R is a removal deck, not a burn deck.** B+R is 20 removal spells, the deepest in the
+  set. Master of Barbs is a *rare*, so the face-damage payoff usually isn't there. Point the
+  burn at creatures and it is a B-tier deck; build toward faces and it is C.
+- **G/U has its payoffs**: the ten-card uncommon **Way** cycle (Way of the Paradox, Way of
+  the Wildspeaker, Way of the Mind Sculptor, …), two per colour, several granting empower 3.
+  Needs 6+ empower cards and 2+ Ways.
 
 ## Pick rubric — use this when the card is unknown
 
