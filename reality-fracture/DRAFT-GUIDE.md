@@ -409,11 +409,11 @@ ran 10–15 cards out of 23, so roughly **half of a sealed deck is forced and ha
 | **New mechanics** | **Empower Jace**, **Heartwood** tokens |
 | **Returning** | **Prepared** (from Secrets of Strixhaven), **threshold**, flashback, surveil, scry, landfall |
 | **Structure** | 5 allied pairs = Hexhaven **colleges**, each signposted by an Elder Sphinx; 5 enemy pairs = the **Lorwyn Five** planeswalkers, each split into two mono-coloured cards (one per colour). Ajani → R/W, Chandra → U/R, Garruk → B/G, Liliana → W/B, Jace → G/U. Collector numbers 195–262 are the whole *Echoed Pair* run: every legend in the set has a mirror in another colour, and the five walkers are its mythic tier. |
-| **Booster quirk** | The **Echoed Pair** slot — 2 of 3 cards in that slot share a rarity and depict a mirrored pair |
+| **Booster quirk** | The **Echoed Pair** slot: **three cards per play booster, two of which are one real mirrored pair** and the third any echo-slot card. **43 pairs, 86 cards: 66 uncommon, 14 rare, 6 mythic** [CONFIRMED — Wizards' collecting article]. Every pair is same-rarity across two colours. The five *Way* enchantments pair by planeswalker (Mentor/Warlord, Cryomancer/Pyromancer, Deathbringer/Wildspeaker, Healer/Necromancer, Mind Sculptor/Paradox). One rare pair — *Jace, Reality Sculptor* / *Tam, the Possibility* — is inferred from the count rather than confirmed by name. |
 
 ### The structural fact most people will miss
 
-**109 uncommons against 71 commons.** That ratio is lopsided, and the **Echoed Pair slot** pushes
+**109 uncommons against 81 commons.** That ratio is lopsided, and the **Echoed Pair slot** pushes
 even more uncommons into your packs than a normal Play Booster. [CONFIRMED]
 
 Consequences [EVAL]:

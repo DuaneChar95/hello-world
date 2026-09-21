@@ -4734,5 +4734,182 @@
   "three_color_rule": "Every 3-colour combination has three common duals (one per pair), so shards and wedges are equally supported. The gate is not the colour wheel, it is whether you can land a planeswalker by turn 3. Want 3+ empower cards before committing to a third colour."
  },
  "card_data": "real",
- "revision": "Corrected from full oracle text and 20 registered sealed decks (2026-09-21): ten common duals exist, not five - the enemy 'Commons' cycle was missed, which invalidated the old three-colour geometry. Memory Trap, Compel Brutality and Infinite Coursework are removal and were untagged. Colour scores: W 7.5->7.9, G 6.6->6.9."
+ "revision": "Corrected from full oracle text and 20 registered sealed decks (2026-09-21): ten common duals exist, not five - the enemy 'Commons' cycle was missed, which invalidated the old three-colour geometry. Memory Trap, Compel Brutality and Infinite Coursework are removal and were untagged. Colour scores: W 7.5->7.9, G 6.6->6.9.",
+ "echoed_pairs": {
+  "pairs": [
+   [
+    "Ajani Resolute",
+    "Ajani Unrelenting"
+   ],
+   [
+    "Arni, Humble Scribe",
+    "Arni, Renowned Champion"
+   ],
+   [
+    "Tinybones, Pocket Nuisance",
+    "Titanbones, Towering Heart"
+   ],
+   [
+    "Chandra, Chill of Compliance",
+    "Chandra, Torch of Defiance"
+   ],
+   [
+    "Danitha, Spear of Agony",
+    "Danitha, Sword of Hope"
+   ],
+   [
+    "Edgar, Ancient Bloodlord",
+    "Edgar, Moonlit Sovereign"
+   ],
+   [
+    "Fblthp, Impossibly Lost",
+    "Fblthp, Knows the Way"
+   ],
+   [
+    "Gallia, Tragic Host",
+    "Gallia, the Merrymaker"
+   ],
+   [
+    "Garruk, Curse Breaker",
+    "Garruk, Veiled Butcher"
+   ],
+   [
+    "Ghalta the Immovable",
+    "Ghalta the Unstoppable"
+   ],
+   [
+    "Gideon the Oathless",
+    "Gideon's Memorial"
+   ],
+   [
+    "Massacre Girl, Most Wanted",
+    "Rescue Girl, First Responder"
+   ],
+   [
+    "Hapatra, the Desert Fang",
+    "Hapatra, the Desert Frost"
+   ],
+   [
+    "Jiang Yanggu, Alone",
+    "Jiang Yanggu, Never Alone"
+   ],
+   [
+    "Karn, Argent Defender",
+    "Karn, Gilded Guardian"
+   ],
+   [
+    "Kiora of Fire and Ashes",
+    "Kiora of Salt and Sand"
+   ],
+   [
+    "Koth of the Homestead",
+    "Koth, the Geomancer"
+   ],
+   [
+    "Liliana the Faultless",
+    "Liliana the Repentant"
+   ],
+   [
+    "Loot, the Anomaly",
+    "Loot, the Nexus"
+   ],
+   [
+    "Lyra, Archangel of Dawn",
+    "Lyra, Tolarian Archangel"
+   ],
+   [
+    "Mabel, Bitter Recluse",
+    "Mabel, Valley Hero"
+   ],
+   [
+    "Marwyn, the Clearcutter",
+    "Marwyn, the Preserver"
+   ],
+   [
+    "Pia, Aether Ascetic",
+    "Pia, Determined Rebuilder"
+   ],
+   [
+    "Proft, Consulting Detective",
+    "Proft, Sinister Mastermind"
+   ],
+   [
+    "Ruric Thar, Biomagus",
+    "Ruric Thar, Magecrusher"
+   ],
+   [
+    "Saheeli, Consul of Oversight",
+    "Saheeli, Jewel of Avishkar"
+   ],
+   [
+    "Samut, Hazoret's Champion",
+    "Samut, Tyrant of Naktamun"
+   ],
+   [
+    "Tetsuko Umezawa, Fugitive",
+    "Tetsuko Umezawa, Pursuer"
+   ],
+   [
+    "Teyo, Diamondblade Mage",
+    "Teyo, Lightshield Expert"
+   ],
+   [
+    "Geist of Saint Thalia",
+    "Thalia, the Survivor"
+   ],
+   [
+    "Tomik, Izzet Sparkmage",
+    "Tomik, Orzhov Lawmage"
+   ],
+   [
+    "Traxos, Academy Guardian",
+    "Traxos, Scourge Eternal"
+   ],
+   [
+    "Vraska, Soul of Stone",
+    "Vraska, the Cutting Glare"
+   ],
+   [
+    "Winter, Team Player",
+    "Winter, Tormented Loner"
+   ],
+   [
+    "Yargle, Glutton of Urborg",
+    "Yargle, Goliath of Otaria"
+   ],
+   [
+    "Yoshimaru, Beloved Companion",
+    "Yoshimaru, Scrappy Stray"
+   ],
+   [
+    "Yuriko, Blade of the Mighty",
+    "Yuriko, Hope from the Shadows"
+   ],
+   [
+    "Way of the Mentor",
+    "Way of the Warlord"
+   ],
+   [
+    "Way of the Cryomancer",
+    "Way of the Pyromancer"
+   ],
+   [
+    "Way of the Deathbringer",
+    "Way of the Wildspeaker"
+   ],
+   [
+    "Way of the Healer",
+    "Way of the Necromancer"
+   ],
+   [
+    "Way of the Mind Sculptor",
+    "Way of the Paradox"
+   ],
+   [
+    "Jace, Reality Sculptor",
+    "Tam, the Possibility"
+   ]
+  ],
+  "note": "43 pairs = 66 U + 14 R + 6 M. Booster: three echo-slot cards, two of which are one real pair. Pairing by name stem plus the five Way pairs; the Jace/Tam rare pair is inferred from the count."
+ }
 }
