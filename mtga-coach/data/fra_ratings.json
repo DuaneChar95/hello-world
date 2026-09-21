@@ -1,16 +1,16 @@
 {
  "set": "FRA",
  "set_name": "Reality Fracture",
- "updated": "2026-09-20",
+ "updated": "2026-09-21",
  "source": "Real FRA card list (280 cards). Grades are heuristic except 49 hand-written ones. Import 17Lands data to replace them.",
  "confidence": "carddata",
  "scale": "0-5 limited grades (3.0 = solid playable, 4.0 = premium, 4.5+ = bomb)",
  "color_scores": {
   "B": 8.6,
   "U": 8.2,
-  "W": 7.5,
+  "W": 7.9,
   "R": 7.2,
-  "G": 6.6
+  "G": 6.9
  },
  "archetypes": {
   "WU": {
@@ -195,7 +195,7 @@
    "note": "4-mana 3/4 flash flier; +1/+1 counter on your team whenever you scry or surveil. Best of the five sphinxes.",
    "cost": "{1}{W}{U}{U}",
    "cmc": 4,
-   "types": "Legendary Creature \u2014 Elder Sphinx",
+   "types": "Legendary Creature — Elder Sphinx",
    "image": "https://cards.scryfall.io/large/front/9/8/986f9e98-9d8d-428b-9187-860745cf3269.jpg?1788878215",
    "scryfall_id": "986f9e98-9d8d-428b-9187-860745cf3269",
    "number": "128"
@@ -214,7 +214,7 @@
    "note": "4-mana 5/4 flier that makes a Heartwood on entry AND death, with a mana sink.",
    "cost": "{1}{R}{G}{G}",
    "cmc": 4,
-   "types": "Legendary Creature \u2014 Elder Sphinx",
+   "types": "Legendary Creature — Elder Sphinx",
    "image": "https://cards.scryfall.io/large/front/f/1/f17d2792-b075-4c47-ad38-e7a7eaee5f8c.jpg?1788878199",
    "scryfall_id": "f17d2792-b075-4c47-ad38-e7a7eaee5f8c",
    "number": "121"
@@ -232,7 +232,7 @@
    "note": "Your attackers each ping every opponent. Turns a wide board into a clock.",
    "cost": "{B}{R}{R}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Elder Sphinx",
+   "types": "Legendary Creature — Elder Sphinx",
    "image": "https://cards.scryfall.io/large/front/6/4/6471b135-33a8-4005-9a07-ebb74e0bf145.jpg?1788878212",
    "scryfall_id": "6471b135-33a8-4005-9a07-ebb74e0bf145",
    "number": "137"
@@ -251,7 +251,7 @@
    "note": "Graveyard payoff; needs threshold-level setup to be a true bomb.",
    "cost": "{3}{U}{B}{B}",
    "cmc": 6,
-   "types": "Legendary Creature \u2014 Elder Sphinx",
+   "types": "Legendary Creature — Elder Sphinx",
    "image": "https://cards.scryfall.io/large/front/a/7/a7ad622a-42ff-48fa-ae95-12e0a5bd9387.jpg?1788878220",
    "scryfall_id": "a7ad622a-42ff-48fa-ae95-12e0a5bd9387",
    "number": "159"
@@ -270,7 +270,7 @@
    "note": "Lotus tokens. Ritual mana is worst in the slowest deck - weakest of the five.",
    "cost": "{3}{G}{W}{W}",
    "cmc": 6,
-   "types": "Legendary Creature \u2014 Elder Sphinx",
+   "types": "Legendary Creature — Elder Sphinx",
    "image": "https://cards.scryfall.io/large/front/2/d/2d6ff182-a853-4898-895b-072c89324ca7.jpg?1788878236",
    "scryfall_id": "2d6ff182-a853-4898-895b-072c89324ca7",
    "number": "140"
@@ -304,7 +304,7 @@
    "note": "Theorix signpost.",
    "cost": "{1}{U/B}",
    "cmc": 2,
-   "types": "Creature \u2014 Octopus Wizard",
+   "types": "Creature — Octopus Wizard",
    "image": "https://cards.scryfall.io/large/front/e/6/e61b9d48-0ace-4453-afe0-a1024444bac0.jpg?1788329390",
    "scryfall_id": "e61b9d48-0ace-4453-afe0-a1024444bac0",
    "number": "143"
@@ -321,7 +321,7 @@
    "note": "Stingerquill signpost.",
    "cost": "{B/R}",
    "cmc": 1,
-   "types": "Creature \u2014 Goblin Sorcerer",
+   "types": "Creature — Goblin Sorcerer",
    "image": "https://cards.scryfall.io/large/front/8/4/84b1c268-3b8a-41b6-92e3-a2ce0cc3d738.jpg?1788329418",
    "scryfall_id": "84b1c268-3b8a-41b6-92e3-a2ce0cc3d738",
    "number": "151"
@@ -340,7 +340,7 @@
    "note": "Konstrari signpost.",
    "cost": "{2}{R/G}",
    "cmc": 3,
-   "types": "Creature \u2014 Cat Druid",
+   "types": "Creature — Cat Druid",
    "image": "https://cards.scryfall.io/large/front/7/d/7d17f7e3-7b63-4674-9024-4fd1827f40ec.jpg?1788329429",
    "scryfall_id": "7d17f7e3-7b63-4674-9024-4fd1827f40ec",
    "number": "165"
@@ -358,7 +358,7 @@
    "note": "Vigorbloom signpost; heals and adds counters.",
    "cost": "{1}{G/W}",
    "cmc": 2,
-   "types": "Creature \u2014 Troll Druid",
+   "types": "Creature — Troll Druid",
    "image": "https://cards.scryfall.io/large/front/a/c/acefc515-bf97-4dc0-b0f7-ae8ae5a61671.jpg?1788329423",
    "scryfall_id": "acefc515-bf97-4dc0-b0f7-ae8ae5a61671",
    "number": "161"
@@ -377,7 +377,7 @@
    "note": "UR signpost.",
    "cost": "{2}{U}{R}",
    "cmc": 4,
-   "types": "Legendary Creature \u2014 Human Artificer",
+   "types": "Legendary Creature — Human Artificer",
    "image": "https://cards.scryfall.io/large/front/2/8/28d84ef6-e190-46d4-882d-1cea5e111e2a.jpg?1789644883",
    "scryfall_id": "28d84ef6-e190-46d4-882d-1cea5e111e2a",
    "number": "275"
@@ -393,7 +393,7 @@
    "note": "GU signpost.",
    "cost": "{1}{G}{U}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Merfolk Noble",
+   "types": "Legendary Creature — Merfolk Noble",
    "image": "https://cards.scryfall.io/large/front/8/1/8151f5f5-e9f6-4fbe-b543-f456ebf22aa5.jpg?1789127745",
    "scryfall_id": "8151f5f5-e9f6-4fbe-b543-f456ebf22aa5",
    "number": "273"
@@ -410,7 +410,7 @@
    "note": "Echoed pair.",
    "cost": "{1}{W}",
    "cmc": 2,
-   "types": "Legendary Planeswalker \u2014 Ajani",
+   "types": "Legendary Planeswalker — Ajani",
    "image": "https://cards.scryfall.io/large/front/a/5/a5e1a7dd-8c49-4435-935c-bcc78704082b.jpg?1788329189",
    "scryfall_id": "a5e1a7dd-8c49-4435-935c-bcc78704082b",
    "number": "195"
@@ -427,7 +427,7 @@
    "note": "Echoed pair.",
    "cost": "{4}{R}{R}",
    "cmc": 6,
-   "types": "Legendary Planeswalker \u2014 Ajani",
+   "types": "Legendary Planeswalker — Ajani",
    "image": "https://cards.scryfall.io/large/front/b/c/bc3c096f-7f6c-474c-a2c8-75d3e6ddd6f5.jpg?1788329317",
    "scryfall_id": "bc3c096f-7f6c-474c-a2c8-75d3e6ddd6f5",
    "number": "242"
@@ -445,7 +445,7 @@
    "note": "Echoed pair.",
    "cost": "{1}{B}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Human Warlock",
+   "types": "Legendary Creature — Human Warlock",
    "image": "https://cards.scryfall.io/large/front/1/e/1eb25a6c-d6b4-465d-990e-f1ab86b26b69.jpg?1788329273",
    "scryfall_id": "1eb25a6c-d6b4-465d-990e-f1ab86b26b69",
    "number": "231"
@@ -462,7 +462,7 @@
    "note": "Echoed pair.",
    "cost": "{W}",
    "cmc": 1,
-   "types": "Legendary Creature \u2014 Human Cleric",
+   "types": "Legendary Creature — Human Cleric",
    "image": "https://cards.scryfall.io/large/front/7/0/70d8c400-87dc-4f15-808f-e54a95d779fc.jpg?1788329194",
    "scryfall_id": "70d8c400-87dc-4f15-808f-e54a95d779fc",
    "number": "200"
@@ -479,7 +479,7 @@
    "note": "Echoed pair.",
    "cost": "{3}{G}{G}",
    "cmc": 5,
-   "types": "Legendary Planeswalker \u2014 Garruk",
+   "types": "Legendary Planeswalker — Garruk",
    "image": "https://cards.scryfall.io/large/front/9/0/90ca5812-ceb5-46bd-b049-aed7ff10e6af.jpg?1788329370",
    "scryfall_id": "90ca5812-ceb5-46bd-b049-aed7ff10e6af",
    "number": "259"
@@ -497,7 +497,7 @@
    "note": "Echoed pair.",
    "cost": "{3}{B}{B}",
    "cmc": 5,
-   "types": "Legendary Planeswalker \u2014 Garruk",
+   "types": "Legendary Planeswalker — Garruk",
    "image": "https://cards.scryfall.io/large/front/d/4/d48bfb8a-d135-45f3-be99-4694b4b9ab93.jpg?1788329269",
    "scryfall_id": "d48bfb8a-d135-45f3-be99-4694b4b9ab93",
    "number": "229"
@@ -515,7 +515,7 @@
    "note": "Echoed pair.",
    "cost": "{2}{R}{R}",
    "cmc": 4,
-   "types": "Legendary Planeswalker \u2014 Chandra",
+   "types": "Legendary Planeswalker — Chandra",
    "image": "https://cards.scryfall.io/large/front/4/0/40cb22c8-cb03-45c9-bb0e-b8cabdcc43cd.jpg?1788329325",
    "scryfall_id": "40cb22c8-cb03-45c9-bb0e-b8cabdcc43cd",
    "number": "244"
@@ -533,7 +533,7 @@
    "note": "Echoed pair; mono-blue Echoverse Chandra.",
    "cost": "{1}{U}{U}",
    "cmc": 3,
-   "types": "Legendary Planeswalker \u2014 Chandra",
+   "types": "Legendary Planeswalker — Chandra",
    "image": "https://cards.scryfall.io/large/front/2/4/240f58ab-944c-4f4c-9df9-5f40b132bf3e.jpg?1788329242",
    "scryfall_id": "240f58ab-944c-4f4c-9df9-5f40b132bf3e",
    "number": "212"
@@ -552,7 +552,7 @@
    "note": "Fatehold prepared: makes a 2/2 and surveils. Premium common rate.",
    "cost": "{1}{W/U}{W/U}",
    "cmc": 3,
-   "types": "Creature \u2014 Dwarf Wizard",
+   "types": "Creature — Dwarf Wizard",
    "image": "https://cards.scryfall.io/large/front/6/c/6c1c790b-9e0e-4964-9ea3-554843907f06.jpg?1788329412",
    "scryfall_id": "6c1c790b-9e0e-4964-9ea3-554843907f06",
    "number": "146"
@@ -570,7 +570,7 @@
    "note": "Fatehold prepared.",
    "cost": "{3}{U}",
    "cmc": 4,
-   "types": "Creature \u2014 Human Wizard",
+   "types": "Creature — Human Wizard",
    "image": "https://cards.scryfall.io/large/front/7/e/7e5a640b-fd88-4b5a-9dfc-1d8f5a5cef41.jpg?1789127516",
    "scryfall_id": "7e5a640b-fd88-4b5a-9dfc-1d8f5a5cef41",
    "number": "39"
@@ -589,7 +589,7 @@
    "note": "Fatehold prepared.",
    "cost": "{1}{W/U}",
    "cmc": 2,
-   "types": "Creature \u2014 Bird Wizard",
+   "types": "Creature — Bird Wizard",
    "image": "https://cards.scryfall.io/large/front/2/9/29e7ec16-0c16-48aa-8e09-ce6e0d5bd40b.jpg?1789060173",
    "scryfall_id": "29e7ec16-0c16-48aa-8e09-ce6e0d5bd40b",
    "number": "133"
@@ -606,7 +606,7 @@
    "note": "Pays you off for scry/surveil.",
    "cost": "{W}{U}",
    "cmc": 2,
-   "types": "Creature \u2014 Human Cleric",
+   "types": "Creature — Human Cleric",
    "image": "https://cards.scryfall.io/large/front/c/f/cf0eec8c-0475-4050-8144-481a9bb13a0f.jpg?1789127661",
    "scryfall_id": "cf0eec8c-0475-4050-8144-481a9bb13a0f",
    "number": "145"
@@ -622,7 +622,7 @@
    "note": "Scry/surveil payoff.",
    "cost": "{1}{U}",
    "cmc": 2,
-   "types": "Creature \u2014 Bird Illusion",
+   "types": "Creature — Bird Illusion",
    "image": "https://cards.scryfall.io/large/front/9/d/9df8a06d-c7de-49af-8c01-06dca3dfef4b.jpg?1789385597",
    "scryfall_id": "9df8a06d-c7de-49af-8c01-06dca3dfef4b",
    "number": "42"
@@ -653,7 +653,7 @@
    "note": "Empower Jace.",
    "cost": "{1}{W}",
    "cmc": 2,
-   "types": "Creature \u2014 Human Advisor",
+   "types": "Creature — Human Advisor",
    "image": "https://cards.scryfall.io/large/front/6/0/6047b14c-91d5-4f8e-af3f-057a541e2546.jpg?1788878120",
    "scryfall_id": "6047b14c-91d5-4f8e-af3f-057a541e2546",
    "number": "4"
@@ -688,7 +688,7 @@
    "note": "Empower Jace 3 - roughly half a card.",
    "cost": "{1}{U}",
    "cmc": 2,
-   "types": "Creature \u2014 Illusion",
+   "types": "Creature — Illusion",
    "image": "https://cards.scryfall.io/large/front/7/1/710302ca-c4be-4069-8ce1-f531414c74e9.jpg?1788878151",
    "scryfall_id": "710302ca-c4be-4069-8ce1-f531414c74e9",
    "number": "44"
@@ -707,7 +707,7 @@
    "note": "Theorix prepared: self-mill.",
    "cost": "{2}{U/B}",
    "cmc": 3,
-   "types": "Creature \u2014 Shade Wizard",
+   "types": "Creature — Shade Wizard",
    "image": "https://cards.scryfall.io/large/front/f/b/fb6bad96-841d-4738-8e62-92f346f914fd.jpg?1789556930",
    "scryfall_id": "fb6bad96-841d-4738-8e62-92f346f914fd",
    "number": "156"
@@ -725,7 +725,7 @@
    "note": "Much stronger past threshold.",
    "cost": "{1}{B}",
    "cmc": 2,
-   "types": "Creature \u2014 Aetherborn Warlock",
+   "types": "Creature — Aetherborn Warlock",
    "image": "https://cards.scryfall.io/large/front/0/e/0eae2efb-bf25-48ee-9c07-9098008110ad.jpg?1789556787",
    "scryfall_id": "0eae2efb-bf25-48ee-9c07-9098008110ad",
    "number": "70"
@@ -740,7 +740,7 @@
    "note": "Threshold payoff - U/B only.",
    "cost": "{2}{U}{B}",
    "cmc": 4,
-   "types": "Creature \u2014 Human Warlock",
+   "types": "Creature — Human Warlock",
    "image": "https://cards.scryfall.io/large/front/3/a/3afdc75a-1bf5-4f2f-84eb-d82f77a095cd.jpg?1789127648",
    "scryfall_id": "3afdc75a-1bf5-4f2f-84eb-d82f77a095cd",
    "number": "142"
@@ -773,7 +773,7 @@
    "note": "Finisher for a stocked graveyard.",
    "cost": "{2}{B}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Human Warlock",
+   "types": "Legendary Creature — Human Warlock",
    "image": "https://cards.scryfall.io/large/front/9/6/9670f754-f41f-45ac-8e8b-025ad2c0f66b.jpg?1789127724",
    "scryfall_id": "9670f754-f41f-45ac-8e8b-025ad2c0f66b",
    "number": "240"
@@ -790,7 +790,7 @@
    "note": "Graveyard value.",
    "cost": "{1}{B}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Zombie Satyr",
+   "types": "Legendary Creature — Zombie Satyr",
    "image": "https://cards.scryfall.io/large/front/4/9/498fa810-8522-4020-b773-52ad404c9f65.jpg?1789385697",
    "scryfall_id": "498fa810-8522-4020-b773-52ad404c9f65",
    "number": "228"
@@ -808,7 +808,7 @@
    "note": "Stingerquill prepared: damage to opponent.",
    "cost": "{2}{R}",
    "cmc": 3,
-   "types": "Creature \u2014 Elemental Sorcerer",
+   "types": "Creature — Elemental Sorcerer",
    "image": "https://cards.scryfall.io/large/front/7/e/7e324816-552f-455d-97c4-5ea6b26d2e6e.jpg?1789127576",
    "scryfall_id": "7e324816-552f-455d-97c4-5ea6b26d2e6e",
    "number": "85"
@@ -827,7 +827,7 @@
    "note": "Stingerquill prepared.",
    "cost": "{3}{B/R}",
    "cmc": 4,
-   "types": "Creature \u2014 Vampire Sorcerer",
+   "types": "Creature — Vampire Sorcerer",
    "image": "https://cards.scryfall.io/large/front/8/0/8096bc9a-a610-448f-bef2-7230e17e9777.jpg?1789127692",
    "scryfall_id": "8096bc9a-a610-448f-bef2-7230e17e9777",
    "number": "164"
@@ -845,7 +845,7 @@
    "note": "Enabled by noncombat damage.",
    "cost": "{B}{R}",
    "cmc": 2,
-   "types": "Creature \u2014 Zombie Bard",
+   "types": "Creature — Zombie Bard",
    "image": "https://cards.scryfall.io/large/front/8/2/8295c48c-b4dd-4bc1-a206-04cf12b79bbd.jpg?1789470746",
    "scryfall_id": "8295c48c-b4dd-4bc1-a206-04cf12b79bbd",
    "number": "136"
@@ -861,7 +861,7 @@
    "note": "The payoff that makes Stingerquill work at all.",
    "cost": "{1}{R}",
    "cmc": 2,
-   "types": "Creature \u2014 Lizard Bard",
+   "types": "Creature — Lizard Bard",
    "image": "https://cards.scryfall.io/large/front/4/4/4404d9d4-9cdd-4dad-a4f6-574d90db5052.jpg?1789127596",
    "scryfall_id": "4404d9d4-9cdd-4dad-a4f6-574d90db5052",
    "number": "88"
@@ -880,7 +880,7 @@
    "note": "2-mana haste body; gives an instant/sorcery flashback on entry. Red Snapcaster. RARITY UNVERIFIED.",
    "cost": "{1}{R}",
    "cmc": 2,
-   "types": "Creature \u2014 Human Wizard",
+   "types": "Creature — Human Wizard",
    "image": "https://cards.scryfall.io/large/front/2/d/2d8e8e5f-3bf5-490d-aa9c-9df2b26f1460.jpg?1788329303",
    "scryfall_id": "2d8e8e5f-3bf5-490d-aa9c-9df2b26f1460",
    "number": "93"
@@ -896,7 +896,7 @@
    "note": "Keeps counters around after creatures die.",
    "cost": "{2}{W}",
    "cmc": 3,
-   "types": "Creature \u2014 Human Cleric",
+   "types": "Creature — Human Cleric",
    "image": "https://cards.scryfall.io/large/front/3/2/32a7a905-11bf-4b66-a28e-1066a0e372b8.jpg?1789644811",
    "scryfall_id": "32a7a905-11bf-4b66-a28e-1066a0e372b8",
    "number": "10"
@@ -913,7 +913,7 @@
    "note": "Draws on lifegain.",
    "cost": "{2}{G}{W}",
    "cmc": 4,
-   "types": "Creature \u2014 Plant Elemental",
+   "types": "Creature — Plant Elemental",
    "image": "https://cards.scryfall.io/large/front/6/b/6b804503-9c70-4b1f-bb13-a65fb6dd3ef8.jpg?1789644843",
    "scryfall_id": "6b804503-9c70-4b1f-bb13-a65fb6dd3ef8",
    "number": "124"
@@ -930,7 +930,7 @@
    "note": "Incidental lifegain.",
    "cost": "{2}{G}",
    "cmc": 3,
-   "types": "Creature \u2014 Cat Druid",
+   "types": "Creature — Cat Druid",
    "image": "https://cards.scryfall.io/large/front/a/5/a56e0f91-b128-4693-a949-53cb403f4fbf.jpg?1789127136",
    "scryfall_id": "a56e0f91-b128-4693-a949-53cb403f4fbf",
    "number": "104"
@@ -1059,7 +1059,7 @@
    "rarity": "common",
    "cost": "{2}",
    "cmc": 2,
-   "types": "Artifact Creature \u2014 Gargoyle",
+   "types": "Artifact Creature — Gargoyle",
    "tags": [
     "flying"
    ],
@@ -1089,7 +1089,7 @@
    "rarity": "common",
    "cost": "{4}{B}{B}",
    "cmc": 6,
-   "types": "Creature \u2014 Wolf",
+   "types": "Creature — Wolf",
    "tags": [
     "bigcreature",
     "lifegain",
@@ -1106,7 +1106,7 @@
    "rarity": "common",
    "cost": "{1}{G}",
    "cmc": 2,
-   "types": "Creature \u2014 Snake",
+   "types": "Creature — Snake",
    "tags": [
     "deathtouch",
     "empower",
@@ -1123,7 +1123,7 @@
    "rarity": "uncommon",
    "cost": "{6}",
    "cmc": 6,
-   "types": "Artifact Creature \u2014 Sphinx",
+   "types": "Artifact Creature — Sphinx",
    "tags": [
     "bigcreature",
     "flying",
@@ -1140,7 +1140,7 @@
    "rarity": "uncommon",
    "cost": "{2}{U}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Human Wizard",
+   "types": "Legendary Creature — Human Wizard",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/8/e/8e3a2239-9348-4639-9318-e9e35b2cf86b.jpg?1789568409",
    "scryfall_id": "8e3a2239-9348-4639-9318-e9e35b2cf86b",
@@ -1153,7 +1153,7 @@
    "rarity": "uncommon",
    "cost": "{3}{R}",
    "cmc": 4,
-   "types": "Legendary Creature \u2014 Human Berserker",
+   "types": "Legendary Creature — Human Berserker",
    "tags": [
     "trample"
    ],
@@ -1181,7 +1181,7 @@
    "rarity": "mythic",
    "cost": "{G}{U}",
    "cmc": 2,
-   "types": "Creature \u2014 Avatar",
+   "types": "Creature — Avatar",
    "tags": [
     "counters",
     "empower",
@@ -1243,7 +1243,7 @@
    "rarity": "common",
    "cost": "{W/B}",
    "cmc": 1,
-   "types": "Creature \u2014 Zombie Cleric",
+   "types": "Creature — Zombie Cleric",
    "tags": [
     "lifegain",
     "recursion"
@@ -1259,7 +1259,7 @@
    "rarity": "mythic",
    "cost": "{1}{B}",
    "cmc": 2,
-   "types": "Creature \u2014 Vampire Warlock",
+   "types": "Creature — Vampire Warlock",
    "tags": [
     "prepared"
    ],
@@ -1274,7 +1274,7 @@
    "rarity": "common",
    "cost": "{3}{W}",
    "cmc": 4,
-   "types": "Creature \u2014 Angel Cleric",
+   "types": "Creature — Angel Cleric",
    "tags": [
     "counters",
     "flying",
@@ -1308,7 +1308,7 @@
    "rarity": "common",
    "cost": "{2}{G}",
    "cmc": 3,
-   "types": "Creature \u2014 Dryad Scout",
+   "types": "Creature — Dryad Scout",
    "tags": [
     "artifact"
    ],
@@ -1323,7 +1323,7 @@
    "rarity": "rare",
    "cost": "{1}{G}",
    "cmc": 2,
-   "types": "Creature \u2014 Elf Warlock",
+   "types": "Creature — Elf Warlock",
    "tags": [
     "deathtouch",
     "prepared",
@@ -1354,7 +1354,7 @@
    "rarity": "common",
    "cost": "{2}{R}",
    "cmc": 3,
-   "types": "Creature \u2014 Gremlin Elemental",
+   "types": "Creature — Gremlin Elemental",
    "tags": [
     "counters",
     "haste"
@@ -1398,7 +1398,7 @@
    "rarity": "rare",
    "cost": "{3}",
    "cmc": 3,
-   "types": "Legendary Artifact Creature \u2014 Book Construct",
+   "types": "Legendary Artifact Creature — Book Construct",
    "tags": [
     "prepared"
    ],
@@ -1430,12 +1430,17 @@
    "cost": "{1}{G}",
    "cmc": 2,
    "types": "Instant",
-   "tags": [],
+   "tags": [
+    "planeswalker",
+    "removal",
+    "removal_conditional"
+   ],
    "image": "https://cards.scryfall.io/large/front/b/d/bd32d736-7a58-46b9-90b4-2cac3c3e80a1.jpg?1788521235",
    "scryfall_id": "bd32d736-7a58-46b9-90b4-2cac3c3e80a1",
    "number": "101",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 3.2,
+   "source": "auto",
+   "note": "{1}{G} instant. Mode 1: your creature deals damage equal to its power. Mode 2: a PLANESWALKER you control deals damage equal to its LOYALTY - with a 5-loyalty Jace this kills almost anything for 2 mana. Green's real removal spell. 6 of 20 decks."
   },
   "Countersculpt": {
    "colors": "U",
@@ -1458,7 +1463,7 @@
    "rarity": "uncommon",
    "cost": "{3}{R}{R}{G}{G}",
    "cmc": 7,
-   "types": "Artifact Creature \u2014 Boar Construct",
+   "types": "Artifact Creature — Boar Construct",
    "tags": [
     "bigcreature",
     "removal",
@@ -1475,7 +1480,7 @@
    "rarity": "mythic",
    "cost": "{4}{R}{R}{R}",
    "cmc": 7,
-   "types": "Artifact Creature \u2014 Beast Construct",
+   "types": "Artifact Creature — Beast Construct",
    "tags": [
     "bigcreature",
     "haste",
@@ -1492,7 +1497,7 @@
    "rarity": "common",
    "cost": "{1}{U}",
    "cmc": 2,
-   "types": "Creature \u2014 Human Wizard",
+   "types": "Creature — Human Wizard",
    "tags": [
     "aggro",
     "prowess"
@@ -1508,7 +1513,7 @@
    "rarity": "rare",
    "cost": "{2}{R}{R}",
    "cmc": 4,
-   "types": "Creature \u2014 Demon",
+   "types": "Creature — Demon",
    "tags": [
     "flying",
     "trample"
@@ -1524,7 +1529,7 @@
    "rarity": "uncommon",
    "cost": "{2}{B}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Human Knight",
+   "types": "Legendary Creature — Human Knight",
    "tags": [
     "counters"
    ],
@@ -1539,7 +1544,7 @@
    "rarity": "uncommon",
    "cost": "{2}{W}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Human Knight",
+   "types": "Legendary Creature — Human Knight",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/d/5/d5cb9810-3c2d-4ae4-b8b6-0155ca3f47ad.jpg?1789127178",
    "scryfall_id": "d5cb9810-3c2d-4ae4-b8b6-0155ca3f47ad",
@@ -1552,7 +1557,7 @@
    "rarity": "mythic",
    "cost": "{3}{B}",
    "cmc": 4,
-   "types": "Creature \u2014 Phoenix",
+   "types": "Creature — Phoenix",
    "tags": [
     "flying",
     "haste",
@@ -1569,7 +1574,7 @@
    "rarity": "rare",
    "cost": "{B}",
    "cmc": 1,
-   "types": "Creature \u2014 Human Warlock",
+   "types": "Creature — Human Warlock",
    "tags": [
     "selfmill"
    ],
@@ -1616,7 +1621,7 @@
    "rarity": "uncommon",
    "cost": "{2}{W}{U}",
    "cmc": 4,
-   "types": "Creature \u2014 Kor Scout",
+   "types": "Creature — Kor Scout",
    "tags": [
     "counters",
     "flying"
@@ -1632,7 +1637,7 @@
    "rarity": "rare",
    "cost": "{U}",
    "cmc": 1,
-   "types": "Creature \u2014 Dwarf Wizard",
+   "types": "Creature — Dwarf Wizard",
    "tags": [
     "prepared",
     "scry",
@@ -1649,7 +1654,7 @@
    "rarity": "common",
    "cost": "{2}{U}",
    "cmc": 3,
-   "types": "Creature \u2014 Merfolk Wizard",
+   "types": "Creature — Merfolk Wizard",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/9/6/960c7335-331d-488b-be68-2ad1c1c695dc.jpg?1789556709",
    "scryfall_id": "960c7335-331d-488b-be68-2ad1c1c695dc",
@@ -1662,7 +1667,7 @@
    "rarity": "rare",
    "cost": "{3}{R}{R}",
    "cmc": 5,
-   "types": "Creature \u2014 Dragon",
+   "types": "Creature — Dragon",
    "tags": [
     "artifact",
     "bigcreature",
@@ -1679,7 +1684,7 @@
    "rarity": "common",
    "cost": "{1}{R}",
    "cmc": 2,
-   "types": "Creature \u2014 Human Bard",
+   "types": "Creature — Human Bard",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/5/f/5f8771f9-8128-4818-a11d-41ea368cf697.jpg?1789127173",
    "scryfall_id": "5f8771f9-8128-4818-a11d-41ea368cf697",
@@ -1692,7 +1697,7 @@
    "rarity": "uncommon",
    "cost": "{W}{B}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Vampire Noble",
+   "types": "Legendary Creature — Vampire Noble",
    "tags": [
     "counters",
     "lifegain",
@@ -1709,7 +1714,7 @@
    "rarity": "uncommon",
    "cost": "{3}{G}{G}",
    "cmc": 5,
-   "types": "Legendary Creature \u2014 Werewolf Noble",
+   "types": "Legendary Creature — Werewolf Noble",
    "tags": [
     "bigcreature",
     "counters"
@@ -1725,7 +1730,7 @@
    "rarity": "common",
    "cost": "{G/W}",
    "cmc": 1,
-   "types": "Creature \u2014 Dryad Cleric",
+   "types": "Creature — Dryad Cleric",
    "tags": [
     "counters",
     "lifegain",
@@ -1743,7 +1748,7 @@
    "rarity": "mythic",
    "cost": "{10}",
    "cmc": 10,
-   "types": "Legendary Creature \u2014 Eldrazi",
+   "types": "Legendary Creature — Eldrazi",
    "tags": [
     "bigcreature",
     "flying",
@@ -1761,7 +1766,7 @@
    "rarity": "mythic",
    "cost": "{1}{W}",
    "cmc": 2,
-   "types": "Creature \u2014 Kor Cleric",
+   "types": "Creature — Kor Cleric",
    "tags": [
     "lifegain",
     "surveil"
@@ -1868,7 +1873,7 @@
    "rarity": "common",
    "cost": "{4}{W}",
    "cmc": 5,
-   "types": "Creature \u2014 Rhino Cleric",
+   "types": "Creature — Rhino Cleric",
    "tags": [
     "bigcreature",
     "counters",
@@ -1885,7 +1890,7 @@
    "rarity": "uncommon",
    "cost": "{1}{U}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Homunculus",
+   "types": "Legendary Creature — Homunculus",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/a/3/a3a2edbb-d144-4670-acad-17316cea98d2.jpg?1789127697",
    "scryfall_id": "a3a2edbb-d144-4670-acad-17316cea98d2",
@@ -1898,7 +1903,7 @@
    "rarity": "uncommon",
    "cost": "{X}{G}{G}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Homunculus Scout",
+   "types": "Legendary Creature — Homunculus Scout",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/2/8/28fbb55a-5c9d-45ee-bf42-a84b1048f5d2.jpg?1789127976",
    "scryfall_id": "28fbb55a-5c9d-45ee-bf42-a84b1048f5d2",
@@ -1911,7 +1916,7 @@
    "rarity": "common",
    "cost": "{1}{B/G}",
    "cmc": 2,
-   "types": "Enchantment \u2014 Aura",
+   "types": "Enchantment — Aura",
    "tags": [
     "deathtouch"
    ],
@@ -1926,7 +1931,7 @@
    "rarity": "rare",
    "cost": "{3}{W}",
    "cmc": 4,
-   "types": "Creature \u2014 Dog",
+   "types": "Creature — Dog",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/6/8/686f3a25-305d-4f02-8972-eba7b8e9635f.jpg?1789470769",
    "scryfall_id": "686f3a25-305d-4f02-8972-eba7b8e9635f",
@@ -1968,7 +1973,7 @@
    "rarity": "rare",
    "cost": "{U}{R}{R}",
    "cmc": 3,
-   "types": "Creature \u2014 Elemental",
+   "types": "Creature — Elemental",
    "tags": [
     "haste",
     "trample"
@@ -1999,7 +2004,7 @@
    "rarity": "uncommon",
    "cost": "{1}{R}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Satyr",
+   "types": "Legendary Creature — Satyr",
    "tags": [
     "aggro",
     "counters",
@@ -2031,7 +2036,7 @@
    "rarity": "uncommon",
    "cost": "{1}{U}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Spirit Cleric",
+   "types": "Legendary Creature — Spirit Cleric",
    "tags": [
     "flying"
    ],
@@ -2075,7 +2080,7 @@
    "rarity": "uncommon",
    "cost": "{8}{W}",
    "cmc": 9,
-   "types": "Legendary Creature \u2014 Elder Dinosaur",
+   "types": "Legendary Creature — Elder Dinosaur",
    "tags": [
     "bigcreature"
    ],
@@ -2090,7 +2095,7 @@
    "rarity": "uncommon",
    "cost": "{8}{G}",
    "cmc": 9,
-   "types": "Legendary Creature \u2014 Elder Dinosaur",
+   "types": "Legendary Creature — Elder Dinosaur",
    "tags": [
     "bigcreature",
     "trample"
@@ -2119,7 +2124,7 @@
    "rarity": "rare",
    "cost": "{2}{B}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Human Mercenary",
+   "types": "Legendary Creature — Human Mercenary",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/c/9/c985b0d1-25bd-4069-aab7-a566ff27a8f6.jpg?1789127990",
    "scryfall_id": "c985b0d1-25bd-4069-aab7-a566ff27a8f6",
@@ -2132,7 +2137,7 @@
    "rarity": "rare",
    "cost": "{X}{W}",
    "cmc": 1,
-   "types": "Creature \u2014 Hydra Horror",
+   "types": "Creature — Hydra Horror",
    "tags": [
     "counters"
    ],
@@ -2162,7 +2167,7 @@
    "rarity": "uncommon",
    "cost": "{2}{B}{B}{G}",
    "cmc": 5,
-   "types": "Legendary Creature \u2014 Human Cleric",
+   "types": "Legendary Creature — Human Cleric",
    "tags": [
     "bigcreature"
    ],
@@ -2177,7 +2182,7 @@
    "rarity": "uncommon",
    "cost": "{3}{U}",
    "cmc": 4,
-   "types": "Legendary Creature \u2014 Human Wizard",
+   "types": "Legendary Creature — Human Wizard",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/8/5/85faaa9d-4656-4365-871d-7cba53ed0996.jpg?1789387113",
    "scryfall_id": "85faaa9d-4656-4365-871d-7cba53ed0996",
@@ -2206,7 +2211,7 @@
    "rarity": "common",
    "cost": "{3}{R}",
    "cmc": 4,
-   "types": "Creature \u2014 Elf Sorcerer",
+   "types": "Creature — Elf Sorcerer",
    "tags": [
     "trample"
    ],
@@ -2221,7 +2226,7 @@
    "rarity": "uncommon",
    "cost": "{G}",
    "cmc": 1,
-   "types": "Creature \u2014 Elf Artificer",
+   "types": "Creature — Elf Artificer",
    "tags": [
     "artifact",
     "heartwood",
@@ -2244,13 +2249,15 @@
    "tags": [
     "empower",
     "ramp",
-    "surveil"
+    "surveil",
+    "token"
    ],
    "image": "https://cards.scryfall.io/large/front/3/b/3b6ac80e-c726-4bd0-893a-e666041a04a6.jpg?1789556695",
    "scryfall_id": "3b6ac80e-c726-4bd0-893a-e666041a04a6",
    "number": "12",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 3.0,
+   "source": "auto",
+   "note": "{4}{W}{W}: three 2/2 Cadets AND empower Jace 2, and basic landcycles for {2} when you don't want it. No floor problem. 6 of 20 decks."
   },
   "Hexhaven Dueling Arena": {
    "colors": "",
@@ -2272,7 +2279,7 @@
    "rarity": "mythic",
    "cost": "{G}{G}{G}{G}",
    "cmc": 4,
-   "types": "Creature \u2014 Chimera Horror",
+   "types": "Creature — Chimera Horror",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/9/a/9a446cae-e93c-4574-8ffd-7688f9729a8a.jpg?1788878191",
    "scryfall_id": "9a446cae-e93c-4574-8ffd-7688f9729a8a",
@@ -2285,7 +2292,7 @@
    "rarity": "rare",
    "cost": "{3}{G}{G}",
    "cmc": 5,
-   "types": "Artifact Creature \u2014 Beast Construct",
+   "types": "Artifact Creature — Beast Construct",
    "tags": [
     "artifact",
     "bigcreature",
@@ -2307,7 +2314,7 @@
    "rarity": "uncommon",
    "cost": "{G}",
    "cmc": 1,
-   "types": "Artifact \u2014 Equipment",
+   "types": "Artifact — Equipment",
    "tags": [
     "deathtouch",
     "trample"
@@ -2353,13 +2360,17 @@
    "rarity": "common",
    "cost": "{2}{U}",
    "cmc": 3,
-   "types": "Enchantment \u2014 Aura",
-   "tags": [],
+   "types": "Enchantment — Aura",
+   "tags": [
+    "removal",
+    "removal_conditional"
+   ],
    "image": "https://cards.scryfall.io/large/front/a/5/a5988272-faaa-463d-a0a1-a8e96b946bad.jpg?1789385916",
    "scryfall_id": "a5988272-faaa-463d-a0a1-a8e96b946bad",
    "number": "31",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 3.0,
+   "source": "auto",
+   "note": "{2}{U} aura: taps it, makes it unprepared, it loses all abilities and doesn't untap. Blue's only common that permanently stops a creature. Also the cleanest answer to a prepared creature."
   },
   "Innovative Commons": {
    "colors": "",
@@ -2382,7 +2393,7 @@
    "rarity": "common",
    "cost": "{2}{G}",
    "cmc": 3,
-   "types": "Creature \u2014 Elf Warrior",
+   "types": "Creature — Elf Warrior",
    "tags": [
     "counters",
     "empower",
@@ -2399,7 +2410,7 @@
    "rarity": "rare",
    "cost": "{3}{U}{U}",
    "cmc": 5,
-   "types": "Legendary Planeswalker \u2014 Jace",
+   "types": "Legendary Planeswalker — Jace",
    "tags": [
     "empower",
     "planeswalker"
@@ -2432,7 +2443,7 @@
    "rarity": "uncommon",
    "cost": "{4}{R}",
    "cmc": 5,
-   "types": "Legendary Creature \u2014 Human Berserker",
+   "types": "Legendary Creature — Human Berserker",
    "tags": [
     "bigcreature",
     "counters"
@@ -2448,7 +2459,7 @@
    "rarity": "uncommon",
    "cost": "{3}{G}",
    "cmc": 4,
-   "types": "Legendary Creature \u2014 Human Druid",
+   "types": "Legendary Creature — Human Druid",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/f/5/f5a0bb3e-8119-4739-8684-e61d1d607dcb.jpg?1789014406",
    "scryfall_id": "f5a0bb3e-8119-4739-8684-e61d1d607dcb",
@@ -2461,7 +2472,7 @@
    "rarity": "rare",
    "cost": "{2}",
    "cmc": 2,
-   "types": "Legendary Artifact Creature \u2014 Golem",
+   "types": "Legendary Artifact Creature — Golem",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/1/e/1ebbbddb-2dc3-4194-b72b-13bcebe2ab89.jpg?1788878301",
    "scryfall_id": "1ebbbddb-2dc3-4194-b72b-13bcebe2ab89",
@@ -2474,7 +2485,7 @@
    "rarity": "rare",
    "cost": "{2/W}{2/U}{2/B}{2/R}{2/G}",
    "cmc": 10,
-   "types": "Legendary Artifact Creature \u2014 Golem",
+   "types": "Legendary Artifact Creature — Golem",
    "tags": [
     "bigcreature",
     "trample"
@@ -2490,7 +2501,7 @@
    "rarity": "common",
    "cost": "{3}",
    "cmc": 3,
-   "types": "Artifact Creature \u2014 Chimera",
+   "types": "Artifact Creature — Chimera",
    "tags": [
     "empower",
     "surveil"
@@ -2521,7 +2532,7 @@
    "rarity": "uncommon",
    "cost": "{4}{R}{R}",
    "cmc": 6,
-   "types": "Legendary Creature \u2014 Merfolk Noble",
+   "types": "Legendary Creature — Merfolk Noble",
    "tags": [
     "bigcreature",
     "flying"
@@ -2556,7 +2567,7 @@
    "rarity": "common",
    "cost": "{1}{R/G}",
    "cmc": 2,
-   "types": "Creature \u2014 Human Artificer",
+   "types": "Creature — Human Artificer",
    "tags": [
     "artifact",
     "heartwood",
@@ -2575,7 +2586,7 @@
    "rarity": "uncommon",
    "cost": "{2}{W}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Human Citizen",
+   "types": "Legendary Creature — Human Citizen",
    "tags": [
     "counters",
     "lifegain"
@@ -2591,7 +2602,7 @@
    "rarity": "uncommon",
    "cost": "{2}{R}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Human Warrior",
+   "types": "Legendary Creature — Human Warrior",
    "tags": [
     "burn_face",
     "ramp"
@@ -2622,7 +2633,7 @@
    "rarity": "rare",
    "cost": "{B}",
    "cmc": 1,
-   "types": "Artifact \u2014 Equipment",
+   "types": "Artifact — Equipment",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/b/1/b105511d-5022-4a84-b6ce-4bb433e93a62.jpg?1789644819",
    "scryfall_id": "b105511d-5022-4a84-b6ce-4bb433e93a62",
@@ -2635,7 +2646,7 @@
    "rarity": "common",
    "cost": "{2}",
    "cmc": 2,
-   "types": "Artifact Creature \u2014 Book Illusion",
+   "types": "Artifact Creature — Book Illusion",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/5/d/5d4a8e5f-0024-4da3-a2f5-edb48b12e733.jpg?1789556949",
    "scryfall_id": "5d4a8e5f-0024-4da3-a2f5-edb48b12e733",
@@ -2648,7 +2659,7 @@
    "rarity": "uncommon",
    "cost": "{2}{B}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Beast Horror",
+   "types": "Legendary Creature — Beast Horror",
    "tags": [
     "sacrifice",
     "threshold"
@@ -2664,7 +2675,7 @@
    "rarity": "uncommon",
    "cost": "{2}{G}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Beast Noble",
+   "types": "Legendary Creature — Beast Noble",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/3/c/3cfa4fc6-4d90-4576-a83f-6496c7f21104.jpg?1789614764",
    "scryfall_id": "3cfa4fc6-4d90-4576-a83f-6496c7f21104",
@@ -2690,7 +2701,7 @@
    "rarity": "rare",
    "cost": "{2}{W}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Angel Knight",
+   "types": "Legendary Creature — Angel Knight",
    "tags": [
     "counters",
     "flying"
@@ -2706,7 +2717,7 @@
    "rarity": "rare",
    "cost": "{1}{U}{U}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Angel Wizard",
+   "types": "Legendary Creature — Angel Wizard",
    "tags": [
     "flying"
    ],
@@ -2721,7 +2732,7 @@
    "rarity": "uncommon",
    "cost": "{B}",
    "cmc": 1,
-   "types": "Legendary Creature \u2014 Mouse Warlock",
+   "types": "Legendary Creature — Mouse Warlock",
    "tags": [
     "deathtouch"
    ],
@@ -2736,7 +2747,7 @@
    "rarity": "uncommon",
    "cost": "{1}{R}{W}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Mouse Soldier",
+   "types": "Legendary Creature — Mouse Soldier",
    "tags": [
     "counters"
    ],
@@ -2751,7 +2762,7 @@
    "rarity": "uncommon",
    "cost": "{R}",
    "cmc": 1,
-   "types": "Legendary Creature \u2014 Elf Warrior",
+   "types": "Legendary Creature — Elf Warrior",
    "tags": [
     "artifact"
    ],
@@ -2766,7 +2777,7 @@
    "rarity": "uncommon",
    "cost": "{1}{G}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Elf Druid",
+   "types": "Legendary Creature — Elf Druid",
    "tags": [
     "recursion"
    ],
@@ -2781,7 +2792,7 @@
    "rarity": "uncommon",
    "cost": "{4}{B}",
    "cmc": 5,
-   "types": "Legendary Creature \u2014 Human Assassin",
+   "types": "Legendary Creature — Human Assassin",
    "tags": [
     "bigcreature",
     "burn_face",
@@ -2799,7 +2810,7 @@
    "rarity": "common",
    "cost": "{2}",
    "cmc": 2,
-   "types": "Artifact \u2014 Equipment",
+   "types": "Artifact — Equipment",
    "tags": [
     "flying",
     "lifegain"
@@ -2816,12 +2827,16 @@
    "cost": "{2}{W}",
    "cmc": 3,
    "types": "Enchantment",
-   "tags": [],
+   "tags": [
+    "exile",
+    "removal"
+   ],
    "image": "https://cards.scryfall.io/large/front/2/f/2f5345ae-4489-4d05-b2d5-c71285254f05.jpg?1788866058",
    "scryfall_id": "2f5345ae-4489-4d05-b2d5-c71285254f05",
    "number": "15",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 3.4,
+   "source": "auto",
+   "note": "{2}{W} enchantment: exile target nonland permanent an opponent controls until this leaves. An Oblivion Ring at common - white's best common removal. Played in 6 of 20 real sealed decks."
   },
   "Meticulous Commons": {
    "colors": "",
@@ -2844,7 +2859,7 @@
    "rarity": "uncommon",
    "cost": "{3}{G}{U}{U}",
    "cmc": 6,
-   "types": "Creature \u2014 Bird Fish Illusion",
+   "types": "Creature — Bird Fish Illusion",
    "tags": [
     "bigcreature",
     "flying"
@@ -2860,7 +2875,7 @@
    "rarity": "common",
    "cost": "{2}{U}",
    "cmc": 3,
-   "types": "Creature \u2014 Homunculus",
+   "types": "Creature — Homunculus",
    "tags": [
     "empower",
     "empower3",
@@ -2890,7 +2905,7 @@
    "rarity": "common",
    "cost": "{3}",
    "cmc": 3,
-   "types": "Artifact \u2014 Book",
+   "types": "Artifact — Book",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/d/6/d68eab2e-89dd-4377-b7af-01512b1804a0.jpg?1789385977",
    "scryfall_id": "d68eab2e-89dd-4377-b7af-01512b1804a0",
@@ -2962,7 +2977,7 @@
    "rarity": "uncommon",
    "cost": "{2}{G}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Human Druid",
+   "types": "Legendary Creature — Human Druid",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/f/f/ff0bc30f-9d20-458e-808f-bdc2825905a5.jpg?1789387120",
    "scryfall_id": "ff0bc30f-9d20-458e-808f-bdc2825905a5",
@@ -2975,7 +2990,7 @@
    "rarity": "uncommon",
    "cost": "{2}{R}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Human Artificer",
+   "types": "Legendary Creature — Human Artificer",
    "tags": [
     "artifact",
     "flying"
@@ -3007,7 +3022,7 @@
    "rarity": "rare",
    "cost": "{R}",
    "cmc": 1,
-   "types": "Creature \u2014 Goblin Sorcerer",
+   "types": "Creature — Goblin Sorcerer",
    "tags": [
     "aggro",
     "prepared",
@@ -3039,20 +3054,22 @@
    "cmc": 2,
    "types": "Sorcery",
    "tags": [
-    "counters"
+    "counters",
+    "flashback"
    ],
    "image": "https://cards.scryfall.io/large/front/5/0/50a0e5f0-3c39-4f16-9a73-eec8ef71f12e.jpg?1789556696",
    "scryfall_id": "50a0e5f0-3c39-4f16-9a73-eec8ef71f12e",
    "number": "16",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.7,
+   "source": "auto",
+   "note": "{1}{W} sorcery: +1/+1 counter on one or two creatures, flashback {3}{W}. Two cards in one for the counters decks."
   },
   "Primal Witchstalker": {
    "colors": "BG",
    "rarity": "uncommon",
    "cost": "{1}{B}{G}",
    "cmc": 3,
-   "types": "Creature \u2014 Wolf",
+   "types": "Creature — Wolf",
    "tags": [
     "recursion",
     "selfmill"
@@ -3068,7 +3085,7 @@
    "rarity": "uncommon",
    "cost": "{1}{U}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Human Detective",
+   "types": "Legendary Creature — Human Detective",
    "tags": [
     "counters",
     "scry",
@@ -3085,7 +3102,7 @@
    "rarity": "uncommon",
    "cost": "{2}{B}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Human Rogue",
+   "types": "Legendary Creature — Human Rogue",
    "tags": [
     "removal",
     "threshold"
@@ -3133,7 +3150,7 @@
    "rarity": "rare",
    "cost": "{1}{G}",
    "cmc": 2,
-   "types": "Enchantment \u2014 Aura",
+   "types": "Enchantment — Aura",
    "tags": [
     "artifact",
     "recursion"
@@ -3149,7 +3166,7 @@
    "rarity": "rare",
    "cost": "{1}{R}{R}",
    "cmc": 3,
-   "types": "Creature \u2014 Elemental Sorcerer",
+   "types": "Creature — Elemental Sorcerer",
    "tags": [
     "prepared",
     "prowess"
@@ -3165,7 +3182,7 @@
    "rarity": "common",
    "cost": "{3}{B}",
    "cmc": 4,
-   "types": "Creature \u2014 Horror",
+   "types": "Creature — Horror",
    "tags": [
     "deathtouch"
    ],
@@ -3180,13 +3197,16 @@
    "rarity": "common",
    "cost": "{1}{B}",
    "cmc": 2,
-   "types": "Creature \u2014 Zombie Rat",
-   "tags": [],
+   "types": "Creature — Zombie Rat",
+   "tags": [
+    "discard"
+   ],
    "image": "https://cards.scryfall.io/large/front/4/f/4ff6da82-d7dd-4b59-b7e6-30670cea7169.jpg?1789556727",
    "scryfall_id": "4ff6da82-d7dd-4b59-b7e6-30670cea7169",
    "number": "61",
    "grade": 2.5,
-   "source": "auto"
+   "source": "auto",
+   "note": "{1}{B} 2/1-ish: each opponent discards on ETB."
   },
   "Recursive Recruitment": {
    "colors": "UB",
@@ -3224,7 +3244,7 @@
    "rarity": "rare",
    "cost": "{1}{W}",
    "cmc": 2,
-   "types": "Creature \u2014 Human Soldier",
+   "types": "Creature — Human Soldier",
    "tags": [
     "empower",
     "surveil"
@@ -3240,7 +3260,7 @@
    "rarity": "uncommon",
    "cost": "{2}{W}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Human Cleric",
+   "types": "Legendary Creature — Human Cleric",
    "tags": [
     "flying"
    ],
@@ -3364,7 +3384,7 @@
    "rarity": "uncommon",
    "cost": "{4}{U}{U}",
    "cmc": 6,
-   "types": "Legendary Creature \u2014 Ogre Crab Wizard",
+   "types": "Legendary Creature — Ogre Crab Wizard",
    "tags": [
     "bigcreature",
     "flying",
@@ -3381,7 +3401,7 @@
    "rarity": "uncommon",
    "cost": "{5}{G}{G}",
    "cmc": 7,
-   "types": "Legendary Creature \u2014 Ogre Warrior",
+   "types": "Legendary Creature — Ogre Warrior",
    "tags": [
     "bigcreature",
     "trample"
@@ -3397,7 +3417,7 @@
    "rarity": "uncommon",
    "cost": "{3}{W}{W}",
    "cmc": 5,
-   "types": "Legendary Creature \u2014 Human Advisor",
+   "types": "Legendary Creature — Human Advisor",
    "tags": [
     "artifact",
     "bigcreature",
@@ -3416,7 +3436,7 @@
    "rarity": "rare",
    "cost": "{1}{R}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Human Warrior Cleric",
+   "types": "Legendary Creature — Human Warrior Cleric",
    "tags": [
     "aggro",
     "haste"
@@ -3432,7 +3452,7 @@
    "rarity": "rare",
    "cost": "{1}{U}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Human Wizard",
+   "types": "Legendary Creature — Human Wizard",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/6/d/6d7d8fa7-ce69-4a8c-9af0-55571393a244.jpg?1789729644",
    "scryfall_id": "6d7d8fa7-ce69-4a8c-9af0-55571393a244",
@@ -3445,24 +3465,26 @@
    "rarity": "rare",
    "cost": "{2}{B}",
    "cmc": 3,
-   "types": "Creature \u2014 Horror",
+   "types": "Creature — Horror",
    "tags": [
     "burn_face",
     "empower",
-    "lifegain"
+    "lifegain",
+    "planeswalker"
    ],
    "image": "https://cards.scryfall.io/large/front/2/1/2185c08f-bb4d-49d5-8b6c-c629a48bb61c.jpg?1789556729",
    "scryfall_id": "2185c08f-bb4d-49d5-8b6c-c629a48bb61c",
    "number": "64",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 3.6,
+   "source": "auto",
+   "note": "{2}{B} rare: planeswalkers you control aren't put into the graveyard for having 0 loyalty. A Jace token enters at 0 - this makes every empower card in your deck work and keeps a spent Jace holding your duals untapped. Both sealed builders ran it in B/R."
   },
   "Screeching Soulbreaker": {
    "colors": "B",
    "rarity": "common",
    "cost": "{2}{B}",
    "cmc": 3,
-   "types": "Creature \u2014 Siren Bard",
+   "types": "Creature — Siren Bard",
    "tags": [
     "flying",
     "lifegain"
@@ -3478,7 +3500,7 @@
    "rarity": "mythic",
    "cost": "{1}{U}{U}",
    "cmc": 3,
-   "types": "Creature \u2014 Human Wizard",
+   "types": "Creature — Human Wizard",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/f/1/f1a15a83-2f74-4513-ae4b-4cdc17016a84.jpg?1789470965",
    "scryfall_id": "f1a15a83-2f74-4513-ae4b-4cdc17016a84",
@@ -3491,7 +3513,7 @@
    "rarity": "common",
    "cost": "{2}{W}",
    "cmc": 3,
-   "types": "Creature \u2014 Pegasus",
+   "types": "Creature — Pegasus",
    "tags": [
     "flying"
    ],
@@ -3530,15 +3552,16 @@
    "image": "https://cards.scryfall.io/large/front/f/1/f1d274db-751b-4414-a38d-762198168e91.jpg?1789385640",
    "scryfall_id": "f1d274db-751b-4414-a38d-762198168e91",
    "number": "66",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.1,
+   "source": "auto",
+   "note": "{1}{B}: destroy target creature or planeswalker; additional cost sacrifice a creature/planeswalker or pay {3}. Removal AND a sacrifice outlet for W/B."
   },
   "Simulacrum Shaper": {
    "colors": "G",
    "rarity": "rare",
    "cost": "{1}{G}{G}",
    "cmc": 3,
-   "types": "Creature \u2014 Elf Druid",
+   "types": "Creature — Elf Druid",
    "tags": [
     "ramp"
    ],
@@ -3553,20 +3576,24 @@
    "rarity": "common",
    "cost": "{1}{R}",
    "cmc": 2,
-   "types": "Creature \u2014 Human Warrior",
-   "tags": [],
+   "types": "Creature — Human Warrior",
+   "tags": [
+    "aggro",
+    "firststrike"
+   ],
    "image": "https://cards.scryfall.io/large/front/0/e/0e44f959-1322-4abd-b6eb-dea992307c0c.jpg?1789556811",
    "scryfall_id": "0e44f959-1322-4abd-b6eb-dea992307c0c",
    "number": "92",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.6,
+   "source": "auto",
+   "note": "{1}{R} - first strike on your turn, {1}{R} pump. A fine aggro two-drop."
   },
   "Solarium Sentry": {
    "colors": "WG",
    "rarity": "rare",
    "cost": "{G}{W}",
    "cmc": 2,
-   "types": "Creature \u2014 Cat Soldier",
+   "types": "Creature — Cat Soldier",
    "tags": [
     "lifegain"
    ],
@@ -3615,20 +3642,22 @@
    "types": "Instant",
    "tags": [
     "lifegain",
+    "recursion",
     "selfmill"
    ],
    "image": "https://cards.scryfall.io/large/front/0/2/02ee7817-40af-4fcf-a2df-eb218b669281.jpg?1788878199",
    "scryfall_id": "02ee7817-40af-4fcf-a2df-eb218b669281",
    "number": "114",
    "grade": 2.5,
-   "source": "auto"
+   "source": "auto",
+   "note": "{1}{G} instant: mill four, take a permanent from among them, gain 1. Self-mill that replaces itself - good in B/G and U/G."
   },
   "Sphinx of False Conclusions": {
    "colors": "U",
    "rarity": "rare",
    "cost": "{2}{U}{U}",
    "cmc": 4,
-   "types": "Creature \u2014 Sphinx Illusion",
+   "types": "Creature — Sphinx Illusion",
    "tags": [
     "flying"
    ],
@@ -3688,7 +3717,7 @@
    "rarity": "common",
    "cost": "{1}{G}",
    "cmc": 2,
-   "types": "Creature \u2014 Human Archer",
+   "types": "Creature — Human Archer",
    "tags": [
     "flying",
     "removal"
@@ -3722,7 +3751,7 @@
    "rarity": "rare",
    "cost": "{1}{G}{U}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Gorgon Wizard",
+   "types": "Legendary Creature — Gorgon Wizard",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/6/5/6529d399-677e-45a6-ac3e-12a0b10f6c37.jpg?1789644886",
    "scryfall_id": "6529d399-677e-45a6-ac3e-12a0b10f6c37",
@@ -3735,7 +3764,7 @@
    "rarity": "mythic",
    "cost": "{1}{G}",
    "cmc": 2,
-   "types": "Creature \u2014 Lhurgoyf",
+   "types": "Creature — Lhurgoyf",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/8/b/8be5ee47-8f8a-4e3c-b1a1-9ca0e1fdec7f.jpg?1789127270",
    "scryfall_id": "8be5ee47-8f8a-4e3c-b1a1-9ca0e1fdec7f",
@@ -3748,7 +3777,7 @@
    "rarity": "rare",
    "cost": "{1}{R}{G}",
    "cmc": 3,
-   "types": "Creature \u2014 Human Artificer",
+   "types": "Creature — Human Artificer",
    "tags": [
     "counters",
     "heartwood",
@@ -3795,7 +3824,7 @@
    "rarity": "common",
    "cost": "{4}{R}",
    "cmc": 5,
-   "types": "Creature \u2014 Minotaur Artificer",
+   "types": "Creature — Minotaur Artificer",
    "tags": [
     "bigcreature"
    ],
@@ -3810,7 +3839,7 @@
    "rarity": "uncommon",
    "cost": "{1}{U}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Human Rogue",
+   "types": "Legendary Creature — Human Rogue",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/3/9/3983d71e-3c23-4b36-b331-08e0707d8245.jpg?1789127702",
    "scryfall_id": "3983d71e-3c23-4b36-b331-08e0707d8245",
@@ -3823,7 +3852,7 @@
    "rarity": "uncommon",
    "cost": "{3}{R}",
    "cmc": 4,
-   "types": "Legendary Creature \u2014 Human Mercenary",
+   "types": "Legendary Creature — Human Mercenary",
    "tags": [
     "prowess"
    ],
@@ -3838,7 +3867,7 @@
    "rarity": "uncommon",
    "cost": "{3}{B}",
    "cmc": 4,
-   "types": "Legendary Creature \u2014 Human Warlock",
+   "types": "Legendary Creature — Human Warlock",
    "tags": [
     "counters",
     "deathtouch"
@@ -3854,7 +3883,7 @@
    "rarity": "uncommon",
    "cost": "{1}{W}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Human Cleric",
+   "types": "Legendary Creature — Human Cleric",
    "tags": [
     "counters"
    ],
@@ -3869,7 +3898,7 @@
    "rarity": "uncommon",
    "cost": "{3}{W}",
    "cmc": 4,
-   "types": "Legendary Creature \u2014 Human Soldier",
+   "types": "Legendary Creature — Human Soldier",
    "tags": [
     "lifegain"
    ],
@@ -3899,7 +3928,7 @@
    "rarity": "common",
    "cost": "{2}{B}",
    "cmc": 3,
-   "types": "Creature \u2014 Vampire Warlock",
+   "types": "Creature — Vampire Warlock",
    "tags": [
     "recursion"
    ],
@@ -3914,7 +3943,7 @@
    "rarity": "rare",
    "cost": "",
    "cmc": 0,
-   "types": "Land \u2014 Island",
+   "types": "Land — Island",
    "tags": [
     "land"
    ],
@@ -3945,7 +3974,7 @@
    "rarity": "mythic",
    "cost": "{2}{U}{U}",
    "cmc": 4,
-   "types": "Legendary Planeswalker \u2014 Jace",
+   "types": "Legendary Planeswalker — Jace",
    "tags": [
     "artifact",
     "counters",
@@ -3962,7 +3991,7 @@
    "rarity": "uncommon",
    "cost": "{2}{B}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Skeleton Rogue",
+   "types": "Legendary Creature — Skeleton Rogue",
    "tags": [
     "burn_face"
    ],
@@ -3977,7 +4006,7 @@
    "rarity": "uncommon",
    "cost": "{3}{G}",
    "cmc": 4,
-   "types": "Legendary Creature \u2014 Skeleton Druid",
+   "types": "Legendary Creature — Skeleton Druid",
    "tags": [
     "counters",
     "lifegain"
@@ -3993,7 +4022,7 @@
    "rarity": "uncommon",
    "cost": "{1}{R}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Human Wizard",
+   "types": "Legendary Creature — Human Wizard",
    "tags": [
     "aggro",
     "prowess"
@@ -4009,7 +4038,7 @@
    "rarity": "uncommon",
    "cost": "{1}{W}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Human Advisor",
+   "types": "Legendary Creature — Human Advisor",
    "tags": [
     "counters",
     "flying"
@@ -4041,7 +4070,7 @@
    "rarity": "uncommon",
    "cost": "{3}{U}",
    "cmc": 4,
-   "types": "Legendary Artifact Creature \u2014 Dragon Construct",
+   "types": "Legendary Artifact Creature — Dragon Construct",
    "tags": [
     "flying",
     "prowess"
@@ -4057,7 +4086,7 @@
    "rarity": "uncommon",
    "cost": "{4}",
    "cmc": 4,
-   "types": "Legendary Artifact Creature \u2014 Dragon Construct",
+   "types": "Legendary Artifact Creature — Dragon Construct",
    "tags": [
     "artifact",
     "trample"
@@ -4074,12 +4103,16 @@
    "cost": "{1}{U/R}",
    "cmc": 2,
    "types": "Instant",
-   "tags": [],
+   "tags": [
+    "cantrip",
+    "flashback"
+   ],
    "image": "https://cards.scryfall.io/large/front/5/5/55f85984-0137-4899-8993-bbc8c4794d33.jpg?1789556940",
    "scryfall_id": "55f85984-0137-4899-8993-bbc8c4794d33",
    "number": "157",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.8,
+   "source": "auto",
+   "note": "{1}{U/R} instant: draw a card, draw two instead if not cast from hand. Flashback {1}{U/R}{U/R}, discard a card - so the flashback draws two. Hybrid, castable in either colour."
   },
   "Twisted Fates": {
    "colors": "WB",
@@ -4101,7 +4134,7 @@
    "rarity": "common",
    "cost": "{4}{U}",
    "cmc": 5,
-   "types": "Creature \u2014 Serpent",
+   "types": "Creature — Serpent",
    "tags": [
     "bigcreature",
     "flying",
@@ -4118,7 +4151,7 @@
    "rarity": "common",
    "cost": "{1}{W}",
    "cmc": 2,
-   "types": "Creature \u2014 Human Cleric",
+   "types": "Creature — Human Cleric",
    "tags": [
     "counters"
    ],
@@ -4134,19 +4167,23 @@
    "cost": "{U}",
    "cmc": 1,
    "types": "Instant",
-   "tags": [],
+   "tags": [
+    "bounce",
+    "tempo"
+   ],
    "image": "https://cards.scryfall.io/large/front/d/d/ddad9f16-52d5-49de-82b0-b1a5294a9c44.jpg?1789556722",
    "scryfall_id": "ddad9f16-52d5-49de-82b0-b1a5294a9c44",
    "number": "46",
    "grade": 2.5,
-   "source": "auto"
+   "source": "auto",
+   "note": "{U} instant: bounce. In FRA it also resets a prepared creature and undoes an aura."
   },
   "Variable Chaser": {
    "colors": "U",
    "rarity": "rare",
    "cost": "{2}{U}",
    "cmc": 3,
-   "types": "Creature \u2014 Human Wizard",
+   "types": "Creature — Human Wizard",
    "tags": [
     "flying",
     "prepared",
@@ -4163,7 +4200,7 @@
    "rarity": "rare",
    "cost": "{4}{G}{G}{G}",
    "cmc": 7,
-   "types": "Creature \u2014 Plant Kraken",
+   "types": "Creature — Plant Kraken",
    "tags": [
     "bigcreature",
     "ramp"
@@ -4210,7 +4247,7 @@
    "rarity": "common",
    "cost": "{4}{G}{G}",
    "cmc": 6,
-   "types": "Creature \u2014 Rhino Soldier",
+   "types": "Creature — Rhino Soldier",
    "tags": [
     "bigcreature",
     "counters",
@@ -4262,7 +4299,7 @@
    "rarity": "rare",
    "cost": "{U}{R}{W}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Gorgon Wizard",
+   "types": "Legendary Creature — Gorgon Wizard",
    "tags": [
     "artifact"
    ],
@@ -4277,7 +4314,7 @@
    "rarity": "rare",
    "cost": "{B}{B}{G}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Gorgon Assassin",
+   "types": "Legendary Creature — Gorgon Assassin",
    "tags": [
     "artifact",
     "deathtouch",
@@ -4294,7 +4331,7 @@
    "rarity": "uncommon",
    "cost": "{2}{R}{W}",
    "cmc": 4,
-   "types": "Artifact \u2014 Equipment",
+   "types": "Artifact — Equipment",
    "tags": [
     "burn_face",
     "counters",
@@ -4467,7 +4504,7 @@
    "rarity": "uncommon",
    "cost": "{4}{R}",
    "cmc": 5,
-   "types": "Legendary Creature \u2014 Human Warrior",
+   "types": "Legendary Creature — Human Warrior",
    "tags": [
     "bigcreature"
    ],
@@ -4497,7 +4534,7 @@
    "rarity": "common",
    "cost": "{4}{G}",
    "cmc": 5,
-   "types": "Artifact Creature \u2014 Lizard Construct",
+   "types": "Artifact Creature — Lizard Construct",
    "tags": [
     "bigcreature",
     "trample"
@@ -4513,7 +4550,7 @@
    "rarity": "uncommon",
    "cost": "{4}{B}",
    "cmc": 5,
-   "types": "Legendary Creature \u2014 Frog Spirit",
+   "types": "Legendary Creature — Frog Spirit",
    "tags": [
     "bigcreature"
    ],
@@ -4528,7 +4565,7 @@
    "rarity": "uncommon",
    "cost": "{4}{U}",
    "cmc": 5,
-   "types": "Legendary Creature \u2014 Frog Spirit",
+   "types": "Legendary Creature — Frog Spirit",
    "tags": [
     "bigcreature"
    ],
@@ -4543,7 +4580,7 @@
    "rarity": "uncommon",
    "cost": "{2}{W}",
    "cmc": 3,
-   "types": "Legendary Creature \u2014 Dog",
+   "types": "Legendary Creature — Dog",
    "tags": [
     "counters"
    ],
@@ -4558,7 +4595,7 @@
    "rarity": "uncommon",
    "cost": "{1}{G}",
    "cmc": 2,
-   "types": "Legendary Creature \u2014 Dog",
+   "types": "Legendary Creature — Dog",
    "tags": [
     "counters"
    ],
@@ -4589,7 +4626,7 @@
    "rarity": "uncommon",
    "cost": "{3}{W}",
    "cmc": 4,
-   "types": "Legendary Creature \u2014 Human Samurai",
+   "types": "Legendary Creature — Human Samurai",
    "tags": [],
    "image": "https://cards.scryfall.io/large/front/c/c/ccbe92a5-42bc-4228-9d5a-212df2f5dc15.jpg?1789128047",
    "scryfall_id": "ccbe92a5-42bc-4228-9d5a-212df2f5dc15",
@@ -4602,7 +4639,7 @@
    "rarity": "uncommon",
    "cost": "{U}",
    "cmc": 1,
-   "types": "Legendary Creature \u2014 Human Ninja",
+   "types": "Legendary Creature — Human Ninja",
    "tags": [
     "surveil"
    ],
@@ -4614,18 +4651,35 @@
   }
  },
  "fixing": {
-  "note": "Every dual in FRA is allied. There is no enemy-colour land at any rarity.",
-  "annex_common": {
+  "note": "TEN common duals, one for every pair - five allied (Annex) and five enemy (Commons). All ten enter tapped unless you control a planeswalker, so empower Jace is the set's mana fixer. Correction: an earlier version of this file said there was no enemy dual at any rarity. That was wrong.",
+  "annex_common_allied": {
    "Fatehold Annex": "WU",
    "Theorix Annex": "UB",
    "Stingerquill Annex": "BR",
    "Konstrari Annex": "RG",
    "Vigorbloom Annex": "GW"
   },
-  "portal_rare": "A cycle of 5 rare Echoverse/Portal slowlands, also allied pairs only.",
+  "commons_common_enemy": {
+   "Meticulous Commons": "WB",
+   "Innovative Commons": "UR",
+   "Formidable Commons": "BG",
+   "Dedicated Commons": "RW",
+   "Transformative Commons": "GU"
+  },
+  "slowland_rare_allied": {
+   "Deserted Beach": "WU",
+   "Shipwreck Marsh": "UB",
+   "Haunted Ridge": "BR",
+   "Rockfall Vale": "RG",
+   "Overgrown Farmland": "GW",
+   "condition": "Enters tapped unless you control two or more other lands - untapped from turn 3, no planeswalker needed. Strictly better than the commons; allied pairs only."
+  },
+  "room_of_refuge": "Common. Always enters tapped; choose a colour as it enters. Any-colour splash land with no condition.",
+  "theorists_sanctum": "Rare blue land; untapped if you behold a Jace. {2}{U},{T}: Empower Jace 2.",
   "heartwood": "Artifact token, {T}: add {R} or {G}. Fixes an R or G splash ONLY - not any colour.",
-  "lotus": "Kwia Vigorbloom (mythic) makes Lotus tokens: tap and sacrifice for three mana of one colour."
+  "lotus": "Kwia Vigorbloom (mythic) makes Lotus tokens: tap and sacrifice for three mana of one colour.",
+  "three_color_rule": "Every 3-colour combination has three common duals (one per pair), so shards and wedges are equally supported. The gate is not the colour wheel, it is whether you can land a planeswalker by turn 3. Want 3+ empower cards before committing to a third colour."
  },
  "card_data": "real",
- "revision": "Colour scores and two archetype scores revised from the real card list: removal counts per colour (B12/R8/W6/G4/U3) and the discovery of the ten-card Way cycle that pays off G/U."
+ "revision": "Corrected from full oracle text and 20 registered sealed decks (2026-09-21): ten common duals exist, not five - the enemy 'Commons' cycle was missed, which invalidated the old three-colour geometry. Memory Trap, Compel Brutality and Infinite Coursework are removal and were untagged. Colour scores: W 7.5->7.9, G 6.6->6.9."
 }

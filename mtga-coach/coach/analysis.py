@@ -21,99 +21,125 @@ from .model import Ratings
 
 COLORS = "WUBRG"
 
-# The whole of FRA's colour fixing. Note what is NOT here: there is no
-# enemy-colour dual at any rarity, and Heartwood adds {R} or {G} only.
+# The whole of FRA's colour fixing.
+#
+# Correction (2026-09-21): an earlier version of this module said there was no
+# enemy-colour dual at any rarity and built a shard/wedge distinction on it.
+# That was wrong. There are TEN common duals, one for every pair -- the five
+# allied "Annex" lands and the five enemy "Commons" lands, with identical text.
+# Shards and wedges are equally supported, and the colour wheel does not enter
+# into it. What does is the clause all ten share: they enter tapped unless you
+# already control a planeswalker.
 ANNEX = {"WU": "Fatehold Annex", "UB": "Theorix Annex", "BR": "Stingerquill Annex",
          "RG": "Konstrari Annex", "GW": "Vigorbloom Annex"}
+COMMONS = {"WB": "Meticulous Commons", "UR": "Innovative Commons",
+           "BG": "Formidable Commons", "RW": "Dedicated Commons",
+           "GU": "Transformative Commons"}
+
+# Rare slowlands: untapped from turn 3 with no planeswalker needed, so strictly
+# better than the commons. These ARE allied-only -- the one place the wheel
+# still matters.
+SLOWLAND = {"WU": "Deserted Beach", "UB": "Shipwreck Marsh", "BR": "Haunted Ridge",
+            "RG": "Rockfall Vale", "GW": "Overgrown Farmland"}
+
+# Unconditional any-colour splash land, at common. Always tapped.
+ROOM_OF_REFUGE = "Room of Refuge"
+
 ALLIED = list(ANNEX)
 
-# Contiguous arcs of the colour wheel. Each contains TWO allied pairs, so each
-# gets two common Annexes. Wedges contain only one and are far worse supported.
-SHARDS = {frozenset("WUB"): ("WUB", "Esper", ("WU", "UB")),
-          frozenset("UBR"): ("UBR", "Grixis", ("UB", "BR")),
-          frozenset("BRG"): ("BRG", "Jund", ("BR", "RG")),
-          frozenset("RGW"): ("RGW", "Naya", ("RG", "GW")),
-          frozenset("GWU"): ("GWU", "Bant", ("GW", "WU"))}
+
+def _key(pair) -> str:
+    return "".join(sorted(set(pair), key=COLORS.index))
 
 
-def shard_of(colors) -> Optional[tuple]:
-    """(label, nickname, its two allied pairs) if these three colours form a
-    contiguous arc of the wheel, else None -- a wedge, which FRA barely supports."""
-    return SHARDS.get(frozenset(colors))
-
-# The one colour that turns an enemy pair into a shard, making both of its
-# Annexes into real duals instead of half-dead lands.
-BRIDGE = {"WB": "U", "UR": "B", "BG": "R", "RW": "G", "GU": "W"}
+DUALS = {_key(k): v for k, v in list(ANNEX.items()) + list(COMMONS.items())}
+SLOWLANDS = {_key(k): v for k, v in SLOWLAND.items()}
 
 
-def annex_for(pair: str) -> Optional[str]:
-    key = "".join(sorted(pair, key=COLORS.index))
-    for a, name in ANNEX.items():
-        if "".join(sorted(a, key=COLORS.index)) == key:
-            return name
-    return None
+def dual_for(pair: str):
+    """The common dual for this pair. Every pair has one."""
+    return DUALS.get(_key(pair))
+
+
+def slowland_for(pair: str):
+    """The rare slowland for this pair, or None -- allied pairs only."""
+    return SLOWLANDS.get(_key(pair))
+
+
+def is_allied(pair: str) -> bool:
+    return _key(pair) in SLOWLANDS
+
+
+def annex_for(pair: str):
+    """Kept for callers written against the old name; every pair has a dual now."""
+    return dual_for(pair)
+
+
+def three_color_lands(colors) -> list[dict]:
+    """Every common dual available to a three-colour deck -- one per pair, so three."""
+    cols = sorted(set(colors), key=COLORS.index)
+    out = []
+    for i in range(len(cols)):
+        for j in range(i + 1, len(cols)):
+            pair = cols[i] + cols[j]
+            out.append({"pair": pair, "land": dual_for(pair),
+                        "slowland": slowland_for(pair)})
+    return out
 
 
 def bridges_to(pair: str) -> list[dict]:
-    """Which third colours this pair can reach on a common dual, and how."""
+    """Every third colour this pair can add, and the two extra duals it brings.
+
+    All three remaining colours are available -- each adds two duals that each
+    share a colour with you, so neither is ever a dead draw.
+    """
     cols = set(pair)
     out = []
-    for allied, land in ANNEX.items():
-        shared = cols & set(allied)
-        extra = set(allied) - cols
-        if len(shared) == 1 and len(extra) == 1:
-            c = next(iter(extra))
-            three = cols | {c}
-            sh = shard_of(three)
-            out.append({"color": c, "land": land, "shares": next(iter(shared)),
-                        "kind": "shard" if sh else "wedge",
-                        "shard": sh[0] if sh else "".join(sorted(three, key=COLORS.index)),
-                        "nickname": sh[1] if sh else "",
-                        "lands": list(sh[2]) if sh else [allied]})
-    # A real shard reached by two different Annexes is one option, not two.
-    merged: dict[str, dict] = {}
-    for o in out:
-        k = o["color"]
-        if k in merged:
-            merged[k]["land"] = merged[k]["land"] + " + " + o["land"]
-        else:
-            merged[k] = o
-    ranked = sorted(merged.values(), key=lambda o: (o["kind"] != "shard", o["color"]))
-    return ranked
+    for c in COLORS:
+        if c in cols:
+            continue
+        three = sorted(cols | {c}, key=COLORS.index)
+        extra = [{"pair": x + c if COLORS.index(x) < COLORS.index(c) else c + x,
+                  "land": dual_for(x + c)} for x in sorted(cols, key=COLORS.index)]
+        slows = [d for d in (slowland_for(e["pair"]) for e in extra) if d]
+        out.append({
+            "color": c,
+            "three": "".join(three),
+            "land": " + ".join(e["land"] for e in extra),
+            "lands": [e["land"] for e in extra],
+            "pairs": [e["pair"] for e in extra],
+            "slowlands": slows,
+            # Kept so old callers that filter on "shard" keep working; every
+            # option is now equally supported, so they all report as one.
+            "kind": "shard",
+            "shard": "".join(three),
+            "nickname": "",
+        })
+    # A splash is better when the bridge colour also has a slowland with you.
+    return sorted(out, key=lambda o: (-len(o["slowlands"]), o["color"]))
 
 
 def three_color_plan(pair: str) -> dict:
     """How this two-colour deck should think about a third colour."""
-    key = "".join(sorted(pair, key=COLORS.index))
-    allied = any("".join(sorted(a, key=COLORS.index)) == key for a in ANNEX)
+    own = dual_for(pair)
+    slow = slowland_for(pair)
     options = bridges_to(pair)
-    if allied:
-        return {
-            "base": "allied", "own_land": annex_for(pair), "options": options,
-            "headline": f"{annex_for(pair)} is your dual. Two third colours are one "
-                        "common away.",
-            "advice": "Each option below shares a colour with you, so that land is "
-                      "never dead - it makes one of your main colours whether or "
-                      "not you draw the splash card."}
-    bridge = BRIDGE.get(key) or BRIDGE.get(pair)
-    if bridge:
-        lands = [o for o in options if o["color"] == bridge]
-        sh = shard_of(set(pair) | {bridge})
-        shard = f"{sh[0]} ({sh[1]})" if sh else "".join(
-            sorted(set(pair) | {bridge}, key=COLORS.index))
-        return {
-            "base": "enemy", "own_land": None, "bridge": bridge, "shard": shard,
-            "options": options,
-            "headline": f"No dual exists for {key}. Adding {bridge} is what fixes it.",
-            "advice": (f"{key} has no land in this set. But {bridge} turns you into "
-                       f"{shard}, and then BOTH "
-                       + " and ".join(sorted({
-                           part for l in lands for part in l["land"].split(" + ")}))
-                       + " become real duals instead of half-dead lands. Adding a "
-                         "third colour here can improve your mana rather than "
-                         "strain it - but only if you actually have the Annexes.")}
-    return {"base": "unknown", "options": options, "headline": "", "advice": ""}
-
+    base = "allied" if is_allied(pair) else "enemy"
+    headline = f"{own} is your dual - every pair in FRA has one."
+    if slow:
+        headline += f" {slow} (rare) is the better version: untapped from turn 3, no planeswalker needed."
+    advice = (
+        "All three remaining colours are open, and each brings two duals that "
+        "share a colour with you, so neither is ever a dead draw. The gate is "
+        "not the colour wheel - it is the clause on all ten commons: they enter "
+        "tapped unless a planeswalker is ALREADY on the battlefield. Want 3+ "
+        "empower cards before you commit to a third colour, and two duals before "
+        "you count the splash as live. " + ROOM_OF_REFUGE +
+        " asks nothing at all - always tapped, any colour - and is often the "
+        "right splash land for a single bomb."
+    )
+    return {"base": base, "own_land": own, "slowland": slow, "options": options,
+            "headline": headline, "advice": advice}
 
 
 # --------------------------------------------------------------------------

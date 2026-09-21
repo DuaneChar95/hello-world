@@ -23,9 +23,17 @@ and the signal it implies. Not an essay.**
 - **Heartwood token** — red-and-green artifact, `{T}: Add {R} or {G}`. **Fixes an R or G splash
   only — it does nothing for a W, U or B splash.** (An earlier version of this file overstated
   this; correct the user if they repeat it.)
-- **Annex lands** (common): Fatehold W/U, Theorix U/B, Stingerquill B/R, Konstrari R/G,
-  Vigorbloom G/W. Tap for their two allied colours; **enter tapped unless you already control a
-  planeswalker** — a Jace token counts, but one entering the same turn does not.
+- **Ten common dual lands — one for every pair.** Allied "Annex": Fatehold W/U, Theorix U/B,
+  Stingerquill B/R, Konstrari R/G, Vigorbloom G/W. Enemy "Commons": Meticulous W/B, Innovative
+  U/R, Formidable B/G, Dedicated R/W, Transformative G/U. All ten **enter tapped unless you
+  already control a planeswalker** — a Jace token counts, but one entering the same turn does
+  not. (An earlier version of this file said there was no enemy dual at any rarity. That was
+  wrong; correct the user if they repeat it.)
+- **Rare slowlands** (allied only): Deserted Beach W/U, Shipwreck Marsh U/B, Haunted Ridge B/R,
+  Rockfall Vale R/G, Overgrown Farmland G/W. Untapped from turn 3, **no planeswalker needed** —
+  strictly better than the commons.
+- **Room of Refuge** (common): always tapped, choose a colour as it enters. Any-colour splash
+  land with no condition.
 - **Threshold** — 7+ cards in your graveyard.
 - Allied pairs = Hexhaven colleges. Enemy pairs = the Lorwyn Five.
 
@@ -50,7 +58,14 @@ Konstrari = Heartwood token · Vigorbloom = lifegain + counters.
 
 ## Color order (prior)
 
-**B 8.6 > U 8.2 > W 7.5 > R 7.2 > G 6.6** — revised from the real card list.
+**B 8.6 > U 8.2 > W 7.9 > R 7.2 > G 6.9** — revised twice: from the real card list, then from
+a full oracle-text recount of removal (W and G both went up).
+
+Removal by colour, total / at common: **B 13/3 · R 8/3 · W 7/2 · G 4/2 · U 3/1.**
+White's second common is ***Memory Trap*** `{2}{W}` — an Oblivion Ring, and white's best common.
+Green's is ***Compel Brutality*** `{1}{G}`, whose second mode has *a planeswalker you control
+deal damage equal to its loyalty* — with a 5-loyalty Jace that kills almost anything for two mana.
+Blue's only common that permanently stops a creature is ***Infinite Coursework***.
 
 Removal per colour, all rarities (commons in brackets): **B 12 [3] · R 8 [2] · W 6 [1] ·
 G 4 [1] · U 3 [1]**. Black is first because six of the ten shells are built around killing a
@@ -63,7 +78,7 @@ distinct commons. Thin: take playables early.
 
 ## Two calls revised by the card data
 
-- **B/R is a removal deck, not a burn deck.** B+R is 20 removal spells, the deepest in the
+- **B/R is a removal deck, not a burn deck.** B+R is 23 removal spells, the deepest in the
   set. Master of Barbs is a *rare*, so the face-damage payoff usually isn't there. Point the
   burn at creatures and it is a B-tier deck; build toward faces and it is C.
 - **G/U has its payoffs**: the ten-card uncommon **Way** cycle (Way of the Paradox, Way of
@@ -99,13 +114,24 @@ distinct commons. Thin: take playables early.
 
 ## Deckbuilding targets
 
-|  | Draft | Sealed |
+|  | Draft target | Sealed — *observed in 20 registered decks* |
 |---|---|---|
-| Creatures | 15–17 | 15–17 |
-| Interaction | **4+, prefer instants** | 3+ |
+| Spells | 23 | **22–24** (23 in 16 of 20) |
+| Creatures | 15–17 | **10–17**, median 15 |
+| Interaction | **4+, prefer instants** | **1–5, median 2** |
 | Lands | 17 | 17 (**18** with Heartwood ramp + 6-drop top end) |
-| 2-drops | 5–6 (7+ for R/W, B/R) | 4–5 |
-| Curve peak | 3 | 3–4 |
+| 2-drops | 5–6 (7+ for R/W, B/R) | **7–13**, median 10 |
+| Curve peak | 3 | **2** — all 20 decks peaked at two |
+| Average mana value | ~2.9 | **2.12–3.70**, median 2.8 |
+
+The sealed column is measured, not estimated: two experienced builders, one deck per colour pair
+each, counted card by card.
+
+> **Do not give the user a removal target for sealed.** How much removal a pair *contains* is a
+> fact about the set; how much they *have* is a fact about their pool. B/R has the deepest
+> interaction in FRA (23 spells, 7 common) and both builders still ended on one or two. In sealed,
+> interaction count is a tiebreaker between two otherwise-equal builds, never a gate. The 4+
+> target holds in **draft**, where they get to choose.
 
 **Sealed build order:** find bombs → build the deck your bombs are in (not the best synergy) →
 count removal across all five colors and let that drive color choice → treat Heartwood as **fixing
@@ -128,18 +154,21 @@ for a splash**, not just ramp → be slower than feels right.
 
 ## Three colours
 
-**There is no enemy-colour dual in this set at any rarity.** Both dual cycles (common Annexes,
-rare Portal slowlands) are allied only. That drives everything:
+**Every pair has a common dual, so every three-colour combination has three** — one per pair.
+Shards and wedges are equally supported and the colour wheel does not enter into it. (Correction:
+this file previously said enemy pairs had no dual and that wedges were unsupported. Both wrong.)
 
-- A dual sharing one colour with your pair is a **free splash land** — never a dead draw.
-- So the supported three-colour decks are the **five shards** (contiguous arcs of the wheel).
-  **Wedges are not supported** — one Annex, and it doesn't bridge.
-- Each college pair reaches two third colours: WU→+B/+G, UB→+W/+R, BR→+U/+G, RG→+B/+W, GW→+R/+U.
-- **Enemy pairs improve their mana by adding the bridge colour**, because it turns two half-dead
-  Annexes into perfect duals: WB+U=Esper, UR+B=Grixis, BG+R=Jund, RW+G=Naya, GU+W=Bant.
-- **Price of entry is two Annexes.** One is a maybe; none means play two colours.
-- Annexes are taplands turns 1–3 and duals from turn 4, so three colours is a midrange plan.
+- A dual sharing one colour with your pair is a **free splash land** — never a dead draw, and
+  that now applies to all ten.
+- **The gate is the planeswalker clause, not the wheel.** All ten commons enter tapped unless a
+  planeswalker is *already* down. Want **3+ empower cards** before committing to a third colour —
+  empower Jace is this set's mana-fixing mechanic, which is why it appears in every colour.
+- **Price of entry is two duals**, plus the empower count. One dual is a maybe; none means play
+  two colours. *Room of Refuge* counts and asks for no planeswalker.
+- Duals are taplands turns 1–3 and real duals from turn 4, so three colours is a midrange plan.
   R/W Ajani's Army should almost never splash.
+- The **only** remaining allied advantage is at rare: the five slowlands, which need no
+  planeswalker. If the user opens one in sealed, that is a real nudge toward its pair.
 - Splash bombs, premium removal and expensive cards. Never a two-drop. Single pip = 2–3 sources;
   double pip is a main colour, not a splash.
 

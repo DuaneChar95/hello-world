@@ -296,23 +296,33 @@ def splash_lines(d: dict, ratings: Ratings) -> list[str]:
     fixers = d.get("lands") or []
     plan = three_color_plan(d["pair"])
     own = plan.get("own_land")
-    own_n = sum(1 for c in fixers if c.name == own) if own else 0
+    slow = plan.get("slowland")
+    names = {own} | ({slow} if slow else set())
+    own_n = sum(1 for c in fixers if c.name in names)
     if own_n:
-        out.append(f"Fixing: {own_n}x {own} for your main pair.")
-    if plan["base"] == "enemy":
-        out.append(plan["headline"] + " " + plan["advice"].split(" - ")[0])
+        out.append(f"Fixing: {own_n}x {own}{' / ' + slow if slow else ''} for your main pair.")
+
+    # All ten pairs have a common dual, so the gate on a third colour is the
+    # planeswalker clause, not the colour wheel. Report the empower count.
+    empower = sum(1 for c in (d.get("pool") or d.get("deck") or [])
+                  if "empower" in " ".join(ratings.tags(c)))
     for o in plan["options"]:
-        if o["kind"] != "shard":
-            continue
-        have = [c for c in fixers if c.name in o["land"].split(" + ")]
+        have = [c for c in fixers if c.name in o["lands"]
+                or c.name in o.get("slowlands", [])]
         if len(have) >= 2:
-            out.append(f"SPLASH LIVE: {len(have)} {o['land']} - {o['color']} is "
-                       f"open to you ({o['shard']}"
-                       + (f", {o['nickname']}" if o["nickname"] else "") +
-                       "). Splash a bomb or premium removal only, never a 2-drop.")
+            line = (f"SPLASH LIVE: {len(have)} of {o['land']} - {o['color']} is open "
+                    f"to you ({o['three']}). Splash a bomb or premium removal only, "
+                    "never a 2-drop.")
+            if empower < 3:
+                line += (f" Caution: only {empower} empower cards - those duals enter "
+                         "tapped without a planeswalker already down.")
+            out.append(line)
         elif len(have) == 1:
             out.append(f"Splash possible: 1 {have[0].name}. One more and {o['color']} "
                        "is a real option.")
+    if not any(l.startswith(("SPLASH", "Splash")) for l in out):
+        out.append("No splash: you need two duals before a third colour is live. "
+                   "Room of Refuge counts and asks for no planeswalker.")
     return out
 
 

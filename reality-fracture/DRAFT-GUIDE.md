@@ -65,7 +65,9 @@ the advice:
   Verse` (Stingerquill); `Woodwork Prodigy // Soul Tether` (Konstrari);
   `Vigorbloom Vanguard // Seed Suture` (Vigorbloom).
 - **The Annexes are commons.** *Fatehold Annex*, *Theorix Annex*, *Stingerquill
-  Annex*, *Konstrari Annex*, *Vigorbloom Annex* — all common lands. Section 4.5 stands.
+  Annex*, *Konstrari Annex*, *Vigorbloom Annex* — all common lands. **But they are only half
+  the cycle** — there are five more common duals covering the enemy pairs, which I missed on
+  the first pass and which broke Section 4.5. See §0.8 and the corrected §4.5.
 - **Rarity distribution** matches exactly: 109 uncommons against 71 common spells.
 
 ### One thing that changes Section 4.5
@@ -89,6 +91,13 @@ true gold card. Two consequences [EVAL]:
 With all 285 cards in hand I counted what each colour actually offers. Two of my
 earlier calls were wrong, and both were wrong for the same reason: I reasoned
 from archetype design instead of from how many playable cards exist.
+
+> **This section has since been superseded in one respect.** The removal counts below were made
+> before I had oracle text for every card, and they undercount white and green — *Memory Trap*
+> and *Compel Brutality* are both removal and both are commons. The counts and colour scores in
+> **§0.8 and §6 are the current ones**; what follows is kept because the *reasoning* (count the
+> cards, don't reason from archetype design) is the part worth keeping, and because it shows the
+> direction the numbers moved.
 
 ### The counts that matter
 
@@ -126,7 +135,8 @@ That plan is still a trap — but red's actual **removal suite is second-best in
 the set**, and `Wrath of the Bloodmane` at common is a premium card. Red is fine;
 *Stingerquill* is the problem. Those are different claims and I conflated them.
 
-**Revised colour ranking** [EVAL, from confirmed counts]:
+**Revised colour ranking** [EVAL, from confirmed counts] — *superseded by §6; White is now 7.9
+and Green 6.9 on the recounted removal:*
 
 | | Colour | Was | Now | Why |
 |---|---|---|---|---|
@@ -142,105 +152,220 @@ I flagged this as the archetype most likely to move a tier, because I couldn't
 tell whether the "grant your planeswalkers abilities" cards existed. **They do:
 a ten-card uncommon cycle of legendary enchantments — `Way of the Mind Sculptor`,
 `Way of the Paradox`, `Way of the Pyromancer`, `Way of the Warlord`,
-`Way of the Wildspeaker`, and five more — two per colour, several granting
-empower 3.** That is real support. **G/U moves from B to A- (6.5 → 7.1).**
+`Way of the Wildspeaker`, and five more — two per colour.** Each one empowers Jace on entry
+(2, 5 or 7) *and* permanently changes what your planeswalkers can do — `Way of the Deathbringer`
+gives every planeswalker you control "−2: sacrifice a creature, create a 4/4 trample Beast";
+`Way of the Warlord` gives them a −4 that deals damage. They are how a 0-loyalty Jace token
+becomes a threat. That is real support. **G/U moves from B to A- (6.5 → 7.1)**, and §0.8
+confirms it: both sealed builders independently ran two Ways in their G/U decks.
 
 ---
 
 ## 0.7 The shell for each deck
 
-A shell is the 23 nonland slots broken into roles, with the cards that actually
-fill them. Land counts are 17 unless noted.
+A shell is the 23 nonland slots broken into roles. Land counts are 17 unless noted.
 
-Read each one as: **Spine** (take these over anything comparable) · **Engine**
-(how many you need before the deck works) · **Filler** · **Fails when**.
+Each one now carries a **Spine** — the cards **both** builders independently played in that pair,
+from the 20 registered sealed decks in §0.8. That is the closest thing to evidence this guide
+has: nobody's opinion, two people arriving at the same card from different pools. Where they
+disagreed I've left the card out rather than pick a side.
+
+Read the rest as: **Engine** (how many you need before the deck works) · **Interaction** (what the
+pool actually gave, not a target) · **Curve** (revised down from §0.8 — these decks are cheaper
+than I first wrote) · **Fails when**.
+
+> **One standing caveat.** These are *sealed* builds. Sealed pools are shallower and slower than
+> draft decks, so a low removal count may mean "the pool had none," not "the deck doesn't want
+> any." Agreement between the two builders is evidence; a single low number is not.
 
 ### U/B Theorix — Graveyard Math · 23 spells, 17 land
 
-- **Spine:** `Theorix Metamage` (C, `{2}{U/B}` — flier, self-mill, threshold, *and* prepared: it is four cards in one), `Void Extrapolator` (C, `{1}{B}`), `Paradox Shaper` (U), `Uldaros Theorix` (M)
-- **Engine:** **5+ self-mill sources.** The Theorix prepared spell (*Omit Variables*) is self-mill, so each prepared creature counts. Only 3 prepared cards exist in-college, so the Jace surveils have to make up the difference — **run 4+ empower cards**, which is easy in blue.
+- **Spine (both builders):** `Theorix Charm` (U) · `Paradox Shaper` (U) · `Last Gasp` (C) · `Void Extrapolator` (C) · `Theorix Metamage` (C) · `Arni, Humble Scribe` (U) · `Extended Absence` (C) · `Recursive Recruitment` (U) · `Undulating Witness` (C) · `Twinned Vision` (C)
+- **Take over anything comparable:** `Theorix Metamage` — flier, self-mill, threshold *and* prepared, four cards in one. `Uldaros Theorix` (M) if you open it.
+- **Engine:** **5+ self-mill sources.** The Theorix prepared spell (*Omit Variables*) is self-mill, so each prepared creature counts. Only 3 prepared cards exist in-college, so the Jace surveils make up the difference — **4+ empower cards**, easy in blue.
 - **Threshold payoffs:** `Null Summoner` (R), `Loot, the Anomaly` (U), `Void Extrapolator`. These wheel; nobody else can use them.
-- **Interaction:** 5. You are in black — take `Last Gasp` and `Silence the Echo` over almost any creature.
-- **Curve:** 1:0 · 2:6 · 3:6 · 4:4 · 5:2 · 6:1
-- **Fails when:** you have the threshold payoffs and not the mill. Count enablers before you take a third payoff.
+- **Interaction:** the builders had **4 and 5** — the highest of the ten pairs, and the one case where my shell number (5) was right. Black delivers.
+- **Curve:** 1:1 · 2:10 · 3:5 · 4:4 · 5:2 · 6:1
+- **Fails when:** you have the threshold payoffs and not the mill. Count enablers before taking a third payoff.
 
 ### W/U Fatehold — Surveil Tempo · 23 spells, 17 land
 
-- **Spine:** `Fatehold Chronologist` (C, `{1}{W/U}` flier + prepared), `Prudent Fateseer` (U), `Denzilore Fatehold` (M — 4-mana 3/4 flash flier that counters up your board on every scry *or* surveil)
-- **Engine:** the prepared spell (*Peer Review*) makes a 2/2 **and** surveils, so your enablers are your payoffs. `Proctor of Potential` (R) and `Surveillance Phantasm` (C) convert the triggers.
-- **Interaction:** this is the shell's weak point — **W+U is 4 removal total, 2 at common.** Plan to win on board, and take `Surgical Precision` and `Icy Reception` higher than their rate suggests.
-- **Curve:** 1:1 · 2:7 · 3:6 · 4:4 · 5:2 · 6:0 — the lowest curve of the good decks.
-- **Fails when:** you treat it as aggro. It is a tempo-value deck; flyers plus tokens plus selection, not a turn-six kill.
+- **Spine (both builders, 14 of 23 — the strongest agreement in the sample):** `Prudent Fateseer` (U) · `Fatehold Chronologist` (C) · `Semester Foreseer` (C) · `Desperate Futurescribe` (U) · `Saheeli, Consul of Oversight` (U) · `Surveillance Phantasm` (C) · `Proft, Consulting Detective` (U) · `Surgical Precision` (C) · `Fatehold Charm` (U) · `Campus Crier` (C) · `Mindseeker Oculus` (C) · `Yuriko, Hope from the Shadows` (U) · `Memory Trap` (C) · `Hexhaven Battalion` (C)
+- **Engine:** the prepared spell (*Peer Review*) makes a 2/2 **and** surveils, so your enablers are your payoffs. `Denzilore Fatehold` (M) is the best of the five sphinxes.
+- **Interaction:** **corrected** — I said "W+U is 4 removal total, 2 at common." It is **10 total, 3 at common**: `Memory Trap`, `Surgical Precision`, `Infinite Coursework`. *Memory Trap is an Oblivion Ring at common* and both builders played it. W/U is not the removal-starved pair I described. It is still last-but-one; that's U's fault, not W's.
+- **Curve:** 1:2 · 2:9 · 3:6 · 4:4 · 5:1 · 6:1
+- **Fails when:** you treat it as aggro. It is a tempo-value deck — fliers, tokens, selection.
 
 ### W/B Liliana's Attrition — Sacrifice & Recursion · 23 spells, 17 land
 
-- **Spine:** `Blessed Ghoul` (C, `{W/B}` — a one-drop that recurs, exactly what the deck wants), `Theoretical Necromancer` (C), `Edgar, Ancient Bloodlord` (U), the Liliana pair (M)
-- **Engine:** a sacrifice outlet. `Silence the Echo` (C) doubles as removal *and* an outlet. Without one, recursion is just small creatures.
-- **Interaction:** **this is the best interaction shell in the format — 18 removal spells across W+B.** Run 6. You are happy to trade all day.
-- **Curve:** 1:2 · 2:7 · 3:6 · 4:4 · 5:2 · 6:0
-- **Mana:** no dual exists. If you see two Fatehold or two Theorix Annexes, **go W/U/B** — Section 4.5.
-- **Fails when:** you draft it as a pile of cheap creatures with no outlet and no payoff.
+- **Spine (both builders):** `Winter, Tormented Loner` (U) · `Last Gasp` (C) · `Way of the Deathbringer` (U) · `Edgar, Ancient Bloodlord` (U) · `Silence the Echo` (C) · `Teyo, Lightshield Expert` (U) · `Mabel, Bitter Recluse` (U) · `Campus Crier` (C) · `Massacre Girl, Most Wanted` (U) · `Memory Trap` (C) · `Rank Rat` (C) · `Hexhaven Battalion` (C)
+- **Engine:** a sacrifice outlet. `Silence the Echo` (C) doubles as removal *and* an outlet. `Way of the Deathbringer` is in both decks and is why: it hands your Jace token "−2: sac a creature, make a 4/4 trample Beast" — an outlet, a payoff and a mana-fixer clause in one card.
+- **Interaction:** the pair contains **22 removal spells, 5 at common** — second-deepest in the set. The builders had **4 and 3**. Take every piece you see; do not expect six.
+- **Curve:** 1:2 · 2:10 · 3:6 · 4:3 · 5:1 · 6:1
+- **Mana:** **corrected** — I wrote "no dual exists." *Meticulous Commons* is a `W/B` common dual. See §4.5.
+- **Fails when:** you draft it as cheap creatures with no outlet and no payoff.
 
 ### B/G Garruk's Bestiary — Value Creatures · 23 spells, 17 land
 
-- **Spine:** `Ferocity of the Hunt` (C, `{1}{B/G}`, deathtouch), `Rampart Hunter` (C, deathtouch), `Primal Witchstalker` (U), `Vraska, the Cutting Glare` (R)
-- **Engine:** none — and that is the point. This is the highest-floor deck because good creatures are good creatures.
-- **Interaction:** black carries it. 5–6, mostly black commons.
-- **Curve:** 1:0 · 2:5 · 3:7 · 4:5 · 5:3 · 6:1 — the highest curve that still works.
-- **Fails when:** never badly. It loses to the two S-tier decks by a little and beats everything else by a little.
+- **Spine (both builders):** `Gallia, Tragic Host` (U) · `Last Gasp` (C) · `Extended Absence` (C) · `Hapatra, the Desert Fang` (U) · `Primal Witchstalker` (U) · `Rewrite Regrets` (U) · `Arcane Amphisbaena` (C) · `Bestial Incursion` (C) · `Something Worth Saving` (C) · `Apex Witchstalker` (C) · `Vinelasher Adept` (C)
+- **Engine:** none — and that is the point. The highest-floor deck, because good creatures are good creatures.
+- **Interaction:** 18 in the pair, 5 at common. The builders had **3 and 4**, all black.
+- **Curve:** the two heaviest decks in the sample (avg 3.70 and 3.09). **1:1 · 2:9 · 3:4 · 4:5 · 5:2 · 6:2** — this is the one shell where a high curve is correct.
+- **Fails when:** never badly. Loses to the two S-tier decks by a little, beats everything else by a little.
 
 ### G/W Vigorbloom — Lifegain & Counters · 23 spells, 17 land
 
-- **Spine:** `Emergency Phytomedic` (C, `{G/W}` — a one-drop with counters, life *and* prepared), `Vigorbloom Vanguard` (U), `Blossom-Blessed Angel` (C), `Solarium Sentry` (R)
+- **Spine (both builders, 14 of 23):** `Vigorbloom Vanguard` (U) · `Bloombrute` (U) · `Blossom-Blessed Angel` (C) · `Edgar, Moonlit Sovereign` (U) · `Surgical Precision` (C) · `Titanbones, Towering Heart` (U) · `Vigorbloom Charm` (U) · `Yoshimaru, Scrappy Stray` (U) · `Greenhouse Propagator` (C) · `Emergency Phytomedic` (C) · `Compel Brutality` (C) · `Memory Trap` (C) · `Unflinching Hortimancer` (C) · `Blessed Ghoul` (C)
 - **Engine:** `Graft Surgeon` (C) keeps counters after a creature dies; `Bloombrute` (U) draws on lifegain. Two payoffs is enough.
-- **Interaction:** **weakest in the format — G+W is 10 removal, 2 at common.** Accept it; win on board size.
-- **Curve:** 1:2 · 2:6 · 3:6 · 4:5 · 5:2 · 6:0
+- **Interaction:** **corrected** — I called this "weakest in the format, 10 removal, 2 at common." It is **12 and 4** (`Compel Brutality`, `Sureshot Sower`, `Memory Trap`, `Surgical Precision`), and the weakest pair is **G/U**, not G/W.
+- **Curve:** 1:3 · 2:10 · 3:5 · 4:3 · 5:1 · 6:1
 - **Fails when:** it plays a long game against U/B or W/B. Lifegain does nothing to a deck winning on cards.
 
 ### R/W Ajani's Army — Counters Aggro · 23 spells, **16 land**
 
-- **Spine:** `Charge the Sanctum` (C, `{2}{R/W}`), `Chandra's Emberling` (C, haste + counters), `Mabel, Valley Hero` (U), `Warrior's Blades` (U equipment), the Ajani pair (M)
-- **Engine:** the curve *is* the engine. **7+ two-drops, 16 lands.**
-- **Interaction:** 3 is enough — you are not trading, you are racing.
-- **Curve:** 1:3 · 2:8 · 3:6 · 4:4 · 5:0 · 6:0
-- **Fails when:** anything. This deck has no late game, loses to Vigorbloom lifegain, and gets 2-for-1'd by prepared creatures. **Only take this lane when it is screaming.**
+- **Spine (both builders):** `Wrath of the Bloodmane` (C) · `Awaken the Inferno` (C) · `Gallia, the Merrymaker` (U) · `Mabel, Valley Hero` (U) · `Winter, Team Player` (U) · `Marwyn, the Clearcutter` (U) · `Warrior's Blades` (U) · `Emergency Phytomedic` (C) · `Heartstring Puller` (C) · `Predictive Preparations` (C) · `Skilled Battlecarver` (C) · `Hexhaven Battalion` (C)
+- **Note:** both builders ran `Emergency Phytomedic` `{G/W}` and Pete ran `Vigorbloom Vanguard` `{1}{G/W}` in a deck with no Forests. **Hybrids are on-colour if you have either half** — confirmed.
+- **Engine:** the curve *is* the engine. **9 two-drops, 16 lands.**
+- **Interaction:** 3 is right, and 3 is what both builders had (2 and 3). Don't trade; race.
+- **Curve:** 1:3 · 2:9 · 3:5 · 4:3 · 5:2 · 6:1
+- **Fails when:** anything. No late game, loses to Vigorbloom lifegain, gets 2-for-1'd by prepared creatures. **Only take this lane when it is screaming.**
 
 ### B/R Stingerquill — Face Burn · 23 spells, 17 land
 
-- **Spine:** `Stingerquill Voxmancer` (U, `{B/R}` one-drop), `Hallway Heckler` (C), `Whiplash Wordsmith` (C — a 4-mana flier with haste), `Ingris Stingerquill` (M)
-- **The honest version:** **B+R is 20 removal spells, the deepest interaction in the set.** The winning B/R deck is not a burn deck — it is a removal deck that happens to be in those colours. `Master of Barbs` being a *rare* means the face-damage payoff usually isn't there, so stop building toward it.
-- **Interaction:** 7. Yes, seven. Point it at creatures.
-- **Curve:** 1:2 · 2:6 · 3:6 · 4:5 · 5:2 · 6:0
-- **Fails when:** you point burn at the face. **Re-rated 6.2 → 6.9 as a removal deck**, and still C-tier as the deck it is designed to be.
+- **Spine (both builders):** `Stingerquill Voxmancer` (U) · `Sanctum Lurker` (R) · `Command the Stage` (U) · `Grim Repriser` (U) · `Tomik, Izzet Sparkmage` (U) · `Stingerquill Charm` (U) · `Whiplash Wordsmith` (C) · `Blazing Crescendo` (C) · `Skilled Battlecarver` (C) · `No Admittance` (C)
+- **`Sanctum Lurker` in both decks is the find here.** "Planeswalkers you control aren't put into their owners' graveyards for having 0 loyalty" — a Jace token enters at **0** and normally dies on the spot unless something empowers it. Lurker makes every empower card in your deck work, and keeps a spent Jace on the board to hold your duals untapped.
+- **Interaction: I have to withdraw a number.** I wrote "run 7. Yes, seven." The pair genuinely has the deepest interaction in the set — **23 spells, 7 at common** — and both builders, from real pools, ended on **1 and 2**. Seven was never a sealed target. In draft, take every removal spell; in sealed, build what you opened.
+- **Curve:** 1:3 · 2:10 · 3:7 · 4:2 · 5:1 · 6:0
+- **Fails when:** you point burn at the face. `Master of Barbs` is a mono-R **rare**, so the face-damage payoff usually isn't there. **Re-rated 6.2 → 6.9 as a removal deck**, still C-tier as the deck it's designed to be.
 
 ### U/R Chandra's Prowess — Noncreature Spells · 23 spells, 17 land
 
-- **Spine:** `Twinned Vision` (C, `{1}{U/R}`), `Cryotheory Adept` (C prowess), `Saheeli, Jewel of Avishkar` (U), `Stingcaster Mage` (M)
+- **Spine (both builders):** `Pompous Battlemage` (R) · `Stingerquill Voxmancer` (U) · `Traxos, Academy Guardian` (U) · `Clash of Elements` (U) · `Plan for All Outcomes` (U) · `Tomik, Izzet Sparkmage` (U) · `Tam's Resistance` (C) · `Blazing Crescendo` (C) · `Chandra's Emberling` (C) · `Cryotheory Adept` (C) · `Unsummon` (C)
 - **Engine:** ~9 noncreature spells, and they should be **removal**, so your spell count and your interaction count are the same cards. Red supplies what blue cannot.
-- **Curve:** 1:1 · 2:7 · 3:6 · 4:4 · 5:2 · 6:0
+- **The cheapest deck in the sample:** Dafore's U/R averaged **2.12** mana with **seven one-drops** and only 10 creatures. If a pair is going to run 13 two-or-fewer-drops, it's this one.
+- **Curve:** 1:5 · 2:9 · 3:5 · 4:3 · 5:1 · 6:0
 - **Fails when:** you play weak cantrips to hit a prowess count. A bad spell is still a bad card.
 
 ### G/U Jace's Mastery — Empower Value · 23 spells, 17 land  **(upgraded)**
 
-- **Spine:** `Tam's Resistance` (C, `{1}{G/U}`, **empower 3**), `Kiora of Salt and Sand` (U), `Avatar of Burgeoning Echoes` (M), and **the Way cycle** — `Way of the Paradox`, `Way of the Wildspeaker`, `Way of the Mind Sculptor`
-- **Engine:** **6+ empower cards and 2+ Ways.** The Ways are what turn a battery into an engine — without two of them you have a green-blue goodstuff deck paying a tax.
-- **Interaction:** G+U is 7 removal, 2 at common. Thin. Take `Sureshot Sower` (a flier that removes) and `Icy Reception` early.
-- **Curve:** 1:0 · 2:6 · 3:6 · 4:5 · 5:3 · 6:0
+- **Spine (both builders):** `Way of the Wildspeaker` (U) · `Sureshot Sower` (C) · `Way of the Mind Sculptor` (U) · `Mind Meanderer` (U) · `Mindseeker Oculus` (C) · `Protege's Awakening` (C) · `Tam's Resistance` (C) · `Arcane Amphisbaena` (C) · `Compel Brutality` (C) · `Infinite Coursework` (C) · `Inspired Tethermage` (C)
+- **Both builders independently ran two Ways.** That is the clearest confirmation in the whole sample of something this guide claimed on reasoning alone: the Ways are what turn a battery of empower cards into an engine.
+- **Engine:** **6+ empower cards and 2+ Ways.** Without two Ways you have a green-blue goodstuff deck paying a tax.
+- **Interaction:** **the genuine floor of the format — 8 spells, 3 at common.** But `Compel Brutality` is better here than anywhere: its second mode has *a planeswalker you control deal damage equal to its loyalty*, and this is the deck with a five-loyalty Jace. A 2-mana instant that kills almost anything, in the colour that isn't supposed to have removal.
+- **Curve:** 1:1 · 2:8 · 3:6 · 4:4 · 5:3 · 6:1
 - **Fails when:** you get the empower and not the Ways.
 
 ### R/G Konstrari — Heartwood Ramp · 23 spells, **18 land in sealed, 17 in draft**
 
-- **Spine:** `Konstrari Improviser` (C, `{1}{R/G}` — makes Heartwood *and* is prepared), `Heartwood Crafter` (U), `Woodwork Prodigy` (U), `Aerid Konstrari` (M), `Craftwork Crusher` (U)
+- **Spine (both builders):** `Woodwork Prodigy` (U) · `Wrath of the Bloodmane` (C) · `Craftwork Crusher` (U) · `Heartwood Crafter` (U) · `Yoshimaru, Scrappy Stray` (U) · `Kiora of Fire and Ashes` (U) · `Konstrari Improviser` (C) · `Arcane Amphisbaena` (C) · `Wrecking Gecko` (C) · `Compel Brutality` (C) · `Vinelasher Adept` (C)
 - **Engine:** **3+ Heartwood makers AND 3+ cards worth ramping into.** Both halves, or neither works.
-- **Interaction:** `Konstrari Charm` (U) and red's commons. 4.
-- **Curve:** 1:0 · 2:5 · 3:5 · 4:4 · 5:5 · 6:4 — deliberately top-heavy.
-- **Fails when:** in draft, the top end went to the other eight drafters. **In sealed it is a top-three deck** and this shell is the reason: pools hand you the expensive cards draft won't.
+- **Interaction:** 14 in the pair, 5 at common — and the builders had **4 and 5, the highest counts in the sample.** Green's interaction is better than I credited it; see §0.8.
+- **Curve:** 1:1 · 2:9 · 3:4 · 4:2 · 5:4 · 6:3 — deliberately top-heavy, and both builders confirmed it (avg 3.48 and 3.30, the second- and third-heaviest decks).
+- **Fails when:** in draft, the top end went to the other eight drafters. **In sealed it is a top-three deck** and this shell is why: pools hand you expensive cards draft won't.
 
 ### The one-line version
 
 > **Black first, blue second, and the best deck in any seat is the one holding
 > the most removal.** Six of the ten shells are built around killing a prepared
-> creature before it casts its copy — and only two colours can reliably do it.
+> creature before it casts its copy. What twenty real sealed decks add: **you will
+> not have as much of it as you want** — median two pieces — so the pick order
+> matters more than the target.
+
+---
+
+## 0.8 What 20 real sealed builds changed  [CONFIRMED decklists, 2026-09-21]
+
+Twenty registered sealed decks — two builders, **Pete** and **Dafore**, one deck per colour pair
+each. Every card parsed against the real set list: **169 distinct cards, 0 unrecognised.** This is
+the first section of this guide checked against decks somebody actually built.
+
+### What it confirmed
+
+- **23 spells is right.** 16 of 20 decks ran exactly 23; the others 22 or 24.
+- **Hybrid college cards slot into single-colour decks.** Both "W/R" builds run *Emergency
+  Phytomedic* `{G/W}` and Pete's runs *Vigorbloom Vanguard* `{1}{G/W}` — castable off Plains.
+  If you are in either half of a hybrid, the card is on-colour. This was an [EVAL] note; it's
+  now confirmed behaviour.
+- **The Jace commons are the glue.** *Fatehold Chronologist* is the single most-played card in
+  the sample (7/20), and 8 of the top 15 have empower or surveil text.
+
+### What it contradicted — my interaction counts
+
+This is the important one. My shells told you to run **6 removal in W/B** and **7 in B/R**. Here
+is what the builders actually had:
+
+| Pair | Removal, Pete | Removal, Dafore | My shell said |
+|---|---|---|---|
+| W/U | 1 | 2 | — |
+| W/B | 4 | 3 | **6** |
+| W/R | 2 | 3 | 3 |
+| W/G | 3 | 2 | — |
+| U/B | 4 | 5 | 5 |
+| U/R | 2 | 1 | — |
+| U/G | 2 | 1 | — |
+| **B/R** | **1** | **2** | **7** |
+| B/G | 3 | 4 | 5–6 |
+| G/R | 4 | 5 | 4 |
+
+**I was conflating two different numbers.** How much removal a colour pair *contains* is a fact
+about the set; how much removal you *have* is a fact about your pool. B/R really is the deepest
+interaction pair in Reality Fracture — 23 removal spells, 7 at common — and a single sealed pool
+still handed each builder one or two. "Run seven" was never a target anyone could hit in sealed;
+I stated an aspiration as a requirement.
+
+> **The rule that replaces it:** set-wide removal depth tells you *what to take when you see it*.
+> It does not tell you what you will have. In sealed, build the deck your pool gave you and take
+> the interaction count as a tiebreaker between two otherwise-equal builds — not as a gate.
+
+In **draft** the 4+ target still stands, because in draft you get to choose.
+
+### What it contradicted — my curves
+
+Every one of the 20 decks peaks at **two mana**, and they are lower than the curves I wrote:
+**7–13 two-drops** (median 10) against my 5–8. Average mana value ran 2.12 (Dafore's U/R, with
+seven one-drops) to 3.70 (Pete's B/G). Treat my per-shell curves in §0.7 as revised: **add two to
+the two-drop row and take them off the four-and-above rows.**
+
+### Three commons I never mentioned, in 6 decks each
+
+| Card | | Why I missed it | Why it's good |
+|---|---|---|---|
+| ***Memory Trap*** | `{2}{W}` C | I had no oracle text for it and graded it 2.5 | **It's an Oblivion Ring.** Exiles *any* nonland permanent an opponent controls. This is premium white common removal and it changes white's evaluation — see below. |
+| ***Compel Brutality*** | `{1}{G}` C | Same | Instant fight-lite — *and* its second mode has **a planeswalker you control deal damage equal to its loyalty.** A Jace token at 5 loyalty makes this a 2-mana instant that kills almost anything. |
+| ***Hexhaven Battalion*** | `{4}{W}{W}` C | Graded 2.2 as an expensive sorcery | Three 2/2s **plus empower Jace 2**, and it **basic landcycles for {2}** when you don't want it. A six-drop with no floor problem. |
+
+### The correction that follows: white and green both have more removal than I said
+
+Recounted from oracle text — cards that kill, exile, or permanently neutralise a creature or
+planeswalker:
+
+| Colour | Total | At common | I previously said |
+|---|---|---|---|
+| **B** | 13 | 3 | 12 / 3 |
+| **R** | 8 | 3 | 8 / 2 |
+| **W** | **7** | **2** | 6 / 1 |
+| **G** | **4** | **2** | 4 / 1 |
+| **U** | 3 | 1 | 3 / 1 |
+
+White gains *Memory Trap*; green gains *Compel Brutality*; red gains *Hallway Heckler // Vicious
+Verse*. **Colour scores move: W 7.5 → 7.9, G 6.6 → 6.9.** Black and blue are unchanged and black
+is still the best colour. The claim in §0.7 that "W+U is 4 removal total, 2 at common" is wrong —
+it is **10 total, 3 at common**, and G/W is not the weakest interaction pair in the format,
+**G/U is**.
+
+By pair, counting mono removal in both colours plus gold and hybrid cards in that pair:
+
+| | B/R | W/B | B/G | U/B | W/R | G/R | W/G | U/R | W/U | U/G |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **Total** | 23 | 22 | 18 | 17 | 16 | 14 | 12 | 12 | 10 | 8 |
+| **Common** | 7 | 5 | 5 | 4 | 5 | 5 | 4 | 4 | 3 | 3 |
+
+### How to read the per-pair lists in §0.7
+
+Each shell now carries a **spine** — the cards *both* builders independently played in that pair.
+Two builders agreeing is evidence. Two builders disagreeing is not a 50/50 to be averaged; it is
+an open question, and I've left those cards out of the spines rather than pick a side. Agreement
+ran 10–15 cards out of 23, so roughly **half of a sealed deck is forced and half is yours.**
 
 ---
 
@@ -424,91 +549,74 @@ with Theorix self-mill**, around **turn 9+ without it**. That gap is enormous.
 
 ## 4.5 Three-colour decks: what actually works
 
-This is the part of the format most people will get wrong, because the fixing is unusually
-shaped. Here is every piece of colour fixing in the set:
+> ### Correction — this section was built on a false premise
+>
+> Earlier versions of this guide said: *"there is no enemy-colour dual land in this set at any
+> rarity,"* and built the whole section on it — shards supported, wedges not, and enemy pairs
+> "repairing" their mana by going to three colours. **That is wrong.** I had found the five
+> *Annex* lands and stopped looking. There is a second common dual cycle, the **Commons** cycle,
+> and it covers exactly the five enemy pairs. Every pair in Reality Fracture has a common dual.
+> The colour-wheel geometry I described does not exist. What follows is the corrected version.
+> [CONFIRMED from oracle text]
 
-| Source | Rarity | What it actually does |
+### Every piece of fixing in the set
+
+| Source | Rarity | What it does |
 |---|---|---|
-| **Annex cycle** — Fatehold, Theorix, Stingerquill, Konstrari, Vigorbloom | **common** | Taps for its two **allied** colours. **Enters tapped unless you control a planeswalker.** [CONFIRMED] |
-| Portal / Echoverse slowlands | rare | A second dual cycle, also **allied pairs only** [CONFIRMED] |
-| **Heartwood** token | common (6 makers) | `{T}: Add {R} or {G}` — **and nothing else** [CONFIRMED] |
-| **Lotus** token (Kwia Vigorbloom) | mythic | Tap and sacrifice for three mana of one colour — a one-shot |
+| **Annex cycle** — Fatehold `WU`, Theorix `UB`, Stingerquill `BR`, Konstrari `RG`, Vigorbloom `GW` | **common** | Taps for its two **allied** colours. Enters tapped **unless you control a planeswalker**. |
+| **Commons cycle** — Meticulous `WB`, Innovative `UR`, Formidable `BG`, Dedicated `RW`, Transformative `GU` | **common** | Taps for its two **enemy** colours. *Identical text:* enters tapped unless you control a planeswalker. |
+| Slowlands — Deserted Beach `WU`, Shipwreck Marsh `UB`, Haunted Ridge `BR`, Rockfall Vale `RG`, Overgrown Farmland `GW` | rare | Allied only. Enters tapped unless you control **two or more other lands** — so untapped from turn 3, no planeswalker needed. |
+| **Room of Refuge** | **common** | Always enters tapped; choose a colour as it enters, taps for that colour. A universal splash land with no condition. |
+| **Heartwood** token | common (6 makers) | `{T}: Add {R} or {G}` — **and nothing else.** |
+| Theorist's Sanctum | rare | Blue land; untapped if you behold a Jace. `{2}{U}, {T}: Empower Jace 2`. |
+| Lotus token (Kwia Vigorbloom) | mythic | Tap and sacrifice for three mana of one colour — one-shot. |
 
-> **Read the table again and notice what is missing: there is no enemy-colour dual land in this
-> set at any rarity.** Both cycles cover only the five college pairs. That single fact drives
-> everything below. [CONFIRMED]
+**Ten common duals, one per pair.** That single fact replaces everything the old section said.
 
-### The rule: a dual that shares one colour with you is a free splash land
+### What actually follows from it
 
-If a land makes one of your main colours *and* your splash colour, it is never a dead draw. You
-are not paying for the splash with a worse mana base — you are paying with a land that would have
-been fine anyway.
+**1. Every three-colour combination has three common duals — one for each of its pairs.**
+Esper `WUB` gets Fatehold + Theorix + Meticulous. Mardu `RWB` gets Dedicated + Meticulous +
+Stingerquill. **Shards and wedges are equally supported.** There is no wheel arc to respect, and
+"you're in a wedge, don't" was bad advice I should not have given.
 
-Because the Annexes are allied, they chain around the colour wheel, so **every college pair has
-exactly two third colours it can reach on a common**: [EVAL, from confirmed card data]
+**2. Every two-colour pair has its own dual, so no pair needs a third colour to fix itself.**
+The old claim that W/B "opens the set with nothing" was wrong — it opens with *Meticulous
+Commons*. Enemy pairs are not mana-disadvantaged at common. The only allied advantage left is at
+**rare**, where the five slowlands exist and the enemy pairs get nothing.
 
-| Your pair | Your dual | +3rd colour | Bridging common | Becomes |
-|---|---|---|---|---|
-| **W/U** Fatehold | Fatehold Annex | +B | Theorix Annex | **WUB** Esper |
-| | | +G | Vigorbloom Annex | **GWU** Bant |
-| **U/B** Theorix | Theorix Annex | +W | Fatehold Annex | **WUB** Esper |
-| | | +R | Stingerquill Annex | **UBR** Grixis |
-| **B/R** Stingerquill | Stingerquill Annex | +U | Theorix Annex | **UBR** Grixis |
-| | | +G | Konstrari Annex | **BRG** Jund |
-| **R/G** Konstrari | Konstrari Annex | +B | Stingerquill Annex | **BRG** Jund |
-| | | +W | Vigorbloom Annex | **RGW** Naya |
-| **G/W** Vigorbloom | Vigorbloom Annex | +R | Konstrari Annex | **RGW** Naya |
-| | | +U | Fatehold Annex | **GWU** Bant |
+**3. The slowlands are the better card, and they're the ones that are allied.** *Haunted Ridge*
+is untapped from turn 3 unconditionally; *Stingerquill Annex* may still be tapped on turn 8. If
+you open a slowland in sealed, that's a real nudge toward its pair.
 
-**The supported three-colour decks are the five shards — the contiguous arcs of the colour wheel.
-Wedges are not supported.** A shard contains two allied pairs, so it gets two Annexes. A wedge
-(Abzan W/B/G, Mardu R/W/B, and so on) contains only one, and that one doesn't bridge to your
-third colour. If you find yourself in a wedge, you are in three colours on basics. Don't.
+### The real gate on three colours: the planeswalker clause
 
-### The insight worth the most: an enemy pair *improves* its mana by adding a third colour
+All ten common duals share one line — **enters tapped unless you control a planeswalker.** That
+is the actual constraint in this format, and it is not a colour-wheel question, it is a deck
+question. [CONFIRMED]
 
-The five Lorwyn Five archetypes are enemy pairs, so **none of them has a dual land.** A W/B
-Liliana's Attrition deck opens the set with nothing.
+Two consequences that matter at the table:
 
-But look at what a Fatehold Annex does in each deck:
+1. **A planeswalker arriving the same turn does not count.** Playing the dual on the turn you
+   make your first Jace does not untap it. The Jace has to already be there.
+2. **Your duals are taplands on turns 1–3 and real duals from turn 4** — backwards for an aggro
+   deck, fine for a midrange one. **Three colours in FRA is a midrange/control plan.** R/W
+   Ajani's Army should almost never do it.
 
-- **In straight W/B:** makes W (useful) or U (dead). It's a Plains that sometimes enters tapped. Unplayable.
-- **In W/U/B:** makes W or U — both live. And Theorix Annex makes U or B — also both live. **Two perfect duals.**
+So a three-colour deck wants **3+ empower cards**, and not primarily for the card advantage:
+*empower Jace is the set's mana-fixing mechanic.* It appears at common in every colour, which is
+why it is in every colour. A deck with six empower cards has six duals that work; a deck with one
+has six taplands.
 
-So for an enemy-pair deck, the bridging colour doesn't strain your mana, it *repairs* it:
+> **The honest rule, restated:** two duals is the price of entry for a third colour, and a
+> planeswalker you can land by turn 3 is the price of the duals. With two duals and the empower
+> count, the third colour is genuinely open. With two duals and no empower, you have bought
+> taplands.
 
-| Enemy archetype | Bridge | Becomes | Both Annexes then live |
-|---|---|---|---|
-| **W/B** Liliana's Attrition | **+U** | WUB Esper | Fatehold + Theorix |
-| **U/R** Chandra's Prowess | **+B** | UBR Grixis | Theorix + Stingerquill |
-| **B/G** Garruk's Bestiary | **+R** | BRG Jund | Stingerquill + Konstrari |
-| **R/W** Ajani's Army | **+G** | RGW Naya | Konstrari + Vigorbloom |
-| **G/U** Jace's Mastery | **+W** | GWU Bant | Vigorbloom + Fatehold |
+### The rule that survives: a dual sharing one colour with you is a free splash land
 
-This is counterintuitive and it is real: **in Reality Fracture, going to three colours can make
-your mana better than staying on two.** [EVAL]
-
-**It is not free, and I don't want to oversell it.** You still dilute your deck, you still draw
-the wrong half sometimes, and it only works if you actually have the Annexes. The honest rule:
-**two Annexes is the price of entry.** With two, the bridge colour is genuinely open. With one,
-it's a maybe. With none, you are a two-colour deck and should act like it.
-
-### Empower Jace is the mana fixer
-
-The Annexes enter untapped **only if you already control a planeswalker** — and empower Jace
-makes a Jace token, at common, in every colour combination. The set's free mechanic is also its
-mana base. [CONFIRMED]
-
-Two consequences that matter at the table [EVAL]:
-
-1. **A planeswalker arriving the same turn does not count.** [CONFIRMED] Playing the Annex on the
-   turn you make your first Jace does not untap it. You need the Jace already down.
-2. **Annexes are taplands on turns 1–3 and real duals from turn 4.** That is precisely backwards
-   for an aggro deck and completely fine for a midrange one. **Three-colour in FRA is a
-   midrange/control plan. R/W Ajani's Army should almost never do it.**
-
-So a three-colour deck wants **3+ empower cards** not for the card advantage but to switch its
-lands on.
+If a land makes one of your main colours *and* your splash colour, it is never a dead draw. That
+was true before and it is still true — it just now applies to every pair, not five of them.
 
 ### When to splash, concretely
 
@@ -518,27 +626,30 @@ lands on.
   card you can't cast on curve isn't doing its job.
 - **Sources:** single coloured pip → 2–3 sources. **Double pip → that is a main colour, not a
   splash.** `{1}{R}` and `{R}{R}` are the same colour and completely different cards.
-- **Count an Annex as a source for both its colours**, but discount it on turns 1–3.
+- **Count a dual as a source for both its colours**, but discount it on turns 1–3 unless your
+  empower count is high.
+- **Room of Refuge is the splash land that asks nothing.** It's always tapped, but it needs no
+  planeswalker and it makes any colour. In a deck splashing one bomb it is often better than the
+  "correct" dual.
 
 A worked example — U/B Theorix splashing W for a bomb, 17 lands:
 
 ```
-2 Fatehold Annex   (W/U - the bridge)
-2 Theorix Annex    (U/B - your own pair)
+2 Meticulous Commons  (W/B - the bridge, and it was always available)
+2 Theorix Annex       (U/B - your own pair)
+1 Room of Refuge      (names W)
 6 Island
-5 Swamp
-2 Plains
-= 4 white sources, 10 blue, 9 black, and every land makes a main colour
+6 Swamp
+= 5 white sources, 8 blue, 10 black, and every land makes a main colour
 ```
 
 ### Draft vs sealed
 
-- **Sealed:** much more likely. Deeper pools, slower games, and more uncastable bombs. Check your
-  Annex count before you settle on two colours — a second Annex can be worth more than a third
-  playable.
-- **Draft:** you have to actively take them. They're commons so they often wheel, but not if two
-  other drafters are splashing. If you're planning the splash, take the second Annex around pick
-  6–8 rather than hoping.
+- **Sealed:** much more likely. Deeper pools, slower games, more uncastable bombs. Count your
+  duals *and your empower cards* before you settle on two colours.
+- **Draft:** you have to take them. Ten common duals across three packs means fixing is genuinely
+  available — but it also means the player two seats down is splashing too. If you're planning
+  it, take the second dual around pick 6–8 rather than hoping it wheels.
 
 ---
 
@@ -564,32 +675,44 @@ everyone tries them** — classic high-variance. The stable, always-fine decks a
 
 ### What this means for your 40
 
-| | Draft | Sealed |
+| | Draft target | Sealed — *observed* across 20 real builds |
 |---|---|---|
-| Creatures | 15–17 | 15–17 |
-| Removal/interaction | **4+ (prioritise instants)** | 3+ (take what you have) |
+| Spells | 23 | **22–24** (23 in 16 of 20) |
+| Creatures | 15–17 | **10–17**, median 15 |
+| Removal/interaction | **4+ (prioritise instants)** | **1–5, median 2** — see §0.8 |
 | Lands | 17 | 17 (18 with Heartwood ramp + a 6-drop top end) |
-| Curve peak | 3 | 3–4 (sealed is slower) |
-| 2-drops | 5–6 (7+ if RW/BR) | 4–5 |
+| Curve peak | 3 | **2** — every one of the 20 decks peaked at two |
+| 2-drops | 5–6 (7+ if RW/BR) | **7–13**, median 10 |
+| Average mana value | ~2.9 | **2.12–3.70**, median 2.8 |
 | Empower cards | 3–4 is an engine | any number, it's free value |
+
+The sealed column is not my estimate — it is what two experienced builders actually registered,
+counted card by card. Where it disagrees with the draft column, trust it for sealed and read
+§0.8 before you trust the draft column either.
 
 ---
 
 ## 6. Colour strength
 
-Scores are 0–10, **pre-release prior** [EVAL]. Every colour appears in exactly four archetypes, so
-this is about raw card quality and how well the colour matches a grindy format — not archetype count.
+Scores are 0–10 [EVAL]. **This table has been revised twice** — once against the real card list
+(§0.6) and once against the recounted removal in §0.8. What follows is the current version; the
+original pre-release guesses are kept in the right-hand column so you can see how far off they were.
 
-| Rank | Colour | Score | The case |
-|---|---|---|---|
-| 1 | **Blue (U)** | **8.5** | The format's mechanics are blue. Empower Jace is a blue token; surveil, self-mill, and card selection are blue's. In a format decided on turn 10, the card-advantage colour is the best colour. Blue is in both of my top-two archetypes. |
-| 2 | **Black (B)** | **8.0** | Black's common removal is the premium currency in a format where killing a prepared creature is a 2-for-1. Add graveyard payoffs (Theorix) and recursion (Liliana's Attrition) and black is grindy-format royalty. |
-| 3 | **White (W)** | **7.5** | Token generation via the Fatehold prepared spell plus the counters-aggro shell. White's ceiling is high but its cards are more synergy-dependent — a pile of white commons with no direction is the worst pile in the set. |
-| 4 | **Green (G)** | **7.0** | Big bodies are genuinely good when games go long, and Heartwood fixes splashes. Held back by green's usual weakness: its removal is combat-based, and fight effects are bad against a deck that gets value from creatures dying or being prepared. |
-| 5 | **Red (R)** | **6.5** | The trap colour. Red's headline plan — point damage at the opponent's face — is the worst plan in a midrange format containing a lifegain archetype. Red's *creature removal* is fine; red's *reach* will be overdrafted. Expect red to be the most available colour by pack 3. |
+Every colour appears in exactly four archetypes, so this is about raw card quality and fit with a
+grindy format — not archetype count.
 
-> **The practical takeaway:** if you have no signal, **start blue-black and move out of it**, and
-> **be the drafter who is happy to end up in red when it's flowing** — not the one who starts there.
+| Rank | Colour | Score | Removal (total / common) | The case | First guess |
+|---|---|---|---|---|---|
+| 1 | **Black (B)** | **8.6** | **13 / 3** | Black has more removal than any two other colours combined, and in a format where killing a prepared creature before it casts its copy is a 2-for-1, that is the premium currency. Add graveyard payoffs (Theorix) and recursion (Liliana's Attrition). Black is the best colour and it isn't close. | 8.0 |
+| 2 | **Blue (U)** | **8.2** | 3 / 1 | The format's mechanics are blue — empower Jace makes a *blue* token, and surveil, self-mill and selection are blue's. Blue is in both top-two archetypes. It drops below black on one number: it cannot kill anything. `Infinite Coursework` is the only blue common that permanently stops a creature. | 8.5 |
+| 3 | **White (W)** | **7.9** | **7 / 2** | **Revised up.** White's stated weakness was "no common removal" and that was my error: *Memory Trap* `{2}{W}` is an Oblivion Ring at common, and both sealed builders played it in every white deck they made. Add `Surgical Precision`, token generation off the Fatehold prepared spell and the counters shell, and white is a real colour, not a synergy-dependent one. | 7.5 |
+| 4 | **Red (R)** | **7.2** | 8 / 3 | **Revised up, for the opposite reason to the one I gave.** Red's headline plan — damage at the face — is still the worst plan in a midrange format with a lifegain archetype. But red's *creature removal* is the second-best in the set at three commons, and I had marked the colour down for its archetype's bad idea. Be happy to end up in red; don't start there. | 6.5 |
+| 5 | **Green (G)** | **6.9** | **4 / 2** | **Revised up slightly.** Big bodies are good when games go long. I said green had one removal common; it has two, and `Compel Brutality` is the more interesting one — its planeswalker mode deals damage equal to *your Jace's loyalty*, which turns green's empower commons into a removal engine. Still last: green's interaction is conditional and its top end is beatable by card advantage. | 7.0 |
+
+> **The practical takeaway:** if you have no signal, **start black and move out of it.** Black is
+> the deepest colour at common and the one whose cards are good in every deck. Blue is the best
+> *partner*; it is a bad colour to be in alone. And be the drafter who is happy to end up in red
+> when it's flowing — not the one who starts there.
 
 ---
 
@@ -776,8 +899,8 @@ single insight in this guide for you specifically, because you're playing both d
 - **In sealed it's a top-three deck.** Sealed pools contain **more expensive bombs than you can
   normally cast**, and sealed games are slower, so the aggro punish barely exists. Heartwood turns
   your uncastable 6- and 7-drops into your win conditions. **In sealed, go up to 18 lands and jam
-  the top end.** (Heartwood only makes R or G — for a splash outside those colours you need
-  Annexes, Section 4.5.)
+  the top end.** (Heartwood only makes R or G — for a splash outside those colours you need the
+  common duals or *Room of Refuge*, Section 4.5.)
 
 ---
 
@@ -927,9 +1050,11 @@ highest floor. **The lane to avoid unless it's screaming:** **B/R Stingerquill.*
    have archetype density.
 3. **Count removal across all five colours** before choosing. Removal is scarcer per-pool than
    creatures, so it should drive colour choice more than playable count.
-4. **Count your Annexes before you plan a splash.** They are the set's only common fixing, and
-   only for allied pairs — see Section 4.5. Heartwood adds R or G only, so it pays for a red or
-   green splash and nothing else. **Go to 18 lands** if you're ramping to a real top end.
+4. **Count your duals before you plan a splash — and your empower cards.** There are ten
+   common duals, one for every pair, so the fixing exists; but all ten enter tapped unless a
+   planeswalker is already on the battlefield. See Section 4.5. Heartwood adds R or G only.
+   *Room of Refuge* makes any colour with no condition. **Go to 18 lands** if you're ramping
+   to a real top end.
 5. **Be slower than you think.** Sealed games in FRA will go long. A 6-drop that wins the game is
    better than a 2-drop that doesn't. Cut the aggro plan unless the pool hands it to you.
 6. **Bring instant-speed removal in from the sideboard** against decks showing prepared creatures.
@@ -948,7 +1073,7 @@ Print this next to your monitor.
 - [ ] **Don't attack their Jace** unless it's actively winning them the game. Take the life total.
 - [ ] **Count your graveyard before casting a threshold card.** Seven.
 - [ ] **Heartwood adds R or G only.** It pays for a red or green splash, not any splash.
-- [ ] **An Annex enters untapped only if a planeswalker is *already* there** — one arriving the same turn doesn't count.
+- [ ] **A dual enters untapped only if a planeswalker is *already* there** — one arriving the same turn doesn't count. This applies to all ten commons, Annex and Commons alike.
 - [ ] **Your removal can point at planeswalkers.** This set has a lot of them.
 
 ---
