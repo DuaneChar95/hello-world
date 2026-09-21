@@ -43,14 +43,16 @@ and the signal it implies. Not an essay.**
 |---|---|---|---|---|
 | U/B | **Theorix** — Esoteric Mathematics | Self-mill → threshold | **S** (8.6) | ▼ needs enabler density |
 | W/U | **Fatehold** — Future History | Scry/surveil, 2/2 tokens | **S** (8.4) | ▬ |
-| W/B | **Liliana's Attrition** | Sacrifice + recursion | **A** (7.8) | ▼ |
-| B/G | **Garruk's Bestiary** | Value creatures, deathtouch+trample | **A** (7.5) | ▲ |
+| W/B | **Liliana's Attrition** — *Liliana the Faultless* (W) / *the Repentant* (B), both rare **creatures** | Sacrifice + recursion | **A** (7.8) | ▼ |
+| B/G | **Garruk's Bestiary** — *Garruk, Veiled Butcher* (B) / *Curse Breaker* (G), mythic walkers | Value creatures, deathtouch+trample | **A** (7.5) | ▲ |
 | G/W | **Vigorbloom** — Invasive Healing | Lifegain + +1/+1 counters | **A** (7.2) | ▲ |
-| R/W | **Ajani's Army** | Counters aggro, equipment | **B** (6.9) | ▼▼▼ can't get the curve |
-| U/R | **Chandra's Prowess** | Noncreature spells, Thopters | **B** (6.7) | ▼ |
-| G/U | **Jace's Mastery** | Empower + the Way cycle | **A** (7.1) | ▬ |
+| R/W | **Ajani's Army** — *Ajani Resolute* (W, 2cmc) / *Unrelenting* (R, 6cmc), mythic walkers | Counters aggro, equipment | **B** (6.9) | ▼▼▼ can't get the curve |
+| U/R | **Chandra's Prowess** — *Chandra, Chill of Compliance* (U) / *Torch of Defiance* (R), mythic walkers | Noncreature spells, Thopters | **B** (6.7) | ▼ |
+| G/U | **Jace's Mastery** — Jace did **not** split; the signpost is the Jace *token* (empower). Jace cards are blue only | Empower + the Way cycle | **A** (7.1) | ▬ |
 | B/R | **Stingerquill** — Painful Words | Removal, *not* face burn | **B** (6.9) | ▼▼ |
 | R/G | **Konstrari** — Constructive Arts | Heartwood ramp | **C** (6.0) | **▲▲▲▲ → 7.3, top-3 in sealed** |
+
+**When the user asks about an enemy-pair archetype, name its planeswalker pair and what each half does** — the user learns these decks by their walkers. Liliana's halves are creatures (she lost her spark); Jace has no green half.
 
 **College prepared spells (C/U, shared within a college):**
 Fatehold = 2/2 token + surveil · Theorix = self-mill · Stingerquill = damage to opponent ·

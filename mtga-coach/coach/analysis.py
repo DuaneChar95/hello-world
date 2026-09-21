@@ -205,6 +205,12 @@ def archetype_affinity(card: CardInfo, ratings: Ratings) -> list[dict]:
             score += 2.0 * len(hits)
             why.append("wants " + ", ".join(sorted(hits)))
 
+        # The archetype's own signposts: an Elder Sphinx or college charm for
+        # a college, the split planeswalker pair for a Lorwyn Five deck.
+        if card.name in meta.get("signposts", []):
+            score += 4.0
+            why.append("this deck's signpost")
+
         # format rules that override raw colour fit
         if "threshold" in tags and pair != "UB":
             score -= 3.0

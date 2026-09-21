@@ -54,7 +54,7 @@ the advice:
 | **Cruel Calculations** | B common | **mono-U rare** | |
 | **Void Extrapolator** | uncommon | **common**, and it's a *prepared* Theorix card (`Void Extrapolator // Omit Variables`) | Good news for U/B: the enabler is at common. |
 | **Prudent Fateseer** | common | **uncommon** | |
-| **The Echoed Pair planeswalkers** | gold rares in the enemy pair | **mono-coloured mythics** — *Ajani Resolute* is W, *Ajani Unrelenting* is R; *Liliana the Repentant* is B, *the Faultless* is W | This one I had structurally wrong. An Echoed Pair is **two mono-coloured cards, one in each colour of the pair** — not a gold card. So the enemy archetypes are signposted by a pair of mono-coloured mythics. |
+| **The Echoed Pair planeswalkers** | gold rares in the enemy pair | **two mono-coloured cards, one in each colour** — and not all of them planeswalkers. *Ajani Resolute* (W) / *Ajani Unrelenting* (R), *Chandra, Chill of Compliance* (U) / *Chandra, Torch of Defiance* (R) and *Garruk, Veiled Butcher* (B) / *Garruk, Curse Breaker* (G) are mythic planeswalkers. *Liliana the Faultless* (W) / *Liliana the Repentant* (B) are **rare legendary creatures** — Liliana is the one who lost her spark. **Jace has no green half at all**: his echo is the Jace *token*, and G/U is built around it. | I had this structurally wrong twice: first as gold cards, then as "five pairs of mythics." §7 now names each pair and what it does. |
 
 ### What the real data confirmed
 
@@ -180,6 +180,9 @@ than I first wrote) · **Fails when**.
 
 ### U/B Theorix — Graveyard Math · 23 spells, 17 land
 
+- **Signposts:** `Uldaros Theorix` (M, {3}{U}{B}{B}) · `Paradox Shaper` (U, {1}{U/B}) · `Theorix Charm` (U, {U}{B}) — The college's Elder Sphinx, its uncommon prepared creature and its charm.
+- **Enablers to look for:** `Theorix Metamage` (C, {2}{U/B}) · `Paradox Shaper` (U, {1}{U/B}) · `Void Extrapolator` (C, {1}{B}) · `Theorix Charm` (U, {U}{B}) · `Liliana the Repentant` (R, {1}{B}) · `Mindseeker Oculus` (C, {2}{U}) · `Protege's Awakening` (C, {3}{U}). Anything that puts your own cards in the graveyard: the Theorix prepared spell is self-mill, every Jace surveil is a mill, and Liliana the Repentant mills two per body. **Count these first — you want five or more.**
+- **Payoffs to look for:** `Uldaros Theorix` (M, {3}{U}{B}{B}) · `Void Extrapolator` (C, {1}{B}) · `Null Summoner` (R, {2}{U}{B}) · `Loot, the Anomaly` (U, {2}{B}) · `Winter, Tormented Loner` (U, {2}{B}) · `Gallia, Tragic Host` (U, {1}{B}) · `Eye of Jace` (U, {1}) · `Tarmogoyf` (M, {1}{G}). Threshold cards and graveyard recursion. Nobody else can use them, so they wheel — **take enablers over payoffs until you have five**, then the payoffs will still be there.
 - **Spine (both builders):** `Theorix Charm` (U) · `Paradox Shaper` (U) · `Last Gasp` (C) · `Void Extrapolator` (C) · `Theorix Metamage` (C) · `Arni, Humble Scribe` (U) · `Extended Absence` (C) · `Recursive Recruitment` (U) · `Undulating Witness` (C) · `Twinned Vision` (C)
 - **Take over anything comparable:** `Theorix Metamage` — flier, self-mill, threshold *and* prepared, four cards in one. `Uldaros Theorix` (M) if you open it.
 - **Engine:** **5+ self-mill sources.** The Theorix prepared spell (*Omit Variables*) is self-mill, so each prepared creature counts. Only 3 prepared cards exist in-college, so the Jace surveils make up the difference — **4+ empower cards**, easy in blue.
@@ -190,6 +193,9 @@ than I first wrote) · **Fails when**.
 
 ### W/U Fatehold — Surveil Tempo · 23 spells, 17 land
 
+- **Signposts:** `Denzilore Fatehold` (M, {1}{W}{U}{U}) · `Prudent Fateseer` (U, {1}{W/U}{W/U}) · `Fatehold Charm` (U, {W}{U}) — The college's Elder Sphinx, its uncommon prepared creature and its charm.
+- **Enablers to look for:** `Fatehold Chronologist` (C, {1}{W/U}) · `Prudent Fateseer` (U, {1}{W/U}{W/U}) · `Semester Foreseer` (C, {3}{U}) · `Campus Crier` (C, {1}{W}) · `Mindseeker Oculus` (C, {2}{U}) · `Academic Ascent` (C, {1}{W}) · `Fatehold Charm` (U, {W}{U}). Scry and surveil sources. The Fatehold prepared spell makes a 2/2 *and* surveils, and every empower card is a surveil waiting to happen — so the enablers here are also bodies.
+- **Payoffs to look for:** `Denzilore Fatehold` (M, {1}{W}{U}{U}) · `Surveillance Phantasm` (C, {1}{U}) · `Diviner of Victory` (R, {U}) · `Prudent Fateseer` (U, {1}{W/U}{W/U}) · `Enlightened Confidant` (M, {1}{W}) · `Proctor of Potential` (R, {W}{U}). Cards that trigger whenever you scry or surveil. Two or three is enough; the enablers are already strong on their own, which is why this deck is S-tier.
 - **Spine (both builders, 14 of 23 — the strongest agreement in the sample):** `Prudent Fateseer` (U) · `Fatehold Chronologist` (C) · `Semester Foreseer` (C) · `Desperate Futurescribe` (U) · `Saheeli, Consul of Oversight` (U) · `Surveillance Phantasm` (C) · `Proft, Consulting Detective` (U) · `Surgical Precision` (C) · `Fatehold Charm` (U) · `Campus Crier` (C) · `Mindseeker Oculus` (C) · `Yuriko, Hope from the Shadows` (U) · `Memory Trap` (C) · `Hexhaven Battalion` (C)
 - **Engine:** the prepared spell (*Peer Review*) makes a 2/2 **and** surveils, so your enablers are your payoffs. `Denzilore Fatehold` (M) is the best of the five sphinxes.
 - **Interaction:** **corrected** — I said "W+U is 4 removal total, 2 at common." It is **10 total, 3 at common**: `Memory Trap`, `Surgical Precision`, `Infinite Coursework`. *Memory Trap is an Oblivion Ring at common* and both builders played it. W/U is not the removal-starved pair I described. It is still last-but-one; that's U's fault, not W's.
@@ -198,6 +204,9 @@ than I first wrote) · **Fails when**.
 
 ### W/B Liliana's Attrition — Sacrifice & Recursion · 23 spells, 17 land
 
+- **Signposts — the Liliana pair:** `Liliana the Faultless` (W, `{W}` 1/1 rare) and `Liliana the Repentant` (B, `{1}{B}` 2/2 rare). **Both are legendary creatures, not planeswalkers** — Liliana is the one of the five who lost her spark, and her halves are a one-drop and a two-drop, which is exactly why this deck is cheap bodies plus recursion. *Repentant* is the engine: every other creature or planeswalker you play mills two (recursion targets, threshold fuel), and her exhaust ability reanimates one of them. *Faultless* gains a life per body and hands out hexproof. Take either over any common.
+- **Enablers to look for:** `Blessed Ghoul` (C, {W/B}) · `Rank Rat` (C, {1}{B}) · `Theoretical Necromancer` (C, {2}{B}) · `Silence the Echo` (C, {1}{B}) · `Winter, Tormented Loner` (U, {2}{B}) · `Way of the Deathbringer` (U, {2}{B}) · `Liliana the Repentant` (R, {1}{B}). Cheap bodies that are happy to die, and **sacrifice outlets** — Silence the Echo and Way of the Deathbringer are the ones that also do something. Without an outlet, recursion is just small creatures.
+- **Payoffs to look for:** `Liliana the Repentant` (R, {1}{B}) · `Gallia, Tragic Host` (U, {1}{B}) · `Edgar, Ancient Bloodlord` (U, {W}{B}) · `Darklight Phoenix` (M, {3}{B}) · `Bloodline Recollector` (M, {1}{B}) · `Massacre Girl, Most Wanted` (U, {4}{B}) · `Way of the Necromancer` (U, {1}{B}). Things that come back, or that get better when creatures die. Liliana the Repentant is both — she fills the graveyard and reanimates from it.
 - **Spine (both builders):** `Winter, Tormented Loner` (U) · `Last Gasp` (C) · `Way of the Deathbringer` (U) · `Edgar, Ancient Bloodlord` (U) · `Silence the Echo` (C) · `Teyo, Lightshield Expert` (U) · `Mabel, Bitter Recluse` (U) · `Campus Crier` (C) · `Massacre Girl, Most Wanted` (U) · `Memory Trap` (C) · `Rank Rat` (C) · `Hexhaven Battalion` (C)
 - **Engine:** a sacrifice outlet. `Silence the Echo` (C) doubles as removal *and* an outlet. `Way of the Deathbringer` is in both decks and is why: it hands your Jace token "−2: sac a creature, make a 4/4 trample Beast" — an outlet, a payoff and a mana-fixer clause in one card.
 - **Interaction:** the pair contains **22 removal spells, 5 at common** — second-deepest in the set. The builders had **4 and 3**. Take every piece you see; do not expect six.
@@ -207,6 +216,9 @@ than I first wrote) · **Fails when**.
 
 ### B/G Garruk's Bestiary — Value Creatures · 23 spells, 17 land
 
+- **Signposts — the Garruk pair:** `Garruk, Veiled Butcher` (B, `{3}{B}{B}` mythic) and `Garruk, Curse Breaker` (G, `{3}{G}{G}` mythic). Two five-mana planeswalkers that **each make a 4/4 trample Beast** — the deck's deathtouch-and-trample theme on one card apiece. *Curse Breaker*'s static (draw whenever a power-4+ creature enters) is the card-advantage engine this deck otherwise lacks; *Veiled Butcher*'s +2 (−4/−1) is repeatable removal and its static exiles anything of theirs that dies. Either is a first-pick bomb; both is the best B/G deck in the room.
+- **Enablers to look for:** `Rampart Hunter` (C, {3}{B}) · `Ferocity of the Hunt` (C, {1}{B/G}) · `Arcane Amphisbaena` (C, {1}{G}) · `Primal Witchstalker` (U, {1}{B}{G}) · `Carnivorous Cultivator` (R, {1}{G}) · `Last Gasp` (C, {1}{B}) · `Compel Brutality` (C, {1}{G}). Deathtouch bodies and removal. This deck has no engine on purpose — its enablers are good creatures that trade up, and its interaction keeps the board clear for the top end.
+- **Payoffs to look for:** `Garruk, Curse Breaker` (M, {3}{G}{G}) · `Garruk, Veiled Butcher` (M, {3}{B}{B}) · `Vraska, the Cutting Glare` (R, {B}{B}{G}) · `Hapatra, the Desert Fang` (U, {2}{B}{B}{G}) · `Vinelasher Adept` (C, {4}{G}{G}) · `Apex Witchstalker` (C, {4}{B}{B}) · `Bestial Incursion` (C, {3}{G}). Big things with trample, and the two Garruks — Curse Breaker draws off every 4-power creature, so the more of these you have the more cards he gives you.
 - **Spine (both builders):** `Gallia, Tragic Host` (U) · `Last Gasp` (C) · `Extended Absence` (C) · `Hapatra, the Desert Fang` (U) · `Primal Witchstalker` (U) · `Rewrite Regrets` (U) · `Arcane Amphisbaena` (C) · `Bestial Incursion` (C) · `Something Worth Saving` (C) · `Apex Witchstalker` (C) · `Vinelasher Adept` (C)
 - **Engine:** none — and that is the point. The highest-floor deck, because good creatures are good creatures.
 - **Interaction:** 18 in the pair, 5 at common. The builders had **3 and 4**, all black.
@@ -215,6 +227,9 @@ than I first wrote) · **Fails when**.
 
 ### G/W Vigorbloom — Lifegain & Counters · 23 spells, 17 land
 
+- **Signposts:** `Kwia Vigorbloom` (M, {3}{G}{W}{W}) · `Vigorbloom Vanguard` (U, {1}{G/W}) · `Vigorbloom Charm` (U, {G}{W}) — The college's Elder Sphinx, its uncommon prepared creature and its charm.
+- **Enablers to look for:** `Emergency Phytomedic` (C, {G/W}) · `Vigorbloom Vanguard` (U, {1}{G/W}) · `Greenhouse Propagator` (C, {2}{G}) · `Unflinching Hortimancer` (C, {1}{W}) · `Predictive Preparations` (C, {1}{W}) · `Liliana the Faultless` (R, {W}) · `Vigorbloom Charm` (U, {G}{W}). Lifegain and +1/+1 counter sources. The Vigorbloom prepared spell does both, and Liliana the Faultless gains a life for every body you play.
+- **Payoffs to look for:** `Bloombrute` (U, {2}{G}{W}) · `Graft Surgeon` (C, {2}{W}) · `Ajani Resolute` (M, {1}{W}) · `Lyra, Archangel of Dawn` (R, {2}{W}) · `Enlightened Confidant` (M, {1}{W}) · `Solarium Sentry` (R, {G}{W}) · `Germinate Recruits` (R, {2}{W}) · `Kwia Vigorbloom` (M, {3}{G}{W}{W}). Cards that draw, grow or make tokens when you gain life. Bloombrute and Graft Surgeon are the commons that matter; Ajani Resolute is the mythic that wants this deck more than his own.
 - **Spine (both builders, 14 of 23):** `Vigorbloom Vanguard` (U) · `Bloombrute` (U) · `Blossom-Blessed Angel` (C) · `Edgar, Moonlit Sovereign` (U) · `Surgical Precision` (C) · `Titanbones, Towering Heart` (U) · `Vigorbloom Charm` (U) · `Yoshimaru, Scrappy Stray` (U) · `Greenhouse Propagator` (C) · `Emergency Phytomedic` (C) · `Compel Brutality` (C) · `Memory Trap` (C) · `Unflinching Hortimancer` (C) · `Blessed Ghoul` (C)
 - **Engine:** `Graft Surgeon` (C) keeps counters after a creature dies; `Bloombrute` (U) draws on lifegain. Two payoffs is enough.
 - **Interaction:** **corrected** — I called this "weakest in the format, 10 removal, 2 at common." It is **12 and 4** (`Compel Brutality`, `Sureshot Sower`, `Memory Trap`, `Surgical Precision`), and the weakest pair is **G/U**, not G/W.
@@ -223,6 +238,9 @@ than I first wrote) · **Fails when**.
 
 ### R/W Ajani's Army — Counters Aggro · 23 spells, **16 land**
 
+- **Signposts — the Ajani pair:** `Ajani Resolute` (W, `{1}{W}`, 2 loyalty, mythic) and `Ajani Unrelenting` (R, `{4}{R}{R}`, 5 loyalty, mythic). **The pair is split across the aggro/lifegain line**, and that matters: *Resolute* is a two-mana walker that ticks itself up whenever you gain life and makes a Pridemate — it wants G/W Vigorbloom as much as R/W. *Unrelenting* is the aggro one: a Cadet on every activation, +1 for team haste, and a −3 one-sided sweep that spares your tokens. Six mana in a 16-land deck is a real cost; it is still the best top-end this deck can have.
+- **Enablers to look for:** `Predictive Preparations` (C, {1}{W}) · `Charge the Sanctum` (C, {2}{R/W}) · `Skilled Battlecarver` (C, {1}{R}) · `Marwyn, the Clearcutter` (U, {R}) · `Emergency Phytomedic` (C, {G/W}) · `Warrior's Blades` (U, {2}{R}{W}) · `Heartstring Puller` (C, {3}{R}). Cheap bodies and counter sources. The curve *is* the engine — nine two-drops and 16 lands — so the enablers are anything that costs two or less and attacks.
+- **Payoffs to look for:** `Mabel, Valley Hero` (U, {1}{R}{W}) · `Ajani Unrelenting` (M, {4}{R}{R}) · `Ajani Resolute` (M, {1}{W}) · `Ajani's Anguish` (R, {X}{R}) · `Gallia, the Merrymaker` (U, {1}{R}) · `Winter, Team Player` (U, {4}{R}) · `Master of Barbs` (R, {1}{R}). Anthems, haste and reach to close. Ajani Unrelenting is the top end; Ajani's Anguish gives the whole team trample. Don't take payoffs over two-drops.
 - **Spine (both builders):** `Wrath of the Bloodmane` (C) · `Awaken the Inferno` (C) · `Gallia, the Merrymaker` (U) · `Mabel, Valley Hero` (U) · `Winter, Team Player` (U) · `Marwyn, the Clearcutter` (U) · `Warrior's Blades` (U) · `Emergency Phytomedic` (C) · `Heartstring Puller` (C) · `Predictive Preparations` (C) · `Skilled Battlecarver` (C) · `Hexhaven Battalion` (C)
 - **Note:** both builders ran `Emergency Phytomedic` `{G/W}` and Pete ran `Vigorbloom Vanguard` `{1}{G/W}` in a deck with no Forests. **Hybrids are on-colour if you have either half** — confirmed.
 - **Engine:** the curve *is* the engine. **9 two-drops, 16 lands.**
@@ -232,6 +250,9 @@ than I first wrote) · **Fails when**.
 
 ### B/R Stingerquill — Face Burn · 23 spells, 17 land
 
+- **Signposts:** `Ingris Stingerquill` (M, {B}{R}{R}) · `Stingerquill Voxmancer` (U, {B/R}) · `Stingerquill Charm` (U, {B}{R}) — The college's Elder Sphinx, its uncommon prepared creature and its charm.
+- **Enablers to look for:** `Stingerquill Voxmancer` (U, {B/R}) · `Hallway Heckler` (C, {2}{R}) · `Whiplash Wordsmith` (C, {3}{B/R}) · `No Admittance` (C, {1}{R}) · `Stingerquill Charm` (U, {B}{R}) · `Screeching Soulbreaker` (C, {2}{B}) · `Cast Away Doubt` (C, {2}{B}). Noncombat damage to the opponent: the Stingerquill prepared spell, pingers and burn. These also happen to be the deck's bodies.
+- **Payoffs to look for:** `Master of Barbs` (R, {1}{R}) · `Ingris Stingerquill` (M, {B}{R}{R}) · `Grim Repriser` (U, {B}{R}) · `Sanctum Lurker` (R, {2}{B}) · `Command the Stage` (U, {2}{R}). Cards that trigger when an opponent takes damage. **Master of Barbs is a rare**, so the payoff usually isn't there — which is why the right B/R deck is a removal deck that ignores this list.
 - **Spine (both builders):** `Stingerquill Voxmancer` (U) · `Sanctum Lurker` (R) · `Command the Stage` (U) · `Grim Repriser` (U) · `Tomik, Izzet Sparkmage` (U) · `Stingerquill Charm` (U) · `Whiplash Wordsmith` (C) · `Blazing Crescendo` (C) · `Skilled Battlecarver` (C) · `No Admittance` (C)
 - **`Sanctum Lurker` in both decks is the find here.** "Planeswalkers you control aren't put into their owners' graveyards for having 0 loyalty" — a Jace token enters at **0** and normally dies on the spot unless something empowers it. Lurker makes every empower card in your deck work, and keeps a spent Jace on the board to hold your duals untapped.
 - **Interaction: I have to withdraw a number.** I wrote "run 7. Yes, seven." The pair genuinely has the deepest interaction in the set — **23 spells, 7 at common** — and both builders, from real pools, ended on **1 and 2**. Seven was never a sealed target. In draft, take every removal spell; in sealed, build what you opened.
@@ -240,6 +261,9 @@ than I first wrote) · **Fails when**.
 
 ### U/R Chandra's Prowess — Noncreature Spells · 23 spells, 17 land
 
+- **Signposts — the Chandra pair:** `Chandra, Chill of Compliance` (U, `{1}{U}{U}` mythic) and `Chandra, Torch of Defiance` (R, `{2}{R}{R}` mythic). Both reward noncreature spells directly: *Chill*'s +1 surveils and picks up a noncreature card, her other +1 makes {U} for noncreature spells only, and −X stuns a blocker. *Torch* is the strongest reprint in the set for Limited — +1 card or 2 damage, +1 for {R}{R}, −3 kills a creature — removal and card advantage on one permanent. Either walker is a reason to be in this deck; the common prowess bodies are not.
+- **Enablers to look for:** `Twinned Vision` (C, {1}{U/R}) · `Unsummon` (C, {U}) · `Blazing Crescendo` (C, {1}{R}) · `Icy Reception` (C, {1}{U}) · `Essence Burn` (U, {1}{R}) · `Wrath of the Bloodmane` (C, {2}{R}) · `Clash of Elements` (U, {1}{U}{R}) · `Artifist Acumen` (C, {R}). Cheap noncreature spells — and they should be **removal or tempo**, so your spell count and your interaction count are the same cards. A bad cantrip is still a bad card.
+- **Payoffs to look for:** `Chandra's Emberling` (C, {2}{R}) · `Cryotheory Adept` (C, {1}{U}) · `Saheeli, Jewel of Avishkar` (U, {2}{U}{R}) · `Variable Chaser` (R, {2}{U}) · `Pyre Rhymer` (R, {1}{R}{R}) · `Stingcaster Mage` (M, {1}{R}) · `Chandra, Chill of Compliance` (M, {1}{U}{U}) · `Chandra, Torch of Defiance` (M, {2}{R}{R}) · `Tomik, Izzet Sparkmage` (U, {1}{R}). Prowess and spell-cast triggers. Saheeli makes a hasty Thopter per spell; both Chandras reward noncreature spells directly.
 - **Spine (both builders):** `Pompous Battlemage` (R) · `Stingerquill Voxmancer` (U) · `Traxos, Academy Guardian` (U) · `Clash of Elements` (U) · `Plan for All Outcomes` (U) · `Tomik, Izzet Sparkmage` (U) · `Tam's Resistance` (C) · `Blazing Crescendo` (C) · `Chandra's Emberling` (C) · `Cryotheory Adept` (C) · `Unsummon` (C)
 - **Engine:** ~9 noncreature spells, and they should be **removal**, so your spell count and your interaction count are the same cards. Red supplies what blue cannot.
 - **The cheapest deck in the sample:** Dafore's U/R averaged **2.12** mana with **seven one-drops** and only 10 creatures. If a pair is going to run 13 two-or-fewer-drops, it's this one.
@@ -248,6 +272,9 @@ than I first wrote) · **Fails when**.
 
 ### G/U Jace's Mastery — Empower Value · 23 spells, 17 land  **(upgraded)**
 
+- **Signposts — Jace, who did not split:** there is no green Jace. **Jace's echo is the Jace *token*** — the empower mechanic itself — and this deck is built around feeding it. The Jace cards are all blue: `The Theorist, Jace Beleren` (`{2}{U}{U}` mythic — you draw on each opponent's draw step; +1 Illusion, −2 bounce) and `Jace, Reality Sculptor` (`{3}{U}{U}` rare — +1 empowers by your Island count). The green half of the archetype is carried by the cards that give your walkers abilities: `Way of the Paradox`, `Way of the Wildspeaker`, `Kiora of Salt and Sand`, `Avatar of Burgeoning Echoes`. So unlike the other four enemy pairs, the signpost here is a mechanic, not a card pair.
+- **Enablers to look for:** `Tam's Resistance` (C, {1}{G/U}) · `Arcane Amphisbaena` (C, {1}{G}) · `Mindseeker Oculus` (C, {2}{U}) · `Protege's Awakening` (C, {3}{U}) · `Inspired Tethermage` (C, {2}{G}) · `Plan for All Outcomes` (U, {3}{U}) · `Jace's Machinations` (R, {2}{U}) · `Jace, Reality Sculptor` (R, {3}{U}{U}). Empower cards — six or more. Blue has the big ones (Oculus 4, Awakening 6, Machinations 8); green's are cheaper bodies. The loyalty is the battery.
+- **Payoffs to look for:** `Way of the Paradox` (U, {2}{G}) · `Way of the Wildspeaker` (U, {4}{G}) · `Way of the Mind Sculptor` (U, {4}{U}) · `Way of the Cryomancer` (U, {2}{U}) · `Kiora of Salt and Sand` (U, {1}{G}{U}) · `Avatar of Burgeoning Echoes` (M, {G}{U}) · `Mind Meanderer` (U, {3}{G}{U}{U}) · `Compel Brutality` (C, {1}{G}). Cards that give your walkers abilities, or that care about loyalty. **Two Ways is the line** — both real sealed builders had two. Compel Brutality turns five loyalty into a removal spell.
 - **Spine (both builders):** `Way of the Wildspeaker` (U) · `Sureshot Sower` (C) · `Way of the Mind Sculptor` (U) · `Mind Meanderer` (U) · `Mindseeker Oculus` (C) · `Protege's Awakening` (C) · `Tam's Resistance` (C) · `Arcane Amphisbaena` (C) · `Compel Brutality` (C) · `Infinite Coursework` (C) · `Inspired Tethermage` (C)
 - **Both builders independently ran two Ways.** That is the clearest confirmation in the whole sample of something this guide claimed on reasoning alone: the Ways are what turn a battery of empower cards into an engine.
 - **Engine:** **6+ empower cards and 2+ Ways.** Without two Ways you have a green-blue goodstuff deck paying a tax.
@@ -257,6 +284,9 @@ than I first wrote) · **Fails when**.
 
 ### R/G Konstrari — Heartwood Ramp · 23 spells, **18 land in sealed, 17 in draft**
 
+- **Signposts:** `Aerid Konstrari` (M, {1}{R}{G}{G}) · `Woodwork Prodigy` (U, {2}{R/G}) · `Konstrari Charm` (U, {R}{G}) — The college's Elder Sphinx, its uncommon prepared creature and its charm.
+- **Enablers to look for:** `Konstrari Improviser` (C, {1}{R/G}) · `Woodwork Prodigy` (U, {2}{R/G}) · `Heartwood Crafter` (U, {G}) · `Aerid Konstrari` (M, {1}{R}{G}{G}) · `Hungering Puppetbeast` (R, {3}{G}{G}) · `Konstrari Charm` (U, {R}{G}). Heartwood makers. Woodwork Prodigy re-prepares every upkeep, so it's a Heartwood a turn. Three or more, or the top end never gets cast.
+- **Payoffs to look for:** `Aerid Konstrari` (M, {1}{R}{G}{G}) · `Craftwork Crusher` (U, {3}{R}{R}{G}{G}) · `Draconic Visitor` (R, {3}{R}{R}) · `Kiora of Fire and Ashes` (U, {4}{R}{R}) · `Wrecking Gecko` (C, {4}{G}) · `Vinelasher Adept` (C, {4}{G}{G}) · `Ghalta the Unstoppable` (U, {8}{G}) · `Puppet Crafting` (R, {1}{G}). Expensive things worth ramping into, and artifact-count cards. Draconic Visitor turns every Heartwood into a 5/5 Dragon. In sealed the pool hands you these; in draft take them *before* the enablers.
 - **Spine (both builders):** `Woodwork Prodigy` (U) · `Wrath of the Bloodmane` (C) · `Craftwork Crusher` (U) · `Heartwood Crafter` (U) · `Yoshimaru, Scrappy Stray` (U) · `Kiora of Fire and Ashes` (U) · `Konstrari Improviser` (C) · `Arcane Amphisbaena` (C) · `Wrecking Gecko` (C) · `Compel Brutality` (C) · `Vinelasher Adept` (C)
 - **Engine:** **3+ Heartwood makers AND 3+ cards worth ramping into.** Both halves, or neither works.
 - **Interaction:** 14 in the pair, 5 at common — and the builders had **4 and 5, the highest counts in the sample.** Green's interaction is better than I credited it; see §0.8.
@@ -378,7 +408,7 @@ ran 10–15 cards out of 23, so roughly **half of a sealed deck is forced and ha
 | **Size** | 290 cards: **71 commons, 109 uncommons, 64 rares, 26 mythics**, 10 basics [CONFIRMED] |
 | **New mechanics** | **Empower Jace**, **Heartwood** tokens |
 | **Returning** | **Prepared** (from Secrets of Strixhaven), **threshold**, flashback, surveil, scry, landfall |
-| **Structure** | 5 allied pairs = Hexhaven **colleges**; 5 enemy pairs = the **Lorwyn Five** planeswalkers |
+| **Structure** | 5 allied pairs = Hexhaven **colleges**, each signposted by an Elder Sphinx; 5 enemy pairs = the **Lorwyn Five** planeswalkers, each split into two mono-coloured cards (one per colour). Ajani → R/W, Chandra → U/R, Garruk → B/G, Liliana → W/B, Jace → G/U. Collector numbers 195–262 are the whole *Echoed Pair* run: every legend in the set has a mirror in another colour, and the five walkers are its mythic tier. |
 | **Booster quirk** | The **Echoed Pair** slot — 2 of 3 cards in that slot share a rarity and depict a mirrored pair |
 
 ### The structural fact most people will miss
@@ -714,6 +744,96 @@ grindy format — not archetype count.
 > *partner*; it is a bad colour to be in alone. And be the drafter who is happy to end up in red
 > when it's flowing — not the one who starts there.
 
+### 6.1 The best cards in each colour  [EVAL]
+
+Eight per colour at any rarity, then the commons you will actually be handed. Order inside a colour is
+my read of the cards; the score is from the table above.
+
+#### Black — 8.6
+
+The best colour, and it isn't close. Thirteen removal spells, three at common — more than any two other colours combined — in a format where killing a prepared creature before it casts its copy is a two-for-one. The graveyard payoffs and the Liliana/Garruk halves are the bonus.
+
+**Top eight:**
+
+1. `Garruk, Veiled Butcher` (M, {3}{B}{B}) — +2 gives −4/−1 every turn — repeatable removal. −2 is an edict that leaves you a 4/4 trampler. Anything of theirs that dies is exiled.
+2. `Overwrite the Multiverse` (M, {4}{B}{B}) — Six-mana exile-all that empowers Jace once per creature swept. A wipe that refills your hand. Sealed sleeper.
+3. `Liliana the Repentant` (R, {1}{B}) — A two-drop that mills two whenever another creature or walker enters, and reanimates one of them once. The W/B and U/B engine.
+4. `Vraska's Final Mercy` (R, {B}{B}) — {B}{B}: destroy a creature or planeswalker for 2 life — or empower Jace 6. The cheapest hard removal in the set, with a second mode.
+5. `Rise of the Deathbringer` (R, {4}{B}) — Instant: draw cards equal to your biggest creature's power, or −3/−3 to everything. Both modes are premium.
+6. `Darklight Phoenix` (M, {3}{B}) — Four-mana 3/2 flying haste that returns from the graveyard whenever two creatures died this turn. Never stays dead in a sacrifice deck.
+7. `Sanctum Lurker` (R, {2}{B}) — Your planeswalkers don't die at 0 loyalty — so the Jace token survives its own entry — and each gets +2: ping and gain. Turns every empower card on.
+8. `Winter, Tormented Loner` (U, {2}{B}) — Three-mana edict on entry that grows with the creatures and walkers in your graveyard. Removal that becomes a finisher.
+
+**Commons you'll see:** `Last Gasp` (C, {1}{B}) · `Silence the Echo` (C, {1}{B}) · `Void Extrapolator` (C, {1}{B}) · `Extended Absence` (C, {3}{B}) · `Screeching Soulbreaker` (C, {2}{B}) · `Rampart Hunter` (C, {3}{B})
+
+#### Blue — 8.2
+
+The format's mechanics are blue — the Jace token is blue, surveil and self-mill are blue — and blue is in both S-tier decks. It drops below black on one number: it cannot kill anything. Infinite Coursework is the only blue common that permanently stops a creature. Blue is the best partner and a poor colour to be in alone.
+
+**Top eight:**
+
+1. `The Theorist, Jace Beleren` (M, {2}{U}{U}) — You draw on every opponent's draw step; the +1 makes chump-blockers to keep it alive. Wins a stalled game by itself.
+2. `Chandra, Chill of Compliance` (M, {1}{U}{U}) — Three-mana walker: +1 surveils and picks up a noncreature card, the other +1 makes {U} for noncreature spells, −X stuns a blocker. Card advantage for the spells deck.
+3. `Jace, Reality Sculptor` (R, {3}{U}{U}) — +1 empowers by your Island count, so it builds its own battery; −3 makes attacking into you pointless for a turn.
+4. `Variable Chaser` (R, {2}{U}) — Three-mana 2/3 flying prowess that enters prepared. A body, a spell and evasion on one card.
+5. `Seasoned Cryomancer` (M, {1}{U}{U}) — Three-mana 2/2 that loots two and stuns a creature per nonland discard. Tempo and selection; recurs from the graveyard.
+6. `Sphinx of False Conclusions` (R, {2}{U}{U}) — Four-mana 4/2 flash flier that loots on attack and copies itself when it dies. Two bodies and card selection.
+7. `Lyra, Tolarian Archangel` (R, {1}{U}{U}) — Three-mana 3/3 flier that makes a 3/3 flying Angel each end step you've drawn three. Pairs with The Theorist and the Jace draw.
+8. `Jace's Machinations` (R, {2}{U}) — Instant empower Jace 8 that lets you activate Jace at instant speed this turn. Eight loyalty for three mana.
+
+**Commons you'll see:** `Semester Foreseer` (C, {3}{U}) · `Icy Reception` (C, {1}{U}) · `Surveillance Phantasm` (C, {1}{U}) · `Infinite Coursework` (C, {2}{U}) · `Mindseeker Oculus` (C, {2}{U}) · `Protege's Awakening` (C, {3}{U})
+
+#### White — 7.9
+
+Revised up once I found Memory Trap — an Oblivion Ring at common, played in every white deck in the real sealed sample. With two good removal commons, three instant-speed removal uncommons, token generation and the counters shell, white is a real colour and not a synergy-dependent one.
+
+**Top eight:**
+
+1. `Ajani Resolute` (M, {1}{W}) — Two-mana walker that gains loyalty whenever you gain life and makes a Pridemate. Wants a lifegain deck more than an aggro one.
+2. `Liliana the Faultless` (R, {W}) — A one-drop that gains a life per body and discards to grant hexproof. Protects the bomb you splashed for.
+3. `Enlightened Confidant` (M, {1}{W}) — Two-mana 2/1 lifelink that surveils each end step you've gained life and picks up cheap cards. A lifegain engine on a two-drop.
+4. `Prophesied End` (U, {1}{W}) — Two-mana instant: destroy a creature; they draw only if it wasn't attacking. Kill blockers on your turn, attackers on theirs.
+5. `Your Fate Ends Here` (U, {2}{W}) — Three-mana instant: destroy a creature or walker with mana value 3+, and surveil. Hits everything that matters.
+6. `Memory Trap` (C, {2}{W}) — Oblivion Ring at common: exile any nonland permanent. Hits walkers and enchantments. White's best common.
+7. `Lyra, Archangel of Dawn` (R, {2}{W}) — Three-mana 3/3 flier; every lifegain grows all your Angels. Lifegain deck top-end that flies.
+8. `Kindred Judgment` (R, {5}{W}{W}) — Seven-mana one-sided wipe: name a type, everything else dies. Slow, but sealed games get there.
+
+**Commons you'll see:** `Memory Trap` (C, {2}{W}) · `Graft Surgeon` (C, {2}{W}) · `Hexhaven Battalion` (C, {4}{W}{W}) · `Blossom-Blessed Angel` (C, {3}{W}) · `Surgical Precision` (C, {1}{W}) · `Fatehold Chronologist` (C, {1}{W/U})
+
+#### Red — 7.2
+
+Better than its archetype. Red's creature removal is second-best in the set — three commons, with Wrath of the Bloodmane premium — and Fulminous Forte is the best uncommon removal in any colour. The face-damage plan is the trap, not the colour. Be happy to end up here; don't start here.
+
+**Top eight:**
+
+1. `Chandra, Torch of Defiance` (M, {2}{R}{R}) — +1 for a card or 2 damage, +1 for {R}{R}, −3 kills a creature. Removal and card advantage on one permanent.
+2. `Ajani Unrelenting` (M, {4}{R}{R}) — A Cadet on every activation, +1 for team haste, −3 is a one-sided sweep that spares your tokens. Six mana in a 16-land deck is the cost.
+3. `Fulminous Forte` (U, {2}{R}) — Instant: 5 damage to a creature or walker, or 1 damage to everything they control. Red's best removal at any rarity.
+4. `Curse-Marred Demon` (R, {2}{R}{R}) — Four-mana 4/4 flying trample that tutors on entry (then discards at random). The rate alone is a first pick.
+5. `Identity Echo` (R, {2}{R}) — Repeatable: exile your creature or walker, reveal until you hit another, put it in. In a token deck it digs for your bomb every turn.
+6. `Draconic Visitor` (R, {3}{R}{R}) — Five-mana 5/5 flier; any artifact token you'd make becomes a 5/5 Dragon instead. Every Heartwood in R/G is a Dragon.
+7. `Master of Barbs` (R, {1}{R}) — Menace two-drop that pumps your team whenever an opponent takes noncombat damage. The payoff that makes B/R's pings matter.
+8. `Pyre Rhymer` (R, {1}{R}{R}) — Three-mana 3/3 prowess that enters prepared. A body plus a spell in the prowess deck.
+
+**Commons you'll see:** `Wrath of the Bloodmane` (C, {2}{R}) · `Awaken the Inferno` (C, {4}{R}) · `Hallway Heckler` (C, {2}{R}) · `Heartstring Puller` (C, {3}{R}) · `Skilled Battlecarver` (C, {1}{R}) · `Stingerquill Voxmancer` (U, {B/R})
+
+#### Green — 6.9
+
+Last, but closer than I first had it. Two removal commons, and Compel Brutality is the more interesting: its second mode has your planeswalker deal damage equal to its loyalty, which turns green's empower commons into a removal engine. Big bodies matter in long games; the top end is still beatable by card advantage.
+
+**Top eight:**
+
+1. `Garruk, Curse Breaker` (M, {3}{G}{G}) — Draws a card whenever a power-4+ creature enters, and −3 makes one. The card-advantage engine B/G otherwise lacks.
+2. `Carnivorous Cultivator` (R, {1}{G}) — Two-mana 2/3 deathtouch that enters prepared and returns lands from the graveyard on damage. The best green two-drop.
+3. `Hexhaven Invigorator` (M, {G}{G}{G}{G}) — {G}{G}{G}{G} 6/6 vigilance that ramps you whenever it's damaged. Mono-green only, and then a monster.
+4. `Tarmogoyf` (M, {1}{G}) — Two mana for a body that scales with card types in all graveyards — in a self-mill format that's a 4/5 by turn four.
+5. `Hungering Puppetbeast` (R, {3}{G}{G}) — Five-mana 5/5 artifact that makes a Heartwood and eats artifacts for counters and keywords. The R/G payoff that's also an enabler.
+6. `Simulacrum Shaper` (R, {1}{G}{G}) — Three-mana 2/2 that ramps a land on entry and draws when it dies. Never a bad draw.
+7. `Compel Brutality` (C, {1}{G}) — Instant fight-lite — or your planeswalker deals damage equal to its loyalty. With a 5-loyalty Jace it kills almost anything for two.
+8. `Way of the Wildspeaker` (U, {4}{G}) — Empower 7 on entry; every walker gets −4 for a 4/4 trample Beast. The biggest single empower in the set.
+
+**Commons you'll see:** `Compel Brutality` (C, {1}{G}) · `Sureshot Sower` (C, {1}{G}) · `Greenhouse Propagator` (C, {2}{G}) · `Arcane Amphisbaena` (C, {1}{G}) · `Bestial Incursion` (C, {3}{G}) · `Wrecking Gecko` (C, {4}{G})
+
 ---
 
 ## 7. The ten archetypes
@@ -784,7 +904,7 @@ chase a turn-6 kill that isn't there.
 Attrition decks are also the **best home for the format's removal**, since you're happy to trade
 one-for-one all day when your cards come back. **Needs a sacrifice outlet or two** to convert
 recursion into an actual engine — without one it's a pile of small creatures.
-**Echoed Pair legends:** *Liliana the Repentant* / *Liliana the Faultless*. [CONFIRMED]
+**Echoed Pair legends:** *Liliana the Repentant* (B, `{1}{B}` 2/2 rare — mill two whenever another creature or planeswalker enters; exhaust `{5}{B}`: reanimate one) / *Liliana the Faultless* (W, `{W}` 1/1 rare — gain 1 life per body; discard to give hexproof). **Legendary creatures, not planeswalkers** — the one member of the Lorwyn Five who lost her spark. [CONFIRMED]
 
 #### 4. B/G — Garruk's Bestiary · **7.5**
 > *"Bring out fearsome creatures to hunt down your foes, combining deathtouch and trample to smash through any defenses!"* [CONFIRMED]
@@ -795,7 +915,7 @@ recursion into an actual engine — without one it's a pile of small creatures.
 It asks for almost no synergy — good creatures are good creatures. Deathtouch is unusually well
 positioned here: it profitably blocks the big Konstrari ramp payoffs and trades with prepared
 creatures before they get value. Ceiling is capped because it has no engine; it just plays fair
-Magic slightly better than you do. **Echoed Pair legends:** *Garruk, Curse Breaker* /
+Magic slightly better than you do. **Echoed Pair legends:** *Garruk, Curse Breaker* (G, `{3}{G}{G}` — draw when a power-4+ creature enters; −3 makes a 4/4 trample Beast) /
 *Garruk, Veiled Butcher*. [CONFIRMED]
 
 #### 5. G/W — Vigorbloom, School of Invasive Healing · "Life Gain" · **7.2**
@@ -829,13 +949,13 @@ equipment. Speed is the win condition.
 loses badly to Vigorbloom lifegain and to any deck that 2-for-1s it with prepared creatures. The
 deck needs a **near-perfect curve and 7+ two-drops** — a Vigorbloom deck can afford a clunky card,
 this one cannot. Only take this lane when it is clearly open early.
-**Echoed Pair legends:** *Ajani Resolute* / *Ajani Unrelenting*. [CONFIRMED]
+**Echoed Pair legends:** *Ajani Resolute* (W, `{1}{W}` — loyalty on every lifegain, −4 Pridemate; it wants Vigorbloom's lifegain as much as this deck) / *Ajani Unrelenting* (R, `{4}{R}{R}` — a Cadet per activation, +1 team haste, −3 one-sided sweep). [CONFIRMED]
 
 #### 7. U/R — Chandra's Prowess · **6.7**
 > *"Cast noncreature spells to trigger abilities and keep up the heat on your opponents."* [CONFIRMED]
 
 **Plan.** Prowess bodies + a high noncreature count, with Thopters as a token sub-theme.
-**Key card:** *Saheeli, Jewel of Avishkar*. **Echoed Pair legends:** Chandra goes from red
+**Key card:** *Saheeli, Jewel of Avishkar*. **Echoed Pair legends:** *Chandra, Chill of Compliance* (U, `{1}{U}{U}` — +1 surveil and pick up a noncreature; +1 {U} for noncreature spells; −X stun) / *Chandra, Torch of Defiance* (R, `{2}{R}{R}` — the classic; −3 kills a creature). Chandra goes from red
 *Chandra, Torch of Defiance* to mono-blue *Chandra, Chill of Compliance*. [CONFIRMED]
 
 [EVAL] Prowess wants ~10 noncreature spells; a grindy format wants creature quality. That tension
@@ -847,6 +967,8 @@ lane. [WATCH — rarity unverified]
 
 #### 8. G/U — Jace's Mastery · **6.5**
 > *"Keep empowering Jace to provide a steady flow of cards or pick your path to victory with cards that grant your planeswalkers abilities!"* [CONFIRMED]
+
+**Echoed Pair legends:** none — **Jace did not split.** His echo is the Jace *token*; the archetype feeds it. The Jace cards are blue only: *The Theorist, Jace Beleren* (`{2}{U}{U}` mythic) and *Jace, Reality Sculptor* (`{3}{U}{U}` rare, +1 empowers by Island count). Green's share is the Way cycle and *Kiora of Salt and Sand*. [CONFIRMED]
 
 **Plan.** Feed the Jace token, then convert loyalty into wins with cards that grant your
 planeswalkers extra abilities. **Key card:** *Kiora of Salt and Sand*. [CONFIRMED]
@@ -990,38 +1112,83 @@ Garruk, Veiled Butcher*, *Chandra, Torch of Defiance / Chandra, Chill of Complia
 > removal should be able to point at a planeswalker.** Value burn spells and evasive creatures
 > slightly higher than usual for this reason. [EVAL]
 
-### 9.3 Top commons — honest status
+### 9.3 Best cards by rarity  [EVAL — a read, not a measurement]
 
-**I could not retrieve a verified common-by-common rating list.** Every card database and review
-site is blocked from this machine, and no public 17Lands data exists for an unreleased set. Rather
-than invent a ranked list of commons with fake ratings — which would actively mislead you in a
-draft — here is what is solid:
+An earlier version of this section refused to rank commons: "there is no verified common-by-common
+rating list, and I won't invent one." That was right when the card list was unverified. With every
+card's oracle text in hand, a reasoned order is worth more than no order — **as long as it is labelled
+as inference, which this is.** When Arena queues open on 29 September, GIH WR replaces every list here.
 
-**Commons confirmed to exist in FRA** (rarity mostly unverified; grouped by lane):
+#### Mythics (26 in the set)
 
-- **Fatehold / W-U:** Prudent Fateseer, Semester Foreseer, Fatehold Chronologist, Fatehold Charm,
-  Campus Crier, Proctor of Potential, Surveillance Phantasm
-- **Theorix / U-B:** Paradox Shaper, Theorix Metamage, Theorist's Proxy, Void Extrapolator,
-  Null Summoner, Cruel Calculations
-- **Stingerquill / B-R:** Stingerquill Voxmancer, Hallway Heckler, Whiplash Wordsmith,
-  Grim Repriser, Master of Barbs, Stingcaster Mage
-- **Konstrari / R-G:** Woodwork Prodigy
-- **Vigorbloom / G-W:** Vigorbloom Vanguard, Graft Surgeon, Bloombrute, Greenhouse Propagator,
-  Surgical Precision, Titanbones, Towering Heart
-- **Other:** Way of the Healer (empower Jace)
+1. `Denzilore Fatehold` (M, {1}{W}{U}{U}) — Four-mana 3/4 flash flier; every scry or surveil puts a counter on your whole team, and the free Jace surveils fire it. Best of the five Sphinxes.
+2. `Aerid Konstrari` (M, {1}{R}{G}{G}) — Four-mana 5/4 flier that makes a Heartwood on entry *and* on death, with a mana sink. Replaces itself twice.
+3. `The Theorist, Jace Beleren` (M, {2}{U}{U}) — You draw on every opponent's draw step; the +1 makes chump-blockers to keep it alive. Wins a stalled game by itself.
+4. `The Echoverse Fulcrum` (M, {2}) — Two-mana loot on entry, then a five-mana one-shot board wipe. Colourless, so every deck plays it — the wipe is the sealed bomb.
+5. `Chandra, Torch of Defiance` (M, {2}{R}{R}) — +1 for a card or 2 damage, +1 for {R}{R}, −3 kills a creature. Removal and card advantage on one permanent.
+6. `Garruk, Veiled Butcher` (M, {3}{B}{B}) — +2 gives −4/−1 every turn — repeatable removal. −2 is an edict that leaves you a 4/4 trampler. Anything of theirs that dies is exiled.
+7. `Garruk, Curse Breaker` (M, {3}{G}{G}) — Draws a card whenever a power-4+ creature enters, and −3 makes one. The card-advantage engine B/G otherwise lacks.
+8. `Overwrite the Multiverse` (M, {4}{B}{B}) — Six-mana exile-all that empowers Jace once per creature swept. A wipe that refills your hand. Sealed sleeper.
+9. `Ingris Stingerquill` (M, {B}{R}{R}) — Every attacker pings each opponent. Turns a wide board into a clock, and makes the B/R deck real.
+10. `Uldaros Theorix` (M, {3}{U}{B}{B}) — Five-mana 5/5 flier that recasts a card of each type from your graveyard for free. A bomb at threshold, merely very good before it.
+11. `Ajani Unrelenting` (M, {4}{R}{R}) — A Cadet on every activation, +1 for team haste, −3 is a one-sided sweep that spares your tokens. Six mana in a 16-land deck is the cost.
+12. `Ajani Resolute` (M, {1}{W}) — Two-mana walker that gains loyalty whenever you gain life and makes a Pridemate. Wants a lifegain deck more than an aggro one.
 
-**The best commons in the set will almost certainly be, in this order** [EVAL]:
+#### Rares (64)
 
-1. **Unconditional instant-speed removal at ≤3 mana** — in any colour, but expect black and red.
-2. **The Fatehold prepared commons** (Prudent Fateseer, Semester Foreseer, Fatehold Chronologist).
-   A body + a 2/2 + a surveil at common is a broken rate, and there are at least three of them.
-3. **The Vigorbloom prepared commons** (Vigorbloom Vanguard and friends) — counters + life on a body.
-4. **Any common with empower Jace 3** (Theorist's Proxy is the confirmed example).
-5. **Common flyers in the 2–4 slot** — this format stalls.
+1. `Vindictive Triumph` (R, {W}{B}{B}) — Three-mana instant: exile any creature or planeswalker, and if it cost three or less you get it for a turn first. Premium removal with a bonus.
+2. `Vraska's Final Mercy` (R, {B}{B}) — {B}{B}: destroy a creature or planeswalker for 2 life — or empower Jace 6. The cheapest hard removal in the set, with a second mode.
+3. `Jace, Reality Sculptor` (R, {3}{U}{U}) — +1 empowers by your Island count, so it builds its own battery; −3 makes attacking into you pointless for a turn.
+4. `Liliana the Repentant` (R, {1}{B}) — A two-drop that mills two whenever another creature or walker enters, and reanimates one of them once. The W/B and U/B engine.
+5. `Rise of the Deathbringer` (R, {4}{B}) — Instant: draw cards equal to your biggest creature's power, or −3/−3 to everything. Both modes are premium.
+6. `Vraska, the Cutting Glare` (R, {B}{B}{G}) — Three-mana 4/4 deathtouch; with six lands it destroys any permanent on entry. A sealed finisher.
+7. `Sanctum Lurker` (R, {2}{B}) — Your planeswalkers don't die at 0 loyalty — so the Jace token survives its own entry — and each gets +2: ping and gain. Turns every empower card on.
+8. `Variable Chaser` (R, {2}{U}) — Three-mana 2/3 flying prowess that enters prepared. A body, a spell and evasion on one card.
+9. `Liliana the Faultless` (R, {W}) — A one-drop that gains a life per body and discards to grant hexproof. Protects the bomb you splashed for.
+10. `Curse-Marred Demon` (R, {2}{R}{R}) — Four-mana 4/4 flying trample that tutors on entry (then discards at random). The rate alone is a first pick.
+11. `Carnivorous Cultivator` (R, {1}{G}) — Two-mana 2/3 deathtouch that enters prepared and returns lands from the graveyard on damage. The best green two-drop.
+12. `Identity Echo` (R, {2}{R}) — Repeatable: exile your creature or walker, reveal until you hit another, put it in. In a token deck it digs for your bomb every turn.
+13. `Draconic Visitor` (R, {3}{R}{R}) — Five-mana 5/5 flier; any artifact token you'd make becomes a 5/5 Dragon instead. Every Heartwood in R/G is a Dragon.
+14. `Codie, Ravenous Codex` (R, {3}) — Copies every prepared spell you cast. Colourless, so any prepared deck can run it.
 
-Verify against the real list at prerelease and overwrite these in the companion tool.
+#### Uncommons (109)
 
----
+1. `Konstrari Charm` (U, {R}{G}) — {R}{G}: 6 damage to a flier, or two counters and trample, or {C}{C}{C}. Three good modes at two mana.
+2. `Fulminous Forte` (U, {2}{R}) — Instant: 5 damage to a creature or walker, or 1 damage to everything they control. Red's best removal at any rarity.
+3. `Prophesied End` (U, {1}{W}) — Two-mana instant: destroy a creature; they draw only if it wasn't attacking. Kill blockers on your turn, attackers on theirs.
+4. `Your Fate Ends Here` (U, {2}{W}) — Three-mana instant: destroy a creature or walker with mana value 3+, and surveil. Hits everything that matters.
+5. `Theorix Charm` (U, {U}{B}) — {U}{B}: soft counter, −2/−2, or mill three and draw. Never dead.
+6. `Winter, Tormented Loner` (U, {2}{B}) — Three-mana edict on entry that grows with the creatures and walkers in your graveyard. Removal that becomes a finisher.
+7. `Saheeli, Jewel of Avishkar` (U, {2}{U}{R}) — A hasty 1/1 flying Thopter for every noncreature spell. The U/R deck on one card.
+8. `Terminal Criticism` (U, {1}{B}) — {1}{B} instant: destroy a blue or red creature or walker. A hoser you maindeck when half the table is blue.
+9. `Vigorbloom Vanguard` (U, {1}{G/W}) — Two-mana 2/2 that enters prepared (life and counters) and gives countered creatures vigilance. Hybrid, so mono-G or mono-W casts it.
+10. `Paradox Shaper` (U, {1}{U/B}) — Re-prepares every upkeep: a self-mill spell every turn for two mana. The Theorix engine.
+11. `Prudent Fateseer` (U, {1}{W/U}{W/U}) — Three-mana 1/4 that enters prepared; the first scry or surveil each turn pumps the team. A wall that attacks.
+12. `Kiora of Salt and Sand` (U, {1}{G}{U}) — Activate a loyalty ability, then your attacker untaps and can't be blocked. Gives walkers −8 for an 8/8 hexproof.
+13. `Way of the Deathbringer` (U, {2}{B}) — Empower 5 on entry, and every planeswalker gets −2: sacrifice a creature, make a 4/4 trample Beast. Outlet, payoff and mana-fixer clause in one card.
+14. `Stingerquill Voxmancer` (U, {B/R}) — Hybrid one-drop with a prepared burn spell. Castable off Swamp or Mountain alone.
+15. `Woodwork Prodigy` (U, {2}{R/G}) — Three-mana 3/3 that re-prepares every upkeep — a Heartwood every turn.
+16. `Gallia, Tragic Host` (U, {1}{B}) — Two-mana menace that recurs itself by exiling a creature card from your graveyard. Never stays dead.
+
+#### Commons (81)
+
+1. `Memory Trap` (C, {2}{W}) — Oblivion Ring at common: exile any nonland permanent. Hits walkers and enchantments. White's best common.
+2. `Last Gasp` (C, {1}{B}) — {1}{B} instant −3/−3. Kills most of the format's two- and three-drops on their upkeep, before a prepared copy is cast.
+3. `Wrath of the Bloodmane` (C, {2}{R}) — Instant 4 damage to a creature or walker, two mana with a legend out. The best red common.
+4. `Compel Brutality` (C, {1}{G}) — Instant fight-lite — or your planeswalker deals damage equal to its loyalty. With a 5-loyalty Jace it kills almost anything for two.
+5. `Fatehold Chronologist` (C, {1}{W/U}) — Two-mana flier that enters prepared: a 2/2 token and a surveil attached. Most-played card in the real sealed sample.
+6. `Silence the Echo` (C, {1}{B}) — {1}{B}: destroy a creature or walker; sacrifice a creature or pay three. Removal and a sacrifice outlet.
+7. `Semester Foreseer` (C, {3}{U}) — Four-mana Fatehold prepared body: the 2/2-and-surveil spell on a bigger creature.
+8. `Void Extrapolator` (C, {1}{B}) — Two-mana 2/2 that enters prepared (self-mill) and is a 3/3 at threshold. Enabler and payoff.
+9. `Icy Reception` (C, {1}{U}) — Instant: soft-counter a creature, or −5/−0. Blue's best trick — it wins a combat or a tempo turn.
+10. `Surveillance Phantasm` (C, {1}{U}) — Two-mana 2/3 flying vigilance that attacks whenever you've scried or surveilled. A wall on defence, a flier on offence.
+11. `Theorix Metamage` (C, {2}{U/B}) — Hybrid three-mana flier that self-mills, has threshold and enters prepared. Four cards in one.
+12. `Hexhaven Battalion` (C, {4}{W}{W}) — Three 2/2s plus empower 2, or cycles for a basic when you'd rather have a land. No bad draw.
+13. `Extended Absence` (C, {3}{B}) — Four-mana instant exile that drains one. Answers anything, including a walker.
+14. `Infinite Coursework` (C, {2}{U}) — Pacifism that also taps the creature, unprepares it and stops it untapping. Blue's only hard answer at common.
+15. `Graft Surgeon` (C, {2}{W}) — 2/2 with a counter that hands its counters to another creature when it dies. Counters that never go away.
+16. `Sureshot Sower` (C, {1}{G}) — Two-mana 3/1 reach that discards itself to kill a flier. Green's anti-air, on a body.
+
 
 ## 10. Draft plan (Arena)
 
