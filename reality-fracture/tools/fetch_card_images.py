@@ -58,6 +58,10 @@ def fetch(url: str, session: requests.Session) -> Image.Image | None:
 
 def main() -> int:
     cards = json.loads(RATINGS.read_text(encoding="utf-8"))["cards"]
+    basics_path = OUT / "basics.json"
+    if basics_path.exists():
+        for name, url in json.loads(basics_path.read_text(encoding="utf-8")).items():
+            cards[name] = {"image": url}
     names = sorted(cards)
     print(f"{len(names)} cards to fetch")
     OUT.mkdir(parents=True, exist_ok=True)
