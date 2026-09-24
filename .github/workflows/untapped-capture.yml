@@ -1,0 +1,43 @@
+name: Capture Untapped data
+
+# The guide's session cannot reach untapped.gg. This runner can: it opens the
+# Reality Fracture Limited pages in a real browser, saves every JSON response
+# and the rendered tables, and commits them under reality-fracture/untapped/.
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'reality-fracture/tools/untapped_capture.mjs'
+      - '.github/workflows/untapped-capture.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright
+        run: |
+          npm init -y > /dev/null
+          npm install playwright@1.47.2 > /dev/null
+          npx playwright install --with-deps chromium
+      - name: Capture
+        run: node reality-fracture/tools/untapped_capture.mjs reality-fracture/untapped
+      - name: Show what was captured
+        run: |
+          ls -la reality-fracture/untapped reality-fracture/untapped/raw | head -60
+          head -c 600 reality-fracture/untapped/text/tier-list.txt || true
+      - name: Commit
+        run: |
+          rm -f package.json package-lock.json
+          rm -rf node_modules
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reality-fracture/untapped
+          if git diff --cached --quiet; then echo "no change"; else git commit -m "Capture Untapped Reality Fracture data [skip ci]" && git push; fi
