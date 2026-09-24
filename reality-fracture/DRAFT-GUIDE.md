@@ -2,7 +2,7 @@
 
 **Draft & Sealed guide for MTG Arena.**
 Set releases **October 2, 2026** · Paper prerelease **Sept 25 – Oct 1** · **Arena digital queues open Sept 29, 2026**.
-Written 2026-09-20, during spoiler season.
+Written 2026-09-20, during spoiler season. **Updated 2026-09-24 with the first day of early-access games** — see §14 for Untapped.gg colour-pair win rates, a measured tier list, pick order and trophy decks. Every grade in the companion page and the coach is now blended with that data.
 
 **Interactive companion:** <https://claude.ai/artifact/CjBgGyDCeXzeGRLpyRGzwf> — the same analysis as a
 working page, with a live signal tracker for the seat you're in.
@@ -12,7 +12,7 @@ working page, with a live signal tracker for the seat you're in.
 
 ## 0. How to read this guide (sourcing & confidence)
 
-This set is **not out yet**. There is no 17Lands data, because nobody has played a game.
+This set is **not out yet** for most players. As of 24 September the only games are the early-access event, and Untapped.gg's numbers from it are in §14 (tagged **[MEASURED — small sample]**). Everything else below was written before a game had been played.
 Anyone publishing a "definitive" pick order right now is guessing with confidence. This guide
 separates the two things:
 
@@ -1028,6 +1028,9 @@ single insight in this guide for you specifically, because you're playing both d
 
 ## 8. Archetype strength chart
 
+> **First-day data check (24 Sep, §14):** the early-access tables did not agree with the tiers below. WU Fatehold (59.6%) and RG Konstrari (56.2%) led the ten pairs; WB (55.5%) and BG (54.0%) were next. UB Theorix, called S here, went 52.0%, and BR Stingerquill, also called S, went 48.7% — the worst pair on the day. WG Vigorbloom was the most-drafted pair (11.8%) and won 49.5%. Small samples (115–217 matches per pair), but the direction is clear enough to draft against: the college decks want their signposts and their tempo cards, not just their colours, and Memory Trap — taken at pick 3.9 on average — won 43.6% of the games it was in hand. The tiers below are left as written so the miss is visible.
+
+
 **Draft** (0–10, pre-release prior [EVAL]):
 
 ```
@@ -1257,6 +1260,111 @@ The three things most likely to move this guide [WATCH]:
 
 Once Arena queues open **Sept 29**, replace every [EVAL] number with 17Lands **GIH WR** — trust
 data over this document the moment data exists.
+
+---
+
+## 14. Untapped early-access data  [MEASURED — small sample]
+
+Untapped.gg free-tier numbers for the **Premier Draft early-access event** (23–24 Sep), captured 2026-09-24 20:34 UTC. Card stats come from **1444 logged games** (bronze 443, silver 331, gold 252, platinum 418); the colour-pair table pools every rank. Raw JSON: `reality-fracture/untapped/untapped-fra.json`; refresh steps in `reality-fracture/untapped/README.md`.
+
+**Read it with the sample size in view.** One day of games. A common with 150 games in hand has a win rate that can move five points by the weekend; anything under 30 games is noise. The colour-pair table is the most reliable thing here, the tier list next, single-card pick orders last. The companion page and `fra_ratings.json` now blend these numbers into every grade with weight `n/(n+60)`, so the data dominates as it grows.
+
+### 14.1 Colour pairs — match win rate, all ranks
+
+| Pair | Archetype | Match WR | Matches | Popularity | Pre-release call |
+|---|---|---:|---:|---:|---|
+| WU | Fatehold | **59.6%** | 203 | 10.5% | A |
+| RG | Konstrari | **56.2%** | 217 | 10.7% | B |
+| WB | Liliana | **55.5%** | 128 | 7.0% | A |
+| BG | Garruk | **54.0%** | 124 | 7.8% | B |
+| UR | Chandra | **53.8%** | 182 | 9.4% | B |
+| WR | Ajani | **53.0%** | 115 | 6.5% | C |
+| UB | Theorix | **52.0%** | 150 | 9.4% | S 8.6 |
+| UG | Tam / Kiora | **50.5%** | 91 | 4.8% | C |
+| WG | Vigorbloom | **49.5%** | 216 | 11.8% | C |
+| BR | Stingerquill | **48.7%** | 115 | 6.2% | S |
+
+Three-colour decks: BRG 79.0% (19), WUB 69.6% (23), WUR 66.7% (45), WBG 65.9% (44), URG 62.9% (35), UBG 62.5% (24), UBR 50.0% (22).
+
+### 14.2 Tier list by games-in-hand win rate (30+ games)
+
+**S (62%+)** — Ajani Unrelenting 80.0% (40), Vraska, the Cutting Glare 76.9% (39), Craftwork Crusher 76.5% (81), Archive Arbiter 75.0% (36), Recursive Recruitment 73.0% (74), Lich's Relic 70.7% (41), Hapatra, the Desert Fang 68.3% (60), Chandra, Chill of Compliance 67.7% (34), Jace's Machinations 67.3% (49), Overwrite the Multiverse 66.7% (30), Rewrite Regrets 66.0% (50), Diviner of Victory 65.2% (46), Ferocity of the Hunt 65.1% (66), Theorist's Proxy 64.9% (37), Shipwreck Marsh 64.7% (34), Fulminous Forte 64.5% (93), Warrior's Blades 64.5% (62), Fatehold Charm 63.9% (72), Mindseeker Oculus 63.4% (197), Desperate Futurescribe 63.3% (49), Proft, Sinister Mastermind 63.3% (49), Theorix Charm 63.0% (46), Teyo, Lightshield Expert 62.9% (105), Mind Meanderer 62.8% (43), Ghalta the Unstoppable 62.5% (64), Multiply by Zero 62.2% (74)
+
+**A (58–62%)** — Way of the Paradox 61.6% (73), Vigorbloom Vanguard 61.4% (101), Prudent Fateseer 61.2% (103), Plan for All Outcomes 61.1% (126), Vigorbloom Charm 60.9% (64), Surveillance Phantasm 60.3% (141), Hunter's Axe 60.0% (40), Liliana the Faultless 60.0% (30), Infinite Coursework 59.9% (147), Surgical Precision 59.6% (208), Konstrari Improviser 59.6% (104), Theorist's Sanctum 59.6% (47), Repurposed Enforcer 59.5% (37), Edgar, Ancient Bloodlord 59.1% (44), Restore with Empathy 58.8% (51), Kiora of Fire and Ashes 58.6% (70), Generous Revival 58.3% (72), Hapatra, the Desert Frost 58.2% (67), Keeper of the Quiet Hour 58.1% (93), Arcane Amphisbaena 58.0% (150)
+
+**B (54–58%)** — Tinybones, Pocket Nuisance 57.7% (78), Vinelasher Adept 57.5% (120), Heartstring Puller 57.3% (82), Tam's Resistance 57.3% (124), Ruric Thar, Magecrusher 57.1% (63), Inspired Tethermage 57.0% (100), Room of Refuge 57.0% (193), Fatehold Chronologist 56.9% (211), Heartwood Crafter 56.8% (81), Yoshimaru, Scrappy Stray 56.8% (81), Way of the Mind Sculptor 56.8% (74), Last Gasp 56.7% (134), Unsummon 56.7% (97), Gallia, the Merrymaker 56.5% (46), Extended Absence 56.4% (149), Tomik, Orzhov Lawmage 56.2% (89), Something Worth Saving 56.0% (75), Meticulous Commons 55.9% (59), Edgar, Moonlit Sovereign 55.9% (59), Compel Brutality 55.9% (170), Campus Crier 55.8% (120), Rescue Girl, First Responder 55.7% (61), Icy Reception 55.4% (130), Ruric Thar, Biomagus 55.4% (65), Protege's Awakening 55.3% (132), Koth, the Geomancer 55.1% (49), Rank Rat 55.0% (109), Loot, the Anomaly 54.8% (31), Violent Echoes 54.7% (53), Bestial Incursion 54.7% (161), Solarium Sentry 54.5% (33), Way of the Wildspeaker 54.4% (79), Konstrari Annex 54.1% (61), Geist of Saint Thalia 54.1% (61), Kiora of Salt and Sand 54.0% (37)
+
+**C (50–54%)** — Shatterwing Pegasus 54.0% (113), Semester Foreseer 53.8% (65), Sphinx of False Conclusions 53.8% (39), Jiang Yanggu, Alone 53.8% (39), Theorix Metamage 53.7% (67), Hexhaven Battalion 53.7% (162), Transformative Commons 53.6% (56), Jiang Yanggu, Never Alone 53.6% (56), Budding Insurgent 53.4% (73), Stingerquill Annex 53.3% (45), Unflinching Hortimancer 53.0% (132), Rampart Hunter 52.8% (36), Undulating Witness 52.7% (112), Saheeli, Consul of Oversight 52.5% (80), Titanbones, Towering Heart 52.5% (61), Fatehold Annex 52.4% (84), Danitha, Sword of Hope 52.3% (44), Tomik, Izzet Sparkmage 52.3% (44), Awaken the Inferno 52.3% (155), Medic's Kitesail 52.0% (73), Twisted Fates 52.0% (50), Jace, Reality Sculptor 51.9% (52), Bloombrute 51.8% (54), Theorix Annex 51.8% (85), Clash of Elements 51.6% (62), Yoshimaru, Beloved Companion 51.5% (66), Primal Witchstalker 51.3% (37), Fblthp, Knows the Way 51.2% (82), Apex Witchstalker 51.2% (125), Prophesied End 51.1% (88), Blessed Ghoul 51.1% (94), Solve for Disappointment 50.8% (59), Greenhouse Propagator 50.7% (140), Your Fate Ends Here 50.6% (89), Wrath of the Bloodmane 50.4% (123), Blossom-Blessed Angel 50.0% (134), Countersculpt 50.0% (60), Perfected Theory 50.0% (38), Break Under Pressure 50.0% (72), Command the Stage 50.0% (48), Emergency Phytomedic 50.0% (120), Stingerquill Charm 50.0% (36), Living Library 50.0% (32), Formidable Commons 50.0% (56), Way of the Cryomancer 50.0% (78), Danitha, Spear of Agony 50.0% (42), Gallia, Tragic Host 50.0% (80), Teyo, Diamondblade Mage 50.0% (54), Traxos, Scourge Eternal 50.0% (34)
+
+**D (45–50%)** — Cryotheory Adept 49.4% (87), Vigorbloom Annex 49.3% (75), Arni, Humble Scribe 49.3% (73), Innovative Commons 49.3% (71), Koth of the Homestead 49.3% (71), Wrecking Gecko 49.3% (69), Guiding Hydra 48.8% (43), Screeching Soulbreaker 48.7% (76), Hallway Heckler 48.6% (74), Saheeli, Jewel of Avishkar 48.3% (58), Mabel, Bitter Recluse 48.1% (54), Marwyn, the Preserver 48.1% (81), Proft, Consulting Detective 48.0% (75), Theoretical Necromancer 48.0% (98), Murmuring Volume 47.9% (73), Lyra, Tolarian Archangel 47.6% (42), Sureshot Sower 47.4% (95), Twinned Vision 47.3% (129), Tether Technician 46.7% (60), Afterthought Sentry 46.7% (60), Silence the Echo 46.5% (99), No Admittance 46.4% (97), Chandra's Emberling 46.2% (52), Thalia, the Survivor 46.2% (65), Way of the Mentor 46.0% (37), Woodwork Prodigy 45.7% (81), Fblthp, Impossibly Lost 45.6% (79), Void Extrapolator 45.5% (55), Tetsuko Umezawa, Fugitive 45.5% (55), Paradox Shaper 45.3% (64)
+
+**F (under 45%)** — Graft Surgeon 44.4% (54), Lyra, Archangel of Dawn 44.4% (45), Pia, Determined Rebuilder 44.2% (43), Traxos, Academy Guardian 44.1% (59), Predictive Preparations 43.8% (48), Memory Trap 43.6% (179), Way of the Healer 43.5% (85), Cast Away Doubt 43.5% (69), Yuriko, Hope from the Shadows 42.9% (42), Skilled Battlecarver 42.7% (82), Way of the Pyromancer 42.6% (61), Whiplash Wordsmith 42.1% (38), Dedicated Commons 41.8% (55), Yuriko, Blade of the Mighty 41.7% (36), Winter, Tormented Loner 41.7% (60), Tetsuko Umezawa, Pursuer 41.7% (36), Divining Duelist 41.5% (65), Loot, the Nexus 41.4% (58), Pia, Aether Ascetic 41.2% (34), Sphinx's Approach 40.7% (54), Mabel, Valley Hero 40.6% (32), Eardrum Rattler 40.0% (30), Way of the Deathbringer 38.3% (47), Stingerquill Voxmancer 38.2% (34), Massacre Girl, Most Wanted 37.5% (32), Way of the Warlord 37.5% (40), Fateshaper Aspirant 37.3% (59), Variable Chaser 37.1% (35), Samut, Tyrant of Naktamun 29.0% (31)
+
+### 14.3 Pick order — average taken at (ATA), 20+ offers
+
+| # | Card | ATA | Last seen | GIH WR | Games |
+|---:|---|---:|---:|---:|---:|
+| 1 | Lich's Relic | 1.3 | 1.9 | 70.7% | 41 |
+| 2 | Sphinx of False Conclusions | 1.5 | 1.6 | 53.8% | 39 |
+| 3 | Jace, Reality Sculptor | 1.6 | 1.6 | 51.9% | 52 |
+| 4 | Master of Barbs | 1.7 | 3.5 | 31.2% | 16 |
+| 5 | Ajani's Anguish | 1.8 | 1.9 | 55.6% | 27 |
+| 6 | Carnivorous Cultivator | 2.0 | 2.0 | 51.8% | 27 |
+| 7 | Curse-Marred Demon | 2.1 | 1.9 | 65.0% | 20 |
+| 8 | Verdant Kraken | 2.2 | 2.6 | 59.1% | 22 |
+| 9 | Liliana the Faultless | 2.2 | 2.8 | 60.0% | 30 |
+| 10 | Lyra, Tolarian Archangel | 2.2 | 2.2 | 47.6% | 42 |
+| 11 | Vraska's Final Mercy | 2.2 | 2.5 | 52.0% | 25 |
+| 12 | Gideon the Oathless | 2.2 | 2.8 | 62.5% | 24 |
+| 13 | Jace's Machinations | 2.6 | 2.3 | 67.3% | 49 |
+| 14 | Diviner of Victory | 2.6 | 2.5 | 65.2% | 46 |
+| 15 | Multiply by Zero | 2.7 | 2.2 | 62.2% | 74 |
+| 16 | Stingcaster Mage | 2.7 | 2.7 | 37.5% | 16 |
+| 17 | Tenured Tethermage | 2.8 | 3.5 | 46.2% | 13 |
+| 18 | Way of the Healer | 2.8 | 2.9 | 43.5% | 85 |
+| 19 | Hexhaven Invigorator | 2.9 | 3.5 | 42.1% | 19 |
+| 20 | Samut, Hazoret's Champion | 3.0 | 3.1 | 61.1% | 18 |
+| 21 | Lyra, Archangel of Dawn | 3.0 | 2.6 | 44.4% | 45 |
+| 22 | Violent Echoes | 3.0 | 2.8 | 54.7% | 53 |
+| 23 | Woodwork Prodigy | 3.1 | 3.0 | 45.7% | 81 |
+| 24 | Null Summoner | 3.1 | 3.0 | 55.6% | 27 |
+| 25 | Your Fate Ends Here | 3.2 | 3.4 | 50.6% | 89 |
+| 26 | Plan for All Outcomes | 3.3 | 2.7 | 61.1% | 126 |
+| 27 | Koth of the Homestead | 3.3 | 3.9 | 49.3% | 71 |
+| 28 | Theorist's Sanctum | 3.3 | 3.2 | 59.6% | 47 |
+| 29 | Rise of the Deathbringer | 3.6 | 2.9 | 71.4% | 28 |
+| 30 | Vraska, the Cutting Glare | 3.6 | 3.1 | 76.9% | 39 |
+| 31 | Ajani Resolute | 3.6 | 2.9 | 58.3% | 12 |
+| 32 | Break Under Pressure | 3.7 | 3.1 | 50.0% | 72 |
+| 33 | No Admittance | 3.7 | 3.2 | 46.4% | 97 |
+| 34 | Fulminous Forte | 3.8 | 3.2 | 64.5% | 93 |
+| 35 | Kiora of Fire and Ashes | 3.8 | 3.5 | 58.6% | 70 |
+| 36 | Way of the Wildspeaker | 3.8 | 2.9 | 54.4% | 79 |
+| 37 | Craftwork Crusher | 3.8 | 3.4 | 76.5% | 81 |
+| 38 | Last Gasp | 3.9 | 3.6 | 56.7% | 134 |
+| 39 | Memory Trap | 3.9 | 3.3 | 43.6% | 179 |
+| 40 | Solarium Sentry | 3.9 | 4.1 | 54.5% | 33 |
+
+### 14.4 Where the pre-release reads were wrong
+
+Underrated (read → data, 0–5 scale): Theorist's Sanctum 0.0→3.4 (59.6%, 47); Room of Refuge 0.0→3.1 (57.0%, 193); Craftwork Crusher 3.1→5.0 (76.5%, 81); Recursive Recruitment 2.9→4.7 (73.0%, 74); Ajani Unrelenting 4.0→5.4 (80.0%, 40); Hapatra, the Desert Fang 2.9→4.2 (68.3%, 60); Ferocity of the Hunt 2.6→3.9 (65.1%, 66); Lich's Relic 3.3→4.5 (70.7%, 41); Warrior's Blades 2.7→3.9 (64.5%, 62); Rewrite Regrets 2.9→4.0 (66.0%, 50); Mindseeker Oculus 2.7→3.8 (63.4%, 197); Fatehold Charm 2.8→3.8 (63.9%, 72).
+
+Overrated: Winter, Tormented Loner 3.6→1.6 (41.7%, 60); Way of the Deathbringer 3.2→1.3 (38.3%, 47); Way of the Warlord 3.1→1.2 (37.5%, 40); Lyra, Archangel of Dawn 3.5→1.9 (44.4%, 45); Memory Trap 3.4→1.8 (43.6%, 179); Paradox Shaper 3.5→2.0 (45.3%, 64); Woodwork Prodigy 3.4→2.0 (45.7%, 81); Jace, Reality Sculptor 4.0→2.6 (51.9%, 52); Saheeli, Jewel of Avishkar 3.6→2.3 (48.3%, 58); Loot, the Nexus 2.9→1.6 (41.4%, 58); Fateshaper Aspirant 2.5→1.2 (37.3%, 59); Lyra, Tolarian Archangel 3.5→2.2 (47.6%, 42).
+
+### 14.5 Trophy decks (7 wins)
+
+- **RG Gruul** — 7–2, Gold, redryansox, 2026-09-24. 23 spells + 17 lands. Arcane Amphisbaena, 2× Awaken the Inferno, Bestial Incursion, Compel Brutality, Heartwood Crafter, Inspired Tethermage, Kiora of Fire and Ashes, 4× Konstrari Improviser, Restore with Empathy, Sureshot Sower, Traxos, Scourge Eternal, 2× Twinned Vision, Verdant Kraken, Vinelasher Adept, Violent Echoes, 3× Wrecking Gecko.
+- **WU Azorius** — 7–1, Platinum, crokodil, 2026-09-24. 24 spells + 17 lands. 2× Campus Crier, Chandra, Chill of Compliance, Hapatra, the Desert Frost, Infinite Coursework, Jace's Machinations, Memory Trap, Mindseeker Oculus, Proft, Consulting Detective, Prophesied End, 2× Prudent Fateseer, Room of Refuge, Ruric Thar, Biomagus, Saheeli, Consul of Oversight, 2× Semester Foreseer, Sphinx of False Conclusions, 2× Surveillance Phantasm, 2× Tam's Resistance, Unsummon, Vigorbloom Vanguard.
+- **WR Boros** — 7–2, Platinum, crokodil, 2026-09-24. 24 spells + 16 lands. Ajani Unrelenting, Awaken the Inferno, 2× Blossom-Blessed Angel, 2× Emergency Phytomedic, Enlightened Confidant, Fulminous Forte, Gallia, the Merrymaker, Generous Revival, Jiang Yanggu, Alone, Liliana the Faultless, Lyra, Archangel of Dawn, Mabel, Valley Hero, 2× Memory Trap, Samut, Hazoret's Champion, Shatterwing Pegasus, Skilled Battlecarver, Solitary Cell, Unflinching Hortimancer, Warrior's Blades, Yoshimaru, Beloved Companion, Your Fate Ends Here.
+- **BRG Jund** — 7–1, Bronze, Leon_AC13, 2026-09-24. 27 spells + 17 lands. Aerid Konstrari, 2× Arcane Amphisbaena, Compel Brutality, Craftwork Crusher, Ferocity of the Hunt, Formidable Commons, Gallia, Tragic Host, Last Gasp, Mabel, Bitter Recluse, Marwyn, the Preserver, Proft, Sinister Mastermind, Rewrite Regrets, Rockfall Vale, Simulacrum Shaper, Something Worth Saving, 2× Stingerquill Annex, 2× Stingerquill Charm, Theoretical Necromancer, Theorix Metamage, Vinelasher Adept, Void Extrapolator, Vraska, the Cutting Glare, Wrecking Gecko, Yoshimaru, Scrappy Stray.
+- **WB Orzhov** — 7–2, Bronze, Leonardo_AC13, 2026-09-24. 23 spells + 17 lands. 2× Blossom-Blessed Angel, 2× Campus Crier, Cast Away Doubt, Enlightened Confidant, Extended Absence, Gallia, Tragic Host, Gideon the Oathless, Last Gasp, 2× Multiply by Zero, Proft, Sinister Mastermind, Rampart Hunter, Rewrite Regrets, Teyo, Diamondblade Mage, Thalia, the Survivor, Theoretical Necromancer, Theorix Metamage, 2× Tinybones, Pocket Nuisance, Traxos, Scourge Eternal, Way of the Healer.
+- **WBG Abzan** — 7–2, Bronze, Tom_AC13, 2026-09-24. 26 spells + 17 lands. Apex Witchstalker, 2× Blessed Ghoul, Bloodline Recollector, Bloombrute, Carnivorous Cultivator, 2× Fatehold Chronologist, Generous Revival, Hexhaven Battalion, Kindred Judgment, Liliana the Repentant, Primal Witchstalker, Rewrite Regrets, Room of Refuge, Screeching Soulbreaker, Surgical Precision, The Echoverse Fulcrum, 3× Twisted Fates, 2× Vigorbloom Annex, Vindictive Triumph, Vinelasher Adept, Your Fate Ends Here.
+- **WR Boros** — 7–2, Bronze, DamienF16, 2026-09-24. 24 spells + 17 lands. Blossom-Blessed Angel, Danitha, Sword of Hope, Dedicated Commons, 2× Emergency Phytomedic, Fatehold Chronologist, Fulminous Forte, Graft Surgeon, Heartstring Puller, Hexhaven Battalion, Koth of the Homestead, Predictive Preparations, 2× Rescue Girl, First Responder, Saheeli, Consul of Oversight, Skilled Battlecarver, Surgical Precision, Vigorbloom Vanguard, 3× Warrior's Blades, Wrath of the Bloodmane, Yoshimaru, Beloved Companion, Yuriko, Blade of the Mighty.
+- **WB Orzhov** — 7–2, Platinum, Garth-Morr, 2026-09-24. 25 spells + 16 lands. 2× Apex Witchstalker, Blossom-Blessed Angel, Campus Crier, 2× Edgar, Ancient Bloodlord, Emergency Phytomedic, Enlightened Confidant, Generous Revival, 2× Guiding Hydra, Hexhaven Battalion, Koth of the Homestead, Lyra, Archangel of Dawn, Mabel, Bitter Recluse, Rise of the Deathbringer, Room of Refuge, Screeching Soulbreaker, Shatterwing Pegasus, Surgical Precision, Teyo, Lightshield Expert, 2× Twisted Fates, Unflinching Hortimancer, Yoshimaru, Beloved Companion.
+
+34 trophy decks exist on Untapped; the free page lists these 8.
+
+Special Guests seen in the data: Austere Command (54.5%, 11), Flesh Duplicate (0.0%, 2), Sublime Epiphany (66.7%, 12), Splinter Twin (83.3%, 6).
 
 ---
 

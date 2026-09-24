@@ -191,6 +191,31 @@ measures colour bias against what they actually saw, and separates preferences
 from habits that cost measurable pick loss. Never characterise their playstyle
 from memory or from a single draft.
 
+## Early-access data (Untapped.gg, 24 Sep)
+
+One day of Premier Draft early-access games (1,444 logged games for card stats, 1,859 matches for pairs), Bronze–Platinum. Raw file: `reality-fracture/untapped/untapped-fra.json`; guide §14 has the full tables. **Grades in `mtga-coach/data/fra_ratings.json` are now blended** (`grade` = data-weighted, `grade_prerelease` = the old read, `untapped` = raw stats). Use `grade`, and quote the sample size when a number decides a pick.
+
+| Pair | Match WR | Matches | Popularity |
+|---|---:|---:|---:|
+| WU | 59.6% | 203 | 10.5% |
+| RG | 56.2% | 217 | 10.7% |
+| WB | 55.5% | 128 | 7.0% |
+| BG | 54.0% | 124 | 7.8% |
+| UR | 53.8% | 182 | 9.4% |
+| WR | 53.0% | 115 | 6.5% |
+| UB | 52.0% | 150 | 9.4% |
+| UG | 50.5% | 91 | 4.8% |
+| WG | 49.5% | 216 | 11.8% |
+| BR | 48.7% | 115 | 6.2% |
+
+What changed versus the prior above: WU and RG lead, WB and BG follow, UB and BR (both called S) are mid and bottom. WG is the most-drafted pair and loses. Treat the colour order as **W ≥ U ≈ G(with R) > B > R**, but keep it soft — the pair table is 100–200 matches each.
+
+Best cards by games-in-hand win rate (40+ games): Ajani Unrelenting 80%, Craftwork Crusher 77%, Recursive Recruitment 73%, Lich's Relic 71%, Hapatra, the Desert Fang 68%, Jace's Machinations 67%, Rewrite Regrets 66%, Diviner of Victory 65%, Ferocity of the Hunt 65%, Fulminous Forte 65%, Warrior's Blades 65%, Fatehold Charm 64%, Mindseeker Oculus 63%, Desperate Futurescribe 63%, Proft, Sinister Mastermind 63%, Theorix Charm 63%, Teyo, Lightshield Expert 63%, Mind Meanderer 63%, Ghalta the Unstoppable 62%, Multiply by Zero 62%.
+
+Worst with 60+ games: Divining Duelist 42%, Winter, Tormented Loner 42%, Way of the Pyromancer 43%, Skilled Battlecarver 43%, Cast Away Doubt 43%, Way of the Healer 44%, Memory Trap 44%, Paradox Shaper 45%, Fblthp, Impossibly Lost 46%, Woodwork Prodigy 46%, Thalia, the Survivor 46%, No Admittance 46%. Memory Trap in particular is being taken at pick 3.9 and losing; it is a fine card in a deck that wants it, not a first-pick.
+
+Refresh: `powershell -File reality-fracture/tools/grab-untapped.ps1 -Out untapped-dump`, then `untapped_parse.py` and `untapped_apply.py` (see `reality-fracture/untapped/README.md`).
+
 ## Honesty rules for this skill
 
 - These numbers are a **pre-release prior**, not data. The set releases 2026-10-02; Arena queues

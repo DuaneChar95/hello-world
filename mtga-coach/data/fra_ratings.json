@@ -1,8 +1,8 @@
 {
  "set": "FRA",
  "set_name": "Reality Fracture",
- "updated": "2026-09-21",
- "source": "Real FRA card list (280 cards). Grades are heuristic except 49 hand-written ones. Import 17Lands data to replace them.",
+ "updated": "2026-09-24",
+ "source": "Real FRA card list (280 cards). Grades are heuristic except 49 hand-written ones. Import 17Lands data to replace them. | Untapped.gg early-access Premier Draft data blended in (2026-09-24 20:34 UTC)",
  "confidence": "carddata",
  "scale": "0-5 limited grades (3.0 = solid playable, 4.0 = premium, 4.5+ = bomb)",
  "color_scores": {
@@ -234,7 +234,7 @@
  ],
  "cards": {
   "Denzilore Fatehold": {
-   "grade": 4.5,
+   "grade": 4.37,
    "colors": "WU",
    "rarity": "mythic",
    "tags": [
@@ -251,10 +251,21 @@
    "types": "Legendary Creature — Elder Sphinx",
    "image": "https://cards.scryfall.io/large/front/9/8/986f9e98-9d8d-428b-9187-860745cf3269.jpg?1788878215",
    "scryfall_id": "986f9e98-9d8d-428b-9187-860745cf3269",
-   "number": "128"
+   "number": "128",
+   "grade_prerelease": 4.5,
+   "untapped": {
+    "gih_games": 4,
+    "gih_wr": 0.5,
+    "oh_games": 1,
+    "oh_wr": 0.0,
+    "games": 9,
+    "ata": 0.0,
+    "alsa": 1.5,
+    "offered": 2
+   }
   },
   "Aerid Konstrari": {
-   "grade": 4.5,
+   "grade": 4.64,
    "colors": "RG",
    "rarity": "mythic",
    "tags": [
@@ -270,10 +281,21 @@
    "types": "Legendary Creature — Elder Sphinx",
    "image": "https://cards.scryfall.io/large/front/f/1/f17d2792-b075-4c47-ad38-e7a7eaee5f8c.jpg?1788878199",
    "scryfall_id": "f17d2792-b075-4c47-ad38-e7a7eaee5f8c",
-   "number": "121"
+   "number": "121",
+   "grade_prerelease": 4.5,
+   "untapped": {
+    "gih_games": 23,
+    "gih_wr": 0.7826,
+    "oh_games": 9,
+    "oh_wr": 0.6667,
+    "games": 32,
+    "ata": 1.0,
+    "alsa": 1.41,
+    "offered": 12
+   }
   },
   "Ingris Stingerquill": {
-   "grade": 4.0,
+   "grade": 3.61,
    "colors": "BR",
    "rarity": "mythic",
    "tags": [
@@ -288,10 +310,21 @@
    "types": "Legendary Creature — Elder Sphinx",
    "image": "https://cards.scryfall.io/large/front/6/4/6471b135-33a8-4005-9a07-ebb74e0bf145.jpg?1788878212",
    "scryfall_id": "6471b135-33a8-4005-9a07-ebb74e0bf145",
-   "number": "137"
+   "number": "137",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 20,
+    "gih_wr": 0.5,
+    "oh_games": 5,
+    "oh_wr": 0.0,
+    "games": 33,
+    "ata": 1.95,
+    "alsa": 2.73,
+    "offered": 11
+   }
   },
   "Uldaros Theorix": {
-   "grade": 4.0,
+   "grade": 4.14,
    "colors": "UB",
    "rarity": "mythic",
    "tags": [
@@ -307,10 +340,21 @@
    "types": "Legendary Creature — Elder Sphinx",
    "image": "https://cards.scryfall.io/large/front/a/7/a7ad622a-42ff-48fa-ae95-12e0a5bd9387.jpg?1788878220",
    "scryfall_id": "a7ad622a-42ff-48fa-ae95-12e0a5bd9387",
-   "number": "159"
+   "number": "159",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 21,
+    "gih_wr": 0.7143,
+    "oh_games": 7,
+    "oh_wr": 0.5714,
+    "games": 34,
+    "ata": 1.43,
+    "alsa": 1.38,
+    "offered": 8
+   }
   },
   "Kwia Vigorbloom": {
-   "grade": 3.5,
+   "grade": 3.49,
    "colors": "WG",
    "rarity": "mythic",
    "tags": [
@@ -326,10 +370,21 @@
    "types": "Legendary Creature — Elder Sphinx",
    "image": "https://cards.scryfall.io/large/front/2/d/2d6ff182-a853-4898-895b-072c89324ca7.jpg?1788878236",
    "scryfall_id": "2d6ff182-a853-4898-895b-072c89324ca7",
-   "number": "140"
+   "number": "140",
+   "grade_prerelease": 3.5,
+   "untapped": {
+    "gih_games": 5,
+    "gih_wr": 0.6,
+    "oh_games": 1,
+    "oh_wr": 0.0,
+    "games": 10,
+    "ata": 2.36,
+    "alsa": 2.27,
+    "offered": 11
+   }
   },
   "Overwrite the Multiverse": {
-   "grade": 4.0,
+   "grade": 4.02,
    "colors": "B",
    "rarity": "mythic",
    "tags": [
@@ -343,10 +398,21 @@
    "types": "Sorcery",
    "image": "https://cards.scryfall.io/large/front/c/4/c4554f5b-791b-48f6-bf54-ad28699e1beb.jpg?1788952080",
    "scryfall_id": "c4554f5b-791b-48f6-bf54-ad28699e1beb",
-   "number": "59"
+   "number": "59",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 30,
+    "gih_wr": 0.6667,
+    "oh_games": 5,
+    "oh_wr": 0.6,
+    "games": 50,
+    "ata": 2.56,
+    "alsa": 2.5,
+    "offered": 10
+   }
   },
   "Paradox Shaper": {
-   "grade": 3.5,
+   "grade": 2.72,
    "colors": "UB",
    "rarity": "uncommon",
    "tags": [
@@ -360,10 +426,21 @@
    "types": "Creature — Octopus Wizard",
    "image": "https://cards.scryfall.io/large/front/e/6/e61b9d48-0ace-4453-afe0-a1024444bac0.jpg?1788329390",
    "scryfall_id": "e61b9d48-0ace-4453-afe0-a1024444bac0",
-   "number": "143"
+   "number": "143",
+   "grade_prerelease": 3.5,
+   "untapped": {
+    "gih_games": 64,
+    "gih_wr": 0.4531,
+    "oh_games": 28,
+    "oh_wr": 0.2857,
+    "games": 101,
+    "ata": 7.2,
+    "alsa": 5.93,
+    "offered": 222
+   }
   },
   "Stingerquill Voxmancer": {
-   "grade": 3.4,
+   "grade": 2.64,
    "colors": "BR",
    "rarity": "uncommon",
    "tags": [
@@ -377,10 +454,21 @@
    "types": "Creature — Goblin Sorcerer",
    "image": "https://cards.scryfall.io/large/front/8/4/84b1c268-3b8a-41b6-92e3-a2ce0cc3d738.jpg?1788329418",
    "scryfall_id": "84b1c268-3b8a-41b6-92e3-a2ce0cc3d738",
-   "number": "151"
+   "number": "151",
+   "grade_prerelease": 3.4,
+   "untapped": {
+    "gih_games": 34,
+    "gih_wr": 0.3824,
+    "oh_games": 14,
+    "oh_wr": 0.3571,
+    "games": 69,
+    "ata": 4.16,
+    "alsa": 3.84,
+    "offered": 144
+   }
   },
   "Woodwork Prodigy": {
-   "grade": 3.4,
+   "grade": 2.61,
    "colors": "RG",
    "rarity": "uncommon",
    "tags": [
@@ -396,10 +484,21 @@
    "types": "Creature — Cat Druid",
    "image": "https://cards.scryfall.io/large/front/7/d/7d17f7e3-7b63-4674-9024-4fd1827f40ec.jpg?1788329429",
    "scryfall_id": "7d17f7e3-7b63-4674-9024-4fd1827f40ec",
-   "number": "165"
+   "number": "165",
+   "grade_prerelease": 3.4,
+   "untapped": {
+    "gih_games": 81,
+    "gih_wr": 0.4568,
+    "oh_games": 35,
+    "oh_wr": 0.4286,
+    "games": 144,
+    "ata": 3.08,
+    "alsa": 2.99,
+    "offered": 103
+   }
   },
   "Vigorbloom Vanguard": {
-   "grade": 3.6,
+   "grade": 3.57,
    "colors": "WG",
    "rarity": "uncommon",
    "tags": [
@@ -414,10 +513,21 @@
    "types": "Creature — Troll Druid",
    "image": "https://cards.scryfall.io/large/front/a/c/acefc515-bf97-4dc0-b0f7-ae8ae5a61671.jpg?1788329423",
    "scryfall_id": "acefc515-bf97-4dc0-b0f7-ae8ae5a61671",
-   "number": "161"
+   "number": "161",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 101,
+    "gih_wr": 0.6139,
+    "oh_games": 39,
+    "oh_wr": 0.5897,
+    "games": 195,
+    "ata": 4.26,
+    "alsa": 3.55,
+    "offered": 103
+   }
   },
   "Saheeli, Jewel of Avishkar": {
-   "grade": 3.6,
+   "grade": 2.95,
    "colors": "UR",
    "rarity": "uncommon",
    "tags": [
@@ -433,10 +543,21 @@
    "types": "Legendary Creature — Human Artificer",
    "image": "https://cards.scryfall.io/large/front/2/8/28d84ef6-e190-46d4-882d-1cea5e111e2a.jpg?1789644883",
    "scryfall_id": "28d84ef6-e190-46d4-882d-1cea5e111e2a",
-   "number": "275"
+   "number": "275",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 58,
+    "gih_wr": 0.4828,
+    "oh_games": 17,
+    "oh_wr": 0.4706,
+    "games": 112,
+    "ata": 6.09,
+    "alsa": 4.61,
+    "offered": 174
+   }
   },
   "Kiora of Salt and Sand": {
-   "grade": 3.5,
+   "grade": 3.25,
    "colors": "UG",
    "rarity": "uncommon",
    "tags": [
@@ -449,10 +570,21 @@
    "types": "Legendary Creature — Merfolk Noble",
    "image": "https://cards.scryfall.io/large/front/8/1/8151f5f5-e9f6-4fbe-b543-f456ebf22aa5.jpg?1789127745",
    "scryfall_id": "8151f5f5-e9f6-4fbe-b543-f456ebf22aa5",
-   "number": "273"
+   "number": "273",
+   "grade_prerelease": 3.5,
+   "untapped": {
+    "gih_games": 37,
+    "gih_wr": 0.5405,
+    "oh_games": 15,
+    "oh_wr": 0.6667,
+    "games": 53,
+    "ata": 8.78,
+    "alsa": 6.33,
+    "offered": 209
+   }
   },
   "Ajani Resolute": {
-   "grade": 4.0,
+   "grade": 3.88,
    "colors": "W",
    "rarity": "mythic",
    "tags": [
@@ -466,10 +598,21 @@
    "types": "Legendary Planeswalker — Ajani",
    "image": "https://cards.scryfall.io/large/front/a/5/a5e1a7dd-8c49-4435-935c-bcc78704082b.jpg?1788329189",
    "scryfall_id": "a5e1a7dd-8c49-4435-935c-bcc78704082b",
-   "number": "195"
+   "number": "195",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 12,
+    "gih_wr": 0.5833,
+    "oh_games": 6,
+    "oh_wr": 0.8333,
+    "games": 25,
+    "ata": 3.62,
+    "alsa": 2.91,
+    "offered": 23
+   }
   },
   "Ajani Unrelenting": {
-   "grade": 4.0,
+   "grade": 4.4,
    "colors": "R",
    "rarity": "mythic",
    "tags": [
@@ -483,10 +626,21 @@
    "types": "Legendary Planeswalker — Ajani",
    "image": "https://cards.scryfall.io/large/front/b/c/bc3c096f-7f6c-474c-a2c8-75d3e6ddd6f5.jpg?1788329317",
    "scryfall_id": "bc3c096f-7f6c-474c-a2c8-75d3e6ddd6f5",
-   "number": "242"
+   "number": "242",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 40,
+    "gih_wr": 0.8,
+    "oh_games": 16,
+    "oh_wr": 0.75,
+    "games": 73,
+    "ata": 1.52,
+    "alsa": 1.47,
+    "offered": 15
+   }
   },
   "Liliana the Repentant": {
-   "grade": 4.0,
+   "grade": 3.37,
    "colors": "B",
    "rarity": "rare",
    "tags": [
@@ -501,10 +655,21 @@
    "types": "Legendary Creature — Human Warlock",
    "image": "https://cards.scryfall.io/large/front/1/e/1eb25a6c-d6b4-465d-990e-f1ab86b26b69.jpg?1788329273",
    "scryfall_id": "1eb25a6c-d6b4-465d-990e-f1ab86b26b69",
-   "number": "231"
+   "number": "231",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 20,
+    "gih_wr": 0.4,
+    "oh_games": 7,
+    "oh_wr": 0.2857,
+    "games": 38,
+    "ata": 4.44,
+    "alsa": 2.9,
+    "offered": 32
+   }
   },
   "Liliana the Faultless": {
-   "grade": 4.0,
+   "grade": 3.81,
    "colors": "W",
    "rarity": "rare",
    "tags": [
@@ -518,10 +683,21 @@
    "types": "Legendary Creature — Human Cleric",
    "image": "https://cards.scryfall.io/large/front/7/0/70d8c400-87dc-4f15-808f-e54a95d779fc.jpg?1788329194",
    "scryfall_id": "70d8c400-87dc-4f15-808f-e54a95d779fc",
-   "number": "200"
+   "number": "200",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 30,
+    "gih_wr": 0.6,
+    "oh_games": 11,
+    "oh_wr": 0.5455,
+    "games": 66,
+    "ata": 2.2,
+    "alsa": 2.78,
+    "offered": 29
+   }
   },
   "Garruk, Curse Breaker": {
-   "grade": 4.0,
+   "grade": 3.5,
    "colors": "G",
    "rarity": "mythic",
    "tags": [
@@ -535,10 +711,21 @@
    "types": "Legendary Planeswalker — Garruk",
    "image": "https://cards.scryfall.io/large/front/9/0/90ca5812-ceb5-46bd-b049-aed7ff10e6af.jpg?1788329370",
    "scryfall_id": "90ca5812-ceb5-46bd-b049-aed7ff10e6af",
-   "number": "259"
+   "number": "259",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 10,
+    "gih_wr": 0.3,
+    "oh_games": 3,
+    "oh_wr": 0.3333,
+    "games": 32,
+    "ata": 1.62,
+    "alsa": 2.0,
+    "offered": 8
+   }
   },
   "Garruk, Veiled Butcher": {
-   "grade": 4.0,
+   "grade": 4.29,
    "colors": "B",
    "rarity": "mythic",
    "tags": [
@@ -553,10 +740,21 @@
    "types": "Legendary Planeswalker — Garruk",
    "image": "https://cards.scryfall.io/large/front/d/4/d48bfb8a-d135-45f3-be99-4694b4b9ab93.jpg?1788329269",
    "scryfall_id": "d48bfb8a-d135-45f3-be99-4694b4b9ab93",
-   "number": "229"
+   "number": "229",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 24,
+    "gih_wr": 0.875,
+    "oh_games": 6,
+    "oh_wr": 1.0,
+    "games": 38,
+    "ata": 1.79,
+    "alsa": 1.75,
+    "offered": 8
+   }
   },
   "Chandra, Torch of Defiance": {
-   "grade": 4.0,
+   "grade": 4.28,
    "colors": "R",
    "rarity": "mythic",
    "tags": [
@@ -571,10 +769,21 @@
    "types": "Legendary Planeswalker — Chandra",
    "image": "https://cards.scryfall.io/large/front/4/0/40cb22c8-cb03-45c9-bb0e-b8cabdcc43cd.jpg?1788329325",
    "scryfall_id": "40cb22c8-cb03-45c9-bb0e-b8cabdcc43cd",
-   "number": "244"
+   "number": "244",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 23,
+    "gih_wr": 0.7826,
+    "oh_games": 5,
+    "oh_wr": 0.8,
+    "games": 41,
+    "ata": 1.59,
+    "alsa": 1.56,
+    "offered": 9
+   }
   },
   "Chandra, Chill of Compliance": {
-   "grade": 4.0,
+   "grade": 4.06,
    "colors": "U",
    "rarity": "mythic",
    "tags": [
@@ -589,10 +798,21 @@
    "types": "Legendary Planeswalker — Chandra",
    "image": "https://cards.scryfall.io/large/front/2/4/240f58ab-944c-4f4c-9df9-5f40b132bf3e.jpg?1788329242",
    "scryfall_id": "240f58ab-944c-4f4c-9df9-5f40b132bf3e",
-   "number": "212"
+   "number": "212",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 34,
+    "gih_wr": 0.6765,
+    "oh_games": 16,
+    "oh_wr": 0.8125,
+    "games": 54,
+    "ata": 3.83,
+    "alsa": 2.65,
+    "offered": 16
+   }
   },
   "Prudent Fateseer": {
-   "grade": 3.5,
+   "grade": 3.52,
    "colors": "WU",
    "rarity": "uncommon",
    "tags": [
@@ -608,10 +828,21 @@
    "types": "Creature — Dwarf Wizard",
    "image": "https://cards.scryfall.io/large/front/6/c/6c1c790b-9e0e-4964-9ea3-554843907f06.jpg?1788329412",
    "scryfall_id": "6c1c790b-9e0e-4964-9ea3-554843907f06",
-   "number": "146"
+   "number": "146",
+   "grade_prerelease": 3.5,
+   "untapped": {
+    "gih_games": 103,
+    "gih_wr": 0.6117,
+    "oh_games": 37,
+    "oh_wr": 0.6486,
+    "games": 198,
+    "ata": 4.91,
+    "alsa": 4.07,
+    "offered": 145
+   }
   },
   "Semester Foreseer": {
-   "grade": 3.2,
+   "grade": 3.0,
    "colors": "U",
    "rarity": "common",
    "tags": [
@@ -626,10 +857,21 @@
    "types": "Creature — Human Wizard",
    "image": "https://cards.scryfall.io/large/front/7/e/7e5a640b-fd88-4b5a-9dfc-1d8f5a5cef41.jpg?1789127516",
    "scryfall_id": "7e5a640b-fd88-4b5a-9dfc-1d8f5a5cef41",
-   "number": "39"
+   "number": "39",
+   "grade_prerelease": 3.2,
+   "untapped": {
+    "gih_games": 65,
+    "gih_wr": 0.5385,
+    "oh_games": 26,
+    "oh_wr": 0.5,
+    "games": 117,
+    "ata": 9.43,
+    "alsa": 6.79,
+    "offered": 481
+   }
   },
   "Fatehold Chronologist": {
-   "grade": 3.2,
+   "grade": 3.13,
    "colors": "WU",
    "rarity": "common",
    "tags": [
@@ -645,10 +887,21 @@
    "types": "Creature — Bird Wizard",
    "image": "https://cards.scryfall.io/large/front/2/9/29e7ec16-0c16-48aa-8e09-ce6e0d5bd40b.jpg?1789060173",
    "scryfall_id": "29e7ec16-0c16-48aa-8e09-ce6e0d5bd40b",
-   "number": "133"
+   "number": "133",
+   "grade_prerelease": 3.2,
+   "untapped": {
+    "gih_games": 211,
+    "gih_wr": 0.5687,
+    "oh_games": 83,
+    "oh_wr": 0.5904,
+    "games": 358,
+    "ata": 6.43,
+    "alsa": 4.95,
+    "offered": 344
+   }
   },
   "Proctor of Potential": {
-   "grade": 3.3,
+   "grade": 3.47,
    "colors": "WU",
    "rarity": "rare",
    "tags": [
@@ -662,10 +915,21 @@
    "types": "Creature — Human Cleric",
    "image": "https://cards.scryfall.io/large/front/c/f/cf0eec8c-0475-4050-8144-481a9bb13a0f.jpg?1789127661",
    "scryfall_id": "cf0eec8c-0475-4050-8144-481a9bb13a0f",
-   "number": "145"
+   "number": "145",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 23,
+    "gih_wr": 0.6522,
+    "oh_games": 13,
+    "oh_wr": 0.6154,
+    "games": 40,
+    "ata": 4.16,
+    "alsa": 3.91,
+    "offered": 43
+   }
   },
   "Surveillance Phantasm": {
-   "grade": 3.1,
+   "grade": 3.34,
    "colors": "U",
    "rarity": "common",
    "tags": [
@@ -678,10 +942,21 @@
    "types": "Creature — Bird Illusion",
    "image": "https://cards.scryfall.io/large/front/9/d/9df8a06d-c7de-49af-8c01-06dca3dfef4b.jpg?1789385597",
    "scryfall_id": "9df8a06d-c7de-49af-8c01-06dca3dfef4b",
-   "number": "42"
+   "number": "42",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 141,
+    "gih_wr": 0.6028,
+    "oh_games": 47,
+    "oh_wr": 0.5106,
+    "games": 249,
+    "ata": 7.75,
+    "alsa": 5.69,
+    "offered": 392
+   }
   },
   "Fatehold Charm": {
-   "grade": 2.8,
+   "grade": 3.35,
    "colors": "WU",
    "rarity": "uncommon",
    "tags": [
@@ -693,10 +968,21 @@
    "types": "Instant",
    "image": "https://cards.scryfall.io/large/front/c/f/cfc54011-647e-4428-bcdb-59400e1da49d.jpg?1789127637",
    "scryfall_id": "cfc54011-647e-4428-bcdb-59400e1da49d",
-   "number": "132"
+   "number": "132",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 72,
+    "gih_wr": 0.6389,
+    "oh_games": 31,
+    "oh_wr": 0.7097,
+    "games": 120,
+    "ata": 7.64,
+    "alsa": 6.15,
+    "offered": 211
+   }
   },
   "Campus Crier": {
-   "grade": 2.7,
+   "grade": 2.91,
    "colors": "W",
    "rarity": "common",
    "tags": [
@@ -709,10 +995,21 @@
    "types": "Creature — Human Advisor",
    "image": "https://cards.scryfall.io/large/front/6/0/6047b14c-91d5-4f8e-af3f-057a541e2546.jpg?1788878120",
    "scryfall_id": "6047b14c-91d5-4f8e-af3f-057a541e2546",
-   "number": "4"
+   "number": "4",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 120,
+    "gih_wr": 0.5583,
+    "oh_games": 55,
+    "oh_wr": 0.5636,
+    "games": 233,
+    "ata": 6.92,
+    "alsa": 5.66,
+    "offered": 380
+   }
   },
   "Way of the Healer": {
-   "grade": 2.6,
+   "grade": 2.14,
    "colors": "W",
    "rarity": "uncommon",
    "tags": [
@@ -727,10 +1024,21 @@
    "types": "Legendary Enchantment",
    "image": "https://cards.scryfall.io/large/front/5/0/50326a2a-7e10-464b-a97e-e880bda0558c.jpg?1789729503",
    "scryfall_id": "50326a2a-7e10-464b-a97e-e880bda0558c",
-   "number": "207"
+   "number": "207",
+   "grade_prerelease": 2.6,
+   "untapped": {
+    "gih_games": 85,
+    "gih_wr": 0.4353,
+    "oh_games": 25,
+    "oh_wr": 0.44,
+    "games": 152,
+    "ata": 2.78,
+    "alsa": 2.93,
+    "offered": 101
+   }
   },
   "Theorist's Proxy": {
-   "grade": 3.0,
+   "grade": 3.34,
    "colors": "U",
    "rarity": "rare",
    "tags": [
@@ -744,10 +1052,21 @@
    "types": "Creature — Illusion",
    "image": "https://cards.scryfall.io/large/front/7/1/710302ca-c4be-4069-8ce1-f531414c74e9.jpg?1788878151",
    "scryfall_id": "710302ca-c4be-4069-8ce1-f531414c74e9",
-   "number": "44"
+   "number": "44",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 37,
+    "gih_wr": 0.6486,
+    "oh_games": 15,
+    "oh_wr": 0.5333,
+    "games": 82,
+    "ata": 4.63,
+    "alsa": 3.77,
+    "offered": 42
+   }
   },
   "Theorix Metamage": {
-   "grade": 3.0,
+   "grade": 2.9,
    "colors": "UB",
    "rarity": "common",
    "tags": [
@@ -763,10 +1082,21 @@
    "types": "Creature — Shade Wizard",
    "image": "https://cards.scryfall.io/large/front/f/b/fb6bad96-841d-4738-8e62-92f346f914fd.jpg?1789556930",
    "scryfall_id": "fb6bad96-841d-4738-8e62-92f346f914fd",
-   "number": "156"
+   "number": "156",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 67,
+    "gih_wr": 0.5373,
+    "oh_games": 27,
+    "oh_wr": 0.5926,
+    "games": 113,
+    "ata": 10.11,
+    "alsa": 7.21,
+    "offered": 529
+   }
   },
   "Void Extrapolator": {
-   "grade": 3.2,
+   "grade": 2.63,
    "colors": "B",
    "rarity": "common",
    "tags": [
@@ -781,7 +1111,18 @@
    "types": "Creature — Aetherborn Warlock",
    "image": "https://cards.scryfall.io/large/front/0/e/0eae2efb-bf25-48ee-9c07-9098008110ad.jpg?1789556787",
    "scryfall_id": "0eae2efb-bf25-48ee-9c07-9098008110ad",
-   "number": "70"
+   "number": "70",
+   "grade_prerelease": 3.2,
+   "untapped": {
+    "gih_games": 55,
+    "gih_wr": 0.4545,
+    "oh_games": 27,
+    "oh_wr": 0.3704,
+    "games": 107,
+    "ata": 9.92,
+    "alsa": 6.8,
+    "offered": 507
+   }
   },
   "Null Summoner": {
    "grade": 3.0,
@@ -796,7 +1137,18 @@
    "types": "Creature — Human Warlock",
    "image": "https://cards.scryfall.io/large/front/3/a/3afdc75a-1bf5-4f2f-84eb-d82f77a095cd.jpg?1789127648",
    "scryfall_id": "3afdc75a-1bf5-4f2f-84eb-d82f77a095cd",
-   "number": "142"
+   "number": "142",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 27,
+    "gih_wr": 0.5556,
+    "oh_games": 7,
+    "oh_wr": 0.7143,
+    "games": 56,
+    "ata": 3.13,
+    "alsa": 3.01,
+    "offered": 35
+   }
   },
   "Cruel Calculations": {
    "grade": 3.0,
@@ -812,10 +1164,11 @@
    "types": "Sorcery",
    "image": "https://cards.scryfall.io/large/front/f/7/f76c4d8e-3e1f-4264-99af-1b8adb9a06be.jpg?1789127482",
    "scryfall_id": "f76c4d8e-3e1f-4264-99af-1b8adb9a06be",
-   "number": "26"
+   "number": "26",
+   "grade_prerelease": 3.0
   },
   "Winter, Tormented Loner": {
-   "grade": 3.6,
+   "grade": 2.62,
    "colors": "B",
    "rarity": "uncommon",
    "tags": [
@@ -829,10 +1182,21 @@
    "types": "Legendary Creature — Human Warlock",
    "image": "https://cards.scryfall.io/large/front/9/6/9670f754-f41f-45ac-8e8b-025ad2c0f66b.jpg?1789127724",
    "scryfall_id": "9670f754-f41f-45ac-8e8b-025ad2c0f66b",
-   "number": "240"
+   "number": "240",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 60,
+    "gih_wr": 0.4167,
+    "oh_games": 25,
+    "oh_wr": 0.44,
+    "games": 110,
+    "ata": 5.86,
+    "alsa": 5.03,
+    "offered": 187
+   }
   },
   "Gallia, Tragic Host": {
-   "grade": 3.4,
+   "grade": 2.85,
    "colors": "B",
    "rarity": "uncommon",
    "tags": [
@@ -846,10 +1210,21 @@
    "types": "Legendary Creature — Zombie Satyr",
    "image": "https://cards.scryfall.io/large/front/4/9/498fa810-8522-4020-b773-52ad404c9f65.jpg?1789385697",
    "scryfall_id": "498fa810-8522-4020-b773-52ad404c9f65",
-   "number": "228"
+   "number": "228",
+   "grade_prerelease": 3.4,
+   "untapped": {
+    "gih_games": 80,
+    "gih_wr": 0.5,
+    "oh_games": 34,
+    "oh_wr": 0.5294,
+    "games": 161,
+    "ata": 5.51,
+    "alsa": 4.32,
+    "offered": 152
+   }
   },
   "Hallway Heckler": {
-   "grade": 2.8,
+   "grade": 2.53,
    "colors": "R",
    "rarity": "common",
    "tags": [
@@ -864,10 +1239,21 @@
    "types": "Creature — Elemental Sorcerer",
    "image": "https://cards.scryfall.io/large/front/7/e/7e324816-552f-455d-97c4-5ea6b26d2e6e.jpg?1789127576",
    "scryfall_id": "7e324816-552f-455d-97c4-5ea6b26d2e6e",
-   "number": "85"
+   "number": "85",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 74,
+    "gih_wr": 0.4865,
+    "oh_games": 32,
+    "oh_wr": 0.4375,
+    "games": 145,
+    "ata": 8.81,
+    "alsa": 6.4,
+    "offered": 476
+   }
   },
   "Whiplash Wordsmith": {
-   "grade": 2.8,
+   "grade": 2.36,
    "colors": "BR",
    "rarity": "common",
    "tags": [
@@ -883,10 +1269,21 @@
    "types": "Creature — Vampire Sorcerer",
    "image": "https://cards.scryfall.io/large/front/8/0/8096bc9a-a610-448f-bef2-7230e17e9777.jpg?1789127692",
    "scryfall_id": "8096bc9a-a610-448f-bef2-7230e17e9777",
-   "number": "164"
+   "number": "164",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 38,
+    "gih_wr": 0.4211,
+    "oh_games": 17,
+    "oh_wr": 0.2941,
+    "games": 87,
+    "ata": 9.51,
+    "alsa": 6.7,
+    "offered": 444
+   }
   },
   "Grim Repriser": {
-   "grade": 2.9,
+   "grade": 2.7,
    "colors": "BR",
    "rarity": "uncommon",
    "tags": [
@@ -901,10 +1298,21 @@
    "types": "Creature — Zombie Bard",
    "image": "https://cards.scryfall.io/large/front/8/2/8295c48c-b4dd-4bc1-a206-04cf12b79bbd.jpg?1789470746",
    "scryfall_id": "8295c48c-b4dd-4bc1-a206-04cf12b79bbd",
-   "number": "136"
+   "number": "136",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 29,
+    "gih_wr": 0.4828,
+    "oh_games": 14,
+    "oh_wr": 0.4286,
+    "games": 63,
+    "ata": 8.82,
+    "alsa": 6.37,
+    "offered": 205
+   }
   },
   "Master of Barbs": {
-   "grade": 3.5,
+   "grade": 2.89,
    "colors": "R",
    "rarity": "rare",
    "tags": [
@@ -917,10 +1325,21 @@
    "types": "Creature — Lizard Bard",
    "image": "https://cards.scryfall.io/large/front/4/4/4404d9d4-9cdd-4dad-a4f6-574d90db5052.jpg?1789127596",
    "scryfall_id": "4404d9d4-9cdd-4dad-a4f6-574d90db5052",
-   "number": "88"
+   "number": "88",
+   "grade_prerelease": 3.5,
+   "untapped": {
+    "gih_games": 16,
+    "gih_wr": 0.3125,
+    "oh_games": 4,
+    "oh_wr": 0.75,
+    "games": 43,
+    "ata": 1.74,
+    "alsa": 3.46,
+    "offered": 31
+   }
   },
   "Stingcaster Mage": {
-   "grade": 3.5,
+   "grade": 3.02,
    "colors": "R",
    "rarity": "mythic",
    "tags": [
@@ -936,10 +1355,21 @@
    "types": "Creature — Human Wizard",
    "image": "https://cards.scryfall.io/large/front/2/d/2d8e8e5f-3bf5-490d-aa9c-9df2b26f1460.jpg?1788329303",
    "scryfall_id": "2d8e8e5f-3bf5-490d-aa9c-9df2b26f1460",
-   "number": "93"
+   "number": "93",
+   "grade_prerelease": 3.5,
+   "untapped": {
+    "gih_games": 16,
+    "gih_wr": 0.375,
+    "oh_games": 8,
+    "oh_wr": 0.5,
+    "games": 31,
+    "ata": 2.69,
+    "alsa": 2.67,
+    "offered": 21
+   }
   },
   "Graft Surgeon": {
-   "grade": 3.1,
+   "grade": 2.53,
    "colors": "W",
    "rarity": "common",
    "tags": [
@@ -952,10 +1382,21 @@
    "types": "Creature — Human Cleric",
    "image": "https://cards.scryfall.io/large/front/3/2/32a7a905-11bf-4b66-a28e-1066a0e372b8.jpg?1789644811",
    "scryfall_id": "32a7a905-11bf-4b66-a28e-1066a0e372b8",
-   "number": "10"
+   "number": "10",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 54,
+    "gih_wr": 0.4444,
+    "oh_games": 19,
+    "oh_wr": 0.3684,
+    "games": 111,
+    "ata": 9.56,
+    "alsa": 7.29,
+    "offered": 470
+   }
   },
   "Bloombrute": {
-   "grade": 3.1,
+   "grade": 2.88,
    "colors": "WG",
    "rarity": "uncommon",
    "tags": [
@@ -969,10 +1410,21 @@
    "types": "Creature — Plant Elemental",
    "image": "https://cards.scryfall.io/large/front/6/b/6b804503-9c70-4b1f-bb13-a65fb6dd3ef8.jpg?1789644843",
    "scryfall_id": "6b804503-9c70-4b1f-bb13-a65fb6dd3ef8",
-   "number": "124"
+   "number": "124",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 54,
+    "gih_wr": 0.5185,
+    "oh_games": 18,
+    "oh_wr": 0.5556,
+    "games": 122,
+    "ata": 5.51,
+    "alsa": 4.66,
+    "offered": 147
+   }
   },
   "Greenhouse Propagator": {
-   "grade": 2.8,
+   "grade": 2.6,
    "colors": "G",
    "rarity": "common",
    "tags": [
@@ -986,10 +1438,21 @@
    "types": "Creature — Cat Druid",
    "image": "https://cards.scryfall.io/large/front/a/5/a56e0f91-b128-4693-a949-53cb403f4fbf.jpg?1789127136",
    "scryfall_id": "a56e0f91-b128-4693-a949-53cb403f4fbf",
-   "number": "104"
+   "number": "104",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 140,
+    "gih_wr": 0.5071,
+    "oh_games": 53,
+    "oh_wr": 0.566,
+    "games": 245,
+    "ata": 6.24,
+    "alsa": 5.32,
+    "offered": 318
+   }
   },
   "Surgical Precision": {
-   "grade": 2.9,
+   "grade": 3.28,
    "colors": "W",
    "rarity": "common",
    "tags": [
@@ -1003,10 +1466,21 @@
    "types": "Sorcery",
    "image": "https://cards.scryfall.io/large/front/d/3/d3acf176-ef02-4729-88c4-0f0dfbfdada4.jpg?1789385570",
    "scryfall_id": "d3acf176-ef02-4729-88c4-0f0dfbfdada4",
-   "number": "22"
+   "number": "22",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 208,
+    "gih_wr": 0.5962,
+    "oh_games": 90,
+    "oh_wr": 0.5667,
+    "games": 393,
+    "ata": 6.18,
+    "alsa": 4.97,
+    "offered": 368
+   }
   },
   "Fatehold Annex": {
-   "grade": 2.2,
+   "grade": 2.48,
    "colors": "",
    "rarity": "common",
    "tags": [
@@ -1020,10 +1494,21 @@
    "types": "Land",
    "image": "https://cards.scryfall.io/large/front/5/1/5140f962-62f3-40fd-a322-44896c7e2613.jpg?1789556955",
    "scryfall_id": "5140f962-62f3-40fd-a322-44896c7e2613",
-   "number": "177"
+   "number": "177",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 84,
+    "gih_wr": 0.5238,
+    "oh_games": 42,
+    "oh_wr": 0.5714,
+    "games": 174,
+    "ata": 9.35,
+    "alsa": 6.84,
+    "offered": 302
+   }
   },
   "Theorix Annex": {
-   "grade": 2.2,
+   "grade": 2.44,
    "colors": "",
    "rarity": "common",
    "tags": [
@@ -1037,10 +1522,21 @@
    "types": "Land",
    "image": "https://cards.scryfall.io/large/front/9/7/97bbbd23-ecb1-4407-ac14-dede08532a1e.jpg?1789557008",
    "scryfall_id": "97bbbd23-ecb1-4407-ac14-dede08532a1e",
-   "number": "192"
+   "number": "192",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 85,
+    "gih_wr": 0.5176,
+    "oh_games": 34,
+    "oh_wr": 0.4706,
+    "games": 154,
+    "ata": 8.48,
+    "alsa": 6.38,
+    "offered": 277
+   }
   },
   "Stingerquill Annex": {
-   "grade": 2.2,
+   "grade": 2.44,
    "colors": "",
    "rarity": "common",
    "tags": [
@@ -1054,10 +1550,21 @@
    "types": "Land",
    "image": "https://cards.scryfall.io/large/front/6/e/6ede3143-69ac-4cbe-922a-d25b07c26da7.jpg?1789557046",
    "scryfall_id": "6ede3143-69ac-4cbe-922a-d25b07c26da7",
-   "number": "190"
+   "number": "190",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 45,
+    "gih_wr": 0.5333,
+    "oh_games": 27,
+    "oh_wr": 0.5185,
+    "games": 99,
+    "ata": 9.64,
+    "alsa": 6.94,
+    "offered": 309
+   }
   },
   "Konstrari Annex": {
-   "grade": 2.2,
+   "grade": 2.53,
    "colors": "",
    "rarity": "common",
    "tags": [
@@ -1071,10 +1578,21 @@
    "types": "Land",
    "image": "https://cards.scryfall.io/large/front/3/9/39c805e3-82cd-42a9-80fe-8d81712a94ea.jpg?1789556993",
    "scryfall_id": "39c805e3-82cd-42a9-80fe-8d81712a94ea",
-   "number": "183"
+   "number": "183",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 61,
+    "gih_wr": 0.541,
+    "oh_games": 34,
+    "oh_wr": 0.5294,
+    "games": 122,
+    "ata": 9.76,
+    "alsa": 6.64,
+    "offered": 289
+   }
   },
   "Vigorbloom Annex": {
-   "grade": 2.2,
+   "grade": 2.3,
    "colors": "",
    "rarity": "common",
    "tags": [
@@ -1088,7 +1606,18 @@
    "types": "Land",
    "image": "https://cards.scryfall.io/large/front/d/b/db8c7bdd-76cd-4be0-ae0d-d430e9a5fe7a.jpg?1789557019",
    "scryfall_id": "db8c7bdd-76cd-4be0-ae0d-d430e9a5fe7a",
-   "number": "194"
+   "number": "194",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 75,
+    "gih_wr": 0.4933,
+    "oh_games": 34,
+    "oh_wr": 0.3529,
+    "games": 159,
+    "ata": 8.43,
+    "alsa": 6.44,
+    "offered": 292
+   }
   },
   "Academic Ascent": {
    "colors": "W",
@@ -1104,8 +1633,19 @@
    "image": "https://cards.scryfall.io/large/front/7/3/730d8c28-1e58-4b8e-89e9-445d154d2e83.jpg?1788878081",
    "scryfall_id": "730d8c28-1e58-4b8e-89e9-445d154d2e83",
    "number": "2",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.16,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 22,
+    "gih_wr": 0.3182,
+    "oh_games": 8,
+    "oh_wr": 0.25,
+    "games": 52,
+    "ata": 11.13,
+    "alsa": 8.26,
+    "offered": 628
+   }
   },
   "Afterthought Sentry": {
    "colors": "",
@@ -1119,8 +1659,19 @@
    "image": "https://cards.scryfall.io/large/front/4/d/4d4b3bf7-a149-4099-b97d-4e36a87dfa60.jpg?1789385875",
    "scryfall_id": "4d4b3bf7-a149-4099-b97d-4e36a87dfa60",
    "number": "166",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.41,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 60,
+    "gih_wr": 0.4667,
+    "oh_games": 16,
+    "oh_wr": 0.375,
+    "games": 114,
+    "ata": 9.5,
+    "alsa": 7.52,
+    "offered": 563
+   }
   },
   "Ajani's Anguish": {
    "colors": "R",
@@ -1134,8 +1685,19 @@
    "image": "https://cards.scryfall.io/large/front/d/9/d9039a58-2f17-4b8a-b714-3a2f0b46f057.jpg?1789470674",
    "scryfall_id": "d9039a58-2f17-4b8a-b714-3a2f0b46f057",
    "number": "72",
-   "grade": 3.4,
-   "source": "auto"
+   "grade": 3.27,
+   "source": "auto",
+   "grade_prerelease": 3.4,
+   "untapped": {
+    "gih_games": 27,
+    "gih_wr": 0.5556,
+    "oh_games": 7,
+    "oh_wr": 0.5714,
+    "games": 68,
+    "ata": 1.77,
+    "alsa": 1.95,
+    "offered": 22
+   }
   },
   "Apex Witchstalker": {
    "colors": "B",
@@ -1151,8 +1713,19 @@
    "image": "https://cards.scryfall.io/large/front/c/d/cd56f047-6bdc-4e83-8a7c-923ebad26302.jpg?1789556710",
    "scryfall_id": "cd56f047-6bdc-4e83-8a7c-923ebad26302",
    "number": "48",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 2.44,
+   "source": "auto",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 125,
+    "gih_wr": 0.512,
+    "oh_games": 58,
+    "oh_wr": 0.4655,
+    "games": 228,
+    "ata": 8.89,
+    "alsa": 6.21,
+    "offered": 415
+   }
   },
   "Arcane Amphisbaena": {
    "colors": "G",
@@ -1168,8 +1741,19 @@
    "image": "https://cards.scryfall.io/large/front/1/b/1bf923c4-f0b7-4271-978c-fd2e79fe1cc8.jpg?1788878190",
    "scryfall_id": "1bf923c4-f0b7-4271-978c-fd2e79fe1cc8",
    "number": "97",
-   "grade": 2.6,
-   "source": "auto"
+   "grade": 3.05,
+   "source": "auto",
+   "grade_prerelease": 2.6,
+   "untapped": {
+    "gih_games": 150,
+    "gih_wr": 0.58,
+    "oh_games": 68,
+    "oh_wr": 0.5294,
+    "games": 276,
+    "ata": 6.21,
+    "alsa": 4.73,
+    "offered": 288
+   }
   },
   "Archive Arbiter": {
    "colors": "",
@@ -1185,8 +1769,19 @@
    "image": "https://cards.scryfall.io/large/front/0/2/024bce1e-a5f3-4292-bc17-d0355a5d65e1.jpg?1789614867",
    "scryfall_id": "024bce1e-a5f3-4292-bc17-d0355a5d65e1",
    "number": "167",
-   "grade": 2.8,
-   "source": "auto"
+   "grade": 3.58,
+   "source": "auto",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 36,
+    "gih_wr": 0.75,
+    "oh_games": 16,
+    "oh_wr": 0.8125,
+    "games": 83,
+    "ata": 6.98,
+    "alsa": 6.0,
+    "offered": 234
+   }
   },
   "Arni, Humble Scribe": {
    "colors": "U",
@@ -1198,8 +1793,19 @@
    "image": "https://cards.scryfall.io/large/front/8/e/8e3a2239-9348-4639-9318-e9e35b2cf86b.jpg?1789568409",
    "scryfall_id": "8e3a2239-9348-4639-9318-e9e35b2cf86b",
    "number": "211",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.61,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 73,
+    "gih_wr": 0.4932,
+    "oh_games": 20,
+    "oh_wr": 0.4,
+    "games": 160,
+    "ata": 6.21,
+    "alsa": 5.48,
+    "offered": 177
+   }
   },
   "Arni, Renowned Champion": {
    "colors": "R",
@@ -1213,8 +1819,19 @@
    "image": "https://cards.scryfall.io/large/front/b/d/bd8db649-1dba-457d-8327-e1f1da1aab36.jpg?1789557035",
    "scryfall_id": "bd8db649-1dba-457d-8327-e1f1da1aab36",
    "number": "243",
-   "grade": 3.0,
-   "source": "auto"
+   "grade": 2.9,
+   "source": "auto",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 3,
+    "gih_wr": 0.3333,
+    "oh_games": 0,
+    "oh_wr": null,
+    "games": 7,
+    "ata": 10.54,
+    "alsa": 7.21,
+    "offered": 239
+   }
   },
   "Artifist Acumen": {
    "colors": "R",
@@ -1226,8 +1843,19 @@
    "image": "https://cards.scryfall.io/large/front/7/d/7d3b720d-f27c-462a-8f80-15748e5086e1.jpg?1789729762",
    "scryfall_id": "7d3b720d-f27c-462a-8f80-15748e5086e1",
    "number": "73",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.24,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 9,
+    "gih_wr": 0.2222,
+    "oh_games": 5,
+    "oh_wr": 0.4,
+    "games": 23,
+    "ata": 11.43,
+    "alsa": 8.39,
+    "offered": 623
+   }
   },
   "Avatar of Burgeoning Echoes": {
    "colors": "UG",
@@ -1243,8 +1871,19 @@
    "image": "https://cards.scryfall.io/large/front/5/9/5905995b-7a20-4602-a7cc-90aa5089a082.jpg?1788878208",
    "scryfall_id": "5905995b-7a20-4602-a7cc-90aa5089a082",
    "number": "122",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 3.79,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 17,
+    "gih_wr": 0.7059,
+    "oh_games": 6,
+    "oh_wr": 0.6667,
+    "games": 31,
+    "ata": 2.54,
+    "alsa": 2.73,
+    "offered": 15
+   }
   },
   "Awaken the Inferno": {
    "colors": "R",
@@ -1260,8 +1899,19 @@
    "image": "https://cards.scryfall.io/large/front/c/5/c596c4ec-8480-4be9-a45d-700398a126f6.jpg?1789556812",
    "scryfall_id": "c596c4ec-8480-4be9-a45d-700398a126f6",
    "number": "74",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.73,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 155,
+    "gih_wr": 0.5226,
+    "oh_games": 63,
+    "oh_wr": 0.5397,
+    "games": 276,
+    "ata": 6.46,
+    "alsa": 5.47,
+    "offered": 410
+   }
   },
   "Bestial Incursion": {
    "colors": "G",
@@ -1275,8 +1925,19 @@
    "image": "https://cards.scryfall.io/large/front/e/0/e0de5f66-f0df-4866-9f73-104ce50411b4.jpg?1789127248",
    "scryfall_id": "e0de5f66-f0df-4866-9f73-104ce50411b4",
    "number": "98",
-   "grade": 2.6,
-   "source": "auto"
+   "grade": 2.82,
+   "source": "auto",
+   "grade_prerelease": 2.6,
+   "untapped": {
+    "gih_games": 161,
+    "gih_wr": 0.5466,
+    "oh_games": 64,
+    "oh_wr": 0.5625,
+    "games": 260,
+    "ata": 6.09,
+    "alsa": 5.17,
+    "offered": 364
+   }
   },
   "Blazing Crescendo": {
    "colors": "R",
@@ -1288,8 +1949,19 @@
    "image": "https://cards.scryfall.io/large/front/8/4/8414a98c-0c79-4884-bc9b-061a6456b392.jpg?1789060147",
    "scryfall_id": "8414a98c-0c79-4884-bc9b-061a6456b392",
    "number": "75",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.42,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 11,
+    "gih_wr": 0.4545,
+    "oh_games": 4,
+    "oh_wr": 0.25,
+    "games": 31,
+    "ata": 11.12,
+    "alsa": 8.19,
+    "offered": 622
+   }
   },
   "Blessed Ghoul": {
    "colors": "WB",
@@ -1304,8 +1976,19 @@
    "image": "https://cards.scryfall.io/large/front/b/b/bb975803-9bf2-401e-9414-d272df314398.jpg?1789556847",
    "scryfall_id": "bb975803-9bf2-401e-9414-d272df314398",
    "number": "123",
-   "grade": 2.3,
-   "source": "auto"
+   "grade": 2.45,
+   "source": "auto",
+   "grade_prerelease": 2.3,
+   "untapped": {
+    "gih_games": 94,
+    "gih_wr": 0.5106,
+    "oh_games": 36,
+    "oh_wr": 0.5,
+    "games": 173,
+    "ata": 8.44,
+    "alsa": 6.32,
+    "offered": 438
+   }
   },
   "Bloodline Recollector": {
    "colors": "B",
@@ -1319,8 +2002,19 @@
    "image": "https://cards.scryfall.io/large/front/4/f/4fcc913e-f736-460a-b24b-022fa2e861b9.jpg?1788329264",
    "scryfall_id": "4fcc913e-f736-460a-b24b-022fa2e861b9",
    "number": "49",
-   "grade": 3.9,
-   "source": "auto"
+   "grade": 3.98,
+   "source": "auto",
+   "grade_prerelease": 3.9,
+   "untapped": {
+    "gih_games": 5,
+    "gih_wr": 0.8,
+    "oh_games": 3,
+    "oh_wr": 1.0,
+    "games": 9,
+    "ata": 2.0,
+    "alsa": 3.33,
+    "offered": 15
+   }
   },
   "Blossom-Blessed Angel": {
    "colors": "W",
@@ -1338,8 +2032,19 @@
    "image": "https://cards.scryfall.io/large/front/5/e/5e77fbf0-9d1f-4e7d-a02e-43065d11b0d9.jpg?1789692643",
    "scryfall_id": "5e77fbf0-9d1f-4e7d-a02e-43065d11b0d9",
    "number": "3",
-   "grade": 3.0,
-   "source": "auto"
+   "grade": 2.62,
+   "source": "auto",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 134,
+    "gih_wr": 0.5,
+    "oh_games": 51,
+    "oh_wr": 0.5686,
+    "games": 269,
+    "ata": 6.47,
+    "alsa": 5.81,
+    "offered": 376
+   }
   },
   "Break Under Pressure": {
    "colors": "B",
@@ -1353,8 +2058,19 @@
    "image": "https://cards.scryfall.io/large/front/4/6/46974d94-e900-43e4-92b5-4fb9b9f7cf46.jpg?1789385622",
    "scryfall_id": "46974d94-e900-43e4-92b5-4fb9b9f7cf46",
    "number": "50",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.65,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 72,
+    "gih_wr": 0.5,
+    "oh_games": 30,
+    "oh_wr": 0.5667,
+    "games": 154,
+    "ata": 3.66,
+    "alsa": 3.12,
+    "offered": 95
+   }
   },
   "Budding Insurgent": {
    "colors": "G",
@@ -1368,8 +2084,19 @@
    "image": "https://cards.scryfall.io/large/front/1/8/18c59d60-2640-4576-9375-3ba38aa3ecb7.jpg?1789127120",
    "scryfall_id": "18c59d60-2640-4576-9375-3ba38aa3ecb7",
    "number": "99",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.65,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 73,
+    "gih_wr": 0.5342,
+    "oh_games": 28,
+    "oh_wr": 0.5,
+    "games": 144,
+    "ata": 8.79,
+    "alsa": 6.79,
+    "offered": 525
+   }
   },
   "Carnivorous Cultivator": {
    "colors": "G",
@@ -1386,8 +2113,19 @@
    "image": "https://cards.scryfall.io/large/front/7/9/79dd5c54-5ea5-47b5-8f9b-50ed57a5ea45.jpg?1789385967",
    "scryfall_id": "79dd5c54-5ea5-47b5-8f9b-50ed57a5ea45",
    "number": "100",
-   "grade": 3.7,
-   "source": "auto"
+   "grade": 3.37,
+   "source": "auto",
+   "grade_prerelease": 3.7,
+   "untapped": {
+    "gih_games": 27,
+    "gih_wr": 0.5185,
+    "oh_games": 10,
+    "oh_wr": 0.4,
+    "games": 62,
+    "ata": 2.03,
+    "alsa": 2.04,
+    "offered": 27
+   }
   },
   "Cast Away Doubt": {
    "colors": "B",
@@ -1399,8 +2137,19 @@
    "image": "https://cards.scryfall.io/large/front/3/b/3b5b28a4-0abd-4dc2-9856-c9a8d27f6a2d.jpg?1788353191",
    "scryfall_id": "3b5b28a4-0abd-4dc2-9856-c9a8d27f6a2d",
    "number": "51",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.13,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 69,
+    "gih_wr": 0.4348,
+    "oh_games": 31,
+    "oh_wr": 0.3871,
+    "games": 149,
+    "ata": 9.4,
+    "alsa": 7.3,
+    "offered": 568
+   }
   },
   "Chandra's Emberling": {
    "colors": "R",
@@ -1415,8 +2164,19 @@
    "image": "https://cards.scryfall.io/large/front/3/a/3a64c5f4-9cfc-4d19-bd99-13d619b1aa9d.jpg?1789385708",
    "scryfall_id": "3a64c5f4-9cfc-4d19-bd99-13d619b1aa9d",
    "number": "76",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.3,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 52,
+    "gih_wr": 0.4615,
+    "oh_games": 21,
+    "oh_wr": 0.4762,
+    "games": 111,
+    "ata": 9.85,
+    "alsa": 7.12,
+    "offered": 507
+   }
   },
   "Charge the Sanctum": {
    "colors": "WR",
@@ -1430,8 +2190,19 @@
    "image": "https://cards.scryfall.io/large/front/8/7/87b40df5-5c0a-41f5-a09c-a04f17066a91.jpg?1788521570",
    "scryfall_id": "87b40df5-5c0a-41f5-a09c-a04f17066a91",
    "number": "125",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.65,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 4,
+    "gih_wr": 0.75,
+    "oh_games": 2,
+    "oh_wr": 1.0,
+    "games": 8,
+    "ata": 11.23,
+    "alsa": 8.28,
+    "offered": 557
+   }
   },
   "Clash of Elements": {
    "colors": "UR",
@@ -1443,8 +2214,19 @@
    "image": "https://cards.scryfall.io/large/front/b/6/b61bcef7-5832-45e6-a2bc-26d4f23707fc.jpg?1788878210",
    "scryfall_id": "b61bcef7-5832-45e6-a2bc-26d4f23707fc",
    "number": "126",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.75,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 62,
+    "gih_wr": 0.5161,
+    "oh_games": 18,
+    "oh_wr": 0.3889,
+    "games": 107,
+    "ata": 6.03,
+    "alsa": 5.57,
+    "offered": 174
+   }
   },
   "Codie, Ravenous Codex": {
    "colors": "",
@@ -1458,8 +2240,19 @@
    "image": "https://cards.scryfall.io/large/front/c/3/c3192390-1518-49fc-8716-f2c7a0384f39.jpg?1789646811",
    "scryfall_id": "c3192390-1518-49fc-8716-f2c7a0384f39",
    "number": "168",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 3.68,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 4,
+    "gih_wr": 0.75,
+    "oh_games": 2,
+    "oh_wr": 0.5,
+    "games": 10,
+    "ata": 8.46,
+    "alsa": 6.79,
+    "offered": 94
+   }
   },
   "Command the Stage": {
    "colors": "R",
@@ -1474,8 +2267,19 @@
    "image": "https://cards.scryfall.io/large/front/f/3/f3307da2-6dad-4ef2-9614-a7d34f38088e.jpg?1789644825",
    "scryfall_id": "f3307da2-6dad-4ef2-9614-a7d34f38088e",
    "number": "77",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.7,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 48,
+    "gih_wr": 0.5,
+    "oh_games": 20,
+    "oh_wr": 0.55,
+    "games": 94,
+    "ata": 5.39,
+    "alsa": 4.09,
+    "offered": 147
+   }
   },
   "Compel Brutality": {
    "colors": "G",
@@ -1491,9 +2295,20 @@
    "image": "https://cards.scryfall.io/large/front/b/d/bd32d736-7a58-46b9-90b4-2cac3c3e80a1.jpg?1788521235",
    "scryfall_id": "bd32d736-7a58-46b9-90b4-2cac3c3e80a1",
    "number": "101",
-   "grade": 3.2,
+   "grade": 3.07,
    "source": "auto",
-   "note": "{1}{G} instant. Mode 1: your creature deals damage equal to its power. Mode 2: a PLANESWALKER you control deals damage equal to its LOYALTY - with a 5-loyalty Jace this kills almost anything for 2 mana. Green's real removal spell. 6 of 20 decks."
+   "note": "{1}{G} instant. Mode 1: your creature deals damage equal to its power. Mode 2: a PLANESWALKER you control deals damage equal to its LOYALTY - with a 5-loyalty Jace this kills almost anything for 2 mana. Green's real removal spell. 6 of 20 decks.",
+   "grade_prerelease": 3.2,
+   "untapped": {
+    "gih_games": 170,
+    "gih_wr": 0.5588,
+    "oh_games": 67,
+    "oh_wr": 0.5075,
+    "games": 355,
+    "ata": 5.2,
+    "alsa": 4.33,
+    "offered": 341
+   }
   },
   "Countersculpt": {
    "colors": "U",
@@ -1508,8 +2323,19 @@
    "image": "https://cards.scryfall.io/large/front/1/4/145b928d-a7ff-4fe5-ae4d-bbae7b1d955b.jpg?1788878107",
    "scryfall_id": "145b928d-a7ff-4fe5-ae4d-bbae7b1d955b",
    "number": "25",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.67,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 60,
+    "gih_wr": 0.5,
+    "oh_games": 16,
+    "oh_wr": 0.4375,
+    "games": 105,
+    "ata": 5.95,
+    "alsa": 4.97,
+    "offered": 133
+   }
   },
   "Craftwork Crusher": {
    "colors": "RG",
@@ -1525,8 +2351,19 @@
    "image": "https://cards.scryfall.io/large/front/0/3/03f9839c-aa07-4ee7-847b-091e47ab80c4.jpg?1789470711",
    "scryfall_id": "03f9839c-aa07-4ee7-847b-091e47ab80c4",
    "number": "127",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 4.19,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 81,
+    "gih_wr": 0.7654,
+    "oh_games": 36,
+    "oh_wr": 0.8611,
+    "games": 140,
+    "ata": 3.8,
+    "alsa": 3.4,
+    "offered": 99
+   }
   },
   "Craterclaw Colossus": {
    "colors": "R",
@@ -1542,8 +2379,19 @@
    "image": "https://cards.scryfall.io/large/front/4/7/47793a51-08c6-4ad2-a7e5-a4484d83a5cd.jpg?1788329298",
    "scryfall_id": "47793a51-08c6-4ad2-a7e5-a4484d83a5cd",
    "number": "78",
-   "grade": 3.4,
-   "source": "auto"
+   "grade": 3.43,
+   "source": "auto",
+   "grade_prerelease": 3.4,
+   "untapped": {
+    "gih_games": 3,
+    "gih_wr": 0.6667,
+    "oh_games": 1,
+    "oh_wr": 1.0,
+    "games": 12,
+    "ata": 5.61,
+    "alsa": 5.85,
+    "offered": 19
+   }
   },
   "Cryotheory Adept": {
    "colors": "U",
@@ -1558,8 +2406,19 @@
    "image": "https://cards.scryfall.io/large/front/9/b/9ba1f7ce-3404-4932-9795-22967707f762.jpg?1789556701",
    "scryfall_id": "9ba1f7ce-3404-4932-9795-22967707f762",
    "number": "27",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.43,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 87,
+    "gih_wr": 0.4943,
+    "oh_games": 35,
+    "oh_wr": 0.5143,
+    "games": 174,
+    "ata": 8.36,
+    "alsa": 7.1,
+    "offered": 495
+   }
   },
   "Curse-Marred Demon": {
    "colors": "R",
@@ -1574,8 +2433,19 @@
    "image": "https://cards.scryfall.io/large/front/8/f/8f827e50-0a08-4bc8-98b1-b26c9af15ef2.jpg?1789470818",
    "scryfall_id": "8f827e50-0a08-4bc8-98b1-b26c9af15ef2",
    "number": "79",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 3.68,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 20,
+    "gih_wr": 0.65,
+    "oh_games": 8,
+    "oh_wr": 0.75,
+    "games": 39,
+    "ata": 2.06,
+    "alsa": 1.85,
+    "offered": 20
+   }
   },
   "Danitha, Spear of Agony": {
    "colors": "B",
@@ -1589,8 +2459,19 @@
    "image": "https://cards.scryfall.io/large/front/6/4/6489814b-3d10-423e-988c-324740d36748.jpg?1789127194",
    "scryfall_id": "6489814b-3d10-423e-988c-324740d36748",
    "number": "227",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.71,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 42,
+    "gih_wr": 0.5,
+    "oh_games": 18,
+    "oh_wr": 0.6111,
+    "games": 92,
+    "ata": 7.75,
+    "alsa": 5.32,
+    "offered": 173
+   }
   },
   "Danitha, Sword of Hope": {
    "colors": "W",
@@ -1602,8 +2483,19 @@
    "image": "https://cards.scryfall.io/large/front/d/5/d5cb9810-3c2d-4ae4-b8b6-0155ca3f47ad.jpg?1789127178",
    "scryfall_id": "d5cb9810-3c2d-4ae4-b8b6-0155ca3f47ad",
    "number": "196",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.8,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 44,
+    "gih_wr": 0.5227,
+    "oh_games": 16,
+    "oh_wr": 0.625,
+    "games": 117,
+    "ata": 8.6,
+    "alsa": 5.94,
+    "offered": 185
+   }
   },
   "Darklight Phoenix": {
    "colors": "B",
@@ -1619,8 +2511,19 @@
    "image": "https://cards.scryfall.io/large/front/1/6/16c5f0f3-2578-40d3-9012-6eaef17fa0b1.jpg?1789471442",
    "scryfall_id": "16c5f0f3-2578-40d3-9012-6eaef17fa0b1",
    "number": "444",
-   "grade": 3.8,
-   "source": "auto"
+   "grade": 3.41,
+   "source": "auto",
+   "grade_prerelease": 3.8,
+   "untapped": {
+    "gih_games": 8,
+    "gih_wr": 0.25,
+    "oh_games": 3,
+    "oh_wr": 0.0,
+    "games": 16,
+    "ata": 6.33,
+    "alsa": 5.13,
+    "offered": 17
+   }
   },
   "Dark Matter Manipulator": {
    "colors": "B",
@@ -1634,8 +2537,19 @@
    "image": "https://cards.scryfall.io/large/front/4/e/4ec912d5-cbe7-4d07-9ece-b03ac02d3055.jpg?1789385959",
    "scryfall_id": "4ec912d5-cbe7-4d07-9ece-b03ac02d3055",
    "number": "52",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 2.89,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 6,
+    "gih_wr": 0.3333,
+    "oh_games": 3,
+    "oh_wr": 0.3333,
+    "games": 17,
+    "ata": 7.57,
+    "alsa": 5.21,
+    "offered": 75
+   }
   },
   "Dedicated Commons": {
    "colors": "",
@@ -1650,8 +2564,19 @@
    "image": "https://cards.scryfall.io/large/front/3/2/3223e5db-5cc4-42f9-ae9e-ff58abc7c390.jpg?1789556950",
    "scryfall_id": "3223e5db-5cc4-42f9-ae9e-ff58abc7c390",
    "number": "175",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 1.94,
+   "source": "auto",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 55,
+    "gih_wr": 0.4182,
+    "oh_games": 23,
+    "oh_wr": 0.6522,
+    "games": 114,
+    "ata": 8.72,
+    "alsa": 6.85,
+    "offered": 303
+   }
   },
   "Deserted Beach": {
    "colors": "",
@@ -1666,8 +2591,19 @@
    "image": "https://cards.scryfall.io/large/front/5/6/56dae4c4-3e71-4a32-979b-4e26d9c9e96c.jpg?1788878239",
    "scryfall_id": "56dae4c4-3e71-4a32-979b-4e26d9c9e96c",
    "number": "176",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 1.98,
+   "source": "auto",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 14,
+    "gih_wr": 0.3571,
+    "oh_games": 4,
+    "oh_wr": 0.5,
+    "games": 35,
+    "ata": 5.64,
+    "alsa": 5.32,
+    "offered": 31
+   }
   },
   "Desperate Futurescribe": {
    "colors": "WU",
@@ -1682,8 +2618,19 @@
    "image": "https://cards.scryfall.io/large/front/c/f/cfaa3ebd-5c21-4e99-a0dd-8426d19b53a5.jpg?1789644852",
    "scryfall_id": "cfaa3ebd-5c21-4e99-a0dd-8426d19b53a5",
    "number": "129",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 3.39,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 49,
+    "gih_wr": 0.6327,
+    "oh_games": 24,
+    "oh_wr": 0.6667,
+    "games": 85,
+    "ata": 6.48,
+    "alsa": 4.7,
+    "offered": 137
+   }
   },
   "Diviner of Victory": {
    "colors": "U",
@@ -1699,8 +2646,19 @@
    "image": "https://cards.scryfall.io/large/front/0/8/0853bb80-8664-432a-8457-600139fd96d5.jpg?1788878145",
    "scryfall_id": "0853bb80-8664-432a-8457-600139fd96d5",
    "number": "28",
-   "grade": 3.4,
-   "source": "auto"
+   "grade": 3.63,
+   "source": "auto",
+   "grade_prerelease": 3.4,
+   "untapped": {
+    "gih_games": 46,
+    "gih_wr": 0.6522,
+    "oh_games": 19,
+    "oh_wr": 0.6842,
+    "games": 85,
+    "ata": 2.58,
+    "alsa": 2.48,
+    "offered": 33
+   }
   },
   "Divining Duelist": {
    "colors": "U",
@@ -1712,8 +2670,19 @@
    "image": "https://cards.scryfall.io/large/front/9/6/960c7335-331d-488b-be68-2ad1c1c695dc.jpg?1789556709",
    "scryfall_id": "960c7335-331d-488b-be68-2ad1c1c695dc",
    "number": "29",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.04,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 65,
+    "gih_wr": 0.4154,
+    "oh_games": 20,
+    "oh_wr": 0.4,
+    "games": 102,
+    "ata": 9.34,
+    "alsa": 7.53,
+    "offered": 531
+   }
   },
   "Draconic Visitor": {
    "colors": "R",
@@ -1729,8 +2698,19 @@
    "image": "https://cards.scryfall.io/large/front/1/1/112f8478-bd89-4a14-9721-8ab750613129.jpg?1789470842",
    "scryfall_id": "112f8478-bd89-4a14-9721-8ab750613129",
    "number": "80",
-   "grade": 3.5,
-   "source": "auto"
+   "grade": 2.89,
+   "source": "auto",
+   "grade_prerelease": 3.5,
+   "untapped": {
+    "gih_games": 16,
+    "gih_wr": 0.3125,
+    "oh_games": 6,
+    "oh_wr": 0.1667,
+    "games": 52,
+    "ata": 1.88,
+    "alsa": 1.91,
+    "offered": 11
+   }
   },
   "Eardrum Rattler": {
    "colors": "R",
@@ -1742,8 +2722,19 @@
    "image": "https://cards.scryfall.io/large/front/5/f/5f8771f9-8128-4818-a11d-41ea368cf697.jpg?1789127173",
    "scryfall_id": "5f8771f9-8128-4818-a11d-41ea368cf697",
    "number": "81",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.16,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 30,
+    "gih_wr": 0.4,
+    "oh_games": 12,
+    "oh_wr": 0.3333,
+    "games": 72,
+    "ata": 10.48,
+    "alsa": 8.13,
+    "offered": 596
+   }
   },
   "Edgar, Ancient Bloodlord": {
    "colors": "WB",
@@ -1759,8 +2750,19 @@
    "image": "https://cards.scryfall.io/large/front/7/c/7c619fed-2394-4efc-8cdc-6df5f51c1f57.jpg?1789127743",
    "scryfall_id": "7c619fed-2394-4efc-8cdc-6df5f51c1f57",
    "number": "270",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.08,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 44,
+    "gih_wr": 0.5909,
+    "oh_games": 20,
+    "oh_wr": 0.55,
+    "games": 76,
+    "ata": 8.22,
+    "alsa": 6.52,
+    "offered": 235
+   }
   },
   "Edgar, Moonlit Sovereign": {
    "colors": "G",
@@ -1775,8 +2777,19 @@
    "image": "https://cards.scryfall.io/large/front/d/a/dad6afc9-8505-4cdd-bf79-e9ba4670f2bb.jpg?1789127966",
    "scryfall_id": "dad6afc9-8505-4cdd-bf79-e9ba4670f2bb",
    "number": "257",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.96,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 59,
+    "gih_wr": 0.5593,
+    "oh_games": 23,
+    "oh_wr": 0.5217,
+    "games": 133,
+    "ata": 4.72,
+    "alsa": 4.11,
+    "offered": 140
+   }
   },
   "Emergency Phytomedic": {
    "colors": "WG",
@@ -1793,8 +2806,19 @@
    "image": "https://cards.scryfall.io/large/front/d/e/de94d388-919d-44ff-baef-8c90a417ac6d.jpg?1789637792",
    "scryfall_id": "de94d388-919d-44ff-baef-8c90a417ac6d",
    "number": "130",
-   "grade": 2.6,
-   "source": "auto"
+   "grade": 2.5,
+   "source": "auto",
+   "grade_prerelease": 2.6,
+   "untapped": {
+    "gih_games": 120,
+    "gih_wr": 0.5,
+    "oh_games": 56,
+    "oh_wr": 0.5179,
+    "games": 236,
+    "ata": 6.76,
+    "alsa": 5.54,
+    "offered": 418
+   }
   },
   "Emrakul, the Exigent Doom": {
    "colors": "",
@@ -1811,8 +2835,19 @@
    "image": "https://cards.scryfall.io/large/front/e/e/ee609b68-5c9c-43e0-aff4-eb1bbc8b2911.jpg?1789060230",
    "scryfall_id": "ee609b68-5c9c-43e0-aff4-eb1bbc8b2911",
    "number": "438",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 3.17,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 15,
+    "gih_wr": 0.4,
+    "oh_games": 5,
+    "oh_wr": 0.6,
+    "games": 32,
+    "ata": 3.93,
+    "alsa": 2.98,
+    "offered": 17
+   }
   },
   "Enlightened Confidant": {
    "colors": "W",
@@ -1827,8 +2862,19 @@
    "image": "https://cards.scryfall.io/large/front/4/8/483fcc58-cc6e-4452-a696-7b38e117c837.jpg?1788329184",
    "scryfall_id": "483fcc58-cc6e-4452-a696-7b38e117c837",
    "number": "5",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 3.71,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 18,
+    "gih_wr": 0.6667,
+    "oh_games": 7,
+    "oh_wr": 0.8571,
+    "games": 54,
+    "ata": 1.0,
+    "alsa": 1.7,
+    "offered": 10
+   }
   },
   "Entrust the Spark": {
    "colors": "UG",
@@ -1843,7 +2889,8 @@
    "scryfall_id": "ca894d25-b9fc-4cd6-8746-70d8c2868721",
    "number": "131",
    "grade": 3.3,
-   "source": "auto"
+   "source": "auto",
+   "grade_prerelease": 3.3
   },
   "Essence Burn": {
    "colors": "R",
@@ -1855,8 +2902,19 @@
    "image": "https://cards.scryfall.io/large/front/d/2/d2e958de-70de-4156-8f9b-b2c0c1ba704a.jpg?1789470825",
    "scryfall_id": "d2e958de-70de-4156-8f9b-b2c0c1ba704a",
    "number": "82",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.89,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 2,
+    "gih_wr": 0.5,
+    "oh_games": 0,
+    "oh_wr": null,
+    "games": 7,
+    "ata": 10.26,
+    "alsa": 7.7,
+    "offered": 276
+   }
   },
   "Extended Absence": {
    "colors": "B",
@@ -1872,8 +2930,19 @@
    "image": "https://cards.scryfall.io/large/front/e/b/eb4b6ed8-782e-4473-abc9-d50bf2275c6a.jpg?1789556713",
    "scryfall_id": "eb4b6ed8-782e-4473-abc9-d50bf2275c6a",
    "number": "54",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.02,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 149,
+    "gih_wr": 0.5638,
+    "oh_games": 58,
+    "oh_wr": 0.5172,
+    "games": 271,
+    "ata": 4.04,
+    "alsa": 3.47,
+    "offered": 240
+   }
   },
   "Extrapolate the Impossible": {
    "colors": "B",
@@ -1885,8 +2954,19 @@
    "image": "https://cards.scryfall.io/large/front/1/7/17fb6538-493c-41aa-ad13-3e63d3ad3317.jpg?1789729624",
    "scryfall_id": "17fb6538-493c-41aa-ad13-3e63d3ad3317",
    "number": "55",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.27,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 2,
+    "gih_wr": 0.5,
+    "oh_games": 1,
+    "oh_wr": 1.0,
+    "games": 6,
+    "ata": 10.92,
+    "alsa": 7.53,
+    "offered": 117
+   }
   },
   "Eye of Jace": {
    "colors": "",
@@ -1903,8 +2983,19 @@
    "image": "https://cards.scryfall.io/large/front/0/e/0edba64a-39cf-4a8d-ba20-4f7da10b6c3d.jpg?1789614864",
    "scryfall_id": "0edba64a-39cf-4a8d-ba20-4f7da10b6c3d",
    "number": "170",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.92,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 14,
+    "gih_wr": 0.6429,
+    "oh_games": 2,
+    "oh_wr": 0.5,
+    "games": 41,
+    "ata": 10.21,
+    "alsa": 7.23,
+    "offered": 222
+   }
   },
   "Face Yourself": {
    "colors": "R",
@@ -1918,8 +3009,19 @@
    "image": "https://cards.scryfall.io/large/front/3/c/3ccf8f64-19bd-4fdf-b70a-30a042bacf2f.jpg?1789127528",
    "scryfall_id": "3ccf8f64-19bd-4fdf-b70a-30a042bacf2f",
    "number": "83",
-   "grade": 3.0,
-   "source": "auto"
+   "grade": 2.97,
+   "source": "auto",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 4,
+    "gih_wr": 0.5,
+    "oh_games": 0,
+    "oh_wr": null,
+    "games": 14,
+    "ata": 8.27,
+    "alsa": 6.1,
+    "offered": 74
+   }
   },
   "Fateshaper Aspirant": {
    "colors": "W",
@@ -1935,8 +3037,19 @@
    "image": "https://cards.scryfall.io/large/front/f/0/f0c8400d-824f-4d79-84bc-7615a0deb831.jpg?1789556683",
    "scryfall_id": "f0c8400d-824f-4d79-84bc-7615a0deb831",
    "number": "6",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 1.86,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 59,
+    "gih_wr": 0.3729,
+    "oh_games": 22,
+    "oh_wr": 0.2727,
+    "games": 137,
+    "ata": 10.23,
+    "alsa": 7.22,
+    "offered": 522
+   }
   },
   "Fblthp, Impossibly Lost": {
    "colors": "U",
@@ -1948,8 +3061,19 @@
    "image": "https://cards.scryfall.io/large/front/a/3/a3a2edbb-d144-4670-acad-17316cea98d2.jpg?1789127697",
    "scryfall_id": "a3a2edbb-d144-4670-acad-17316cea98d2",
    "number": "213",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.4,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 79,
+    "gih_wr": 0.4557,
+    "oh_games": 25,
+    "oh_wr": 0.44,
+    "games": 157,
+    "ata": 6.06,
+    "alsa": 5.6,
+    "offered": 185
+   }
   },
   "Fblthp, Knows the Way": {
    "colors": "G",
@@ -1961,8 +3085,19 @@
    "image": "https://cards.scryfall.io/large/front/2/8/28fbb55a-5c9d-45ee-bf42-a84b1048f5d2.jpg?1789127976",
    "scryfall_id": "28fbb55a-5c9d-45ee-bf42-a84b1048f5d2",
    "number": "258",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.71,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 82,
+    "gih_wr": 0.5122,
+    "oh_games": 38,
+    "oh_wr": 0.4474,
+    "games": 163,
+    "ata": 5.3,
+    "alsa": 4.01,
+    "offered": 140
+   }
   },
   "Ferocity of the Hunt": {
    "colors": "BG",
@@ -1976,8 +3111,19 @@
    "image": "https://cards.scryfall.io/large/front/a/9/a9793ce9-5a0b-41fe-b9ad-02f6f7da2481.jpg?1789644856",
    "scryfall_id": "a9793ce9-5a0b-41fe-b9ad-02f6f7da2481",
    "number": "134",
-   "grade": 2.6,
-   "source": "auto"
+   "grade": 3.29,
+   "source": "auto",
+   "grade_prerelease": 2.6,
+   "untapped": {
+    "gih_games": 66,
+    "gih_wr": 0.6515,
+    "oh_games": 19,
+    "oh_wr": 0.6316,
+    "games": 132,
+    "ata": 8.49,
+    "alsa": 6.66,
+    "offered": 521
+   }
   },
   "Flickering Hound": {
    "colors": "W",
@@ -1989,8 +3135,19 @@
    "image": "https://cards.scryfall.io/large/front/6/8/686f3a25-305d-4f02-8972-eba7b8e9635f.jpg?1789470769",
    "scryfall_id": "686f3a25-305d-4f02-8972-eba7b8e9635f",
    "number": "7",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 2.71,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 24,
+    "gih_wr": 0.375,
+    "oh_games": 11,
+    "oh_wr": 0.1818,
+    "games": 43,
+    "ata": 4.52,
+    "alsa": 3.74,
+    "offered": 39
+   }
   },
   "Flourishing Grapple": {
    "colors": "G",
@@ -2002,8 +3159,19 @@
    "image": "https://cards.scryfall.io/large/front/f/7/f71958e9-6d6d-4393-8b49-567103b50877.jpg?1789470852",
    "scryfall_id": "f71958e9-6d6d-4393-8b49-567103b50877",
    "number": "102",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.82,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 2,
+    "gih_wr": 0.0,
+    "oh_games": 1,
+    "oh_wr": 0.0,
+    "games": 6,
+    "ata": 11.45,
+    "alsa": 8.16,
+    "offered": 307
+   }
   },
   "Formidable Commons": {
    "colors": "",
@@ -2018,8 +3186,19 @@
    "image": "https://cards.scryfall.io/large/front/e/6/e6ca6c3e-f145-42d6-8a17-90770c15afaf.jpg?1789556960",
    "scryfall_id": "e6ca6c3e-f145-42d6-8a17-90770c15afaf",
    "number": "178",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 2.32,
+   "source": "auto",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 56,
+    "gih_wr": 0.5,
+    "oh_games": 20,
+    "oh_wr": 0.55,
+    "games": 115,
+    "ata": 7.61,
+    "alsa": 6.35,
+    "offered": 288
+   }
   },
   "Frostbite Pyromental": {
    "colors": "UR",
@@ -2034,8 +3213,19 @@
    "image": "https://cards.scryfall.io/large/front/7/a/7a44581f-8fc4-457d-888a-1e211090ee7e.jpg?1789470870",
    "scryfall_id": "7a44581f-8fc4-457d-888a-1e211090ee7e",
    "number": "135",
-   "grade": 3.4,
-   "source": "auto"
+   "grade": 2.88,
+   "source": "auto",
+   "grade_prerelease": 3.4,
+   "untapped": {
+    "gih_games": 15,
+    "gih_wr": 0.3333,
+    "oh_games": 8,
+    "oh_wr": 0.375,
+    "games": 25,
+    "ata": 7.47,
+    "alsa": 6.61,
+    "offered": 80
+   }
   },
   "Fulminous Forte": {
    "colors": "R",
@@ -2049,8 +3239,19 @@
    "image": "https://cards.scryfall.io/large/front/1/9/19acb2b5-3b3e-43f0-bd81-8426ed3d9c55.jpg?1789614832",
    "scryfall_id": "19acb2b5-3b3e-43f0-bd81-8426ed3d9c55",
    "number": "84",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 3.76,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 93,
+    "gih_wr": 0.6452,
+    "oh_games": 36,
+    "oh_wr": 0.6944,
+    "games": 189,
+    "ata": 3.77,
+    "alsa": 3.21,
+    "offered": 96
+   }
   },
   "Gallia, the Merrymaker": {
    "colors": "R",
@@ -2066,8 +3267,19 @@
    "image": "https://cards.scryfall.io/large/front/f/2/f27d50f0-d76e-4ce1-a8d9-d997af6a5b41.jpg?1789385716",
    "scryfall_id": "f27d50f0-d76e-4ce1-a8d9-d997af6a5b41",
    "number": "245",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.98,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 46,
+    "gih_wr": 0.5652,
+    "oh_games": 15,
+    "oh_wr": 0.4667,
+    "games": 120,
+    "ata": 6.51,
+    "alsa": 5.02,
+    "offered": 146
+   }
   },
   "Gardenize": {
    "colors": "G",
@@ -2081,8 +3293,19 @@
    "image": "https://cards.scryfall.io/large/front/9/3/930b89c3-4433-48de-829f-20fc3dbfced9.jpg?1789644837",
    "scryfall_id": "930b89c3-4433-48de-829f-20fc3dbfced9",
    "number": "103",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.18,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 3,
+    "gih_wr": 0.3333,
+    "oh_games": 2,
+    "oh_wr": 0.5,
+    "games": 5,
+    "ata": 6.84,
+    "alsa": 6.74,
+    "offered": 88
+   }
   },
   "Geist of Saint Thalia": {
    "colors": "U",
@@ -2096,8 +3319,19 @@
    "image": "https://cards.scryfall.io/large/front/9/c/9c334530-0880-46b5-a358-9603eee3cecf.jpg?1789128026",
    "scryfall_id": "9c334530-0880-46b5-a358-9603eee3cecf",
    "number": "214",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 2.97,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 61,
+    "gih_wr": 0.541,
+    "oh_games": 15,
+    "oh_wr": 0.8,
+    "games": 113,
+    "ata": 4.82,
+    "alsa": 4.72,
+    "offered": 138
+   }
   },
   "Generous Revival": {
    "colors": "W",
@@ -2112,8 +3346,19 @@
    "image": "https://cards.scryfall.io/large/front/f/8/f82f181b-a43b-4cec-b8f6-f6c1dd4c64fd.jpg?1788433351",
    "scryfall_id": "f82f181b-a43b-4cec-b8f6-f6c1dd4c64fd",
    "number": "8",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.1,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 72,
+    "gih_wr": 0.5833,
+    "oh_games": 23,
+    "oh_wr": 0.6087,
+    "games": 146,
+    "ata": 6.47,
+    "alsa": 5.62,
+    "offered": 176
+   }
   },
   "Germinate Recruits": {
    "colors": "W",
@@ -2125,8 +3370,19 @@
    "image": "https://cards.scryfall.io/large/front/1/b/1b5d7d19-b32a-4786-ae9a-00da5e6658ad.jpg?1789644810",
    "scryfall_id": "1b5d7d19-b32a-4786-ae9a-00da5e6658ad",
    "number": "9",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.18,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 10,
+    "gih_wr": 0.5,
+    "oh_games": 3,
+    "oh_wr": 0.3333,
+    "games": 21,
+    "ata": 6.62,
+    "alsa": 5.26,
+    "offered": 66
+   }
   },
   "Ghalta the Immovable": {
    "colors": "W",
@@ -2140,8 +3396,19 @@
    "image": "https://cards.scryfall.io/large/front/a/9/a9f3aa55-908f-42db-8135-4201433df850.jpg?1789014423",
    "scryfall_id": "a9f3aa55-908f-42db-8135-4201433df850",
    "number": "197",
-   "grade": 2.6,
-   "source": "auto"
+   "grade": 2.32,
+   "source": "auto",
+   "grade_prerelease": 2.6,
+   "untapped": {
+    "gih_games": 20,
+    "gih_wr": 0.4,
+    "oh_games": 5,
+    "oh_wr": 0.2,
+    "games": 48,
+    "ata": 8.44,
+    "alsa": 6.39,
+    "offered": 185
+   }
   },
   "Ghalta the Unstoppable": {
    "colors": "G",
@@ -2156,8 +3423,19 @@
    "image": "https://cards.scryfall.io/large/front/1/d/1d535b5f-c916-4f16-89a7-9477578826d2.jpg?1788878290",
    "scryfall_id": "1d535b5f-c916-4f16-89a7-9477578826d2",
    "number": "260",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 3.2,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 64,
+    "gih_wr": 0.625,
+    "oh_games": 24,
+    "oh_wr": 0.5417,
+    "games": 140,
+    "ata": 7.03,
+    "alsa": 4.9,
+    "offered": 114
+   }
   },
   "Gideon's Memorial": {
    "colors": "W",
@@ -2169,8 +3447,19 @@
    "image": "https://cards.scryfall.io/large/front/7/6/768c0e64-9907-417a-a763-c836fdf36883.jpg?1789127685",
    "scryfall_id": "768c0e64-9907-417a-a763-c836fdf36883",
    "number": "198",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.14,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 7,
+    "gih_wr": 0.4286,
+    "oh_games": 2,
+    "oh_wr": 1.0,
+    "games": 27,
+    "ata": 6.35,
+    "alsa": 4.51,
+    "offered": 63
+   }
   },
   "Gideon the Oathless": {
    "colors": "B",
@@ -2182,8 +3471,19 @@
    "image": "https://cards.scryfall.io/large/front/c/9/c985b0d1-25bd-4069-aab7-a566ff27a8f6.jpg?1789127990",
    "scryfall_id": "c985b0d1-25bd-4069-aab7-a566ff27a8f6",
    "number": "230",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.4,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 24,
+    "gih_wr": 0.625,
+    "oh_games": 13,
+    "oh_wr": 0.6154,
+    "games": 68,
+    "ata": 2.23,
+    "alsa": 2.76,
+    "offered": 21
+   }
   },
   "Guiding Hydra": {
    "colors": "W",
@@ -2197,8 +3497,19 @@
    "image": "https://cards.scryfall.io/large/front/a/5/a53eb840-039d-4c45-b701-d58cb26b1a6c.jpg?1789644816",
    "scryfall_id": "a53eb840-039d-4c45-b701-d58cb26b1a6c",
    "number": "11",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 2.78,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 43,
+    "gih_wr": 0.4884,
+    "oh_games": 16,
+    "oh_wr": 0.5,
+    "games": 80,
+    "ata": 1.74,
+    "alsa": 1.63,
+    "offered": 16
+   }
   },
   "Hall of Echoes": {
    "colors": "",
@@ -2212,8 +3523,19 @@
    "image": "https://cards.scryfall.io/large/front/4/a/4a771010-b397-4849-ac9b-08e4dd5d6a72.jpg?1789644859",
    "scryfall_id": "4a771010-b397-4849-ac9b-08e4dd5d6a72",
    "number": "179",
-   "grade": 0.0,
-   "source": "auto"
+   "grade": 0.33,
+   "source": "auto",
+   "grade_prerelease": 0.0,
+   "untapped": {
+    "gih_games": 14,
+    "gih_wr": 0.4286,
+    "oh_games": 8,
+    "oh_wr": 0.5,
+    "games": 22,
+    "ata": 10.1,
+    "alsa": 6.02,
+    "offered": 81
+   }
   },
   "Hapatra, the Desert Fang": {
    "colors": "BG",
@@ -2227,8 +3549,19 @@
    "image": "https://cards.scryfall.io/large/front/c/f/cf7c1534-af41-4991-b3c3-f0a34ae330b5.jpg?1789385991",
    "scryfall_id": "cf7c1534-af41-4991-b3c3-f0a34ae330b5",
    "number": "271",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.57,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 60,
+    "gih_wr": 0.6833,
+    "oh_games": 32,
+    "oh_wr": 0.625,
+    "games": 101,
+    "ata": 4.62,
+    "alsa": 5.06,
+    "offered": 139
+   }
   },
   "Hapatra, the Desert Frost": {
    "colors": "U",
@@ -2240,8 +3573,19 @@
    "image": "https://cards.scryfall.io/large/front/8/5/85faaa9d-4656-4365-871d-7cba53ed0996.jpg?1789387113",
    "scryfall_id": "85faaa9d-4656-4365-871d-7cba53ed0996",
    "number": "215",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.08,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 67,
+    "gih_wr": 0.5821,
+    "oh_games": 21,
+    "oh_wr": 0.4286,
+    "games": 137,
+    "ata": 5.78,
+    "alsa": 5.16,
+    "offered": 179
+   }
   },
   "Haunted Ridge": {
    "colors": "",
@@ -2256,8 +3600,19 @@
    "image": "https://cards.scryfall.io/large/front/a/4/a4e4966b-8963-4fac-a8bf-e778e063c7dd.jpg?1788878241",
    "scryfall_id": "a4e4966b-8963-4fac-a8bf-e778e063c7dd",
    "number": "180",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 2.07,
+   "source": "auto",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 19,
+    "gih_wr": 0.4211,
+    "oh_games": 8,
+    "oh_wr": 0.5,
+    "games": 34,
+    "ata": 6.7,
+    "alsa": 5.31,
+    "offered": 80
+   }
   },
   "Heartstring Puller": {
    "colors": "R",
@@ -2271,8 +3626,19 @@
    "image": "https://cards.scryfall.io/large/front/c/b/cbfe3354-7ced-4773-9a4e-a937ae9f94f8.jpg?1789556808",
    "scryfall_id": "cbfe3354-7ced-4773-9a4e-a937ae9f94f8",
    "number": "86",
-   "grade": 2.6,
-   "source": "auto"
+   "grade": 2.92,
+   "source": "auto",
+   "grade_prerelease": 2.6,
+   "untapped": {
+    "gih_games": 82,
+    "gih_wr": 0.5732,
+    "oh_games": 36,
+    "oh_wr": 0.3889,
+    "games": 174,
+    "ata": 8.14,
+    "alsa": 6.18,
+    "offered": 425
+   }
   },
   "Heartwood Crafter": {
    "colors": "G",
@@ -2290,8 +3656,19 @@
    "image": "https://cards.scryfall.io/large/front/9/1/910a1f41-17fd-4ab0-9597-7151e79dc760.jpg?1789127630",
    "scryfall_id": "910a1f41-17fd-4ab0-9597-7151e79dc760",
    "number": "105",
-   "grade": 3.0,
-   "source": "auto"
+   "grade": 3.06,
+   "source": "auto",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 81,
+    "gih_wr": 0.5679,
+    "oh_games": 36,
+    "oh_wr": 0.6111,
+    "games": 143,
+    "ata": 4.67,
+    "alsa": 3.57,
+    "offered": 127
+   }
   },
   "Hexhaven Battalion": {
    "colors": "W",
@@ -2308,9 +3685,20 @@
    "image": "https://cards.scryfall.io/large/front/3/b/3b6ac80e-c726-4bd0-893a-e666041a04a6.jpg?1789556695",
    "scryfall_id": "3b6ac80e-c726-4bd0-893a-e666041a04a6",
    "number": "12",
-   "grade": 3.0,
+   "grade": 2.86,
    "source": "auto",
-   "note": "{4}{W}{W}: three 2/2 Cadets AND empower Jace 2, and basic landcycles for {2} when you don't want it. No floor problem. 6 of 20 decks."
+   "note": "{4}{W}{W}: three 2/2 Cadets AND empower Jace 2, and basic landcycles for {2} when you don't want it. No floor problem. 6 of 20 decks.",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 162,
+    "gih_wr": 0.537,
+    "oh_games": 64,
+    "oh_wr": 0.5,
+    "games": 285,
+    "ata": 5.55,
+    "alsa": 4.48,
+    "offered": 291
+   }
   },
   "Hexhaven Dueling Arena": {
    "colors": "",
@@ -2324,8 +3712,19 @@
    "image": "https://cards.scryfall.io/large/front/9/1/9128ce00-6744-4d36-bfbe-ef75d78110b0.jpg?1789556985",
    "scryfall_id": "9128ce00-6744-4d36-bfbe-ef75d78110b0",
    "number": "181",
-   "grade": 0.0,
-   "source": "auto"
+   "grade": 0.57,
+   "source": "auto",
+   "grade_prerelease": 0.0,
+   "untapped": {
+    "gih_games": 21,
+    "gih_wr": 0.4762,
+    "oh_games": 4,
+    "oh_wr": 0.0,
+    "games": 45,
+    "ata": 11.05,
+    "alsa": 8.06,
+    "offered": 281
+   }
   },
   "Hexhaven Invigorator": {
    "colors": "G",
@@ -2337,8 +3736,19 @@
    "image": "https://cards.scryfall.io/large/front/9/a/9a446cae-e93c-4574-8ffd-7688f9729a8a.jpg?1788878191",
    "scryfall_id": "9a446cae-e93c-4574-8ffd-7688f9729a8a",
    "number": "106",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 3.14,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 19,
+    "gih_wr": 0.4211,
+    "oh_games": 5,
+    "oh_wr": 0.4,
+    "games": 34,
+    "ata": 2.92,
+    "alsa": 3.5,
+    "offered": 22
+   }
   },
   "Hungering Puppetbeast": {
    "colors": "G",
@@ -2359,8 +3769,19 @@
    "image": "https://cards.scryfall.io/large/front/3/d/3db2da7a-8088-4117-916b-f9c905d1b45b.jpg?1789127646",
    "scryfall_id": "3db2da7a-8088-4117-916b-f9c905d1b45b",
    "number": "107",
-   "grade": 3.4,
-   "source": "auto"
+   "grade": 3.21,
+   "source": "auto",
+   "grade_prerelease": 3.4,
+   "untapped": {
+    "gih_games": 21,
+    "gih_wr": 0.5238,
+    "oh_games": 8,
+    "oh_wr": 0.5,
+    "games": 43,
+    "ata": 1.58,
+    "alsa": 2.02,
+    "offered": 19
+   }
   },
   "Hunter's Axe": {
    "colors": "G",
@@ -2375,8 +3796,19 @@
    "image": "https://cards.scryfall.io/large/front/a/2/a2cc5d0e-9643-4ee2-81de-fa2c3bd1ab09.jpg?1789556822",
    "scryfall_id": "a2cc5d0e-9643-4ee2-81de-fa2c3bd1ab09",
    "number": "108",
-   "grade": 3.0,
-   "source": "auto"
+   "grade": 3.17,
+   "source": "auto",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 40,
+    "gih_wr": 0.6,
+    "oh_games": 16,
+    "oh_wr": 0.625,
+    "games": 86,
+    "ata": 8.76,
+    "alsa": 6.62,
+    "offered": 223
+   }
   },
   "Icy Reception": {
    "colors": "U",
@@ -2390,8 +3822,19 @@
    "image": "https://cards.scryfall.io/large/front/8/d/8d754b96-5e44-45af-9c7a-b0da59fbe4c3.jpg?1788779540",
    "scryfall_id": "8d754b96-5e44-45af-9c7a-b0da59fbe4c3",
    "number": "30",
-   "grade": 3.2,
-   "source": "auto"
+   "grade": 3.04,
+   "source": "auto",
+   "grade_prerelease": 3.2,
+   "untapped": {
+    "gih_games": 130,
+    "gih_wr": 0.5538,
+    "oh_games": 50,
+    "oh_wr": 0.54,
+    "games": 233,
+    "ata": 8.73,
+    "alsa": 6.55,
+    "offered": 491
+   }
   },
   "Identity Echo": {
    "colors": "R",
@@ -2406,7 +3849,8 @@
    "scryfall_id": "e600b33b-8916-43dd-95d3-d7cbf874933d",
    "number": "87",
    "grade": 3.7,
-   "source": "auto"
+   "source": "auto",
+   "grade_prerelease": 3.7
   },
   "Infinite Coursework": {
    "colors": "U",
@@ -2421,9 +3865,20 @@
    "image": "https://cards.scryfall.io/large/front/a/5/a5988272-faaa-463d-a0a1-a8e96b946bad.jpg?1789385916",
    "scryfall_id": "a5988272-faaa-463d-a0a1-a8e96b946bad",
    "number": "31",
-   "grade": 3.0,
+   "grade": 3.29,
    "source": "auto",
-   "note": "{2}{U} aura: taps it, makes it unprepared, it loses all abilities and doesn't untap. Blue's only common that permanently stops a creature. Also the cleanest answer to a prepared creature."
+   "note": "{2}{U} aura: taps it, makes it unprepared, it loses all abilities and doesn't untap. Blue's only common that permanently stops a creature. Also the cleanest answer to a prepared creature.",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 147,
+    "gih_wr": 0.5986,
+    "oh_games": 51,
+    "oh_wr": 0.5686,
+    "games": 233,
+    "ata": 6.59,
+    "alsa": 5.42,
+    "offered": 335
+   }
   },
   "Innovative Commons": {
    "colors": "",
@@ -2438,8 +3893,19 @@
    "image": "https://cards.scryfall.io/large/front/8/4/84ea799a-faa2-4ff1-a933-432d4ee31a3b.jpg?1789556991",
    "scryfall_id": "84ea799a-faa2-4ff1-a933-432d4ee31a3b",
    "number": "182",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 2.3,
+   "source": "auto",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 71,
+    "gih_wr": 0.493,
+    "oh_games": 27,
+    "oh_wr": 0.5926,
+    "games": 148,
+    "ata": 9.35,
+    "alsa": 6.58,
+    "offered": 284
+   }
   },
   "Inspired Tethermage": {
    "colors": "G",
@@ -2455,8 +3921,19 @@
    "image": "https://cards.scryfall.io/large/front/0/7/073f4998-a204-447b-93d5-746ae87fd6a1.jpg?1788878192",
    "scryfall_id": "073f4998-a204-447b-93d5-746ae87fd6a1",
    "number": "109",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.89,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 100,
+    "gih_wr": 0.57,
+    "oh_games": 43,
+    "oh_wr": 0.5814,
+    "games": 169,
+    "ata": 8.78,
+    "alsa": 6.81,
+    "offered": 500
+   }
   },
   "Jace, Reality Sculptor": {
    "colors": "U",
@@ -2471,8 +3948,19 @@
    "image": "https://cards.scryfall.io/large/front/7/4/74087795-0b38-4fd2-9841-147583baca41.jpg?1789644880",
    "scryfall_id": "74087795-0b38-4fd2-9841-147583baca41",
    "number": "216",
-   "grade": 4.0,
-   "source": "auto"
+   "grade": 3.37,
+   "source": "auto",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 52,
+    "gih_wr": 0.5192,
+    "oh_games": 18,
+    "oh_wr": 0.5,
+    "games": 106,
+    "ata": 1.55,
+    "alsa": 1.57,
+    "offered": 21
+   }
   },
   "Jace's Machinations": {
    "colors": "U",
@@ -2488,8 +3976,19 @@
    "image": "https://cards.scryfall.io/large/front/2/8/282588b9-3656-453b-aa25-2419e078ddc1.jpg?1788878150",
    "scryfall_id": "282588b9-3656-453b-aa25-2419e078ddc1",
    "number": "32",
-   "grade": 3.5,
-   "source": "auto"
+   "grade": 3.79,
+   "source": "auto",
+   "grade_prerelease": 3.5,
+   "untapped": {
+    "gih_games": 49,
+    "gih_wr": 0.6735,
+    "oh_games": 18,
+    "oh_wr": 0.6111,
+    "games": 96,
+    "ata": 2.56,
+    "alsa": 2.31,
+    "offered": 29
+   }
   },
   "Jiang Yanggu, Alone": {
    "colors": "R",
@@ -2504,8 +4003,19 @@
    "image": "https://cards.scryfall.io/large/front/e/8/e8c1ce21-b77d-40bf-9ed1-478604e71f5f.jpg?1789014416",
    "scryfall_id": "e8c1ce21-b77d-40bf-9ed1-478604e71f5f",
    "number": "246",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.87,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 39,
+    "gih_wr": 0.5385,
+    "oh_games": 11,
+    "oh_wr": 0.5455,
+    "games": 102,
+    "ata": 8.99,
+    "alsa": 6.32,
+    "offered": 218
+   }
   },
   "Jiang Yanggu, Never Alone": {
    "colors": "G",
@@ -2517,8 +4027,19 @@
    "image": "https://cards.scryfall.io/large/front/f/5/f5a0bb3e-8119-4739-8684-e61d1d607dcb.jpg?1789014406",
    "scryfall_id": "f5a0bb3e-8119-4739-8684-e61d1d607dcb",
    "number": "261",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.85,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 56,
+    "gih_wr": 0.5357,
+    "oh_games": 26,
+    "oh_wr": 0.5385,
+    "games": 165,
+    "ata": 4.6,
+    "alsa": 3.89,
+    "offered": 108
+   }
   },
   "Karn, Argent Defender": {
    "colors": "",
@@ -2531,7 +4052,8 @@
    "scryfall_id": "1ebbbddb-2dc3-4194-b72b-13bcebe2ab89",
    "number": "279",
    "grade": 3.3,
-   "source": "auto"
+   "source": "auto",
+   "grade_prerelease": 3.3
   },
   "Karn, Gilded Guardian": {
    "colors": "WUBRG",
@@ -2546,8 +4068,19 @@
    "image": "https://cards.scryfall.io/large/front/3/a/3abcae65-5b21-4c98-adad-34b8bc76ea3a.jpg?1789014541",
    "scryfall_id": "3abcae65-5b21-4c98-adad-34b8bc76ea3a",
    "number": "272",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 3.23,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 9,
+    "gih_wr": 0.6667,
+    "oh_games": 4,
+    "oh_wr": 0.75,
+    "games": 19,
+    "ata": 9.72,
+    "alsa": 6.88,
+    "offered": 115
+   }
   },
   "Keeper of the Quiet Hour": {
    "colors": "",
@@ -2562,8 +4095,19 @@
    "image": "https://cards.scryfall.io/large/front/b/6/b6331218-dbb8-44a9-8ba5-5fb1ab41c5c0.jpg?1788878239",
    "scryfall_id": "b6331218-dbb8-44a9-8ba5-5fb1ab41c5c0",
    "number": "171",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.94,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 93,
+    "gih_wr": 0.5806,
+    "oh_games": 36,
+    "oh_wr": 0.5556,
+    "games": 166,
+    "ata": 9.38,
+    "alsa": 7.22,
+    "offered": 577
+   }
   },
   "Kindred Judgment": {
    "colors": "W",
@@ -2577,8 +4121,19 @@
    "image": "https://cards.scryfall.io/large/front/6/f/6f9f814b-8249-4e48-a05e-4c84060fe6fb.jpg?1789470776",
    "scryfall_id": "6f9f814b-8249-4e48-a05e-4c84060fe6fb",
    "number": "13",
-   "grade": 3.5,
-   "source": "auto"
+   "grade": 3.16,
+   "source": "auto",
+   "grade_prerelease": 3.5,
+   "untapped": {
+    "gih_games": 28,
+    "gih_wr": 0.5,
+    "oh_games": 11,
+    "oh_wr": 0.4545,
+    "games": 65,
+    "ata": 4.69,
+    "alsa": 4.45,
+    "offered": 66
+   }
   },
   "Kiora of Fire and Ashes": {
    "colors": "R",
@@ -2593,8 +4148,19 @@
    "image": "https://cards.scryfall.io/large/front/0/8/08657053-86f9-4c52-abf0-d9cdd443ae3b.jpg?1789127995",
    "scryfall_id": "08657053-86f9-4c52-abf0-d9cdd443ae3b",
    "number": "247",
-   "grade": 2.8,
-   "source": "auto"
+   "grade": 3.06,
+   "source": "auto",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 70,
+    "gih_wr": 0.5857,
+    "oh_games": 25,
+    "oh_wr": 0.44,
+    "games": 129,
+    "ata": 3.77,
+    "alsa": 3.5,
+    "offered": 100
+   }
   },
   "Konstrari Charm": {
    "colors": "RG",
@@ -2612,8 +4178,19 @@
    "image": "https://cards.scryfall.io/large/front/7/d/7d29dfa1-9582-47bc-8f42-62b611bdcc4e.jpg?1789127645",
    "scryfall_id": "7d29dfa1-9582-47bc-8f42-62b611bdcc4e",
    "number": "138",
-   "grade": 3.9,
-   "source": "auto"
+   "grade": 3.1,
+   "source": "auto",
+   "grade_prerelease": 3.9,
+   "untapped": {
+    "gih_games": 28,
+    "gih_wr": 0.3929,
+    "oh_games": 11,
+    "oh_wr": 0.4545,
+    "games": 64,
+    "ata": 8.73,
+    "alsa": 7.0,
+    "offered": 249
+   }
   },
   "Konstrari Improviser": {
    "colors": "RG",
@@ -2631,8 +4208,19 @@
    "image": "https://cards.scryfall.io/large/front/4/2/42e28bd2-486b-45d4-8840-6e33c19c2d57.jpg?1789556881",
    "scryfall_id": "42e28bd2-486b-45d4-8840-6e33c19c2d57",
    "number": "139",
-   "grade": 2.8,
-   "source": "auto"
+   "grade": 3.17,
+   "source": "auto",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 104,
+    "gih_wr": 0.5962,
+    "oh_games": 39,
+    "oh_wr": 0.6154,
+    "games": 219,
+    "ata": 5.14,
+    "alsa": 4.02,
+    "offered": 301
+   }
   },
   "Koth of the Homestead": {
    "colors": "W",
@@ -2647,8 +4235,19 @@
    "image": "https://cards.scryfall.io/large/front/9/2/920703fd-2a2f-454b-8829-af8f2afda4f4.jpg?1789568532",
    "scryfall_id": "920703fd-2a2f-454b-8829-af8f2afda4f4",
    "number": "199",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.62,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 71,
+    "gih_wr": 0.493,
+    "oh_games": 28,
+    "oh_wr": 0.4643,
+    "games": 153,
+    "ata": 3.29,
+    "alsa": 3.89,
+    "offered": 100
+   }
   },
   "Koth, the Geomancer": {
    "colors": "R",
@@ -2663,8 +4262,19 @@
    "image": "https://cards.scryfall.io/large/front/5/4/54f64e95-5a97-4d7c-9939-7f33a3165562.jpg?1789470892",
    "scryfall_id": "54f64e95-5a97-4d7c-9939-7f33a3165562",
    "number": "248",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.81,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 49,
+    "gih_wr": 0.551,
+    "oh_games": 25,
+    "oh_wr": 0.6,
+    "games": 103,
+    "ata": 6.08,
+    "alsa": 4.81,
+    "offered": 148
+   }
   },
   "Last Gasp": {
    "colors": "B",
@@ -2678,8 +4288,19 @@
    "image": "https://cards.scryfall.io/large/front/2/3/2381d123-d8c7-4822-98fe-b1c365beb5ed.jpg?1789127524",
    "scryfall_id": "2381d123-d8c7-4822-98fe-b1c365beb5ed",
    "number": "56",
-   "grade": 3.2,
-   "source": "auto"
+   "grade": 3.13,
+   "source": "auto",
+   "grade_prerelease": 3.2,
+   "untapped": {
+    "gih_games": 134,
+    "gih_wr": 0.5672,
+    "oh_games": 53,
+    "oh_wr": 0.5283,
+    "games": 256,
+    "ata": 3.87,
+    "alsa": 3.62,
+    "offered": 229
+   }
   },
   "Lich's Relic": {
    "colors": "B",
@@ -2691,8 +4312,19 @@
    "image": "https://cards.scryfall.io/large/front/b/1/b105511d-5022-4a84-b6ce-4bb433e93a62.jpg?1789644819",
    "scryfall_id": "b105511d-5022-4a84-b6ce-4bb433e93a62",
    "number": "57",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.77,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 41,
+    "gih_wr": 0.7073,
+    "oh_games": 16,
+    "oh_wr": 0.5,
+    "games": 89,
+    "ata": 1.34,
+    "alsa": 1.85,
+    "offered": 27
+   }
   },
   "Living Library": {
    "colors": "",
@@ -2704,8 +4336,19 @@
    "image": "https://cards.scryfall.io/large/front/5/d/5d4a8e5f-0024-4da3-a2f5-edb48b12e733.jpg?1789556949",
    "scryfall_id": "5d4a8e5f-0024-4da3-a2f5-edb48b12e733",
    "number": "172",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.48,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 32,
+    "gih_wr": 0.5,
+    "oh_games": 8,
+    "oh_wr": 0.25,
+    "games": 68,
+    "ata": 11.06,
+    "alsa": 8.61,
+    "offered": 678
+   }
   },
   "Loot, the Anomaly": {
    "colors": "B",
@@ -2720,8 +4363,19 @@
    "image": "https://cards.scryfall.io/large/front/4/f/4f6fd2fa-8bc8-4743-bbc8-b56475d64eff.jpg?1789568430",
    "scryfall_id": "4f6fd2fa-8bc8-4743-bbc8-b56475d64eff",
    "number": "232",
-   "grade": 2.8,
-   "source": "auto"
+   "grade": 2.84,
+   "source": "auto",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 31,
+    "gih_wr": 0.5484,
+    "oh_games": 14,
+    "oh_wr": 0.3571,
+    "games": 53,
+    "ata": 8.86,
+    "alsa": 7.01,
+    "offered": 223
+   }
   },
   "Loot, the Nexus": {
    "colors": "G",
@@ -2733,8 +4387,19 @@
    "image": "https://cards.scryfall.io/large/front/3/c/3cfa4fc6-4d90-4576-a83f-6496c7f21104.jpg?1789614764",
    "scryfall_id": "3cfa4fc6-4d90-4576-a83f-6496c7f21104",
    "number": "262",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.26,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 58,
+    "gih_wr": 0.4138,
+    "oh_games": 21,
+    "oh_wr": 0.381,
+    "games": 116,
+    "ata": 5.15,
+    "alsa": 3.71,
+    "offered": 111
+   }
   },
   "Loyal Tutor": {
    "colors": "W",
@@ -2747,7 +4412,8 @@
    "scryfall_id": "490dae91-94ce-42a9-a11f-6c5e77c4e486",
    "number": "14",
    "grade": 3.3,
-   "source": "auto"
+   "source": "auto",
+   "grade_prerelease": 3.3
   },
   "Lyra, Archangel of Dawn": {
    "colors": "W",
@@ -2762,8 +4428,19 @@
    "image": "https://cards.scryfall.io/large/front/8/6/86a3866e-68a8-402c-baf0-1908e98e3995.jpg?1789127693",
    "scryfall_id": "86a3866e-68a8-402c-baf0-1908e98e3995",
    "number": "201",
-   "grade": 3.5,
-   "source": "auto"
+   "grade": 2.82,
+   "source": "auto",
+   "grade_prerelease": 3.5,
+   "untapped": {
+    "gih_games": 45,
+    "gih_wr": 0.4444,
+    "oh_games": 21,
+    "oh_wr": 0.4762,
+    "games": 91,
+    "ata": 3.0,
+    "alsa": 2.64,
+    "offered": 31
+   }
   },
   "Lyra, Tolarian Archangel": {
    "colors": "U",
@@ -2777,8 +4454,19 @@
    "image": "https://cards.scryfall.io/large/front/a/5/a5183681-447b-4023-91f7-00e9338f4417.jpg?1789128032",
    "scryfall_id": "a5183681-447b-4023-91f7-00e9338f4417",
    "number": "217",
-   "grade": 3.5,
-   "source": "auto"
+   "grade": 2.97,
+   "source": "auto",
+   "grade_prerelease": 3.5,
+   "untapped": {
+    "gih_games": 42,
+    "gih_wr": 0.4762,
+    "oh_games": 17,
+    "oh_wr": 0.4706,
+    "games": 64,
+    "ata": 2.2,
+    "alsa": 2.22,
+    "offered": 32
+   }
   },
   "Mabel, Bitter Recluse": {
    "colors": "B",
@@ -2792,8 +4480,19 @@
    "image": "https://cards.scryfall.io/large/front/b/2/b2a412b0-2ae4-4552-bc5e-70654b6b9b4e.jpg?1789385677",
    "scryfall_id": "b2a412b0-2ae4-4552-bc5e-70654b6b9b4e",
    "number": "233",
-   "grade": 2.8,
-   "source": "auto"
+   "grade": 2.55,
+   "source": "auto",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 54,
+    "gih_wr": 0.4815,
+    "oh_games": 20,
+    "oh_wr": 0.6,
+    "games": 124,
+    "ata": 7.45,
+    "alsa": 5.27,
+    "offered": 219
+   }
   },
   "Mabel, Valley Hero": {
    "colors": "WR",
@@ -2807,8 +4506,19 @@
    "image": "https://cards.scryfall.io/large/front/4/7/47abea4b-9848-48aa-bc1b-f04f4799e920.jpg?1789385857",
    "scryfall_id": "47abea4b-9848-48aa-bc1b-f04f4799e920",
    "number": "274",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.42,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 32,
+    "gih_wr": 0.4062,
+    "oh_games": 14,
+    "oh_wr": 0.5,
+    "games": 61,
+    "ata": 6.82,
+    "alsa": 5.99,
+    "offered": 223
+   }
   },
   "Marwyn, the Clearcutter": {
    "colors": "R",
@@ -2822,8 +4532,19 @@
    "image": "https://cards.scryfall.io/large/front/f/9/f93da73c-ca8b-438e-8387-6109dac3fc1a.jpg?1789644549",
    "scryfall_id": "f93da73c-ca8b-438e-8387-6109dac3fc1a",
    "number": "249",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.34,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 27,
+    "gih_wr": 0.4074,
+    "oh_games": 13,
+    "oh_wr": 0.5385,
+    "games": 81,
+    "ata": 7.79,
+    "alsa": 5.24,
+    "offered": 187
+   }
   },
   "Marwyn, the Preserver": {
    "colors": "G",
@@ -2837,8 +4558,19 @@
    "image": "https://cards.scryfall.io/large/front/9/0/90f33f99-7bc5-42e1-815e-bfb4c2b74107.jpg?1789644564",
    "scryfall_id": "90f33f99-7bc5-42e1-815e-bfb4c2b74107",
    "number": "263",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.53,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 81,
+    "gih_wr": 0.4815,
+    "oh_games": 43,
+    "oh_wr": 0.4419,
+    "games": 169,
+    "ata": 6.42,
+    "alsa": 4.91,
+    "offered": 170
+   }
   },
   "Massacre Girl, Most Wanted": {
    "colors": "B",
@@ -2855,8 +4587,19 @@
    "image": "https://cards.scryfall.io/large/front/9/0/9028d31f-9c41-47e3-885b-6a869bca8178.jpg?1789644882",
    "scryfall_id": "9028d31f-9c41-47e3-885b-6a869bca8178",
    "number": "234",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.19,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 32,
+    "gih_wr": 0.375,
+    "oh_games": 12,
+    "oh_wr": 0.25,
+    "games": 67,
+    "ata": 5.75,
+    "alsa": 4.79,
+    "offered": 140
+   }
   },
   "Medic's Kitesail": {
    "colors": "",
@@ -2871,8 +4614,19 @@
    "image": "https://cards.scryfall.io/large/front/8/b/8b07409a-1dce-461d-95e4-1130521ff4c4.jpg?1789556945",
    "scryfall_id": "8b07409a-1dce-461d-95e4-1130521ff4c4",
    "number": "173",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.67,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 73,
+    "gih_wr": 0.5205,
+    "oh_games": 27,
+    "oh_wr": 0.5556,
+    "games": 176,
+    "ata": 10.41,
+    "alsa": 8.23,
+    "offered": 599
+   }
   },
   "Memory Trap": {
    "colors": "W",
@@ -2887,9 +4641,20 @@
    "image": "https://cards.scryfall.io/large/front/2/f/2f5345ae-4489-4d05-b2d5-c71285254f05.jpg?1788866058",
    "scryfall_id": "2f5345ae-4489-4d05-b2d5-c71285254f05",
    "number": "15",
-   "grade": 3.4,
+   "grade": 2.22,
    "source": "auto",
-   "note": "{2}{W} enchantment: exile target nonland permanent an opponent controls until this leaves. An Oblivion Ring at common - white's best common removal. Played in 6 of 20 real sealed decks."
+   "note": "{2}{W} enchantment: exile target nonland permanent an opponent controls until this leaves. An Oblivion Ring at common - white's best common removal. Played in 6 of 20 real sealed decks.",
+   "grade_prerelease": 3.4,
+   "untapped": {
+    "gih_games": 179,
+    "gih_wr": 0.4358,
+    "oh_games": 73,
+    "oh_wr": 0.3699,
+    "games": 331,
+    "ata": 3.91,
+    "alsa": 3.31,
+    "offered": 229
+   }
   },
   "Meticulous Commons": {
    "colors": "",
@@ -2904,8 +4669,19 @@
    "image": "https://cards.scryfall.io/large/front/9/3/93ac525e-1919-43dd-aba4-073b7e4c1768.jpg?1789557002",
    "scryfall_id": "93ac525e-1919-43dd-aba4-073b7e4c1768",
    "number": "184",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 2.61,
+   "source": "auto",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 59,
+    "gih_wr": 0.5593,
+    "oh_games": 30,
+    "oh_wr": 0.5333,
+    "games": 128,
+    "ata": 9.31,
+    "alsa": 7.09,
+    "offered": 325
+   }
   },
   "Mind Meanderer": {
    "colors": "UG",
@@ -2920,8 +4696,19 @@
    "image": "https://cards.scryfall.io/large/front/9/4/94c290ce-252c-42b3-bcb0-c1ef621df566.jpg?1789470861",
    "scryfall_id": "94c290ce-252c-42b3-bcb0-c1ef621df566",
    "number": "141",
-   "grade": 2.8,
-   "source": "auto"
+   "grade": 3.17,
+   "source": "auto",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 43,
+    "gih_wr": 0.6279,
+    "oh_games": 15,
+    "oh_wr": 0.6,
+    "games": 71,
+    "ata": 6.81,
+    "alsa": 4.63,
+    "offered": 177
+   }
   },
   "Mindseeker Oculus": {
    "colors": "U",
@@ -2937,8 +4724,19 @@
    "image": "https://cards.scryfall.io/large/front/f/5/f5324741-353a-4a70-adb2-b631b00806dd.jpg?1789556707",
    "scryfall_id": "f5324741-353a-4a70-adb2-b631b00806dd",
    "number": "33",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 3.51,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 197,
+    "gih_wr": 0.6345,
+    "oh_games": 81,
+    "oh_wr": 0.6049,
+    "games": 316,
+    "ata": 5.37,
+    "alsa": 4.27,
+    "offered": 277
+   }
   },
   "Multiply by Zero": {
    "colors": "B",
@@ -2950,8 +4748,19 @@
    "image": "https://cards.scryfall.io/large/front/9/0/90d684a4-9639-4792-8760-2011a7a85370.jpg?1789644823",
    "scryfall_id": "90d684a4-9639-4792-8760-2011a7a85370",
    "number": "58",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.3,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 74,
+    "gih_wr": 0.6216,
+    "oh_games": 33,
+    "oh_wr": 0.6061,
+    "games": 141,
+    "ata": 2.68,
+    "alsa": 2.25,
+    "offered": 82
+   }
   },
   "Murmuring Volume": {
    "colors": "",
@@ -2963,8 +4772,19 @@
    "image": "https://cards.scryfall.io/large/front/d/6/d68eab2e-89dd-4377-b7af-01512b1804a0.jpg?1789385977",
    "scryfall_id": "d68eab2e-89dd-4377-b7af-01512b1804a0",
    "number": "174",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.36,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 73,
+    "gih_wr": 0.4795,
+    "oh_games": 30,
+    "oh_wr": 0.4,
+    "games": 163,
+    "ata": 8.7,
+    "alsa": 6.95,
+    "offered": 510
+   }
   },
   "No Admittance": {
    "colors": "R",
@@ -2980,8 +4800,19 @@
    "image": "https://cards.scryfall.io/large/front/1/1/11ba4fdd-cc03-4bb6-a493-91a9785771d0.jpg?1788878170",
    "scryfall_id": "11ba4fdd-cc03-4bb6-a493-91a9785771d0",
    "number": "89",
-   "grade": 2.3,
-   "source": "auto"
+   "grade": 2.17,
+   "source": "auto",
+   "grade_prerelease": 2.3,
+   "untapped": {
+    "gih_games": 97,
+    "gih_wr": 0.4639,
+    "oh_games": 43,
+    "oh_wr": 0.4884,
+    "games": 213,
+    "ata": 3.66,
+    "alsa": 3.2,
+    "offered": 209
+   }
   },
   "Omnipresence": {
    "colors": "G",
@@ -2994,7 +4825,8 @@
    "scryfall_id": "91e787cb-a9b0-4353-86b4-a4340122fd2f",
    "number": "448",
    "grade": 3.3,
-   "source": "auto"
+   "source": "auto",
+   "grade_prerelease": 3.3
   },
   "Overgrown Farmland": {
    "colors": "",
@@ -3009,8 +4841,19 @@
    "image": "https://cards.scryfall.io/large/front/1/7/178e61e4-472f-42cd-9d3b-4880c2acc527.jpg?1788878246",
    "scryfall_id": "178e61e4-472f-42cd-9d3b-4880c2acc527",
    "number": "185",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 2.38,
+   "source": "auto",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 20,
+    "gih_wr": 0.55,
+    "oh_games": 8,
+    "oh_wr": 0.5,
+    "games": 50,
+    "ata": 8.03,
+    "alsa": 5.0,
+    "offered": 83
+   }
   },
   "Perfected Theory": {
    "colors": "U",
@@ -3022,8 +4865,19 @@
    "image": "https://cards.scryfall.io/large/front/d/0/d0ecae06-bc5a-4886-84df-c2900816f226.jpg?1788329222",
    "scryfall_id": "d0ecae06-bc5a-4886-84df-c2900816f226",
    "number": "34",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.72,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 38,
+    "gih_wr": 0.5,
+    "oh_games": 9,
+    "oh_wr": 0.2222,
+    "games": 79,
+    "ata": 9.44,
+    "alsa": 6.87,
+    "offered": 231
+   }
   },
   "Pia, Aether Ascetic": {
    "colors": "G",
@@ -3035,8 +4889,19 @@
    "image": "https://cards.scryfall.io/large/front/f/f/ff0bc30f-9d20-458e-808f-bdc2825905a5.jpg?1789387120",
    "scryfall_id": "ff0bc30f-9d20-458e-808f-bdc2825905a5",
    "number": "264",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.42,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 34,
+    "gih_wr": 0.4118,
+    "oh_games": 14,
+    "oh_wr": 0.3571,
+    "games": 80,
+    "ata": 9.37,
+    "alsa": 6.85,
+    "offered": 264
+   }
   },
   "Pia, Determined Rebuilder": {
    "colors": "R",
@@ -3051,8 +4916,19 @@
    "image": "https://cards.scryfall.io/large/front/d/d/dd3faaf4-45ca-4714-8dbe-37102ec131cf.jpg?1789385851",
    "scryfall_id": "dd3faaf4-45ca-4714-8dbe-37102ec131cf",
    "number": "250",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 2.59,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 43,
+    "gih_wr": 0.4419,
+    "oh_games": 17,
+    "oh_wr": 0.4706,
+    "games": 90,
+    "ata": 5.53,
+    "alsa": 4.07,
+    "offered": 158
+   }
   },
   "Plan for All Outcomes": {
    "colors": "U",
@@ -3067,8 +4943,19 @@
    "image": "https://cards.scryfall.io/large/front/c/4/c4effc17-0d0e-423a-b5f2-597ea6c71f67.jpg?1789576786",
    "scryfall_id": "c4effc17-0d0e-423a-b5f2-597ea6c71f67",
    "number": "35",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.33,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 126,
+    "gih_wr": 0.6111,
+    "oh_games": 43,
+    "oh_wr": 0.6047,
+    "games": 193,
+    "ata": 3.27,
+    "alsa": 2.71,
+    "offered": 87
+   }
   },
   "Pompous Battlemage": {
    "colors": "R",
@@ -3084,8 +4971,19 @@
    "image": "https://cards.scryfall.io/large/front/a/a/aa0f77ac-741a-444a-8bf0-a42c644726bf.jpg?1788878186",
    "scryfall_id": "aa0f77ac-741a-444a-8bf0-a42c644726bf",
    "number": "90",
-   "grade": 3.4,
-   "source": "auto"
+   "grade": 2.99,
+   "source": "auto",
+   "grade_prerelease": 3.4,
+   "untapped": {
+    "gih_games": 10,
+    "gih_wr": 0.3,
+    "oh_games": 6,
+    "oh_wr": 0.3333,
+    "games": 25,
+    "ata": 3.96,
+    "alsa": 4.26,
+    "offered": 47
+   }
   },
   "Precise Redaction": {
    "colors": "U",
@@ -3098,7 +4996,8 @@
    "scryfall_id": "9244efad-35ab-45c0-b173-4bc68276cb67",
    "number": "36",
    "grade": 2.9,
-   "source": "auto"
+   "source": "auto",
+   "grade_prerelease": 2.9
   },
   "Predictive Preparations": {
    "colors": "W",
@@ -3113,9 +5012,20 @@
    "image": "https://cards.scryfall.io/large/front/5/0/50a0e5f0-3c39-4f16-9a73-eec8ef71f12e.jpg?1789556696",
    "scryfall_id": "50a0e5f0-3c39-4f16-9a73-eec8ef71f12e",
    "number": "16",
-   "grade": 2.7,
+   "grade": 2.32,
    "source": "auto",
-   "note": "{1}{W} sorcery: +1/+1 counter on one or two creatures, flashback {3}{W}. Two cards in one for the counters decks."
+   "note": "{1}{W} sorcery: +1/+1 counter on one or two creatures, flashback {3}{W}. Two cards in one for the counters decks.",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 48,
+    "gih_wr": 0.4375,
+    "oh_games": 14,
+    "oh_wr": 0.4286,
+    "games": 89,
+    "ata": 10.91,
+    "alsa": 7.8,
+    "offered": 626
+   }
   },
   "Primal Witchstalker": {
    "colors": "BG",
@@ -3130,8 +5040,19 @@
    "image": "https://cards.scryfall.io/large/front/0/4/04e64af7-cca1-499e-8951-f386e84c8b5b.jpg?1789644850",
    "scryfall_id": "04e64af7-cca1-499e-8951-f386e84c8b5b",
    "number": "144",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.78,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 37,
+    "gih_wr": 0.5135,
+    "oh_games": 13,
+    "oh_wr": 0.7692,
+    "games": 80,
+    "ata": 7.51,
+    "alsa": 5.72,
+    "offered": 159
+   }
   },
   "Proft, Consulting Detective": {
    "colors": "U",
@@ -3147,8 +5068,19 @@
    "image": "https://cards.scryfall.io/large/front/b/8/b8466593-40fe-4557-89b2-760c1c92087b.jpg?1789127178",
    "scryfall_id": "b8466593-40fe-4557-89b2-760c1c92087b",
    "number": "218",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.54,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 75,
+    "gih_wr": 0.48,
+    "oh_games": 37,
+    "oh_wr": 0.4324,
+    "games": 159,
+    "ata": 4.11,
+    "alsa": 3.73,
+    "offered": 112
+   }
   },
   "Proft, Sinister Mastermind": {
    "colors": "B",
@@ -3163,8 +5095,19 @@
    "image": "https://cards.scryfall.io/large/front/d/3/d36b0e06-cb82-4c48-bf35-e76f109116f6.jpg?1789127196",
    "scryfall_id": "d36b0e06-cb82-4c48-bf35-e76f109116f6",
    "number": "235",
-   "grade": 3.2,
-   "source": "auto"
+   "grade": 3.44,
+   "source": "auto",
+   "grade_prerelease": 3.2,
+   "untapped": {
+    "gih_games": 49,
+    "gih_wr": 0.6327,
+    "oh_games": 20,
+    "oh_wr": 0.55,
+    "games": 119,
+    "ata": 6.12,
+    "alsa": 5.1,
+    "offered": 162
+   }
   },
   "Prophesied End": {
    "colors": "W",
@@ -3178,8 +5121,19 @@
    "image": "https://cards.scryfall.io/large/front/1/f/1f95399a-9766-4f3d-aa6a-ece55e0530d9.jpg?1788951920",
    "scryfall_id": "1f95399a-9766-4f3d-aa6a-ece55e0530d9",
    "number": "17",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 2.98,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 88,
+    "gih_wr": 0.5114,
+    "oh_games": 28,
+    "oh_wr": 0.4286,
+    "games": 176,
+    "ata": 5.73,
+    "alsa": 4.7,
+    "offered": 157
+   }
   },
   "Protege's Awakening": {
    "colors": "U",
@@ -3195,8 +5149,19 @@
    "image": "https://cards.scryfall.io/large/front/a/0/a08c7ec2-4c6a-4db2-85a7-41afe8731523.jpg?1788878176",
    "scryfall_id": "a08c7ec2-4c6a-4db2-85a7-41afe8731523",
    "number": "37",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.88,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 132,
+    "gih_wr": 0.553,
+    "oh_games": 46,
+    "oh_wr": 0.4565,
+    "games": 236,
+    "ata": 8.46,
+    "alsa": 6.55,
+    "offered": 452
+   }
   },
   "Puppet Crafting": {
    "colors": "G",
@@ -3211,8 +5176,19 @@
    "image": "https://cards.scryfall.io/large/front/6/b/6b8789a6-3b63-4198-af5f-c2f2f49fafd9.jpg?1789470736",
    "scryfall_id": "6b8789a6-3b63-4198-af5f-c2f2f49fafd9",
    "number": "111",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.53,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 14,
+    "gih_wr": 0.7143,
+    "oh_games": 5,
+    "oh_wr": 0.8,
+    "games": 24,
+    "ata": 8.6,
+    "alsa": 5.07,
+    "offered": 55
+   }
   },
   "Pyre Rhymer": {
    "colors": "R",
@@ -3227,8 +5203,19 @@
    "image": "https://cards.scryfall.io/large/front/2/b/2b0ebea0-86de-4da4-9fe8-dacc1e75c161.jpg?1789470850",
    "scryfall_id": "2b0ebea0-86de-4da4-9fe8-dacc1e75c161",
    "number": "91",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 3.41,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 7,
+    "gih_wr": 0.4286,
+    "oh_games": 1,
+    "oh_wr": 1.0,
+    "games": 20,
+    "ata": 4.38,
+    "alsa": 3.79,
+    "offered": 46
+   }
   },
   "Rampart Hunter": {
    "colors": "B",
@@ -3242,8 +5229,19 @@
    "image": "https://cards.scryfall.io/large/front/f/4/f4a80225-7459-4151-86bb-8fdea31c39a6.jpg?1789127211",
    "scryfall_id": "f4a80225-7459-4151-86bb-8fdea31c39a6",
    "number": "60",
-   "grade": 2.6,
-   "source": "auto"
+   "grade": 2.64,
+   "source": "auto",
+   "grade_prerelease": 2.6,
+   "untapped": {
+    "gih_games": 36,
+    "gih_wr": 0.5278,
+    "oh_games": 14,
+    "oh_wr": 0.3571,
+    "games": 71,
+    "ata": 11.26,
+    "alsa": 7.94,
+    "offered": 606
+   }
   },
   "Rank Rat": {
    "colors": "B",
@@ -3257,9 +5255,20 @@
    "image": "https://cards.scryfall.io/large/front/4/f/4ff6da82-d7dd-4b59-b7e6-30670cea7169.jpg?1789556727",
    "scryfall_id": "4ff6da82-d7dd-4b59-b7e6-30670cea7169",
    "number": "61",
-   "grade": 2.5,
+   "grade": 2.78,
    "source": "auto",
-   "note": "{1}{B} 2/1-ish: each opponent discards on ETB."
+   "note": "{1}{B} 2/1-ish: each opponent discards on ETB.",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 109,
+    "gih_wr": 0.5505,
+    "oh_games": 46,
+    "oh_wr": 0.6304,
+    "games": 190,
+    "ata": 7.62,
+    "alsa": 5.41,
+    "offered": 389
+   }
   },
   "Recursive Recruitment": {
    "colors": "UB",
@@ -3273,8 +5282,19 @@
    "image": "https://cards.scryfall.io/large/front/6/8/68fddb6a-86d4-4ebb-907d-fdcaadebc4b3.jpg?1789556898",
    "scryfall_id": "68fddb6a-86d4-4ebb-907d-fdcaadebc4b3",
    "number": "147",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.89,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 74,
+    "gih_wr": 0.7297,
+    "oh_games": 30,
+    "oh_wr": 0.7,
+    "games": 105,
+    "ata": 6.31,
+    "alsa": 4.7,
+    "offered": 147
+   }
   },
   "Refute Destiny": {
    "colors": "W",
@@ -3289,8 +5309,19 @@
    "image": "https://cards.scryfall.io/large/front/2/c/2c588954-c6eb-4aae-a2fa-0651ccf2d90a.jpg?1789470778",
    "scryfall_id": "2c588954-c6eb-4aae-a2fa-0651ccf2d90a",
    "number": "18",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.43,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 5,
+    "gih_wr": 1.0,
+    "oh_games": 0,
+    "oh_wr": null,
+    "games": 15,
+    "ata": 10.73,
+    "alsa": 8.03,
+    "offered": 275
+   }
   },
   "Repurposed Enforcer": {
    "colors": "W",
@@ -3305,8 +5336,19 @@
    "image": "https://cards.scryfall.io/large/front/3/5/35000e93-85d3-44f8-976a-5918ee4c71e0.jpg?1788878108",
    "scryfall_id": "35000e93-85d3-44f8-976a-5918ee4c71e0",
    "number": "19",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.33,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 37,
+    "gih_wr": 0.5946,
+    "oh_games": 17,
+    "oh_wr": 0.5294,
+    "games": 70,
+    "ata": 1.8,
+    "alsa": 2.27,
+    "offered": 15
+   }
   },
   "Rescue Girl, First Responder": {
    "colors": "W",
@@ -3320,8 +5362,19 @@
    "image": "https://cards.scryfall.io/large/front/6/9/699874e3-1ccf-4a6c-8371-61040de82d08.jpg?1789645598",
    "scryfall_id": "699874e3-1ccf-4a6c-8371-61040de82d08",
    "number": "202",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 3.05,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 61,
+    "gih_wr": 0.5574,
+    "oh_games": 17,
+    "oh_wr": 0.4706,
+    "games": 113,
+    "ata": 5.34,
+    "alsa": 4.97,
+    "offered": 133
+   }
   },
   "Restore with Empathy": {
    "colors": "G",
@@ -3336,8 +5389,19 @@
    "image": "https://cards.scryfall.io/large/front/3/5/3546b93b-a7d1-451d-a369-22cc8ddcd00d.jpg?1788865848",
    "scryfall_id": "3546b93b-a7d1-451d-a369-22cc8ddcd00d",
    "number": "112",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.09,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 51,
+    "gih_wr": 0.5882,
+    "oh_games": 13,
+    "oh_wr": 0.4615,
+    "games": 114,
+    "ata": 8.41,
+    "alsa": 6.49,
+    "offered": 242
+   }
   },
   "Return to the Light Realms": {
    "colors": "W",
@@ -3351,8 +5415,19 @@
    "image": "https://cards.scryfall.io/large/front/6/5/65e9f4df-02e5-4ac7-86da-795688bfb66f.jpg?1788878434",
    "scryfall_id": "65e9f4df-02e5-4ac7-86da-795688bfb66f",
    "number": "440",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.56,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 12,
+    "gih_wr": 0.75,
+    "oh_games": 1,
+    "oh_wr": 1.0,
+    "games": 18,
+    "ata": 6.14,
+    "alsa": 5.37,
+    "offered": 36
+   }
   },
   "Rewrite Regrets": {
    "colors": "B",
@@ -3368,8 +5443,19 @@
    "image": "https://cards.scryfall.io/large/front/4/5/453cfde7-c460-4b55-9472-b714e16f24bb.jpg?1788952087",
    "scryfall_id": "453cfde7-c460-4b55-9472-b714e16f24bb",
    "number": "62",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.4,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 50,
+    "gih_wr": 0.66,
+    "oh_games": 18,
+    "oh_wr": 0.6111,
+    "games": 112,
+    "ata": 7.23,
+    "alsa": 5.61,
+    "offered": 198
+   }
   },
   "Rise of the Deathbringer": {
    "colors": "B",
@@ -3383,8 +5469,19 @@
    "image": "https://cards.scryfall.io/large/front/8/1/811719ad-b5a3-4d31-8c6f-5dbdfccf7c1f.jpg?1789470807",
    "scryfall_id": "811719ad-b5a3-4d31-8c6f-5dbdfccf7c1f",
    "number": "63",
-   "grade": 3.8,
-   "source": "auto"
+   "grade": 4.03,
+   "source": "auto",
+   "grade_prerelease": 3.8,
+   "untapped": {
+    "gih_games": 28,
+    "gih_wr": 0.7143,
+    "oh_games": 7,
+    "oh_wr": 0.5714,
+    "games": 68,
+    "ata": 3.57,
+    "alsa": 2.87,
+    "offered": 23
+   }
   },
   "Rockfall Vale": {
    "colors": "",
@@ -3399,8 +5496,19 @@
    "image": "https://cards.scryfall.io/large/front/e/3/e3c8a8b6-23ba-45ad-80d1-8e2dc79897f7.jpg?1788878243",
    "scryfall_id": "e3c8a8b6-23ba-45ad-80d1-8e2dc79897f7",
    "number": "186",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 2.44,
+   "source": "auto",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 23,
+    "gih_wr": 0.5652,
+    "oh_games": 11,
+    "oh_wr": 0.5455,
+    "games": 44,
+    "ata": 7.97,
+    "alsa": 4.82,
+    "offered": 72
+   }
   },
   "Roiling Canopy": {
    "colors": "",
@@ -3414,8 +5522,19 @@
    "image": "https://cards.scryfall.io/large/front/d/b/db61361b-bd12-453e-abc2-bbe09b66e3d9.jpg?1789514074",
    "scryfall_id": "db61361b-bd12-453e-abc2-bbe09b66e3d9",
    "number": "187",
-   "grade": 0.0,
-   "source": "auto"
+   "grade": 0.04,
+   "source": "auto",
+   "grade_prerelease": 0.0,
+   "untapped": {
+    "gih_games": 5,
+    "gih_wr": 0.0,
+    "oh_games": 3,
+    "oh_wr": 0.0,
+    "games": 11,
+    "ata": 11.47,
+    "alsa": 6.88,
+    "offered": 106
+   }
   },
   "Room of Refuge": {
    "colors": "",
@@ -3429,8 +5548,19 @@
    "image": "https://cards.scryfall.io/large/front/9/a/9a467560-6676-4fc2-9400-768a79650aa4.jpg?1789557010",
    "scryfall_id": "9a467560-6676-4fc2-9400-768a79650aa4",
    "number": "188",
-   "grade": 0.0,
-   "source": "auto"
+   "grade": 2.39,
+   "source": "auto",
+   "grade_prerelease": 0.0,
+   "untapped": {
+    "gih_games": 193,
+    "gih_wr": 0.5699,
+    "oh_games": 73,
+    "oh_wr": 0.5479,
+    "games": 369,
+    "ata": 7.32,
+    "alsa": 5.25,
+    "offered": 389
+   }
   },
   "Ruric Thar, Biomagus": {
    "colors": "U",
@@ -3446,8 +5576,19 @@
    "image": "https://cards.scryfall.io/large/front/0/0/00af4e87-5576-4a43-9422-4c35b2b66775.jpg?1789127229",
    "scryfall_id": "00af4e87-5576-4a43-9422-4c35b2b66775",
    "number": "219",
-   "grade": 2.8,
-   "source": "auto"
+   "grade": 2.89,
+   "source": "auto",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 65,
+    "gih_wr": 0.5538,
+    "oh_games": 23,
+    "oh_wr": 0.6522,
+    "games": 130,
+    "ata": 6.64,
+    "alsa": 5.38,
+    "offered": 185
+   }
   },
   "Ruric Thar, Magecrusher": {
    "colors": "G",
@@ -3462,8 +5603,19 @@
    "image": "https://cards.scryfall.io/large/front/e/e/eed83302-dc2c-45f4-a4bd-af9da51edef5.jpg?1789358701",
    "scryfall_id": "eed83302-dc2c-45f4-a4bd-af9da51edef5",
    "number": "265",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.93,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 63,
+    "gih_wr": 0.5714,
+    "oh_games": 26,
+    "oh_wr": 0.5385,
+    "games": 129,
+    "ata": 4.76,
+    "alsa": 4.15,
+    "offered": 130
+   }
   },
   "Saheeli, Consul of Oversight": {
    "colors": "W",
@@ -3481,8 +5633,19 @@
    "image": "https://cards.scryfall.io/large/front/0/7/07572be0-6610-493c-a21e-14b78e9805c9.jpg?1789645608",
    "scryfall_id": "07572be0-6610-493c-a21e-14b78e9805c9",
    "number": "203",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 2.87,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 80,
+    "gih_wr": 0.525,
+    "oh_games": 25,
+    "oh_wr": 0.56,
+    "games": 158,
+    "ata": 5.18,
+    "alsa": 4.9,
+    "offered": 148
+   }
   },
   "Samut, Hazoret's Champion": {
    "colors": "R",
@@ -3497,8 +5660,19 @@
    "image": "https://cards.scryfall.io/large/front/b/a/ba920f23-f05c-410e-8516-c93abedf1d4d.jpg?1789729662",
    "scryfall_id": "ba920f23-f05c-410e-8516-c93abedf1d4d",
    "number": "251",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.35,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 18,
+    "gih_wr": 0.6111,
+    "oh_games": 8,
+    "oh_wr": 0.75,
+    "games": 58,
+    "ata": 2.99,
+    "alsa": 3.09,
+    "offered": 37
+   }
   },
   "Samut, Tyrant of Naktamun": {
    "colors": "U",
@@ -3510,8 +5684,19 @@
    "image": "https://cards.scryfall.io/large/front/6/d/6d7d8fa7-ce69-4a8c-9af0-55571393a244.jpg?1789729644",
    "scryfall_id": "6d7d8fa7-ce69-4a8c-9af0-55571393a244",
    "number": "220",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 2.35,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 31,
+    "gih_wr": 0.2903,
+    "oh_games": 9,
+    "oh_wr": 0.3333,
+    "games": 45,
+    "ata": 6.42,
+    "alsa": 5.24,
+    "offered": 65
+   }
   },
   "Sanctum Lurker": {
    "colors": "B",
@@ -3528,9 +5713,20 @@
    "image": "https://cards.scryfall.io/large/front/2/1/2185c08f-bb4d-49d5-8b6c-c629a48bb61c.jpg?1789556729",
    "scryfall_id": "2185c08f-bb4d-49d5-8b6c-c629a48bb61c",
    "number": "64",
-   "grade": 3.6,
+   "grade": 3.07,
    "source": "auto",
-   "note": "{2}{B} rare: planeswalkers you control aren't put into the graveyard for having 0 loyalty. A Jace token enters at 0 - this makes every empower card in your deck work and keeps a spent Jace holding your duals untapped. Both sealed builders ran it in B/R."
+   "note": "{2}{B} rare: planeswalkers you control aren't put into the graveyard for having 0 loyalty. A Jace token enters at 0 - this makes every empower card in your deck work and keeps a spent Jace holding your duals untapped. Both sealed builders ran it in B/R.",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 27,
+    "gih_wr": 0.4444,
+    "oh_games": 9,
+    "oh_wr": 0.4444,
+    "games": 56,
+    "ata": 1.61,
+    "alsa": 1.72,
+    "offered": 18
+   }
   },
   "Screeching Soulbreaker": {
    "colors": "B",
@@ -3545,8 +5741,19 @@
    "image": "https://cards.scryfall.io/large/front/7/3/738667a1-c184-43ea-829f-49fbb69b6fc0.jpg?1789385960",
    "scryfall_id": "738667a1-c184-43ea-829f-49fbb69b6fc0",
    "number": "65",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.49,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 76,
+    "gih_wr": 0.4868,
+    "oh_games": 31,
+    "oh_wr": 0.4194,
+    "games": 141,
+    "ata": 8.62,
+    "alsa": 6.78,
+    "offered": 506
+   }
   },
   "Seasoned Cryomancer": {
    "colors": "U",
@@ -3558,8 +5765,19 @@
    "image": "https://cards.scryfall.io/large/front/f/1/f1a15a83-2f74-4513-ae4b-4cdc17016a84.jpg?1789470965",
    "scryfall_id": "f1a15a83-2f74-4513-ae4b-4cdc17016a84",
    "number": "441",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 3.55,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 25,
+    "gih_wr": 0.6,
+    "oh_games": 11,
+    "oh_wr": 0.6364,
+    "games": 40,
+    "ata": 1.22,
+    "alsa": 1.44,
+    "offered": 9
+   }
   },
   "Shatterwing Pegasus": {
    "colors": "W",
@@ -3573,8 +5791,19 @@
    "image": "https://cards.scryfall.io/large/front/e/2/e29095de-59ec-4562-ba8e-73f952e457ae.jpg?1789385580",
    "scryfall_id": "e29095de-59ec-4562-ba8e-73f952e457ae",
    "number": "21",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.79,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 113,
+    "gih_wr": 0.5398,
+    "oh_games": 48,
+    "oh_wr": 0.5,
+    "games": 232,
+    "ata": 8.93,
+    "alsa": 6.59,
+    "offered": 534
+   }
   },
   "Shipwreck Marsh": {
    "colors": "",
@@ -3589,8 +5818,19 @@
    "image": "https://cards.scryfall.io/large/front/9/e/9e944c5b-68ac-4a30-bbd4-09a4288319ce.jpg?1788878245",
    "scryfall_id": "9e944c5b-68ac-4a30-bbd4-09a4288319ce",
    "number": "189",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 2.81,
+   "source": "auto",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 34,
+    "gih_wr": 0.6471,
+    "oh_games": 12,
+    "oh_wr": 0.6667,
+    "games": 58,
+    "ata": 8.35,
+    "alsa": 5.3,
+    "offered": 85
+   }
   },
   "Silence the Echo": {
    "colors": "B",
@@ -3605,9 +5845,20 @@
    "image": "https://cards.scryfall.io/large/front/f/1/f1d274db-751b-4414-a38d-762198168e91.jpg?1789385640",
    "scryfall_id": "f1d274db-751b-4414-a38d-762198168e91",
    "number": "66",
-   "grade": 3.1,
+   "grade": 2.48,
    "source": "auto",
-   "note": "{1}{B}: destroy target creature or planeswalker; additional cost sacrifice a creature/planeswalker or pay {3}. Removal AND a sacrifice outlet for W/B."
+   "note": "{1}{B}: destroy target creature or planeswalker; additional cost sacrifice a creature/planeswalker or pay {3}. Removal AND a sacrifice outlet for W/B.",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 99,
+    "gih_wr": 0.4646,
+    "oh_games": 44,
+    "oh_wr": 0.4773,
+    "games": 187,
+    "ata": 6.63,
+    "alsa": 5.27,
+    "offered": 382
+   }
   },
   "Simulacrum Shaper": {
    "colors": "G",
@@ -3621,8 +5872,19 @@
    "image": "https://cards.scryfall.io/large/front/7/c/7c725702-8696-4e5a-8318-62f5e2616d52.jpg?1789470857",
    "scryfall_id": "7c725702-8696-4e5a-8318-62f5e2616d52",
    "number": "113",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.17,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 24,
+    "gih_wr": 0.5417,
+    "oh_games": 8,
+    "oh_wr": 0.5,
+    "games": 67,
+    "ata": 1.58,
+    "alsa": 1.71,
+    "offered": 17
+   }
   },
   "Skilled Battlecarver": {
    "colors": "R",
@@ -3637,9 +5899,20 @@
    "image": "https://cards.scryfall.io/large/front/0/e/0e44f959-1322-4abd-b6eb-dea992307c0c.jpg?1789556811",
    "scryfall_id": "0e44f959-1322-4abd-b6eb-dea992307c0c",
    "number": "92",
-   "grade": 2.6,
+   "grade": 2.1,
    "source": "auto",
-   "note": "{1}{R} - first strike on your turn, {1}{R} pump. A fine aggro two-drop."
+   "note": "{1}{R} - first strike on your turn, {1}{R} pump. A fine aggro two-drop.",
+   "grade_prerelease": 2.6,
+   "untapped": {
+    "gih_games": 82,
+    "gih_wr": 0.4268,
+    "oh_games": 41,
+    "oh_wr": 0.4878,
+    "games": 167,
+    "ata": 8.71,
+    "alsa": 7.2,
+    "offered": 541
+   }
   },
   "Solarium Sentry": {
    "colors": "WG",
@@ -3653,8 +5926,19 @@
    "image": "https://cards.scryfall.io/large/front/1/e/1ef12dcf-df50-4da6-8c4c-e2937ba9698e.jpg?1789127651",
    "scryfall_id": "1ef12dcf-df50-4da6-8c4c-e2937ba9698e",
    "number": "148",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.15,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 33,
+    "gih_wr": 0.5455,
+    "oh_games": 18,
+    "oh_wr": 0.6111,
+    "games": 72,
+    "ata": 3.92,
+    "alsa": 4.14,
+    "offered": 48
+   }
   },
   "Solitary Cell": {
    "colors": "WR",
@@ -3668,8 +5952,19 @@
    "image": "https://cards.scryfall.io/large/front/5/1/5142bbb6-194c-4b12-b11a-1a21c9fe81a6.jpg?1788260690",
    "scryfall_id": "5142bbb6-194c-4b12-b11a-1a21c9fe81a6",
    "number": "149",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.28,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 7,
+    "gih_wr": 0.5714,
+    "oh_games": 2,
+    "oh_wr": 0.5,
+    "games": 19,
+    "ata": 4.48,
+    "alsa": 4.77,
+    "offered": 53
+   }
   },
   "Solve for Disappointment": {
    "colors": "B",
@@ -3684,8 +5979,19 @@
    "image": "https://cards.scryfall.io/large/front/7/b/7beaa8c9-1a2c-4c88-b579-91e371d8d9e3.jpg?1788878155",
    "scryfall_id": "7beaa8c9-1a2c-4c88-b579-91e371d8d9e3",
    "number": "67",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.51,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 59,
+    "gih_wr": 0.5085,
+    "oh_games": 24,
+    "oh_wr": 0.4583,
+    "games": 125,
+    "ata": 9.29,
+    "alsa": 7.32,
+    "offered": 540
+   }
   },
   "Something Worth Saving": {
    "colors": "G",
@@ -3701,9 +6007,20 @@
    "image": "https://cards.scryfall.io/large/front/0/2/02ee7817-40af-4fcf-a2df-eb218b669281.jpg?1788878199",
    "scryfall_id": "02ee7817-40af-4fcf-a2df-eb218b669281",
    "number": "114",
-   "grade": 2.5,
+   "grade": 2.79,
    "source": "auto",
-   "note": "{1}{G} instant: mill four, take a permanent from among them, gain 1. Self-mill that replaces itself - good in B/G and U/G."
+   "note": "{1}{G} instant: mill four, take a permanent from among them, gain 1. Self-mill that replaces itself - good in B/G and U/G.",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 75,
+    "gih_wr": 0.56,
+    "oh_games": 30,
+    "oh_wr": 0.6,
+    "games": 154,
+    "ata": 9.78,
+    "alsa": 7.48,
+    "offered": 545
+   }
   },
   "Sphinx of False Conclusions": {
    "colors": "U",
@@ -3717,8 +6034,19 @@
    "image": "https://cards.scryfall.io/large/front/0/8/08ffbd51-2bd3-4262-8809-09576ce2b6f5.jpg?1789385594",
    "scryfall_id": "08ffbd51-2bd3-4262-8809-09576ce2b6f5",
    "number": "40",
-   "grade": 3.5,
-   "source": "auto"
+   "grade": 3.23,
+   "source": "auto",
+   "grade_prerelease": 3.5,
+   "untapped": {
+    "gih_games": 39,
+    "gih_wr": 0.5385,
+    "oh_games": 13,
+    "oh_wr": 0.6923,
+    "games": 77,
+    "ata": 1.5,
+    "alsa": 1.55,
+    "offered": 20
+   }
   },
   "Sphinx's Approach": {
    "colors": "U",
@@ -3730,8 +6058,19 @@
    "image": "https://cards.scryfall.io/large/front/f/4/f49be090-c745-40e5-bc1c-605b8d98acdf.jpg?1789644816",
    "scryfall_id": "f49be090-c745-40e5-bc1c-605b8d98acdf",
    "number": "41",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.05,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 54,
+    "gih_wr": 0.4074,
+    "oh_games": 15,
+    "oh_wr": 0.6,
+    "games": 91,
+    "ata": 10.37,
+    "alsa": 8.18,
+    "offered": 662
+   }
   },
   "Stingerquill Charm": {
    "colors": "BR",
@@ -3747,8 +6086,19 @@
    "image": "https://cards.scryfall.io/large/front/8/1/81733ff7-e611-43ee-bf38-6bb700676017.jpg?1789127652",
    "scryfall_id": "81733ff7-e611-43ee-bf38-6bb700676017",
    "number": "150",
-   "grade": 2.8,
-   "source": "auto"
+   "grade": 2.67,
+   "source": "auto",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 36,
+    "gih_wr": 0.5,
+    "oh_games": 16,
+    "oh_wr": 0.5625,
+    "games": 74,
+    "ata": 6.79,
+    "alsa": 5.34,
+    "offered": 136
+   }
   },
   "Stinging Vitriol": {
    "colors": "BR",
@@ -3762,8 +6112,19 @@
    "image": "https://cards.scryfall.io/large/front/a/7/a7d78297-7411-4ec5-8931-a25146869d5b.jpg?1789385971",
    "scryfall_id": "a7d78297-7411-4ec5-8931-a25146869d5b",
    "number": "152",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 3.42,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 20,
+    "gih_wr": 0.7,
+    "oh_games": 9,
+    "oh_wr": 0.7778,
+    "games": 34,
+    "ata": 6.93,
+    "alsa": 4.79,
+    "offered": 67
+   }
   },
   "Sureshot Sower": {
    "colors": "G",
@@ -3778,8 +6139,19 @@
    "image": "https://cards.scryfall.io/large/front/b/6/b635389c-e286-4edb-80d1-23dbe4a18857.jpg?1789614751",
    "scryfall_id": "b635389c-e286-4edb-80d1-23dbe4a18857",
    "number": "115",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 2.54,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 95,
+    "gih_wr": 0.4737,
+    "oh_games": 38,
+    "oh_wr": 0.5,
+    "games": 185,
+    "ata": 9.11,
+    "alsa": 6.63,
+    "offered": 523
+   }
   },
   "Tam's Resistance": {
    "colors": "UG",
@@ -3796,8 +6168,19 @@
    "image": "https://cards.scryfall.io/large/front/b/3/b3d33df2-a77b-4c2e-ba7f-2cc9c1505f9b.jpg?1788878215",
    "scryfall_id": "b3d33df2-a77b-4c2e-ba7f-2cc9c1505f9b",
    "number": "153",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 3.01,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 124,
+    "gih_wr": 0.5726,
+    "oh_games": 39,
+    "oh_wr": 0.5641,
+    "games": 210,
+    "ata": 8.02,
+    "alsa": 6.4,
+    "offered": 477
+   }
   },
   "Tam, the Possibility": {
    "colors": "UG",
@@ -3809,8 +6192,19 @@
    "image": "https://cards.scryfall.io/large/front/6/5/6529d399-677e-45a6-ac3e-12a0b10f6c37.jpg?1789644886",
    "scryfall_id": "6529d399-677e-45a6-ac3e-12a0b10f6c37",
    "number": "276",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.31,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 5,
+    "gih_wr": 0.6,
+    "oh_games": 3,
+    "oh_wr": 0.6667,
+    "games": 11,
+    "ata": 8.5,
+    "alsa": 7.49,
+    "offered": 120
+   }
   },
   "Tarmogoyf": {
    "colors": "G",
@@ -3822,8 +6216,19 @@
    "image": "https://cards.scryfall.io/large/front/8/b/8be5ee47-8f8a-4e3c-b1a1-9ca0e1fdec7f.jpg?1789127270",
    "scryfall_id": "8be5ee47-8f8a-4e3c-b1a1-9ca0e1fdec7f",
    "number": "116",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 3.55,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 1,
+    "gih_wr": 0.0,
+    "oh_games": 0,
+    "oh_wr": null,
+    "games": 12,
+    "ata": 5.0,
+    "alsa": 4.01,
+    "offered": 22
+   }
   },
   "Tenured Tethermage": {
    "colors": "RG",
@@ -3840,8 +6245,19 @@
    "image": "https://cards.scryfall.io/large/front/1/7/1703306d-6a3d-4ab8-bf58-a9992236ef0f.jpg?1789385792",
    "scryfall_id": "1703306d-6a3d-4ab8-bf58-a9992236ef0f",
    "number": "154",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.08,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 13,
+    "gih_wr": 0.4615,
+    "oh_games": 4,
+    "oh_wr": 0.0,
+    "games": 29,
+    "ata": 2.75,
+    "alsa": 3.5,
+    "offered": 20
+   }
   },
   "Terminal Criticism": {
    "colors": "B",
@@ -3856,8 +6272,19 @@
    "image": "https://cards.scryfall.io/large/front/7/e/7ebd7e38-b27c-4c6e-aaea-e8ee5ba5e5df.jpg?1789470810",
    "scryfall_id": "7ebd7e38-b27c-4c6e-aaea-e8ee5ba5e5df",
    "number": "68",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 3.68,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 12,
+    "gih_wr": 0.6667,
+    "oh_games": 4,
+    "oh_wr": 0.75,
+    "games": 31,
+    "ata": 12.02,
+    "alsa": 7.91,
+    "offered": 269
+   }
   },
   "Tethermage's Advantage": {
    "colors": "G",
@@ -3869,8 +6296,19 @@
    "image": "https://cards.scryfall.io/large/front/3/8/38589a7c-9cfb-4bcc-845e-9dc205095853.jpg?1789129937",
    "scryfall_id": "38589a7c-9cfb-4bcc-845e-9dc205095853",
    "number": "117",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.14,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 13,
+    "gih_wr": 0.2308,
+    "oh_games": 6,
+    "oh_wr": 0.0,
+    "games": 30,
+    "ata": 11.86,
+    "alsa": 8.61,
+    "offered": 606
+   }
   },
   "Tether Technician": {
    "colors": "R",
@@ -3884,8 +6322,19 @@
    "image": "https://cards.scryfall.io/large/front/b/7/b75bbf46-a421-467a-9433-6cf22398a3a5.jpg?1789556839",
    "scryfall_id": "b75bbf46-a421-467a-9433-6cf22398a3a5",
    "number": "94",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.31,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 60,
+    "gih_wr": 0.4667,
+    "oh_games": 23,
+    "oh_wr": 0.4783,
+    "games": 124,
+    "ata": 10.42,
+    "alsa": 7.81,
+    "offered": 589
+   }
   },
   "Tetsuko Umezawa, Fugitive": {
    "colors": "U",
@@ -3897,8 +6346,19 @@
    "image": "https://cards.scryfall.io/large/front/3/9/3983d71e-3c23-4b36-b331-08e0707d8245.jpg?1789127702",
    "scryfall_id": "3983d71e-3c23-4b36-b331-08e0707d8245",
    "number": "221",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.47,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 55,
+    "gih_wr": 0.4545,
+    "oh_games": 18,
+    "oh_wr": 0.3889,
+    "games": 100,
+    "ata": 9.25,
+    "alsa": 6.26,
+    "offered": 80
+   }
   },
   "Tetsuko Umezawa, Pursuer": {
    "colors": "R",
@@ -3912,8 +6372,19 @@
    "image": "https://cards.scryfall.io/large/front/d/f/df818900-ce5e-4b0d-a927-c975cbef7eda.jpg?1789128002",
    "scryfall_id": "df818900-ce5e-4b0d-a927-c975cbef7eda",
    "number": "252",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.42,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 36,
+    "gih_wr": 0.4167,
+    "oh_games": 18,
+    "oh_wr": 0.3333,
+    "games": 80,
+    "ata": 6.44,
+    "alsa": 5.09,
+    "offered": 172
+   }
   },
   "Teyo, Diamondblade Mage": {
    "colors": "B",
@@ -3928,8 +6399,19 @@
    "image": "https://cards.scryfall.io/large/front/1/0/100c3b67-0c92-4224-b5ed-67789c612df7.jpg?1789470892",
    "scryfall_id": "100c3b67-0c92-4224-b5ed-67789c612df7",
    "number": "236",
-   "grade": 3.0,
-   "source": "auto"
+   "grade": 2.74,
+   "source": "auto",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 54,
+    "gih_wr": 0.5,
+    "oh_games": 24,
+    "oh_wr": 0.4583,
+    "games": 104,
+    "ata": 6.91,
+    "alsa": 5.34,
+    "offered": 201
+   }
   },
   "Teyo, Lightshield Expert": {
    "colors": "W",
@@ -3943,8 +6425,19 @@
    "image": "https://cards.scryfall.io/large/front/5/f/5f7521d7-9f1f-4f03-b2ea-dd2a1b1e4e5b.jpg?1789471515",
    "scryfall_id": "5f7521d7-9f1f-4f03-b2ea-dd2a1b1e4e5b",
    "number": "204",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.41,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 105,
+    "gih_wr": 0.6286,
+    "oh_games": 43,
+    "oh_wr": 0.5116,
+    "games": 193,
+    "ata": 4.42,
+    "alsa": 4.06,
+    "offered": 151
+   }
   },
   "Thalia, the Survivor": {
    "colors": "W",
@@ -3958,8 +6451,19 @@
    "image": "https://cards.scryfall.io/large/front/8/0/80226231-9e70-430e-aabc-f262f70b9226.jpg?1789127700",
    "scryfall_id": "80226231-9e70-430e-aabc-f262f70b9226",
    "number": "205",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.47,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 65,
+    "gih_wr": 0.4615,
+    "oh_games": 27,
+    "oh_wr": 0.4074,
+    "games": 158,
+    "ata": 6.68,
+    "alsa": 4.62,
+    "offered": 152
+   }
   },
   "The Echoverse Fulcrum": {
    "colors": "",
@@ -3973,8 +6477,19 @@
    "image": "https://cards.scryfall.io/large/front/d/7/d71d250f-c0e0-44b2-877c-76f3bcab4f34.jpg?1789385887",
    "scryfall_id": "d71d250f-c0e0-44b2-877c-76f3bcab4f34",
    "number": "169",
-   "grade": 4.1,
-   "source": "auto"
+   "grade": 3.94,
+   "source": "auto",
+   "grade_prerelease": 4.1,
+   "untapped": {
+    "gih_games": 23,
+    "gih_wr": 0.6087,
+    "oh_games": 11,
+    "oh_wr": 0.6364,
+    "games": 55,
+    "ata": 1.74,
+    "alsa": 1.84,
+    "offered": 19
+   }
   },
   "Theoretical Necromancer": {
    "colors": "B",
@@ -3988,8 +6503,19 @@
    "image": "https://cards.scryfall.io/large/front/e/3/e36a7908-1e22-494b-adb4-e72ac0974d62.jpg?1789556734",
    "scryfall_id": "e36a7908-1e22-494b-adb4-e72ac0974d62",
    "number": "69",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.34,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 98,
+    "gih_wr": 0.4796,
+    "oh_games": 45,
+    "oh_wr": 0.4444,
+    "games": 190,
+    "ata": 9.6,
+    "alsa": 6.99,
+    "offered": 499
+   }
   },
   "Theorist's Sanctum": {
    "colors": "",
@@ -4003,8 +6529,19 @@
    "image": "https://cards.scryfall.io/large/front/2/2/22db5bba-46c9-4a26-821d-303ddb386ea4.jpg?1788878256",
    "scryfall_id": "22db5bba-46c9-4a26-821d-303ddb386ea4",
    "number": "191",
-   "grade": 0.0,
-   "source": "auto"
+   "grade": 1.48,
+   "source": "auto",
+   "grade_prerelease": 0.0,
+   "untapped": {
+    "gih_games": 47,
+    "gih_wr": 0.5957,
+    "oh_games": 18,
+    "oh_wr": 0.6111,
+    "games": 80,
+    "ata": 3.34,
+    "alsa": 3.19,
+    "offered": 41
+   }
   },
   "Theorix Charm": {
    "colors": "UB",
@@ -4019,8 +6556,19 @@
    "image": "https://cards.scryfall.io/large/front/2/8/2835c9aa-0904-44db-8da2-e8c4e04201aa.jpg?1789127659",
    "scryfall_id": "2835c9aa-0904-44db-8da2-e8c4e04201aa",
    "number": "155",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 3.65,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 46,
+    "gih_wr": 0.6304,
+    "oh_games": 18,
+    "oh_wr": 0.5556,
+    "games": 80,
+    "ata": 7.11,
+    "alsa": 5.52,
+    "offered": 190
+   }
   },
   "The Theorist, Jace Beleren": {
    "colors": "U",
@@ -4036,8 +6584,19 @@
    "image": "https://cards.scryfall.io/large/front/2/0/20bb8c55-4b0b-425f-8201-b54fa2fdde86.jpg?1788329228",
    "scryfall_id": "20bb8c55-4b0b-425f-8201-b54fa2fdde86",
    "number": "43",
-   "grade": 4.3,
-   "source": "auto"
+   "grade": 3.84,
+   "source": "auto",
+   "grade_prerelease": 4.3,
+   "untapped": {
+    "gih_games": 23,
+    "gih_wr": 0.5217,
+    "oh_games": 7,
+    "oh_wr": 0.7143,
+    "games": 42,
+    "ata": 1.0,
+    "alsa": 1.33,
+    "offered": 6
+   }
   },
   "Tinybones, Pocket Nuisance": {
    "colors": "B",
@@ -4051,8 +6610,19 @@
    "image": "https://cards.scryfall.io/large/front/2/f/2f47ddf7-35b6-4205-8045-f057914c5f64.jpg?1788329294",
    "scryfall_id": "2f47ddf7-35b6-4205-8045-f057914c5f64",
    "number": "237",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.98,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 78,
+    "gih_wr": 0.5769,
+    "oh_games": 37,
+    "oh_wr": 0.5946,
+    "games": 141,
+    "ata": 7.26,
+    "alsa": 5.36,
+    "offered": 176
+   }
   },
   "Titanbones, Towering Heart": {
    "colors": "G",
@@ -4067,8 +6637,19 @@
    "image": "https://cards.scryfall.io/large/front/e/d/edea6f70-a5a7-475d-b7f2-97933d0f32cf.jpg?1788329375",
    "scryfall_id": "edea6f70-a5a7-475d-b7f2-97933d0f32cf",
    "number": "266",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.79,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 61,
+    "gih_wr": 0.5246,
+    "oh_games": 22,
+    "oh_wr": 0.4091,
+    "games": 120,
+    "ata": 6.31,
+    "alsa": 4.84,
+    "offered": 160
+   }
   },
   "Tomik, Izzet Sparkmage": {
    "colors": "R",
@@ -4083,8 +6664,19 @@
    "image": "https://cards.scryfall.io/large/front/5/c/5c5afd5f-6f37-4c3e-83f0-68fdcea98810.jpg?1789729773",
    "scryfall_id": "5c5afd5f-6f37-4c3e-83f0-68fdcea98810",
    "number": "253",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.8,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 44,
+    "gih_wr": 0.5227,
+    "oh_games": 14,
+    "oh_wr": 0.5714,
+    "games": 82,
+    "ata": 7.2,
+    "alsa": 5.57,
+    "offered": 205
+   }
   },
   "Tomik, Orzhov Lawmage": {
    "colors": "W",
@@ -4099,8 +6691,19 @@
    "image": "https://cards.scryfall.io/large/front/7/c/7ca95235-6e54-4ff8-bc2e-6a3d483ff007.jpg?1789729766",
    "scryfall_id": "7ca95235-6e54-4ff8-bc2e-6a3d483ff007",
    "number": "206",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 3.07,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 89,
+    "gih_wr": 0.5618,
+    "oh_games": 37,
+    "oh_wr": 0.5135,
+    "games": 185,
+    "ata": 5.45,
+    "alsa": 4.03,
+    "offered": 137
+   }
   },
   "Transformative Commons": {
    "colors": "",
@@ -4115,8 +6718,19 @@
    "image": "https://cards.scryfall.io/large/front/b/5/b57d5be7-3157-4b49-aeb8-d7368ca7e9dd.jpg?1789557014",
    "scryfall_id": "b57d5be7-3157-4b49-aeb8-d7368ca7e9dd",
    "number": "193",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 2.49,
+   "source": "auto",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 56,
+    "gih_wr": 0.5357,
+    "oh_games": 25,
+    "oh_wr": 0.56,
+    "games": 113,
+    "ata": 10.42,
+    "alsa": 7.02,
+    "offered": 298
+   }
   },
   "Traxos, Academy Guardian": {
    "colors": "U",
@@ -4131,8 +6745,19 @@
    "image": "https://cards.scryfall.io/large/front/a/3/a349800f-b634-4e74-a9d9-185df37ad909.jpg?1789568451",
    "scryfall_id": "a349800f-b634-4e74-a9d9-185df37ad909",
    "number": "222",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 2.49,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 59,
+    "gih_wr": 0.4407,
+    "oh_games": 17,
+    "oh_wr": 0.4706,
+    "games": 114,
+    "ata": 7.54,
+    "alsa": 5.31,
+    "offered": 215
+   }
   },
   "Traxos, Scourge Eternal": {
    "colors": "",
@@ -4147,8 +6772,19 @@
    "image": "https://cards.scryfall.io/large/front/0/5/05102c46-96f8-44a0-a1e6-e388fa5e0841.jpg?1789557046",
    "scryfall_id": "05102c46-96f8-44a0-a1e6-e388fa5e0841",
    "number": "280",
-   "grade": 3.0,
-   "source": "auto"
+   "grade": 2.8,
+   "source": "auto",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 34,
+    "gih_wr": 0.5,
+    "oh_games": 14,
+    "oh_wr": 0.5714,
+    "games": 73,
+    "ata": 8.08,
+    "alsa": 6.23,
+    "offered": 287
+   }
   },
   "Twinned Vision": {
    "colors": "UR",
@@ -4163,9 +6799,20 @@
    "image": "https://cards.scryfall.io/large/front/5/5/55f85984-0137-4899-8993-bbc8c4794d33.jpg?1789556940",
    "scryfall_id": "55f85984-0137-4899-8993-bbc8c4794d33",
    "number": "157",
-   "grade": 2.8,
+   "grade": 2.38,
    "source": "auto",
-   "note": "{1}{U/R} instant: draw a card, draw two instead if not cast from hand. Flashback {1}{U/R}{U/R}, discard a card - so the flashback draws two. Hybrid, castable in either colour."
+   "note": "{1}{U/R} instant: draw a card, draw two instead if not cast from hand. Flashback {1}{U/R}{U/R}, discard a card - so the flashback draws two. Hybrid, castable in either colour.",
+   "grade_prerelease": 2.8,
+   "untapped": {
+    "gih_games": 129,
+    "gih_wr": 0.4729,
+    "oh_games": 47,
+    "oh_wr": 0.4255,
+    "games": 232,
+    "ata": 7.57,
+    "alsa": 5.94,
+    "offered": 413
+   }
   },
   "Twisted Fates": {
    "colors": "WB",
@@ -4179,8 +6826,19 @@
    "image": "https://cards.scryfall.io/large/front/c/7/c7c0765d-38fd-4d7b-bfb4-49b10ff5939b.jpg?1789614785",
    "scryfall_id": "c7c0765d-38fd-4d7b-bfb4-49b10ff5939b",
    "number": "158",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.78,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 50,
+    "gih_wr": 0.52,
+    "oh_games": 24,
+    "oh_wr": 0.5417,
+    "games": 80,
+    "ata": 6.8,
+    "alsa": 5.37,
+    "offered": 162
+   }
   },
   "Undulating Witness": {
    "colors": "U",
@@ -4197,7 +6855,18 @@
    "scryfall_id": "0adbb4b2-a142-48da-8f4b-fa91529dbac4",
    "number": "45",
    "grade": 2.7,
-   "source": "auto"
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 112,
+    "gih_wr": 0.5268,
+    "oh_games": 39,
+    "oh_wr": 0.4615,
+    "games": 176,
+    "ata": 9.47,
+    "alsa": 7.04,
+    "offered": 441
+   }
   },
   "Unflinching Hortimancer": {
    "colors": "W",
@@ -4211,8 +6880,19 @@
    "image": "https://cards.scryfall.io/large/front/6/3/63f82985-c9c2-4d0a-ac4f-560166bebd9f.jpg?1789556741",
    "scryfall_id": "63f82985-c9c2-4d0a-ac4f-560166bebd9f",
    "number": "23",
-   "grade": 2.5,
-   "source": "auto"
+   "grade": 2.67,
+   "source": "auto",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 132,
+    "gih_wr": 0.5303,
+    "oh_games": 67,
+    "oh_wr": 0.5522,
+    "games": 243,
+    "ata": 7.63,
+    "alsa": 5.95,
+    "offered": 456
+   }
   },
   "Unsummon": {
    "colors": "U",
@@ -4227,9 +6907,20 @@
    "image": "https://cards.scryfall.io/large/front/d/d/ddad9f16-52d5-49de-82b0-b1a5294a9c44.jpg?1789556722",
    "scryfall_id": "ddad9f16-52d5-49de-82b0-b1a5294a9c44",
    "number": "46",
-   "grade": 2.5,
+   "grade": 2.87,
    "source": "auto",
-   "note": "{U} instant: bounce. In FRA it also resets a prepared creature and undoes an aura."
+   "note": "{U} instant: bounce. In FRA it also resets a prepared creature and undoes an aura.",
+   "grade_prerelease": 2.5,
+   "untapped": {
+    "gih_games": 97,
+    "gih_wr": 0.567,
+    "oh_games": 45,
+    "oh_wr": 0.5556,
+    "games": 179,
+    "ata": 9.61,
+    "alsa": 7.47,
+    "offered": 114
+   }
   },
   "Variable Chaser": {
    "colors": "U",
@@ -4245,8 +6936,19 @@
    "image": "https://cards.scryfall.io/large/front/e/3/e3afedb1-bf9d-4e31-9700-433514cc29b1.jpg?1789470807",
    "scryfall_id": "e3afedb1-bf9d-4e31-9700-433514cc29b1",
    "number": "47",
-   "grade": 3.8,
-   "source": "auto"
+   "grade": 2.84,
+   "source": "auto",
+   "grade_prerelease": 3.8,
+   "untapped": {
+    "gih_games": 35,
+    "gih_wr": 0.3714,
+    "oh_games": 14,
+    "oh_wr": 0.3571,
+    "games": 70,
+    "ata": 5.11,
+    "alsa": 3.63,
+    "offered": 51
+   }
   },
   "Verdant Kraken": {
    "colors": "G",
@@ -4261,8 +6963,19 @@
    "image": "https://cards.scryfall.io/large/front/2/b/2bb7a8eb-227f-410b-859f-750ef0aea2f0.jpg?1789644841",
    "scryfall_id": "2bb7a8eb-227f-410b-859f-750ef0aea2f0",
    "number": "118",
-   "grade": 3.0,
-   "source": "auto"
+   "grade": 3.09,
+   "source": "auto",
+   "grade_prerelease": 3.0,
+   "untapped": {
+    "gih_games": 22,
+    "gih_wr": 0.5909,
+    "oh_games": 14,
+    "oh_wr": 0.7143,
+    "games": 55,
+    "ata": 2.17,
+    "alsa": 2.56,
+    "offered": 23
+   }
   },
   "Vigorbloom Charm": {
    "colors": "WG",
@@ -4277,8 +6990,19 @@
    "image": "https://cards.scryfall.io/large/front/2/b/2b198e10-b507-4314-a29c-a219f06e48b7.jpg?1789127656",
    "scryfall_id": "2b198e10-b507-4314-a29c-a219f06e48b7",
    "number": "160",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.22,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 64,
+    "gih_wr": 0.6094,
+    "oh_games": 29,
+    "oh_wr": 0.5862,
+    "games": 137,
+    "ata": 5.43,
+    "alsa": 4.88,
+    "offered": 151
+   }
   },
   "Vindictive Triumph": {
    "colors": "WB",
@@ -4292,8 +7016,19 @@
    "image": "https://cards.scryfall.io/large/front/a/8/a803dbe7-153a-4e92-ad4d-c2babebe003d.jpg?1789127665",
    "scryfall_id": "a803dbe7-153a-4e92-ad4d-c2babebe003d",
    "number": "162",
-   "grade": 4.0,
-   "source": "auto"
+   "grade": 3.79,
+   "source": "auto",
+   "grade_prerelease": 4.0,
+   "untapped": {
+    "gih_games": 13,
+    "gih_wr": 0.5385,
+    "oh_games": 4,
+    "oh_wr": 0.25,
+    "games": 37,
+    "ata": 6.14,
+    "alsa": 3.84,
+    "offered": 38
+   }
   },
   "Vinelasher Adept": {
    "colors": "G",
@@ -4309,8 +7044,19 @@
    "image": "https://cards.scryfall.io/large/front/e/5/e5ed142b-2b61-4ef5-8b23-2db2a0a0319d.jpg?1789556814",
    "scryfall_id": "e5ed142b-2b61-4ef5-8b23-2db2a0a0319d",
    "number": "119",
-   "grade": 2.2,
-   "source": "auto"
+   "grade": 2.85,
+   "source": "auto",
+   "grade_prerelease": 2.2,
+   "untapped": {
+    "gih_games": 120,
+    "gih_wr": 0.575,
+    "oh_games": 41,
+    "oh_wr": 0.5854,
+    "games": 260,
+    "ata": 9.04,
+    "alsa": 6.55,
+    "offered": 473
+   }
   },
   "Violent Echoes": {
    "colors": "R",
@@ -4326,8 +7072,19 @@
    "image": "https://cards.scryfall.io/large/front/a/d/ad03ba90-2442-4a71-94df-2088b5b63662.jpg?1789127599",
    "scryfall_id": "ad03ba90-2442-4a71-94df-2088b5b63662",
    "number": "95",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 3.12,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 53,
+    "gih_wr": 0.5472,
+    "oh_games": 19,
+    "oh_wr": 0.5263,
+    "games": 106,
+    "ata": 3.02,
+    "alsa": 2.82,
+    "offered": 77
+   }
   },
   "Vraska's Final Mercy": {
    "colors": "B",
@@ -4344,8 +7101,19 @@
    "image": "https://cards.scryfall.io/large/front/9/9/992bd991-7cfb-459f-bafd-9a44f3c925c5.jpg?1789699369",
    "scryfall_id": "992bd991-7cfb-459f-bafd-9a44f3c925c5",
    "number": "71",
-   "grade": 3.9,
-   "source": "auto"
+   "grade": 3.53,
+   "source": "auto",
+   "grade_prerelease": 3.9,
+   "untapped": {
+    "gih_games": 25,
+    "gih_wr": 0.52,
+    "oh_games": 7,
+    "oh_wr": 0.7143,
+    "games": 48,
+    "ata": 2.23,
+    "alsa": 2.45,
+    "offered": 22
+   }
   },
   "Vraska, Soul of Stone": {
    "colors": "WUR",
@@ -4359,8 +7127,19 @@
    "image": "https://cards.scryfall.io/large/front/f/3/f3869752-eade-4e7a-8dd1-68cafb9e10be.jpg?1789128008",
    "scryfall_id": "f3869752-eade-4e7a-8dd1-68cafb9e10be",
    "number": "277",
-   "grade": 3.3,
-   "source": "auto"
+   "grade": 2.63,
+   "source": "auto",
+   "grade_prerelease": 3.3,
+   "untapped": {
+    "gih_games": 19,
+    "gih_wr": 0.2632,
+    "oh_games": 4,
+    "oh_wr": 0.25,
+    "games": 40,
+    "ata": 7.45,
+    "alsa": 5.33,
+    "offered": 76
+   }
   },
   "Vraska, the Cutting Glare": {
    "colors": "BG",
@@ -4376,8 +7155,19 @@
    "image": "https://cards.scryfall.io/large/front/5/c/5c28b012-5efb-488f-a1c1-09e2dddfd6ee.jpg?1789127776",
    "scryfall_id": "5c28b012-5efb-488f-a1c1-09e2dddfd6ee",
    "number": "278",
-   "grade": 3.8,
-   "source": "auto"
+   "grade": 4.27,
+   "source": "auto",
+   "grade_prerelease": 3.8,
+   "untapped": {
+    "gih_games": 39,
+    "gih_wr": 0.7692,
+    "oh_games": 13,
+    "oh_wr": 0.6923,
+    "games": 68,
+    "ata": 3.61,
+    "alsa": 3.13,
+    "offered": 23
+   }
   },
   "Warrior's Blades": {
    "colors": "WR",
@@ -4393,8 +7183,19 @@
    "image": "https://cards.scryfall.io/large/front/c/6/c63d5b0e-ee72-42ed-aa7e-484ba84507cd.jpg?1789007648",
    "scryfall_id": "c63d5b0e-ee72-42ed-aa7e-484ba84507cd",
    "number": "163",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 3.29,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 62,
+    "gih_wr": 0.6452,
+    "oh_games": 28,
+    "oh_wr": 0.6429,
+    "games": 100,
+    "ata": 5.61,
+    "alsa": 4.65,
+    "offered": 153
+   }
   },
   "Way of the Cryomancer": {
    "colors": "U",
@@ -4410,8 +7211,19 @@
    "image": "https://cards.scryfall.io/large/front/8/3/838b0efb-7398-4df9-8fdf-b8af43b47938.jpg?1789014637",
    "scryfall_id": "838b0efb-7398-4df9-8fdf-b8af43b47938",
    "number": "223",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 2.73,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 78,
+    "gih_wr": 0.5,
+    "oh_games": 36,
+    "oh_wr": 0.5278,
+    "games": 145,
+    "ata": 5.92,
+    "alsa": 5.04,
+    "offered": 168
+   }
   },
   "Way of the Deathbringer": {
    "colors": "B",
@@ -4429,8 +7241,19 @@
    "image": "https://cards.scryfall.io/large/front/1/2/12dd46b2-e892-4660-b120-55766fd4d878.jpg?1789729576",
    "scryfall_id": "12dd46b2-e892-4660-b120-55766fd4d878",
    "number": "238",
-   "grade": 3.2,
-   "source": "auto"
+   "grade": 2.37,
+   "source": "auto",
+   "grade_prerelease": 3.2,
+   "untapped": {
+    "gih_games": 47,
+    "gih_wr": 0.383,
+    "oh_games": 15,
+    "oh_wr": 0.2667,
+    "games": 103,
+    "ata": 7.46,
+    "alsa": 5.45,
+    "offered": 144
+   }
   },
   "Way of the Mentor": {
    "colors": "W",
@@ -4446,8 +7269,19 @@
    "image": "https://cards.scryfall.io/large/front/1/a/1a59d5b1-12d6-486b-bd29-ca371359addd.jpg?1789729554",
    "scryfall_id": "1a59d5b1-12d6-486b-bd29-ca371359addd",
    "number": "208",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 2.7,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 37,
+    "gih_wr": 0.4595,
+    "oh_games": 19,
+    "oh_wr": 0.5263,
+    "games": 93,
+    "ata": 7.22,
+    "alsa": 5.92,
+    "offered": 147
+   }
   },
   "Way of the Mind Sculptor": {
    "colors": "U",
@@ -4464,7 +7298,18 @@
    "scryfall_id": "5838af68-66c3-4fe8-ab89-0a1721b0cfeb",
    "number": "224",
    "grade": 3.1,
-   "source": "auto"
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 74,
+    "gih_wr": 0.5676,
+    "oh_games": 25,
+    "oh_wr": 0.52,
+    "games": 152,
+    "ata": 5.27,
+    "alsa": 5.0,
+    "offered": 128
+   }
   },
   "Way of the Necromancer": {
    "colors": "B",
@@ -4479,8 +7324,19 @@
    "image": "https://cards.scryfall.io/large/front/a/0/a0ff9689-ea49-4fff-b37c-4abbaeb0f73d.jpg?1789729526",
    "scryfall_id": "a0ff9689-ea49-4fff-b37c-4abbaeb0f73d",
    "number": "239",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.04,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 27,
+    "gih_wr": 0.5926,
+    "oh_games": 7,
+    "oh_wr": 0.7143,
+    "games": 39,
+    "ata": 10.44,
+    "alsa": 7.07,
+    "offered": 227
+   }
   },
   "Way of the Paradox": {
    "colors": "G",
@@ -4497,8 +7353,19 @@
    "image": "https://cards.scryfall.io/large/front/9/8/98dc5470-507a-4364-8480-42607255e56c.jpg?1789729606",
    "scryfall_id": "98dc5470-507a-4364-8480-42607255e56c",
    "number": "267",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 3.36,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 73,
+    "gih_wr": 0.6164,
+    "oh_games": 33,
+    "oh_wr": 0.6061,
+    "games": 145,
+    "ata": 6.54,
+    "alsa": 4.81,
+    "offered": 142
+   }
   },
   "Way of the Pyromancer": {
    "colors": "R",
@@ -4514,8 +7381,19 @@
    "image": "https://cards.scryfall.io/large/front/c/1/c1a00020-7c14-4503-a057-5763704bb83e.jpg?1788878311",
    "scryfall_id": "c1a00020-7c14-4503-a057-5763704bb83e",
    "number": "254",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.31,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 61,
+    "gih_wr": 0.4262,
+    "oh_games": 23,
+    "oh_wr": 0.3478,
+    "games": 122,
+    "ata": 5.34,
+    "alsa": 4.37,
+    "offered": 138
+   }
   },
   "Way of the Warlord": {
    "colors": "R",
@@ -4531,8 +7409,19 @@
    "image": "https://cards.scryfall.io/large/front/6/d/6d86e410-20c4-4248-96bf-5780ece6274a.jpg?1789729585",
    "scryfall_id": "6d86e410-20c4-4248-96bf-5780ece6274a",
    "number": "255",
-   "grade": 3.1,
-   "source": "auto"
+   "grade": 2.35,
+   "source": "auto",
+   "grade_prerelease": 3.1,
+   "untapped": {
+    "gih_games": 40,
+    "gih_wr": 0.375,
+    "oh_games": 18,
+    "oh_wr": 0.2778,
+    "games": 97,
+    "ata": 5.22,
+    "alsa": 4.09,
+    "offered": 106
+   }
   },
   "Way of the Wildspeaker": {
    "colors": "G",
@@ -4549,8 +7438,19 @@
    "image": "https://cards.scryfall.io/large/front/a/2/a252cb01-537b-4afe-9abc-81a98c4a1439.jpg?1789729602",
    "scryfall_id": "a252cb01-537b-4afe-9abc-81a98c4a1439",
    "number": "268",
-   "grade": 3.2,
-   "source": "auto"
+   "grade": 3.02,
+   "source": "auto",
+   "grade_prerelease": 3.2,
+   "untapped": {
+    "gih_games": 79,
+    "gih_wr": 0.5443,
+    "oh_games": 29,
+    "oh_wr": 0.5517,
+    "games": 170,
+    "ata": 3.77,
+    "alsa": 2.94,
+    "offered": 88
+   }
   },
   "Winter, Team Player": {
    "colors": "R",
@@ -4564,8 +7464,19 @@
    "image": "https://cards.scryfall.io/large/front/d/f/df8713cd-3f4b-43ef-adbd-e37c2617c617.jpg?1789128020",
    "scryfall_id": "df8713cd-3f4b-43ef-adbd-e37c2617c617",
    "number": "256",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.62,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 8,
+    "gih_wr": 0.125,
+    "oh_games": 0,
+    "oh_wr": null,
+    "games": 24,
+    "ata": 8.98,
+    "alsa": 6.29,
+    "offered": 224
+   }
   },
   "Wrath of the Bloodmane": {
    "colors": "R",
@@ -4579,8 +7490,19 @@
    "image": "https://cards.scryfall.io/large/front/b/5/b5b55617-684a-4036-be9b-a3b24fc9cd5a.jpg?1789385820",
    "scryfall_id": "b5b55617-684a-4036-be9b-a3b24fc9cd5a",
    "number": "96",
-   "grade": 3.2,
-   "source": "auto"
+   "grade": 2.72,
+   "source": "auto",
+   "grade_prerelease": 3.2,
+   "untapped": {
+    "gih_games": 123,
+    "gih_wr": 0.5041,
+    "oh_games": 44,
+    "oh_wr": 0.4318,
+    "games": 234,
+    "ata": 5.05,
+    "alsa": 4.24,
+    "offered": 283
+   }
   },
   "Wrecking Gecko": {
    "colors": "G",
@@ -4595,8 +7517,19 @@
    "image": "https://cards.scryfall.io/large/front/3/d/3d693cb0-681e-480a-8f70-07e94c39225c.jpg?1789385843",
    "scryfall_id": "3d693cb0-681e-480a-8f70-07e94c39225c",
    "number": "120",
-   "grade": 2.6,
-   "source": "auto"
+   "grade": 2.48,
+   "source": "auto",
+   "grade_prerelease": 2.6,
+   "untapped": {
+    "gih_games": 69,
+    "gih_wr": 0.4928,
+    "oh_games": 27,
+    "oh_wr": 0.4444,
+    "games": 148,
+    "ata": 10.06,
+    "alsa": 7.52,
+    "offered": 575
+   }
   },
   "Yargle, Glutton of Urborg": {
    "colors": "B",
@@ -4611,7 +7544,8 @@
    "scryfall_id": "04c816fb-5951-4db1-8834-ed3f0b36bfe1",
    "number": "241",
    "grade": 2.9,
-   "source": "auto"
+   "source": "auto",
+   "grade_prerelease": 2.9
   },
   "Yargle, Goliath of Otaria": {
    "colors": "U",
@@ -4625,8 +7559,19 @@
    "image": "https://cards.scryfall.io/large/front/f/4/f45ba926-6496-4bd4-96eb-663946d56bbf.jpg?1789128043",
    "scryfall_id": "f45ba926-6496-4bd4-96eb-663946d56bbf",
    "number": "225",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.69,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 12,
+    "gih_wr": 0.4167,
+    "oh_games": 3,
+    "oh_wr": 0.6667,
+    "games": 26,
+    "ata": 10.65,
+    "alsa": 8.11,
+    "offered": 271
+   }
   },
   "Yoshimaru, Beloved Companion": {
    "colors": "W",
@@ -4640,8 +7585,19 @@
    "image": "https://cards.scryfall.io/large/front/3/8/384f3b7d-8d7f-41bf-bebd-64e8babe7fca.jpg?1789470881",
    "scryfall_id": "384f3b7d-8d7f-41bf-bebd-64e8babe7fca",
    "number": "209",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.74,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 66,
+    "gih_wr": 0.5152,
+    "oh_games": 18,
+    "oh_wr": 0.7222,
+    "games": 137,
+    "ata": 5.85,
+    "alsa": 4.69,
+    "offered": 151
+   }
   },
   "Yoshimaru, Scrappy Stray": {
    "colors": "G",
@@ -4655,8 +7611,19 @@
    "image": "https://cards.scryfall.io/large/front/b/8/b8dfd087-2434-42c6-ac4c-1decbcdde2db.jpg?1789470909",
    "scryfall_id": "b8dfd087-2434-42c6-ac4c-1decbcdde2db",
    "number": "269",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 3.02,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 81,
+    "gih_wr": 0.5679,
+    "oh_games": 31,
+    "oh_wr": 0.6774,
+    "games": 176,
+    "ata": 4.93,
+    "alsa": 3.76,
+    "offered": 129
+   }
   },
   "Your Fate Ends Here": {
    "colors": "W",
@@ -4671,8 +7638,19 @@
    "image": "https://cards.scryfall.io/large/front/2/5/25000a17-b701-4d69-b2ef-2c74029199d3.jpg?1789729751",
    "scryfall_id": "25000a17-b701-4d69-b2ef-2c74029199d3",
    "number": "24",
-   "grade": 3.6,
-   "source": "auto"
+   "grade": 2.94,
+   "source": "auto",
+   "grade_prerelease": 3.6,
+   "untapped": {
+    "gih_games": 89,
+    "gih_wr": 0.5056,
+    "oh_games": 32,
+    "oh_wr": 0.4375,
+    "games": 177,
+    "ata": 3.21,
+    "alsa": 3.39,
+    "offered": 101
+   }
   },
   "Yuriko, Blade of the Mighty": {
    "colors": "W",
@@ -4684,8 +7662,19 @@
    "image": "https://cards.scryfall.io/large/front/c/c/ccbe92a5-42bc-4228-9d5a-212df2f5dc15.jpg?1789128047",
    "scryfall_id": "ccbe92a5-42bc-4228-9d5a-212df2f5dc15",
    "number": "210",
-   "grade": 2.9,
-   "source": "auto"
+   "grade": 2.42,
+   "source": "auto",
+   "grade_prerelease": 2.9,
+   "untapped": {
+    "gih_games": 36,
+    "gih_wr": 0.4167,
+    "oh_games": 14,
+    "oh_wr": 0.4286,
+    "games": 84,
+    "ata": 7.16,
+    "alsa": 5.0,
+    "offered": 175
+   }
   },
   "Yuriko, Hope from the Shadows": {
    "colors": "U",
@@ -4699,8 +7688,19 @@
    "image": "https://cards.scryfall.io/large/front/4/5/45e81487-8b8c-480b-922a-eaa9edc7201d.jpg?1789127717",
    "scryfall_id": "45e81487-8b8c-480b-922a-eaa9edc7201d",
    "number": "226",
-   "grade": 2.7,
-   "source": "auto"
+   "grade": 2.31,
+   "source": "auto",
+   "grade_prerelease": 2.7,
+   "untapped": {
+    "gih_games": 42,
+    "gih_wr": 0.4286,
+    "oh_games": 18,
+    "oh_wr": 0.4444,
+    "games": 81,
+    "ata": 8.82,
+    "alsa": 6.44,
+    "offered": 217
+   }
   }
  },
  "fixing": {
@@ -4911,5 +7911,1104 @@
    ]
   ],
   "note": "43 pairs = 66 U + 14 R + 6 M. Booster: three echo-slot cards, two of which are one real pair. Pairing by name stem plus the five Way pairs; the Jace/Tam rare pair is inferred from the count."
+ },
+ "untapped": {
+  "captured": "2026-09-24 20:34 UTC",
+  "event": "PremierDraft_FRAEA_20260923",
+  "games_by_rank": {
+   "bronze": 443,
+   "silver": 331,
+   "gold": 252,
+   "platinum": 418
+  },
+  "matches": 1859,
+  "gih_mean": 0.5312,
+  "gih_sd": 0.0819,
+  "blend": "grade = w*data + (1-w)*grade_prerelease, w = gih_games/(gih_games+60); data grade on 0-5 = (5.5 + z*1.6)/2",
+  "color_pairs": {
+   "WU": {
+    "matches": 203,
+    "wins": 121,
+    "wr": 0.5961,
+    "popularity": 10.46
+   },
+   "WB": {
+    "matches": 128,
+    "wins": 71,
+    "wr": 0.5547,
+    "popularity": 6.97
+   },
+   "UB": {
+    "matches": 150,
+    "wins": 78,
+    "wr": 0.52,
+    "popularity": 9.38
+   },
+   "WUB": {
+    "matches": 23,
+    "wins": 16,
+    "wr": 0.6957,
+    "popularity": 0.81
+   },
+   "WR": {
+    "matches": 115,
+    "wins": 61,
+    "wr": 0.5304,
+    "popularity": 6.45
+   },
+   "UR": {
+    "matches": 182,
+    "wins": 98,
+    "wr": 0.5385,
+    "popularity": 9.38
+   },
+   "WUR": {
+    "matches": 45,
+    "wins": 30,
+    "wr": 0.6667,
+    "popularity": 2.15
+   },
+   "BR": {
+    "matches": 115,
+    "wins": 56,
+    "wr": 0.487,
+    "popularity": 6.17
+   },
+   "UBR": {
+    "matches": 22,
+    "wins": 11,
+    "wr": 0.5,
+    "popularity": 1.35
+   },
+   "WG": {
+    "matches": 216,
+    "wins": 107,
+    "wr": 0.4954,
+    "popularity": 11.8
+   },
+   "UG": {
+    "matches": 91,
+    "wins": 46,
+    "wr": 0.5055,
+    "popularity": 4.83
+   },
+   "BG": {
+    "matches": 124,
+    "wins": 67,
+    "wr": 0.5403,
+    "popularity": 7.78
+   },
+   "WBG": {
+    "matches": 44,
+    "wins": 29,
+    "wr": 0.6591,
+    "popularity": 1.62
+   },
+   "UBG": {
+    "matches": 24,
+    "wins": 15,
+    "wr": 0.625,
+    "popularity": 1.34
+   },
+   "RG": {
+    "matches": 217,
+    "wins": 122,
+    "wr": 0.5622,
+    "popularity": 10.72
+   },
+   "URG": {
+    "matches": 35,
+    "wins": 22,
+    "wr": 0.6286,
+    "popularity": 1.87
+   },
+   "BRG": {
+    "matches": 19,
+    "wins": 15,
+    "wr": 0.7895,
+    "popularity": 1.08
+   },
+   "other": {
+    "matches": 1859,
+    "wins": 1009,
+    "wr": 0.5428,
+    "popularity": 99.99
+   }
+  },
+  "trophy_decks": [
+   {
+    "player": "redryansox",
+    "wins": 7,
+    "losses": 2,
+    "rank": 4,
+    "colors": "RG",
+    "date": "2026-09-24 16:42:29+00:00",
+    "lands": 17,
+    "guild": "Gruul",
+    "rares": 1,
+    "rank_name": "Gold",
+    "key_cards": [
+     "Compel Brutality",
+     "Craftwork Crusher",
+     "Heartwood Crafter",
+     "Konstrari Improviser",
+     "Awaken the Inferno"
+    ],
+    "cards": [
+     {
+      "name": "Heartwood Crafter",
+      "qty": 1,
+      "title_id": 1132149
+     },
+     {
+      "name": "Arcane Amphisbaena",
+      "qty": 1,
+      "title_id": 1132117
+     },
+     {
+      "name": "Compel Brutality",
+      "qty": 1,
+      "title_id": 1132134
+     },
+     {
+      "name": "Konstrari Improviser",
+      "qty": 4,
+      "title_id": 1132269
+     },
+     {
+      "name": "Sureshot Sower",
+      "qty": 1,
+      "title_id": 1132185
+     },
+     {
+      "name": "Twinned Vision",
+      "qty": 2,
+      "title_id": 1132334
+     },
+     {
+      "name": "Inspired Tethermage",
+      "qty": 1,
+      "title_id": 1132167
+     },
+     {
+      "name": "Restore with Empathy",
+      "qty": 1,
+      "title_id": 1132177
+     },
+     {
+      "name": "Bestial Incursion",
+      "qty": 1,
+      "title_id": 1132121
+     },
+     {
+      "name": "Traxos, Scourge Eternal",
+      "qty": 1,
+      "title_id": 1132776
+     },
+     {
+      "name": "Violent Echoes",
+      "qty": 1,
+      "title_id": 1132109
+     },
+     {
+      "name": "Awaken the Inferno",
+      "qty": 2,
+      "title_id": 1132037
+     },
+     {
+      "name": "Wrecking Gecko",
+      "qty": 3,
+      "title_id": 1132199
+     },
+     {
+      "name": "Kiora of Fire and Ashes",
+      "qty": 1,
+      "title_id": 1132648
+     },
+     {
+      "name": "Vinelasher Adept",
+      "qty": 1,
+      "title_id": 1132195
+     },
+     {
+      "name": "Verdant Kraken",
+      "qty": 1,
+      "title_id": 1132191
+     }
+    ]
+   },
+   {
+    "player": "crokodil",
+    "wins": 7,
+    "losses": 1,
+    "rank": 5,
+    "colors": "WU",
+    "date": "2026-09-24 14:19:42+00:00",
+    "lands": 17,
+    "guild": "Azorius",
+    "rares": 3,
+    "rank_name": "Platinum",
+    "key_cards": [
+     "Hexhaven Battalion",
+     "Semester Foreseer",
+     "Prudent Fateseer",
+     "Tam's Resistance",
+     "Surgical Precision"
+    ],
+    "cards": [
+     {
+      "name": "Unsummon",
+      "qty": 1,
+      "title_id": 398
+     },
+     {
+      "name": "Campus Crier",
+      "qty": 2,
+      "title_id": 1131806
+     },
+     {
+      "name": "Proft, Consulting Detective",
+      "qty": 1,
+      "title_id": 1132535
+     },
+     {
+      "name": "Prophesied End",
+      "qty": 1,
+      "title_id": 1131848
+     },
+     {
+      "name": "Surveillance Phantasm",
+      "qty": 2,
+      "title_id": 1131933
+     },
+     {
+      "name": "Tam's Resistance",
+      "qty": 2,
+      "title_id": 1132317
+     },
+     {
+      "name": "Vigorbloom Vanguard",
+      "qty": 1,
+      "title_id": 1132348
+     },
+     {
+      "name": "Chandra, Chill of Compliance",
+      "qty": 1,
+      "title_id": 1132509
+     },
+     {
+      "name": "Infinite Coursework",
+      "qty": 1,
+      "title_id": 1131894
+     },
+     {
+      "name": "Jace's Machinations",
+      "qty": 1,
+      "title_id": 1131898
+     },
+     {
+      "name": "Memory Trap",
+      "qty": 1,
+      "title_id": 1131843
+     },
+     {
+      "name": "Mindseeker Oculus",
+      "qty": 1,
+      "title_id": 1131901
+     },
+     {
+      "name": "Prudent Fateseer",
+      "qty": 2,
+      "title_id": 1132293
+     },
+     {
+      "name": "Hapatra, the Desert Frost",
+      "qty": 1,
+      "title_id": 1132520
+     },
+     {
+      "name": "Semester Foreseer",
+      "qty": 2,
+      "title_id": 1131923
+     },
+     {
+      "name": "Sphinx of False Conclusions",
+      "qty": 1,
+      "title_id": 1131926
+     },
+     {
+      "name": "Saheeli, Consul of Oversight",
+      "qty": 1,
+      "title_id": 1132476
+     },
+     {
+      "name": "Ruric Thar, Biomagus",
+      "qty": 1,
+      "title_id": 1132539
+     },
+     {
+      "name": "Room of Refuge",
+      "qty": 1,
+      "title_id": 1132430
+     }
+    ]
+   },
+   {
+    "player": "crokodil",
+    "wins": 7,
+    "losses": 2,
+    "rank": 5,
+    "colors": "WR",
+    "date": "2026-09-24 12:18:46+00:00",
+    "lands": 16,
+    "guild": "Boros",
+    "rares": 6,
+    "rank_name": "Platinum",
+    "key_cards": [
+     "Emergency Phytomedic",
+     "Warrior's Blades",
+     "Blossom-Blessed Angel",
+     "Memory Trap",
+     "Fulminous Forte"
+    ],
+    "cards": [
+     {
+      "name": "Emergency Phytomedic",
+      "qty": 2,
+      "title_id": 1132242
+     },
+     {
+      "name": "Liliana the Faultless",
+      "qty": 1,
+      "title_id": 1132466
+     },
+     {
+      "name": "Enlightened Confidant",
+      "qty": 1,
+      "title_id": 1131809
+     },
+     {
+      "name": "Gallia, the Merrymaker",
+      "qty": 1,
+      "title_id": 1132641
+     },
+     {
+      "name": "Samut, Hazoret's Champion",
+      "qty": 1,
+      "title_id": 1132663
+     },
+     {
+      "name": "Skilled Battlecarver",
+      "qty": 1,
+      "title_id": 1132101
+     },
+     {
+      "name": "Solitary Cell",
+      "qty": 1,
+      "title_id": 1132301
+     },
+     {
+      "name": "Unflinching Hortimancer",
+      "qty": 1,
+      "title_id": 1131868
+     },
+     {
+      "name": "Fulminous Forte",
+      "qty": 1,
+      "title_id": 1132072
+     },
+     {
+      "name": "Generous Revival",
+      "qty": 1,
+      "title_id": 1131822
+     },
+     {
+      "name": "Lyra, Archangel of Dawn",
+      "qty": 1,
+      "title_id": 1132470
+     },
+     {
+      "name": "Mabel, Valley Hero",
+      "qty": 1,
+      "title_id": 1132756
+     },
+     {
+      "name": "Memory Trap",
+      "qty": 2,
+      "title_id": 1131843
+     },
+     {
+      "name": "Shatterwing Pegasus",
+      "qty": 1,
+      "title_id": 1131861
+     },
+     {
+      "name": "Yoshimaru, Beloved Companion",
+      "qty": 1,
+      "title_id": 1132498
+     },
+     {
+      "name": "Your Fate Ends Here",
+      "qty": 1,
+      "title_id": 1131870
+     },
+     {
+      "name": "Blossom-Blessed Angel",
+      "qty": 2,
+      "title_id": 1131804
+     },
+     {
+      "name": "Warrior's Blades",
+      "qty": 1,
+      "title_id": 1132353
+     },
+     {
+      "name": "Awaken the Inferno",
+      "qty": 1,
+      "title_id": 1132037
+     },
+     {
+      "name": "Jiang Yanggu, Alone",
+      "qty": 1,
+      "title_id": 1132645
+     },
+     {
+      "name": "Ajani Unrelenting",
+      "qty": 1,
+      "title_id": 1132632
+     }
+    ]
+   },
+   {
+    "player": "Leon_AC13",
+    "wins": 7,
+    "losses": 1,
+    "rank": 2,
+    "colors": "BRG",
+    "date": "2026-09-24 11:51:50+00:00",
+    "lands": 17,
+    "guild": "Jund",
+    "rares": 4,
+    "rank_name": "Bronze",
+    "key_cards": [
+     "Arcane Amphisbaena",
+     "Stingerquill Charm",
+     "Last Gasp",
+     "Rewrite Regrets",
+     "Theoretical Necromancer"
+    ],
+    "cards": [
+     {
+      "name": "Mabel, Bitter Recluse",
+      "qty": 1,
+      "title_id": 1132594
+     },
+     {
+      "name": "Arcane Amphisbaena",
+      "qty": 2,
+      "title_id": 1132117
+     },
+     {
+      "name": "Compel Brutality",
+      "qty": 1,
+      "title_id": 1132134
+     },
+     {
+      "name": "Ferocity of the Hunt",
+      "qty": 1,
+      "title_id": 1132252
+     },
+     {
+      "name": "Gallia, Tragic Host",
+      "qty": 1,
+      "title_id": 1132570
+     },
+     {
+      "name": "Last Gasp",
+      "qty": 1,
+      "title_id": 3291
+     },
+     {
+      "name": "Marwyn, the Preserver",
+      "qty": 1,
+      "title_id": 1132708
+     },
+     {
+      "name": "Something Worth Saving",
+      "qty": 1,
+      "title_id": 1132182
+     },
+     {
+      "name": "Stingerquill Charm",
+      "qty": 2,
+      "title_id": 1132306
+     },
+     {
+      "name": "Void Extrapolator",
+      "qty": 1,
+      "title_id": 1132023
+     },
+     {
+      "name": "Yoshimaru, Scrappy Stray",
+      "qty": 1,
+      "title_id": 1132733
+     },
+     {
+      "name": "Proft, Sinister Mastermind",
+      "qty": 1,
+      "title_id": 1132605
+     },
+     {
+      "name": "Simulacrum Shaper",
+      "qty": 1,
+      "title_id": 1132180
+     },
+     {
+      "name": "Theoretical Necromancer",
+      "qty": 1,
+      "title_id": 1132021
+     },
+     {
+      "name": "Theorix Metamage",
+      "qty": 1,
+      "title_id": 1132330
+     },
+     {
+      "name": "Vraska, the Cutting Glare",
+      "qty": 1,
+      "title_id": 1132769
+     },
+     {
+      "name": "Aerid Konstrari",
+      "qty": 1,
+      "title_id": 1132204
+     },
+     {
+      "name": "Rewrite Regrets",
+      "qty": 1,
+      "title_id": 1131996
+     },
+     {
+      "name": "Wrecking Gecko",
+      "qty": 1,
+      "title_id": 1132199
+     },
+     {
+      "name": "Vinelasher Adept",
+      "qty": 1,
+      "title_id": 1132195
+     },
+     {
+      "name": "Craftwork Crusher",
+      "qty": 1,
+      "title_id": 1132229
+     },
+     {
+      "name": "Rockfall Vale",
+      "qty": 1,
+      "title_id": 530684
+     },
+     {
+      "name": "Formidable Commons",
+      "qty": 1,
+      "title_id": 1132407
+     },
+     {
+      "name": "Stingerquill Annex",
+      "qty": 2,
+      "title_id": 1132435
+     }
+    ]
+   },
+   {
+    "player": "Leonardo_AC13",
+    "wins": 7,
+    "losses": 2,
+    "rank": 2,
+    "colors": "WB",
+    "date": "2026-09-24 09:45:13+00:00",
+    "lands": 17,
+    "guild": "Orzhov",
+    "rares": 2,
+    "rank_name": "Bronze",
+    "key_cards": [
+     "Edgar, Ancient Bloodlord",
+     "Blossom-Blessed Angel",
+     "Campus Crier",
+     "Tinybones, Pocket Nuisance",
+     "Twisted Fates"
+    ],
+    "cards": [
+     {
+      "name": "Campus Crier",
+      "qty": 2,
+      "title_id": 1131806
+     },
+     {
+      "name": "Enlightened Confidant",
+      "qty": 1,
+      "title_id": 1131809
+     },
+     {
+      "name": "Gallia, Tragic Host",
+      "qty": 1,
+      "title_id": 1132570
+     },
+     {
+      "name": "Last Gasp",
+      "qty": 1,
+      "title_id": 3291
+     },
+     {
+      "name": "Multiply by Zero",
+      "qty": 2,
+      "title_id": 1131984
+     },
+     {
+      "name": "Cast Away Doubt",
+      "qty": 1,
+      "title_id": 1131962
+     },
+     {
+      "name": "Gideon the Oathless",
+      "qty": 1,
+      "title_id": 1132577
+     },
+     {
+      "name": "Proft, Sinister Mastermind",
+      "qty": 1,
+      "title_id": 1132605
+     },
+     {
+      "name": "Theoretical Necromancer",
+      "qty": 1,
+      "title_id": 1132021
+     },
+     {
+      "name": "Theorix Metamage",
+      "qty": 1,
+      "title_id": 1132330
+     },
+     {
+      "name": "Tinybones, Pocket Nuisance",
+      "qty": 2,
+      "title_id": 1132613
+     },
+     {
+      "name": "Blossom-Blessed Angel",
+      "qty": 2,
+      "title_id": 1131804
+     },
+     {
+      "name": "Extended Absence",
+      "qty": 1,
+      "title_id": 1131973
+     },
+     {
+      "name": "Rampart Hunter",
+      "qty": 1,
+      "title_id": 1131990
+     },
+     {
+      "name": "Rewrite Regrets",
+      "qty": 1,
+      "title_id": 1131996
+     },
+     {
+      "name": "Teyo, Diamondblade Mage",
+      "qty": 1,
+      "title_id": 1132609
+     },
+     {
+      "name": "Thalia, the Survivor",
+      "qty": 1,
+      "title_id": 1132482
+     },
+     {
+      "name": "Traxos, Scourge Eternal",
+      "qty": 1,
+      "title_id": 1132776
+     },
+     {
+      "name": "Way of the Healer",
+      "qty": 1,
+      "title_id": 1132490
+     }
+    ]
+   },
+   {
+    "player": "Tom_AC13",
+    "wins": 7,
+    "losses": 2,
+    "rank": 2,
+    "colors": "WBG",
+    "date": "2026-09-24 06:15:38+00:00",
+    "lands": 17,
+    "guild": "Abzan",
+    "rares": 6,
+    "rank_name": "Bronze",
+    "key_cards": [
+     "Fatehold Chronologist",
+     "Twisted Fates",
+     "Surgical Precision",
+     "Generous Revival",
+     "Hexhaven Battalion"
+    ],
+    "cards": [
+     {
+      "name": "Blessed Ghoul",
+      "qty": 2,
+      "title_id": 1132214
+     },
+     {
+      "name": "Bloodline Recollector",
+      "qty": 1,
+      "title_id": 1131955
+     },
+     {
+      "name": "Carnivorous Cultivator",
+      "qty": 1,
+      "title_id": 1132129
+     },
+     {
+      "name": "Fatehold Chronologist",
+      "qty": 2,
+      "title_id": 1132251
+     },
+     {
+      "name": "Liliana the Repentant",
+      "qty": 1,
+      "title_id": 1132583
+     },
+     {
+      "name": "Surgical Precision",
+      "qty": 1,
+      "title_id": 1131863
+     },
+     {
+      "name": "The Echoverse Fulcrum",
+      "qty": 1,
+      "title_id": 1132378
+     },
+     {
+      "name": "Generous Revival",
+      "qty": 1,
+      "title_id": 1131822
+     },
+     {
+      "name": "Primal Witchstalker",
+      "qty": 1,
+      "title_id": 1132286
+     },
+     {
+      "name": "Screeching Soulbreaker",
+      "qty": 1,
+      "title_id": 1132007
+     },
+     {
+      "name": "Vindictive Triumph",
+      "qty": 1,
+      "title_id": 1132350
+     },
+     {
+      "name": "Your Fate Ends Here",
+      "qty": 1,
+      "title_id": 1131870
+     },
+     {
+      "name": "Bloombrute",
+      "qty": 1,
+      "title_id": 1132217
+     },
+     {
+      "name": "Rewrite Regrets",
+      "qty": 1,
+      "title_id": 1131996
+     },
+     {
+      "name": "Twisted Fates",
+      "qty": 3,
+      "title_id": 1132338
+     },
+     {
+      "name": "Apex Witchstalker",
+      "qty": 1,
+      "title_id": 1131952
+     },
+     {
+      "name": "Hexhaven Battalion",
+      "qty": 1,
+      "title_id": 1131836
+     },
+     {
+      "name": "Vinelasher Adept",
+      "qty": 1,
+      "title_id": 1132195
+     },
+     {
+      "name": "Kindred Judgment",
+      "qty": 1,
+      "title_id": 1131838
+     },
+     {
+      "name": "Room of Refuge",
+      "qty": 1,
+      "title_id": 1132430
+     },
+     {
+      "name": "Vigorbloom Annex",
+      "qty": 2,
+      "title_id": 1132445
+     }
+    ]
+   },
+   {
+    "player": "DamienF16",
+    "wins": 7,
+    "losses": 2,
+    "rank": 2,
+    "colors": "WR",
+    "date": "2026-09-24 05:21:19+00:00",
+    "lands": 17,
+    "guild": "Boros",
+    "rares": 0,
+    "rank_name": "Bronze",
+    "key_cards": [
+     "Emergency Phytomedic",
+     "Warrior's Blades",
+     "Blossom-Blessed Angel",
+     "Memory Trap",
+     "Fulminous Forte"
+    ],
+    "cards": [
+     {
+      "name": "Emergency Phytomedic",
+      "qty": 2,
+      "title_id": 1132242
+     },
+     {
+      "name": "Fatehold Chronologist",
+      "qty": 1,
+      "title_id": 1132251
+     },
+     {
+      "name": "Predictive Preparations",
+      "qty": 1,
+      "title_id": 1131845
+     },
+     {
+      "name": "Skilled Battlecarver",
+      "qty": 1,
+      "title_id": 1132101
+     },
+     {
+      "name": "Surgical Precision",
+      "qty": 1,
+      "title_id": 1131863
+     },
+     {
+      "name": "Vigorbloom Vanguard",
+      "qty": 1,
+      "title_id": 1132348
+     },
+     {
+      "name": "Danitha, Sword of Hope",
+      "qty": 1,
+      "title_id": 1132453
+     },
+     {
+      "name": "Fulminous Forte",
+      "qty": 1,
+      "title_id": 1132072
+     },
+     {
+      "name": "Graft Surgeon",
+      "qty": 1,
+      "title_id": 1131828
+     },
+     {
+      "name": "Koth of the Homestead",
+      "qty": 1,
+      "title_id": 1132463
+     },
+     {
+      "name": "Rescue Girl, First Responder",
+      "qty": 2,
+      "title_id": 1132473
+     },
+     {
+      "name": "Wrath of the Bloodmane",
+      "qty": 1,
+      "title_id": 1132113
+     },
+     {
+      "name": "Yoshimaru, Beloved Companion",
+      "qty": 1,
+      "title_id": 1132498
+     },
+     {
+      "name": "Blossom-Blessed Angel",
+      "qty": 1,
+      "title_id": 1131804
+     },
+     {
+      "name": "Heartstring Puller",
+      "qty": 1,
+      "title_id": 1132083
+     },
+     {
+      "name": "Warrior's Blades",
+      "qty": 3,
+      "title_id": 1132353
+     },
+     {
+      "name": "Yuriko, Blade of the Mighty",
+      "qty": 1,
+      "title_id": 1132501
+     },
+     {
+      "name": "Saheeli, Consul of Oversight",
+      "qty": 1,
+      "title_id": 1132476
+     },
+     {
+      "name": "Hexhaven Battalion",
+      "qty": 1,
+      "title_id": 1131836
+     },
+     {
+      "name": "Dedicated Commons",
+      "qty": 1,
+      "title_id": 1132400
+     }
+    ]
+   },
+   {
+    "player": "Garth-Morr",
+    "wins": 7,
+    "losses": 2,
+    "rank": 5,
+    "colors": "WB",
+    "date": "2026-09-24 05:05:32+00:00",
+    "lands": 16,
+    "guild": "Orzhov",
+    "rares": 5,
+    "rank_name": "Platinum",
+    "key_cards": [
+     "Edgar, Ancient Bloodlord",
+     "Blossom-Blessed Angel",
+     "Campus Crier",
+     "Tinybones, Pocket Nuisance",
+     "Twisted Fates"
+    ],
+    "cards": [
+     {
+      "name": "Emergency Phytomedic",
+      "qty": 1,
+      "title_id": 1132242
+     },
+     {
+      "name": "Guiding Hydra",
+      "qty": 2,
+      "title_id": 1131832
+     },
+     {
+      "name": "Mabel, Bitter Recluse",
+      "qty": 1,
+      "title_id": 1132594
+     },
+     {
+      "name": "Campus Crier",
+      "qty": 1,
+      "title_id": 1131806
+     },
+     {
+      "name": "Edgar, Ancient Bloodlord",
+      "qty": 2,
+      "title_id": 1132738
+     },
+     {
+      "name": "Enlightened Confidant",
+      "qty": 1,
+      "title_id": 1131809
+     },
+     {
+      "name": "Surgical Precision",
+      "qty": 1,
+      "title_id": 1131863
+     },
+     {
+      "name": "Teyo, Lightshield Expert",
+      "qty": 1,
+      "title_id": 1132479
+     },
+     {
+      "name": "Unflinching Hortimancer",
+      "qty": 1,
+      "title_id": 1131868
+     },
+     {
+      "name": "Generous Revival",
+      "qty": 1,
+      "title_id": 1131822
+     },
+     {
+      "name": "Koth of the Homestead",
+      "qty": 1,
+      "title_id": 1132463
+     },
+     {
+      "name": "Lyra, Archangel of Dawn",
+      "qty": 1,
+      "title_id": 1132470
+     },
+     {
+      "name": "Screeching Soulbreaker",
+      "qty": 1,
+      "title_id": 1132007
+     },
+     {
+      "name": "Shatterwing Pegasus",
+      "qty": 1,
+      "title_id": 1131861
+     },
+     {
+      "name": "Yoshimaru, Beloved Companion",
+      "qty": 1,
+      "title_id": 1132498
+     },
+     {
+      "name": "Blossom-Blessed Angel",
+      "qty": 1,
+      "title_id": 1131804
+     },
+     {
+      "name": "Rise of the Deathbringer",
+      "qty": 1,
+      "title_id": 1131998
+     },
+     {
+      "name": "Twisted Fates",
+      "qty": 2,
+      "title_id": 1132338
+     },
+     {
+      "name": "Apex Witchstalker",
+      "qty": 2,
+      "title_id": 1131952
+     },
+     {
+      "name": "Hexhaven Battalion",
+      "qty": 1,
+      "title_id": 1131836
+     },
+     {
+      "name": "Room of Refuge",
+      "qty": 1,
+      "title_id": 1132430
+     }
+    ]
+   }
+  ]
  }
 }
