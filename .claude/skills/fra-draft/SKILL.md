@@ -182,6 +182,10 @@ degree sign are generated placeholders shaped like FRA cards, not real spoilers
 - never present them as real cards. Practice drafts feed the same review and
 playstyle pipeline.
 
+## Played decks
+
+The companion page has a **My Decks** tab: the user saves a deck they played (screenshot, Arena export, Rate-a-Deck list or practice run), asks Claude in-page for win conditions, combos, plan, keepable hands, weaknesses and cuts, adds their own points, and keeps a W–L record. When the user pastes such a deck here, give the same structure: win conditions with the cards involved, combos with the rules interaction, and a reply to each of their points.
+
 ## Playstyle
 
 The desktop app (`mtga-coach/`) profiles the user from their saved drafts:

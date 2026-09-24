@@ -20,6 +20,7 @@ python reality-fracture\tools\untapped_report.py reality-fracture\untapped\untap
 * `reality-fracture/companion/hexhaven.html` is the source of the published companion page (card art comes from `../card-images`, published as `cards/`).
 * `untapped_apply.py` rewrites the marked blocks in the companion page (data, tab, UI, card-sheet row) and
   blends the grades in `fra_ratings.json`: `grade = w * data + (1 - w) * grade_prerelease`, `w = games / (games + 60)`.
+* `mydecks_apply.py` installs the My Decks tab (decks you played, Claude's analysis of win conditions and combos, your points, W–L record) from `mydecks_ui.js` the same way.
 * `untapped_report.py` prints the Markdown for guide section 14.
 
 Only `pick-order.html` and `trophy-decks.html` carry data in a saved page; the tier-list and sealed pages
