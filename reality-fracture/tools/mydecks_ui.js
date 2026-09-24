@@ -82,6 +82,16 @@ function analysisHtml(a){
   if(a.on_your_points&&a.on_your_points.length) h+='<h4 style="margin:14px 0 4px">On your points</h4><ul style="font-size:13.5px;padding-left:18px">'+a.on_your_points.map(function(w){return '<li>'+esc(w)+'</li>';}).join('')+'</ul>';
   return h;
 }
+function revisionsHtml(d){
+  var rv=d.revisions||[]; if(!rv.length) return '';
+  var latest=rv[0];
+  var h='<div style="margin:10px 0 4px;padding:10px 12px;border:1px solid var(--accent);border-radius:10px"><div class="gmeta">Your latest point · '+String(latest.at).slice(0,16).replace('T',' ')+'</div>'+
+    '<p style="margin:4px 0;font-style:italic">“'+esc(latest.point)+'”</p>'+
+    (latest.reading?'<p style="margin:4px 0;font-size:13.5px"><strong>What it tells us:</strong> '+esc(latest.reading)+(latest.pattern?' <span class="gmeta">('+esc(latest.pattern)+')</span>':'')+'</p>':'')+
+    (latest.changes&&latest.changes.length?'<p style="margin:4px 0 0;font-size:13.5px"><strong>What changed below:</strong></p><ul style="margin:2px 0 0;padding-left:18px;font-size:13.5px">'+latest.changes.map(function(c){return '<li>'+esc(c)+'</li>';}).join('')+'</ul>':'<p class="gmeta" style="margin:4px 0 0">The analysis stood as it was.</p>')+'</div>';
+  if(rv.length>1) h+='<details style="margin:4px 0 8px"><summary class="gmeta" style="cursor:pointer">Earlier revisions ('+(rv.length-1)+')</summary>'+rv.slice(1).map(function(r){return '<div style="margin:8px 0;font-size:13px"><span class="gmeta">'+String(r.at).slice(0,10)+'</span> “'+esc(r.point)+'” — '+esc(r.reading||'')+(r.changes&&r.changes.length?'<ul style="margin:2px 0;padding-left:18px">'+r.changes.map(function(c){return '<li>'+esc(c)+'</li>';}).join('')+'</ul>':'')+'</div>';}).join('')+'</details>';
+  return h;
+}
 function renderDetail(){
   var d=deckOf(MD.cur); if(!d){ MD.cur=null; renderHome(); return; }
   var host=$('md-body'); var cs=colorsOf(d); var rt=ratingOf(d);
@@ -95,30 +105,38 @@ function renderDetail(){
     '<ul id="md-points" style="padding-left:18px;font-size:13.5px">'+(d.points||[]).map(function(p,i){return '<li style="margin:4px 0">'+esc(p.text)+' <span class="gmeta">'+String(p.at).slice(0,10)+'</span> <button class="linkbtn" type="button" data-md-pdel="'+i+'" style="padding:0 6px;font-size:11px" aria-label="Remove point">×</button></li>';}).join('')+'</ul>'+
     '<div style="display:flex;gap:8px"><input id="md-point" class="gsearch" style="flex:1" placeholder="Add a point…"><button class="linkbtn" type="button" id="md-addpoint">Add</button></div></div>';
   h+='<div class="card"><h4>Claude’s read</h4>'+(MD.sample?'<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><button class="linkbtn" type="button" id="md-analyse" style="border-color:var(--accent);color:var(--accent)">'+(d.analysis?'Analyse again':'Analyse this deck')+'</button><button class="linkbtn" type="button" id="md-astop" hidden>Stop</button><span class="gmeta" id="md-astatus"></span></div>':'<p class="gmeta">Analysis asks Claude on your account and only works inside the claude.ai viewer.</p>')+
+    (d.pendingPoint?'<p class="gmeta" style="color:var(--bad)">A point was added since the last analysis. Open this page in the claude.ai viewer to have it re-read.</p>':'')+
+    revisionsHtml(d)+
     '<div id="md-analysis">'+(d.analysis?analysisHtml(d.analysis)+'<p class="gmeta" style="margin-top:10px">Analysed '+String(d.analysedAt||'').slice(0,16).replace('T',' ')+'</p>':'')+'</div></div></div>';
   host.innerHTML=h; wireDetail(d);
 }
-async function analyse(d){
+async function analyse(d,newPoint){
   if(!MD.sample) return;
-  var ctl=new AbortController(); MD.ctl=ctl; var st=$('md-astatus'); st.textContent='Asking Claude… this takes a minute.'; $('md-analyse').disabled=true; $('md-astop').hidden=false;
+  if(MD.ctl) MD.ctl.abort();
+  var ctl=new AbortController(); MD.ctl=ctl; var st=$('md-astatus'); if(st) st.textContent=newPoint?'Reading your point and re-approaching the deck…':'Asking Claude… this takes a minute.'; if($('md-analyse')) $('md-analyse').disabled=true; if($('md-astop')) $('md-astop').hidden=false;
   var list=d.list.map(function(c){ return c.count+'x '+c.name+(BYNAME[c.name]?' — '+cardTx(c.name):''); }).join('\n');
   var pts=(d.points||[]).map(function(p){return '- '+p.text;}).join('\n');
   var prompt='You are a Magic: The Gathering Limited coach for the set Reality Fracture. Below is a 40-card deck the player has been playing on Arena, with each card\'s type, cost and rules text. Read the actual card texts; do not assume cards from other sets.\n\nDECK:\n'+list+
-    (pts?'\n\nTHE PLAYER\'S OWN POINTS FROM PLAYING IT:\n'+pts:'')+
+    (pts?'\n\nTHE PLAYER\'S OWN POINTS FROM PLAYING IT (oldest first):\n'+pts:'')+
+    (d.analysis?'\n\nYOUR PREVIOUS ANALYSIS OF THIS DECK (JSON):\n'+JSON.stringify({summary:d.analysis.summary,win_conditions:d.analysis.win_conditions,combos:d.analysis.combos,plan:d.analysis.plan,mulligan:d.analysis.mulligan,weaknesses:d.analysis.weaknesses,cuts:d.analysis.cuts}):'')+
+    (newPoint?'\n\nTHE PLAYER JUST ADDED THIS POINT:\n"'+newPoint+'"\n\nFirst analyse that point: what does it reveal about how the deck is actually playing, and is it a real pattern or variance? Then re-approach the whole deck analysis in light of it: keep what still holds, change what the point contradicts (a win condition that is not happening, a combo that does not assemble, a card to cut, a different plan or mulligan rule), and list every change you made and why. Do not just append a reply — revise the analysis itself.':'')+
     '\n\nExplain how this deck wins and what its combos are. Be concrete and name cards. Reply with ONLY JSON in this exact shape:\n'+
     '{"summary":"two sentences on what the deck is","win_conditions":[{"title":"short name","cards":["Card A","Card B"],"how":"how these cards actually close the game"}],'+
     '"combos":[{"cards":["Card A","Card B"],"why":"why they are better together, with the rules interaction"}],'+
     '"plan":{"early":"turns 1-3","mid":"turns 4-6","late":"turn 7+"},"mulligan":"what a keepable seven needs","weaknesses":["what beats this deck"],'+
-    '"cuts":[{"card":"weakest card","why":"and what to want instead"}],"on_your_points":["a reply to each of the player\'s points, if any"]}\n'+
+    '"cuts":[{"card":"weakest card","why":"and what to want instead"}],"on_your_points":["a reply to each of the player\'s points, if any"],'+
+    '"point_analysis":{"reading":"what the newest point tells you about the deck (empty string if no new point)","pattern":"real pattern | probably variance | need more games","changes":["each change made to the analysis because of it, and why"]}}\n'+
     'Give 2-4 win conditions, 4-8 combos, 2-4 weaknesses, 2 cuts. Use only card names that appear in the deck.';
   try{
     var a=await MD.sample.json(prompt,{modelTier:'default',signal:ctl.signal,cache:false});
-    d.analysis=a; d.analysedAt=new Date().toISOString(); save(); renderDetail();
-  }catch(e){ st.textContent=COPY[e&&e.code]||('Couldn’t analyse ('+((e&&e.code)||'error')+').'); $('md-analyse').disabled=false; $('md-astop').hidden=true; }
+    if(newPoint){ var pa=a.point_analysis||{}; d.revisions=d.revisions||[]; d.revisions.unshift({at:new Date().toISOString(),point:newPoint,reading:pa.reading||'',pattern:pa.pattern||'',changes:pa.changes||[]}); d.revisions=d.revisions.slice(0,20); }
+    d.analysis=a; d.analysedAt=new Date().toISOString(); save(); if(MD.cur===d.id) renderDetail();
+  }catch(e){ if(e&&e.code==='cancelled'&&MD.ctl!==ctl) return; if(st) st.textContent=COPY[e&&e.code]||('Couldn’t analyse ('+((e&&e.code)||'error')+').'); if($('md-analyse')) $('md-analyse').disabled=false; if($('md-astop')) $('md-astop').hidden=true; }
 }
 function wireDetail(d){
+  if(d.pendingPoint&&MD.sample){ var pp=d.pendingPoint; d.pendingPoint=null; save(); analyse(d,pp); }
   $('md-back').addEventListener('click',function(e){ e.preventDefault(); MD.cur=null; renderHome(); });
-  $('md-addpoint').addEventListener('click',function(){ var t=$('md-point').value.trim(); if(!t) return; d.points=d.points||[]; d.points.push({text:t,at:new Date().toISOString()}); save(); renderDetail(); });
+  $('md-addpoint').addEventListener('click',function(){ var t=$('md-point').value.trim(); if(!t) return; d.points=d.points||[]; d.points.push({text:t,at:new Date().toISOString()}); d.pendingPoint=MD.sample?null:t; save(); renderDetail(); if(MD.sample) analyse(d,t); });
   $('md-point').addEventListener('keydown',function(e){ if(e.key==='Enter'){ e.preventDefault(); $('md-addpoint').click(); } });
   if($('md-analyse')){ $('md-analyse').addEventListener('click',function(){ analyse(d); }); $('md-astop').addEventListener('click',function(){ if(MD.ctl) MD.ctl.abort(); }); }
 }
